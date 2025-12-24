@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { LanguageProvider, DEFAULT_LANGUAGE } from './i18n/LanguageContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -16,29 +17,67 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import Contact from './pages/Contact';
 
+// Dil destekli route wrapper
+const LanguageRoutes = () => {
+  return (
+    <LanguageProvider>
+      <Header />
+      <Routes>
+        <Route path="" element={<Home />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="blog/:slug" element={<BlogDetail />} />
+        <Route path="urun/:slug" element={<ProductDetail />} />
+        <Route path="sertifikalar" element={<Certificates />} />
+        <Route path="bayiler" element={<Dealers />} />
+        <Route path="ayak-analizi" element={<AyakAnalizi />} />
+        <Route path="iletisim" element={<Contact />} />
+        <Route path="gizlilik-politikasi" element={<PrivacyPolicy />} />
+        <Route path="kullanim-sartlari" element={<TermsOfService />} />
+      </Routes>
+      <Footer />
+      <WhatsAppButton />
+    </LanguageProvider>
+  );
+};
+
 function App() {
   return (
     <div className="App" style={{ margin: 0, padding: 0, border: 'none' }}>
       <BrowserRouter>
         <ScrollToTop />
-        <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogDetail />} />
-          <Route path="/urun/:slug" element={<ProductDetail />} />
-          <Route path="/sertifikalar" element={<Certificates />} />
-          <Route path="/bayiler" element={<Dealers />} />
-          <Route path="/ayak-analizi" element={<AyakAnalizi />} />
-          <Route path="/iletisim" element={<Contact />} />
-          <Route path="/gizlilik-politikasi" element={<PrivacyPolicy />} />
-          <Route path="/kullanim-sartlari" element={<TermsOfService />} />
+          {/* Ana sayfa redirect - / -> /tr */}
+          <Route path="/" element={<Navigate to={`/${DEFAULT_LANGUAGE}`} replace />} />
+          
+          {/* Eski URL'lerden yeni yapıya redirect */}
+          <Route path="/blog" element={<Navigate to={`/${DEFAULT_LANGUAGE}/blog`} replace />} />
+          <Route path="/blog/:slug" element={<OldBlogRedirect />} />
+          <Route path="/urun/:slug" element={<OldProductRedirect />} />
+          <Route path="/sertifikalar" element={<Navigate to={`/${DEFAULT_LANGUAGE}/sertifikalar`} replace />} />
+          <Route path="/bayiler" element={<Navigate to={`/${DEFAULT_LANGUAGE}/bayiler`} replace />} />
+          <Route path="/ayak-analizi" element={<Navigate to={`/${DEFAULT_LANGUAGE}/ayak-analizi`} replace />} />
+          <Route path="/iletisim" element={<Navigate to={`/${DEFAULT_LANGUAGE}/iletisim`} replace />} />
+          <Route path="/gizlilik-politikasi" element={<Navigate to={`/${DEFAULT_LANGUAGE}/gizlilik-politikasi`} replace />} />
+          <Route path="/kullanim-sartlari" element={<Navigate to={`/${DEFAULT_LANGUAGE}/kullanim-sartlari`} replace />} />
+          
+          {/* Dil bazlı route'lar */}
+          <Route path="/:lang/*" element={<LanguageRoutes />} />
         </Routes>
-        <Footer />
-        <WhatsAppButton />
       </BrowserRouter>
     </div>
   );
 }
+
+// Eski blog URL'lerini yönlendirme
+const OldBlogRedirect = () => {
+  const slug = window.location.pathname.split('/blog/')[1];
+  return <Navigate to={`/${DEFAULT_LANGUAGE}/blog/${slug}`} replace />;
+};
+
+// Eski ürün URL'lerini yönlendirme
+const OldProductRedirect = () => {
+  const slug = window.location.pathname.split('/urun/')[1];
+  return <Navigate to={`/${DEFAULT_LANGUAGE}/urun/${slug}`} replace />;
+};
 
 export default App;

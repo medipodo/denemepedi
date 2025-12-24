@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { ArrowLeft, CheckCircle, Phone, Mail, MapPin, Star, ShieldCheck, Droplets, Sparkles, Heart, Award, Footprints, BookOpen } from 'lucide-react';
 import { products, siteInfo } from '../mock';
@@ -8,9 +7,11 @@ import { Badge } from '../components/ui/badge';
 import { Card, CardContent } from '../components/ui/card';
 import SerumProductContent from '../components/SerumProductContent';
 import FoamProductContent from '../components/FoamProductContent';
+import LocalizedLink from '../components/LocalizedLink';
+import { useLanguage } from '../i18n/LanguageContext';
 
 const ProductDetail = () => {
-  const { slug } = useParams();
+  const { slug } = useLanguage();
   const product = products.find(p => p.id === slug);
   const [selectedImage, setSelectedImage] = useState(0);
 

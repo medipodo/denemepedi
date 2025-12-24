@@ -1,58 +1,26 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import blogPosts from '../blog_content';
-import { useLanguage } from '../i18n/LanguageContext';
+// frontend/src/blog_content.js
+// ✅ SINGLE SOURCE OF TRUTH – BLOG DATA ONLY
+// ❌ NO REACT, NO ROUTER, NO COMPONENTS
 
-const BlogDetail = () => {
-  const { slug } = useParams();
-  const { currentLang } = useLanguage();
-
-  const post = blogPosts.find(
-    p => p.slug === slug && p.lang === currentLang
-  );
-
-  if (!post) {
-    return (
-      <div className="pt-32 text-center text-gray-600">
-        Blog bulunamadı.
-      </div>
-    );
+export const blogPosts = [
+  {
+    id: 'ure-nedir',
+    lang: 'tr',
+    slug: 'ure-nedir',
+    title: 'Üre Nedir ve Kuru Ciltler İçin Neden Mucizevidir?',
+    excerpt:
+      'Cildinizin unutulmuş kahramanı: Üre ve ayak bakımındaki bilimsel etkileri.',
+    image: '/blog-images/ure-nedir.jpg',
+    date: '2025-12-24',
+    readTime: '12 dk',
+    tags: ['Üre', 'Cilt Bakımı'],
+    content: `
+      <p>
+        Üre, cildin nem dengesini sağlayan en önemli doğal nem tutuculardan biridir.
+        Özellikle kuru ve çatlamaya eğilimli ayak derisinde kritik rol oynar.
+      </p>
+    `
   }
 
-  return (
-    <main className="pt-32 pb-16 bg-white">
-      <section className="py-10">
-        <div className="container mx-auto px-4 max-w-4xl prose prose-lg">
-
-          {/* BAŞLIK */}
-          <h1>{post.title}</h1>
-
-          {/* META */}
-          <p className="text-sm text-gray-500">
-            {post.date} • {post.readTime}
-          </p>
-
-          {/* KAPAK GÖRSELİ */}
-          {post.image && (
-            <img
-              src={post.image}
-              alt={post.title}
-              className="w-full rounded-xl my-8"
-              loading="lazy"
-            />
-          )}
-
-          {/* HTML BLOG İÇERİĞİ */}
-          <div
-            dangerouslySetInnerHTML={{
-              __html: post.content
-            }}
-          />
-
-        </div>
-      </section>
-    </main>
-  );
-};
-
-export default BlogDetail;
+  // 👉 diğer bloglar buraya
+];

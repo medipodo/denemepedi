@@ -1,0 +1,22 @@
+# 301 Redirects - Eski URL'lerden yeni yapıya
+
+# Ana sayfa redirect
+/  /tr  301
+
+# Blog redirects
+/blog  /tr/blog  301
+/blog/*  /tr/blog/:splat  301
+
+# Ürün redirects
+/urun/*  /tr/urun/:splat  301
+
+# Diğer sayfalar
+/sertifikalar  /tr/sertifikalar  301
+/bayiler  /tr/bayiler  301
+/ayak-analizi  /tr/ayak-analizi  301
+/iletisim  /tr/iletisim  301
+/gizlilik-politikasi  /tr/gizlilik-politikasi  301
+/kullanim-sartlari  /tr/kullanim-sartlari  301
+
+# SPA fallback - tüm dil route'ları için
+/:lang/*  /index.html  200

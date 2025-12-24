@@ -10,6 +10,7 @@ import {
 import { blogPosts, products } from '../mock';
 import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
+import BlogUreNedir from '../components/BlogUreNedir';
 
 const BlogDetail = () => {
   const { slug } = useParams();
@@ -20,6 +21,11 @@ const BlogDetail = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [slug]);
+
+  // Üre blogu için özel component
+  if (slug === 'ure-nedir') {
+    return <BlogUreNedir />;
+  }
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(window.location.href);

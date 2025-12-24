@@ -36,10 +36,14 @@ const LanguageContent = () => {
   const slug = pathParts[1] || '';
 
   // İngilizce için mevcut içerikler (kademeli eklenecek)
-  const enAvailableContent = {
-    blogs: ['what-is-foot-fungus', 'types-of-nail-fungus'], // İngilizce mevcut bloglar
-    products: [] // İngilizce mevcut ürünler
-  };
+const enAvailableContent = {
+  blogs: [
+    'what-is-foot-fungus',
+    'types-of-nail-fungus',
+    'what-causes-foot-odor'
+  ], // İngilizce mevcut bloglar
+  products: [] // İngilizce mevcut ürünler
+};
 
   // Belirli içerik için dil kontrolü
   const hasContentForPage = () => {
@@ -145,5 +149,6 @@ const OldProductRedirect = () => {
   const slug = window.location.pathname.split('/urun/')[1];
   return <Navigate to={`/${DEFAULT_LANGUAGE}/urun/${slug}`} replace />;
 };
+// deploy trigger
 
 export default App;

@@ -188,3 +188,7 @@ denemepedi/.git/objects/pack/pack-0909ec2252a6f9d0ab17fc9c1213558dfc9d7026.pack
 *.env
 *.env.*
 frontend/node_modules/.cache/default-development/0.pack
+-e 
+# Environment files
+*.env
+*.env.*

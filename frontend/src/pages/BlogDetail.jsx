@@ -1,212 +1,52 @@
-import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
-import {
-  ArrowLeft, Calendar, Clock, User,
-  Share2, Check
-} from 'lucide-react';
-
+import React from 'react';
+import { useParams } from 'react-router-dom';
 import { blogPosts } from '../blog_content';
-import { Button } from '../components/ui/button';
-
-import BlogUreNedir from '../components/BlogUreNedir';
-import BlogAyakMantariEN from '../components/BlogAyakMantariEN';
-import BlogTirnakMantariEN from '../components/BlogTirnakMantariEN';
-import BlogFootOdorEN from '../components/BlogFootOdorEN';
-import BlogPreventFootFungusEN from '../components/BlogPreventFootFungusEN';
-
-import LocalizedLink from '../components/LocalizedLink';
 import { useLanguage } from '../i18n/LanguageContext';
 
 const BlogDetail = () => {
-  const { slug, currentLang } = useLanguage();
+  const { slug } = useParams();
+  const { currentLang } = useLanguage();
 
-  /* ✅ EN KRİTİK SATIR (TR BLOG SORUNU BURADAYDI) */
   const post = blogPosts.find(
     p => p.slug === slug && p.lang === currentLang
   );
 
-  const [copied, setCopied] = useState(false);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [slug, currentLang]);
-
-  /* ===============================
-     ÖZEL BLOG COMPONENT'LERİ
-     =============================== */
-
-  if (slug === 'ure-nedir' && currentLang === 'tr') {
-    return <BlogUreNedir />;
-  }
-
-  if (slug === 'what-is-foot-fungus' && currentLang === 'en') {
-    return <BlogAyakMantariEN />;
-  }
-
-  if (slug === 'types-of-nail-fungus' && currentLang === 'en') {
-    return <BlogTirnakMantariEN />;
-  }
-
-  if (slug === 'what-causes-foot-odor' && currentLang === 'en') {
-    return <BlogFootOdorEN />;
-  }
-
-  if (slug === 'how-to-prevent-foot-fungus' && currentLang === 'en') {
-    return <BlogPreventFootFungusEN />;
-  }
-
-  /* ===============================
-     POST YOKSA
-     =============================== */
-
   if (!post) {
     return (
-      <div className="min-h-screen pt-32 pb-16 text-center">
-        <h1 className="text-3xl font-bold mb-4">Yazı Bulunamadı</h1>
-        <LocalizedLink to="/blog">
-          <Button>
-            <ArrowLeft className="mr-2" /> Blog’a Dön
-          </Button>
-        </LocalizedLink>
+      <div className="pt-32 text-center text-gray-600">
+        Blog bulunamadı.
       </div>
     );
   }
 
-  /* ===============================
-     SEO SCHEMA
-     =============================== */
-
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": post.title,
-    "description": post.excerpt,
-    "datePublished": post.date,
-    "author": {
-      "@type": "Organization",
-      "name": "PediZone"
-    }
-  };
-
-  /* ===============================
-     RELATED POSTS (DİL FİLTRELİ)
-     =============================== */
-
-  const relatedPosts = blogPosts
-    .filter(p => p.slug !== slug && p.lang === currentLang)
-    .slice(0, 3);
-
-  /* ===============================
-     SHARE
-     =============================== */
-
-  const handleCopyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
-  /* ===============================
-     RENDER
-     =============================== */
-
   return (
-    <div className="min-h-screen bg-white">
-      <Helmet>
-        <title>{post.title} | PediZone Blog</title>
-        <meta name="description" content={post.excerpt} />
-        <script type="application/ld+json">
-          {JSON.stringify(articleSchema)}
-        </script>
-      </Helmet>
-
-      {/* HEADER */}
-      <section className="pt-24 pb-8 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
-
-          <div className="flex flex-wrap gap-4 text-sm text-gray-600 items-center">
-            <span className="flex items-center gap-1">
-              <User size={14} /> PediZone
-            </span>
-            <span className="flex items-center gap-1">
-              <Calendar size={14} /> {post.date}
-            </span>
-            <span className="flex items-center gap-1">
-              <Clock size={14} /> {post.readTime}
-            </span>
-
-            <button
-              onClick={handleCopyLink}
-              className="ml-auto flex items-center gap-1 text-red-600 font-medium"
-            >
-              {copied ? <Check size={14} /> : <Share2 size={14} />}
-              {copied ? 'Kopyalandı' : 'Paylaş'}
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* CONTENT */}
+    <main className="pt-32 pb-16 bg-white">
       <section className="py-10">
         <div className="container mx-auto px-4 max-w-4xl prose prose-lg">
-          {post.sections?.length ? (
-            post.sections.map((section, i) => (
-              <BlogSection key={i} section={section} />
-            ))
-          ) : (
-            <div
-              dangerouslySetInnerHTML={{
-                __html: post.content?.replace(/\n/g, '<br/>')
-              }}
+
+          <h1>{post.title}</h1>
+
+          <p className="text-sm text-gray-500">
+            {post.date} • {post.readTime}
+          </p>
+
+          {post.image && (
+            <img
+              src={post.image}
+              alt={post.title}
+              className="w-full rounded-xl my-8"
+              loading="lazy"
             />
           )}
+
+          <div
+            dangerouslySetInnerHTML={{ __html: post.content }}
+          />
+
         </div>
       </section>
-
-      {/* RELATED */}
-      {relatedPosts.length > 0 && (
-        <section className="py-12 bg-gray-50">
-          <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-2xl font-bold mb-6">İlgili Yazılar</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              {relatedPosts.map(rp => (
-                <LocalizedLink key={rp.slug} to={`/blog/${rp.slug}`}>
-                  <div className="bg-white p-4 rounded-xl shadow hover:shadow-lg">
-                    <h3 className="font-semibold">{rp.title}</h3>
-                    <span className="text-sm text-gray-500">{rp.readTime}</span>
-                  </div>
-                </LocalizedLink>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-    </div>
+    </main>
   );
-};
-
-/* ===============================
-   BLOG SECTION (BASİT & SAFE)
-   =============================== */
-
-const BlogSection = ({ section }) => {
-  switch (section.type) {
-    case 'heading':
-      return <h2>{section.content}</h2>;
-    case 'paragraph':
-      return <p>{section.content}</p>;
-    case 'bulletList':
-      return (
-        <ul>
-          {section.items.map((i, idx) => (
-            <li key={idx}>{i}</li>
-          ))}
-        </ul>
-      );
-    default:
-      return null;
-  }
 };
 
 export default BlogDetail;

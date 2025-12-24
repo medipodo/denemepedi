@@ -37,7 +37,7 @@ const LanguageContent = () => {
 
   // İngilizce için mevcut içerikler (kademeli eklenecek)
   const enAvailableContent = {
-    blogs: ['ayak-mantari-nedir'], // İngilizce mevcut bloglar
+    blogs: ['what-is-foot-fungus'], // İngilizce mevcut bloglar
     products: [] // İngilizce mevcut ürünler
   };
 

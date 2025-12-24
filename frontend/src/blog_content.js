@@ -1,3 +1,4 @@
+// frontend/src/blog_content.js
 // ✅ TEK KAYNAK BLOG VERİSİ
 // TR + EN bloglar buradan yönetilir
 // ⚠️ BlogDetail.jsx slug + lang ile filtreler
@@ -5,7 +6,7 @@
 export const blogPosts = [
 
   /* =====================================================
-     🇹🇷 TÜRKÇE BLOG LİSTESİ (7 ADET)
+     🇹🇷 TÜRKÇE BLOG LİSTESİ
   ===================================================== */
 
   {
@@ -23,6 +24,10 @@ export const blogPosts = [
       <p>
         Üre, cildin nem dengesini sağlayan en önemli doğal nem tutuculardan biridir.
         Özellikle kuru ve çatlamaya eğilimli ayak derisinde kritik rol oynar.
+      </p>
+      <p>
+        Dermatolojide keratolitik etkisi sayesinde ölü deri hücrelerinin
+        uzaklaştırılmasına yardımcı olur.
       </p>
     `
   },
@@ -59,8 +64,8 @@ export const blogPosts = [
     tags: ['Ayak Mantarı', 'Ayak Sağlığı'],
     content: `
       <p>
-        Ayak mantarı, dermatofit adı verilen mantarların neden olduğu bulaşıcı bir
-        cilt enfeksiyonudur.
+        Ayak mantarı, dermatofit adı verilen mantarların neden olduğu
+        bulaşıcı bir cilt enfeksiyonudur.
       </p>
     `
   },
@@ -69,7 +74,7 @@ export const blogPosts = [
     id: 'tirnak-mantari-turleri',
     lang: 'tr',
     slug: 'tirnak-mantari-turleri',
-    title: 'Tırnak Mantarı Türleri (Onikomikoz): Belirtiler, Nedenler ve Tedavi Yaklaşımları',
+    title: 'Tırnak Mantarı Türleri (Onikomikoz)',
     excerpt:
       'Tırnak mantarı türleri nelerdir? Onikomikoz çeşitleri ve erken belirtiler.',
     image: '/images/blog/tirnak-mantari.jpg',
@@ -78,25 +83,8 @@ export const blogPosts = [
     tags: ['Tırnak Mantarı', 'Onikomikoz'],
     content: `
       <p>
-        Onikomikoz, tırnak plağını etkileyen mantar enfeksiyonlarının genel adıdır.
-      </p>
-    `
-  },
-
-  {
-    id: 'mantar-icin-serum',
-    lang: 'tr',
-    slug: 'mantar-icin-serum',
-    title: 'Mantar İçin Serum Kullanmanın Önemi: Topikal Tedavide Serum Farkı',
-    excerpt:
-      'Mantar enfeksiyonlarında serum formunun avantajları ve doğru kullanım rehberi.',
-    image: '/images/blog/mantar-serum.jpg',
-    date: '2025-12-10',
-    readTime: '8 dk',
-    tags: ['Serum', 'Topikal Tedavi'],
-    content: `
-      <p>
-        Serum formu, etken maddelerin daha derin katmanlara ulaşmasını sağlar.
+        Onikomikoz, tırnak plağını etkileyen mantar enfeksiyonlarının
+        genel adıdır.
       </p>
     `
   },
@@ -105,7 +93,7 @@ export const blogPosts = [
     id: 'ayak-kokusu-neden-olur',
     lang: 'tr',
     slug: 'ayak-kokusu-neden-olur',
-    title: 'Ayak Kokusu (Bromhidroz) Neden Olur? Etkili Çözüm Yolları',
+    title: 'Ayak Kokusu (Bromhidroz) Neden Olur?',
     excerpt:
       'Ayak kokusu neden olur? Terleme, bakteri ve mantar kaynaklı nedenler.',
     image: '/images/blog/ayak-kokusu.jpg',
@@ -119,80 +107,25 @@ export const blogPosts = [
     `
   },
 
-  {
-    id: 'ayak-hijyeni',
-    lang: 'tr',
-    slug: 'ayak-hijyeni',
-    title: 'Ayak Hijyeni ve Bakım İpuçları: Sağlıklı Ayaklar İçin Günlük Rehber',
-    excerpt:
-      'Günlük ayak hijyeni ve mantar riskini azaltan bakım ipuçları.',
-    image: '/images/blog/ayak-hijyeni.jpg',
-    date: '2025-11-29',
-    readTime: '8 dk',
-    tags: ['Ayak Hijyeni', 'Ayak Bakımı'],
-    content: `
-      <p>
-        Ayak hijyeni, mantar ve koku oluşumunu önlemenin temelidir.
-      </p>
-    `
-  },
-
   /* =====================================================
-     🇬🇧 ENGLISH BLOG LIST (3 POSTS)
+     🇬🇧 ENGLISH BLOG LIST
   ===================================================== */
 
   {
     id: 'what-is-foot-fungus',
     lang: 'en',
     slug: 'what-is-foot-fungus',
-    title: 'What Is Foot Fungus? Causes, Symptoms, Types, and Prevention',
+    title: 'What Is Foot Fungus?',
     excerpt:
       'Foot fungus is a common fungal infection affecting the skin of the feet.',
     image: '/blog-images/ayak-mantari/ayak-mantari-cover.jpg',
     date: '2025-01-15',
     readTime: '8 min',
-    tags: ['Foot Fungus', 'Foot Care'],
+    tags: ['Foot Fungus'],
     content: `
       <p>
         Foot fungus is a fungal infection that affects the skin of the feet,
         especially between the toes.
-      </p>
-    `
-  },
-
-  {
-    id: 'types-of-nail-fungus',
-    lang: 'en',
-    slug: 'types-of-nail-fungus',
-    title: 'Types of Nail Fungus (Onychomycosis): Symptoms, Causes, and Early Signs',
-    excerpt:
-      'Learn the most common types of nail fungus and early warning signs.',
-    image: '/blog-images/tirnak-mantari/Tırnak-Mantarı-Neden-Oluşur.jpg',
-    date: '2025-01-20',
-    readTime: '10 min',
-    tags: ['Nail Fungus', 'Onychomycosis'],
-    content: `
-      <p>
-        Nail fungus affects the structure and color of the nails and requires
-        early attention.
-      </p>
-    `
-  },
-
-  {
-    id: 'what-causes-foot-odor',
-    lang: 'en',
-    slug: 'what-causes-foot-odor',
-    title: 'What Causes Foot Odor?',
-    excerpt:
-      'Foot odor occurs when sweat and bacteria interact. Learn the main causes.',
-    image: '/blog-images/ayak-kokusu/foot-odor.jpg',
-    date: '2025-01-25',
-    readTime: '7 min',
-    tags: ['Foot Odor', 'Foot Hygiene'],
-    content: `
-      <p>
-        Foot odor develops when sweat combines with bacteria on the skin.
       </p>
     `
   }

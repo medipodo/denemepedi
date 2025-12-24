@@ -640,7 +640,7 @@ const ProductDetail = () => {
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-red-50 via-white to-orange-50 border-2 border-red-100 rounded-2xl p-8 hover:shadow-xl transition-shadow">
+            <div className="bg-gradient-to-br from-red-50 via-white to-orange-50 border-2 border-red-100 rounded-2xl p-8 hover:shadow-xl transition-shadow mb-6">
               <div className="flex flex-col md:flex-row items-center gap-6">
                 <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
                   <Footprints className="w-8 h-8 md:w-10 md:h-10 text-white" />
@@ -655,6 +655,30 @@ const ProductDetail = () => {
                   >
                     <span className="text-base">Ayak Hijyeni İpuçları</span>
                     <span className="text-sm font-normal opacity-90">(Sağlıklı cilt için bakım önerileri)</span>
+                    <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Üre Blogu Linki */}
+            <div className="bg-gradient-to-br from-blue-50 via-white to-purple-50 border-2 border-blue-100 rounded-2xl p-8 hover:shadow-xl transition-shadow">
+              <div className="flex flex-col md:flex-row items-center gap-6">
+                <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <BookOpen className="w-8 h-8 md:w-10 md:h-10 text-white" />
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <p className="text-lg text-gray-600 mb-4 leading-relaxed">
+                    Üre ciltte nasıl çalışır? Bilimsel olarak kanıtlanmış etkilerini keşfedin
+                  </p>
+                  <Link 
+                    to="/blog/ure-nedir"
+                    className="inline-flex items-center gap-3 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-all hover:gap-4 shadow-md hover:shadow-lg group"
+                  >
+                    <span className="text-base">Üre Nedir?</span>
+                    <span className="text-sm font-normal opacity-90">(Dermatolojinin gizli kahramanı)</span>
                     <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>

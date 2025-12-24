@@ -5,7 +5,7 @@ const LanguageSwitcher = () => {
   const { currentLang, switchLanguage } = useLanguage();
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-0.5">
       {SUPPORTED_LANGUAGES.map((langCode) => {
         const info = LANGUAGE_INFO[langCode];
         const isActive = langCode === currentLang;
@@ -14,7 +14,7 @@ const LanguageSwitcher = () => {
           <button
             key={langCode}
             onClick={() => switchLanguage(langCode)}
-            className={`p-2 rounded-lg transition-all ${
+            className={`p-1.5 rounded-lg transition-all ${
               isActive 
                 ? 'bg-white/20 ring-2 ring-white' 
                 : 'hover:bg-white/10'
@@ -22,7 +22,7 @@ const LanguageSwitcher = () => {
             aria-label={`${info.name} diline geç`}
             title={info.name}
           >
-            <span className="text-3xl block leading-none">{info.flag}</span>
+            <span className="text-[2rem] block leading-none">{info.flag}</span>
           </button>
         );
       })}

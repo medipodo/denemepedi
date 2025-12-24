@@ -16,10 +16,11 @@ export const siteInfo = {
   logo: ''
 };
 
-// ⛑️ Build-safe empty exports
+// ⛑️ Build-safe empty exports (build crash önlemek için)
 export const blogPosts = [];
 export const mockPosts = [];
 export const services = [];
 export const galleryImages = [];
 export const teamMembers = [];
 export const whyChooseUs = [];
+export const products = [];

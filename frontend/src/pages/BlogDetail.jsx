@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import {
-  ArrowLeft, Calendar, Clock, User, AlertTriangle, CheckCircle,
-  XCircle, Info, Lightbulb, ShieldCheck, ChevronDown, ChevronUp,
-  BookOpen, Sparkles, Share2, Check
+  ArrowLeft, Calendar, Clock, User,
+  Share2, Check
 } from 'lucide-react';
 
-import { blogPosts, products } from '../blog_content';
+import { blogPosts } from '../blog_content';
 import { Button } from '../components/ui/button';
-import { Badge } from '../components/ui/badge';
 
 import BlogUreNedir from '../components/BlogUreNedir';
 import BlogAyakMantariEN from '../components/BlogAyakMantariEN';
@@ -22,12 +20,11 @@ import { useLanguage } from '../i18n/LanguageContext';
 const BlogDetail = () => {
   const { slug, currentLang } = useLanguage();
 
-  // ✅ DİL FİLTRESİ EKLENDİ (ANA SORUN BUYDU)
+  /* ✅ EN KRİTİK SATIR (TR BLOG SORUNU BURADAYDI) */
   const post = blogPosts.find(
     p => p.slug === slug && p.lang === currentLang
   );
 
-  const [openFaq, setOpenFaq] = useState(null);
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -79,26 +76,16 @@ const BlogDetail = () => {
      SEO SCHEMA
      =============================== */
 
-  const faqSchema = post.faqs ? {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": post.faqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  } : null;
-
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": post.title,
     "description": post.excerpt,
-    "author": { "@type": "Person", "name": post.author },
-    "datePublished": post.date
+    "datePublished": post.date,
+    "author": {
+      "@type": "Organization",
+      "name": "PediZone"
+    }
   };
 
   /* ===============================
@@ -131,20 +118,16 @@ const BlogDetail = () => {
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>
-        {faqSchema && (
-          <script type="application/ld+json">
-            {JSON.stringify(faqSchema)}
-          </script>
-        )}
       </Helmet>
 
       {/* HEADER */}
       <section className="pt-24 pb-8 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
           <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
-          <div className="flex gap-4 text-sm text-gray-600">
+
+          <div className="flex flex-wrap gap-4 text-sm text-gray-600 items-center">
             <span className="flex items-center gap-1">
-              <User size={14} /> {post.author}
+              <User size={14} /> PediZone
             </span>
             <span className="flex items-center gap-1">
               <Calendar size={14} /> {post.date}
@@ -152,7 +135,11 @@ const BlogDetail = () => {
             <span className="flex items-center gap-1">
               <Clock size={14} /> {post.readTime}
             </span>
-            <button onClick={handleCopyLink} className="ml-auto flex items-center gap-1">
+
+            <button
+              onClick={handleCopyLink}
+              className="ml-auto flex items-center gap-1 text-red-600 font-medium"
+            >
               {copied ? <Check size={14} /> : <Share2 size={14} />}
               {copied ? 'Kopyalandı' : 'Paylaş'}
             </button>
@@ -163,17 +150,17 @@ const BlogDetail = () => {
       {/* CONTENT */}
       <section className="py-10">
         <div className="container mx-auto px-4 max-w-4xl prose prose-lg">
-          {post.sections?.length
-            ? post.sections.map((section, i) => (
-                <BlogSection key={i} section={section} />
-              ))
-            : (
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: post.content?.replace(/\n/g, '<br/>')
-                }}
-              />
-            )}
+          {post.sections?.length ? (
+            post.sections.map((section, i) => (
+              <BlogSection key={i} section={section} />
+            ))
+          ) : (
+            <div
+              dangerouslySetInnerHTML={{
+                __html: post.content?.replace(/\n/g, '<br/>')
+              }}
+            />
+          )}
         </div>
       </section>
 
@@ -200,7 +187,7 @@ const BlogDetail = () => {
 };
 
 /* ===============================
-   BLOG SECTION
+   BLOG SECTION (BASİT & SAFE)
    =============================== */
 
 const BlogSection = ({ section }) => {
@@ -212,7 +199,9 @@ const BlogSection = ({ section }) => {
     case 'bulletList':
       return (
         <ul>
-          {section.items.map((i, idx) => <li key={idx}>{i}</li>)}
+          {section.items.map((i, idx) => (
+            <li key={idx}>{i}</li>
+          ))}
         </ul>
       );
     default:

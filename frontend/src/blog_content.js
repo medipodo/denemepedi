@@ -1,5 +1,6 @@
 // ✅ TEK KAYNAK BLOG VERİSİ
 // TR + EN bloglar buradan yönetilir
+// ⚠️ BlogDetail.jsx slug + lang ile filtreler
 
 export const blogPosts = [
 

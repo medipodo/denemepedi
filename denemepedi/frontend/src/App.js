@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { LanguageProvider, DEFAULT_LANGUAGE } from './i18n/LanguageContext';
+import { BrowserRouter, Routes, Route, Navigate, useParams } from 'react-router-dom';
+import { LanguageProvider, DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES } from './i18n/LanguageContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -17,23 +17,50 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import Contact from './pages/Contact';
 
-// Dil destekli route wrapper
-const LanguageRoutes = () => {
+// Dil destekli içerik wrapper
+const LanguageContent = () => {
+  const { lang, "*": rest } = useParams();
+  
+  // Geçersiz dil kodu kontrolü
+  if (!SUPPORTED_LANGUAGES.includes(lang)) {
+    return <Navigate to={`/${DEFAULT_LANGUAGE}`} replace />;
+  }
+
+  // Path'i parse et
+  const pathParts = rest ? rest.split('/') : [];
+  const page = pathParts[0] || '';
+  const slug = pathParts[1] || '';
+
+  // Sayfa render
+  const renderPage = () => {
+    switch (page) {
+      case '':
+        return <Home />;
+      case 'blog':
+        return slug ? <BlogDetail /> : <Blog />;
+      case 'urun':
+        return <ProductDetail />;
+      case 'sertifikalar':
+        return <Certificates />;
+      case 'bayiler':
+        return <Dealers />;
+      case 'ayak-analizi':
+        return <AyakAnalizi />;
+      case 'iletisim':
+        return <Contact />;
+      case 'gizlilik-politikasi':
+        return <PrivacyPolicy />;
+      case 'kullanim-sartlari':
+        return <TermsOfService />;
+      default:
+        return <Home />;
+    }
+  };
+
   return (
     <LanguageProvider>
       <Header />
-      <Routes>
-        <Route path="" element={<Home />} />
-        <Route path="blog" element={<Blog />} />
-        <Route path="blog/:slug" element={<BlogDetail />} />
-        <Route path="urun/:slug" element={<ProductDetail />} />
-        <Route path="sertifikalar" element={<Certificates />} />
-        <Route path="bayiler" element={<Dealers />} />
-        <Route path="ayak-analizi" element={<AyakAnalizi />} />
-        <Route path="iletisim" element={<Contact />} />
-        <Route path="gizlilik-politikasi" element={<PrivacyPolicy />} />
-        <Route path="kullanim-sartlari" element={<TermsOfService />} />
-      </Routes>
+      {renderPage()}
       <Footer />
       <WhatsAppButton />
     </LanguageProvider>
@@ -61,7 +88,7 @@ function App() {
           <Route path="/kullanim-sartlari" element={<Navigate to={`/${DEFAULT_LANGUAGE}/kullanim-sartlari`} replace />} />
           
           {/* Dil bazlı route'lar */}
-          <Route path="/:lang/*" element={<LanguageRoutes />} />
+          <Route path="/:lang/*" element={<LanguageContent />} />
         </Routes>
       </BrowserRouter>
     </div>

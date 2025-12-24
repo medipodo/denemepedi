@@ -24,7 +24,7 @@ const Header = () => {
   const navLinks = [
     { name: t('nav.home'), path: '/' },
     { name: t('nav.products'), path: '/#urunler' },
-    { name: 'Ayak Analizi', path: '/ayak-analizi' },
+    { name: t('nav.footAnalysis'), path: '/ayak-analizi' },
     { name: t('nav.dealers'), path: '/bayiler' },
     { name: t('nav.blog'), path: '/blog' },
     { name: t('nav.certificates'), path: '/sertifikalar' },

@@ -150,34 +150,34 @@ const Home = () => {
             <div className="relative flex justify-center items-center">
               <div className="flex items-end justify-center gap-2 md:gap-4 lg:gap-6">
                 {/* Sol Ürün - Serum */}
-                <Link to="/urun/foot-nail-care-serum" className="transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+                <LocalizedLink to="/urun/foot-nail-care-serum" className="transform hover:scale-105 transition-transform duration-300 cursor-pointer">
                   <img 
                     src={productSerum} 
                     alt="PediZone Serum" 
                     className="h-48 sm:h-56 md:h-64 lg:h-80 object-contain drop-shadow-2xl rounded-none"
                     style={{ borderRadius: 0 }}
                   />
-                </Link>
+                </LocalizedLink>
                 
                 {/* Orta Ürün - Köpük (Öne Çıkan) */}
-                <Link to="/urun/temizleme-kopugu" className="transform hover:scale-105 transition-transform duration-300 -mt-4 md:-mt-8 cursor-pointer">
+                <LocalizedLink to="/urun/temizleme-kopugu" className="transform hover:scale-105 transition-transform duration-300 -mt-4 md:-mt-8 cursor-pointer">
                   <img 
                     src={productFoam} 
                     alt="PediZone Köpük" 
                     className="h-56 sm:h-64 md:h-72 lg:h-96 object-contain drop-shadow-2xl rounded-none"
                     style={{ borderRadius: 0 }}
                   />
-                </Link>
+                </LocalizedLink>
                 
                 {/* Sağ Ürün - Krem */}
-                <Link to="/urun/ureli-krem" className="transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+                <LocalizedLink to="/urun/ureli-krem" className="transform hover:scale-105 transition-transform duration-300 cursor-pointer">
                   <img 
                     src={productCream} 
                     alt="PediZone Krem" 
                     className="h-48 sm:h-56 md:h-64 lg:h-80 object-contain drop-shadow-2xl rounded-none"
                     style={{ borderRadius: 0 }}
                   />
-                </Link>
+                </LocalizedLink>
               </div>
             </div>
           </div>
@@ -196,7 +196,7 @@ const Home = () => {
             {products.map((product) => (
               <Card key={product.id} className="overflow-hidden group cursor-pointer border border-gray-100 hover:shadow-2xl transition-all duration-300 max-w-sm mx-auto w-full">
                 {/* Görsel - hover'da yaklaşma efekti */}
-                <Link to={`/urun/${product.id}`} className="block relative overflow-hidden bg-gray-50">
+                <LocalizedLink to={`/urun/${product.id}`} className="block relative overflow-hidden bg-gray-50">
                   <img 
                     src={product.image} 
                     alt={product.name} 
@@ -207,7 +207,7 @@ const Home = () => {
                       {product.badge}
                     </Badge>
                   )}
-                </Link>
+                </LocalizedLink>
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold text-gray-900 mb-2">{product.name}</h3>
                   <p className="text-gray-500 text-sm mb-4">{product.description}</p>
@@ -219,11 +219,11 @@ const Home = () => {
                       </span>
                     ))}
                   </div>
-                  <Link to={`/urun/${product.id}`}>
+                  <LocalizedLink to={`/urun/${product.id}`}>
                     <Button className="w-full bg-gray-900 hover:bg-gray-800 text-white rounded-lg">
                       Detayları İncele
                     </Button>
-                  </Link>
+                  </LocalizedLink>
                 </CardContent>
               </Card>
             ))}
@@ -248,11 +248,11 @@ const Home = () => {
               6 basit soruyla ayak sağlığınızı analiz edin ve podologunuzla danışarak size özel PediZone® ürün önerisi alın.
             </p>
             
-            <Link to="/ayak-analizi">
+            <LocalizedLink to="/ayak-analizi">
               <Button className="bg-white text-red-700 hover:bg-red-50 px-10 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all">
                 Ayaklarınızı Analiz Edin
               </Button>
-            </Link>
+            </LocalizedLink>
             
             {/* Alt bilgiler */}
             <div className="flex flex-wrap justify-center gap-6 mt-8">
@@ -348,7 +348,7 @@ const Home = () => {
                 link: '/blog/ayak-kokusu-nedenleri'
               }
             ].map((item, idx) => (
-              <Link key={idx} to={item.link} className="group">
+              <LocalizedLink key={idx} to={item.link} className="group">
                 <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-red-200">
                   <div className="aspect-square overflow-hidden">
                     <img 
@@ -363,7 +363,7 @@ const Home = () => {
                     </h3>
                   </div>
                 </div>
-              </Link>
+              </LocalizedLink>
             ))}
           </div>
         </div>
@@ -388,15 +388,15 @@ const Home = () => {
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2">{post.title}</h3>
                   <p className="text-gray-600 text-sm mb-4 line-clamp-2">{post.excerpt}</p>
-                  <Link to={`/blog/${post.slug}`}>
+                  <LocalizedLink to={`/blog/${post.slug}`}>
                     <Button variant="link" className="text-red-600 p-0">Devamını Oku <ArrowRight size={16} className="ml-1" /></Button>
-                  </Link>
+                  </LocalizedLink>
                 </CardContent>
               </Card>
             ))}
           </div>
           <div className="text-center mt-8">
-            <Link to="/blog"><Button className="bg-red-600 hover:bg-red-700 text-white px-8">Tüm Yazılar</Button></Link>
+            <LocalizedLink to="/blog"><Button className="bg-red-600 hover:bg-red-700 text-white px-8">Tüm Yazılar</Button></LocalizedLink>
           </div>
         </div>
       </section>
@@ -511,11 +511,11 @@ const Home = () => {
             </div>
             
             <div className="text-center mt-6 mb-0">
-              <Link to="/bayiler">
+              <LocalizedLink to="/bayiler">
                 <Button className="bg-red-600 hover:bg-red-700 text-white px-8">
                   Tüm Satış Noktalarını Görüntüle
                 </Button>
-              </Link>
+              </LocalizedLink>
             </div>
           </div>
         </div>

@@ -39,6 +39,16 @@ const enBlogPosts = [
     date: 'January 22, 2025',
     readTime: '8 min',
     tags: ['Foot Odor', 'Foot Care', 'Prevention']
+  },
+  {
+    id: 'how-to-prevent-foot-fungus',
+    title: 'How to Prevent Foot Fungus: Daily Habits, Hygiene, and Professional Care',
+    slug: 'how-to-prevent-foot-fungus',
+    excerpt: 'Foot fungus is common but preventable. Learn how daily hygiene habits, proper footwear, and early care can help prevent foot fungus and reduce the risk of recurrence.',
+    image: '',
+    date: 'January 24, 2025',
+    readTime: '9 min',
+    tags: ['Foot Fungus', 'Prevention', 'Foot Care']
   }
 ];
 

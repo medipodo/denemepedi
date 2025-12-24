@@ -44,11 +44,11 @@ const Blog = () => {
                       <span>{post.readTime}</span>
                     </div>
                     <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
-                    <Link to={`/blog/${post.slug}`}>
+                    <LocalizedLink to={`/blog/${post.slug}`}>
                       <Button variant="link" className="text-red-600 p-0 h-auto font-semibold">
                         Devamını Oku <ArrowRight className="ml-1" size={16} />
                       </Button>
-                    </Link>
+                    </LocalizedLink>
                   </div>
                 </CardContent>
               </Card>

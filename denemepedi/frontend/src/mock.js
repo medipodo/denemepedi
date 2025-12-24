@@ -344,6 +344,12 @@ export const blogPosts = [
         type: 'relatedArticles',
         articles: [
           {
+            title: 'Üre Nedir ve Kuru Ciltler İçin Neden Mucizevidir?',
+            description: 'Dermatolojinin gizli kahramanı ürenin bilimsel temelleri ve ayak bakımındaki kritik rolü.',
+            link: '/blog/ure-nedir',
+            icon: '💧'
+          },
+          {
             title: 'Ayak Mantarı Belirtileri ve Tedavisi',
             description: 'Ayak mantarı neden olur? Belirtileri, korunma yöntemleri ve etkili tedavi yaklaşımları.',
             link: '/blog/ayak-mantari-nedir',

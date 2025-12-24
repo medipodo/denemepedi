@@ -838,3 +838,4 @@ const BlogSection = ({ section, index }) => {
 
 export default BlogDetail;
 // Updated: Wed Dec 24 15:29:48 UTC 2025
+// Force update 1766600399

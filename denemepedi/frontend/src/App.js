@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route, Navigate, useParams } from 'react-router-dom';
-import { LanguageProvider, DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES } from './i18n/LanguageContext';
+import { LanguageProvider, DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES, LANGUAGE_INFO } from './i18n/LanguageContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTop from './components/ScrollToTop';
+import NoContentPage from './components/NoContentPage';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';
@@ -26,13 +27,21 @@ const LanguageContent = () => {
     return <Navigate to={`/${DEFAULT_LANGUAGE}`} replace />;
   }
 
+  // İçerik var mı kontrolü
+  const hasContent = LANGUAGE_INFO[lang]?.hasContent ?? false;
+
   // Path'i parse et
   const pathParts = rest ? rest.split('/') : [];
   const page = pathParts[0] || '';
   const slug = pathParts[1] || '';
 
-  // Sayfa render
+  // Sayfa render - içerik yoksa NoContentPage göster
   const renderPage = () => {
+    // İçerik yoksa NoContentPage
+    if (!hasContent) {
+      return <NoContentPage />;
+    }
+
     switch (page) {
       case '':
         return <Home />;

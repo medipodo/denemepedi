@@ -157,7 +157,7 @@ const FoamProductContent = ({ product, productImages }) => {
             <div className="my-8 rounded-2xl overflow-hidden shadow-lg">
               <picture>
                 <source media="(max-width: 640px)" srcSet="/images/products/foam/foam-usage.jpg?w=640&q=75" />
-                <img src="/images/products/foam/foam-usage.jpg" alt="PediZone Köpük Kullanımı" className="w-full h-80 object-cover" loading="lazy" />
+                <img src="/images/products/foam/foam-usage.jpg" alt="PediZone Köpük Kullanımı" className="w-full object-contain" loading="lazy" />
               </picture>
             </div>
 

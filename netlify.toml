@@ -1,6 +1,7 @@
 [build]
-  command = "cd denemepedi/frontend && yarn install && yarn build"
-  publish = "denemepedi/frontend/build"
+  base = "denemepedi/frontend"
+  command = "yarn install && yarn build"
+  publish = "build"
 
 [build.environment]
   NODE_VERSION = "20"

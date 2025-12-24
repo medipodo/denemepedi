@@ -529,26 +529,43 @@ const Home = () => {
             <p className="text-lg text-gray-600">Sorularınız için buradayız</p>
           </div>
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <MapPin className="w-6 h-6 text-red-600 mt-1" />
-                <div>
-                  <h3 className="font-bold text-gray-900">Adres</h3>
-                  <p className="text-gray-600">{siteInfo.address}</p>
+            <div className="space-y-4">
+              {/* Telefon Butonu */}
+              <a 
+                href={`tel:${siteInfo.phoneLink}`}
+                className="flex items-center gap-4 bg-white border-2 border-gray-200 hover:border-red-500 rounded-2xl p-5 transition-all hover:shadow-lg group"
+              >
+                <div className="w-14 h-14 bg-red-100 group-hover:bg-red-600 rounded-xl flex items-center justify-center transition-colors">
+                  <Phone className="w-6 h-6 text-red-600 group-hover:text-white transition-colors" />
                 </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <Phone className="w-6 h-6 text-red-600 mt-1" />
                 <div>
-                  <h3 className="font-bold text-gray-900">Telefon</h3>
-                  <a href={`tel:${siteInfo.phoneLink}`} className="text-gray-600 hover:text-red-600">{siteInfo.phone}</a>
+                  <p className="text-sm text-gray-500 mb-1">Telefon</p>
+                  <p className="text-lg font-bold text-gray-900">{siteInfo.phone}</p>
                 </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <Mail className="w-6 h-6 text-red-600 mt-1" />
+              </a>
+
+              {/* E-posta Butonu */}
+              <a 
+                href={`mailto:${siteInfo.email}`}
+                className="flex items-center gap-4 bg-white border-2 border-gray-200 hover:border-red-500 rounded-2xl p-5 transition-all hover:shadow-lg group"
+              >
+                <div className="w-14 h-14 bg-red-100 group-hover:bg-red-600 rounded-xl flex items-center justify-center transition-colors">
+                  <Mail className="w-6 h-6 text-red-600 group-hover:text-white transition-colors" />
+                </div>
                 <div>
-                  <h3 className="font-bold text-gray-900">E-posta</h3>
-                  <a href={`mailto:${siteInfo.email}`} className="text-gray-600 hover:text-red-600">{siteInfo.email}</a>
+                  <p className="text-sm text-gray-500 mb-1">E-posta</p>
+                  <p className="text-lg font-bold text-gray-900">{siteInfo.email}</p>
+                </div>
+              </a>
+
+              {/* Adres Butonu */}
+              <div className="flex items-center gap-4 bg-white border-2 border-gray-200 rounded-2xl p-5">
+                <div className="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center">
+                  <MapPin className="w-6 h-6 text-red-600" />
+                </div>
+                <div>
+                  <p className="text-sm text-gray-500 mb-1">Adres</p>
+                  <p className="text-lg font-bold text-gray-900">Ankara / Turkey</p>
                 </div>
               </div>
             </div>

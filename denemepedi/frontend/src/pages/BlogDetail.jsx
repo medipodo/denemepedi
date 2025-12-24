@@ -11,6 +11,7 @@ import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
 import BlogUreNedir from '../components/BlogUreNedir';
 import BlogAyakMantariEN from '../components/BlogAyakMantariEN';
+import BlogTirnakMantariEN from '../components/BlogTirnakMantariEN';
 import LocalizedLink from '../components/LocalizedLink';
 import { useLanguage } from '../i18n/LanguageContext';
 
@@ -32,6 +33,11 @@ const BlogDetail = () => {
   // Ayak mantarı blogu için İngilizce component
   if (slug === 'what-is-foot-fungus' && currentLang === 'en') {
     return <BlogAyakMantariEN />;
+  }
+
+  // Tırnak mantarı türleri blogu için İngilizce component
+  if (slug === 'types-of-nail-fungus' && currentLang === 'en') {
+    return <BlogTirnakMantariEN />;
   }
 
   const handleCopyLink = () => {

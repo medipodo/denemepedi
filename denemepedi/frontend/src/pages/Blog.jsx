@@ -19,6 +19,16 @@ const enBlogPosts = [
     date: 'January 15, 2025',
     readTime: '8 min',
     tags: ['Foot Fungus', 'Foot Care', 'Prevention']
+  },
+  {
+    id: 'types-of-nail-fungus',
+    title: 'Types of Nail Fungus (Onychomycosis): Symptoms, Causes, and Early Signs',
+    slug: 'types-of-nail-fungus',
+    excerpt: 'Nail fungus, also known as onychomycosis, has different types affecting the nails. Learn the most common types, early symptoms, causes, and why early care matters.',
+    image: '/blog-images/tirnak-mantari/tirnak-mantari-cover.jpg',
+    date: 'January 20, 2025',
+    readTime: '10 min',
+    tags: ['Nail Fungus', 'Onychomycosis', 'Foot Care']
   }
 ];
 

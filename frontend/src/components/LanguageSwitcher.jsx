@@ -22,7 +22,11 @@ const LanguageSwitcher = () => {
             aria-label={`${info.name} diline geç`}
             title={info.name}
           >
-            <span className="text-[2rem] block leading-none">{info.flag}</span>
+            <img 
+              src={info.flag} 
+              alt={`${info.name} bayrağı`}
+              className="w-8 h-8 object-contain"
+            />
           </button>
         );
       })}

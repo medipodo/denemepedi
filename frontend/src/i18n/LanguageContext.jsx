@@ -10,19 +10,19 @@ export const LANGUAGE_INFO = {
   tr: {
     code: 'tr',
     name: 'Türkçe',
-    flag: '🇹🇷',
+    flag: '/assets/flags/turkey.svg',
     hasContent: true
   },
   en: {
     code: 'en',
     name: 'English',
-    flag: '🇬🇧',
+    flag: '/assets/flags/uk.svg',
     hasContent: false // İçerik eklenince true yapılacak
   },
   de: {
     code: 'de',
     name: 'Deutsch',
-    flag: '🇩🇪',
+    flag: '/assets/flags/germany.svg',
     hasContent: false // İçerik eklenince true yapılacak
   }
 };

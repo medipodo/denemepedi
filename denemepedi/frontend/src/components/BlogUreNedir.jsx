@@ -57,7 +57,7 @@ const BlogUreNedir = () => {
             {/* Kapak Görseli */}
             <div className="rounded-2xl overflow-hidden shadow-xl mb-8">
               <img 
-                src="/blog-images/ure-nedir/1.jpg" 
+                src="/blog-images/ure-nedir/3.jpg" 
                 alt="Üre Nedir - Blog Kapak" 
                 className="w-full object-cover"
               />

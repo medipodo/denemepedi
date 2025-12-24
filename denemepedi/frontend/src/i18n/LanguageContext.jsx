@@ -30,9 +30,17 @@ export const LANGUAGE_INFO = {
 const LanguageContext = createContext(null);
 
 export const LanguageProvider = ({ children }) => {
-  const { lang } = useParams();
+  const params = useParams();
   const navigate = useNavigate();
   const location = useLocation();
+
+  // URL'den dil ve slug bilgilerini parse et
+  const lang = params.lang;
+  const restPath = params['*'] || '';
+  const pathParts = restPath.split('/').filter(Boolean);
+  
+  // Slug bilgisi (blog/:slug veya urun/:slug için)
+  const slug = pathParts.length > 1 ? pathParts[1] : null;
 
   // Geçerli dil (varsayılan: tr)
   const currentLang = SUPPORTED_LANGUAGES.includes(lang) ? lang : DEFAULT_LANGUAGE;
@@ -67,12 +75,13 @@ export const LanguageProvider = ({ children }) => {
 
   const value = useMemo(() => ({
     currentLang,
+    slug,
     switchLanguage,
     getLocalizedPath,
     getAlternateUrls,
     languageInfo: LANGUAGE_INFO[currentLang],
     hasContent: LANGUAGE_INFO[currentLang]?.hasContent ?? false
-  }), [currentLang, location.pathname]);
+  }), [currentLang, slug, location.pathname]);
 
   return (
     <LanguageContext.Provider value={value}>

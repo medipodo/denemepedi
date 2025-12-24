@@ -2,6 +2,7 @@
 // ⚠️ Compatibility-only mock layer
 // ❌ NOT USED FOR SEO
 // ❌ NOT USED FOR REAL CONTENT
+// ✅ Build-safe (CRA friendly)
 
 export const siteInfo = {
   name: '',
@@ -16,7 +17,8 @@ export const siteInfo = {
   logo: ''
 };
 
-// ⛑️ Build-safe empty exports (build crash önlemek için)
+// ⛑️ Build-safe empty exports
+// (eski component’ler import ediyorsa build kırılmasın diye)
 export const blogPosts = [];
 export const mockPosts = [];
 export const services = [];

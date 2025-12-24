@@ -1,5 +1,5 @@
 export const blogPosts = [
-  // 🇹🇷 TR BLOG – ÖRNEK
+  // 🇹🇷 TR BLOG
   {
     id: 'medikal-ayak-bakimi-nedir',
     lang: 'tr',
@@ -19,7 +19,7 @@ export const blogPosts = [
     `
   },
 
-  // 🇬🇧 EN BLOG – SAĞLAM OLAN
+  // 🇬🇧 EN BLOG – 1
   {
     id: 'what-is-foot-fungus',
     lang: 'en',
@@ -36,6 +36,38 @@ export const blogPosts = [
       <p>
         Foot fungus is a common fungal infection that affects the skin of the feet,
         especially between the toes.
+      </p>
+    `
+  },
+
+  // 🇬🇧 EN BLOG – 2
+  {
+    id: 'types-of-nail-fungus',
+    lang: 'en',
+    slug: 'types-of-nail-fungus',
+    title: 'Types of Nail Fungus (Onychomycosis): Symptoms, Causes, and Early Signs',
+    excerpt:
+      'Nail fungus, also known as onychomycosis, has different types affecting the nails. Learn the most common types and early symptoms.',
+    image: '/blog-images/tirnak-mantari/Tırnak-Mantarı-Neden-Oluşur.jpg',
+    date: '2025-01-20',
+    readTime: '10 min',
+    tags: ['Nail Fungus', 'Onychomycosis'],
+    content: `
+      <h2>What Is Nail Fungus?</h2>
+      <p>
+        Nail fungus is a fungal infection that affects fingernails or toenails.
+        It often starts as a white or yellow spot under the nail tip.
+      </p>
+
+      <h2>Common Types of Nail Fungus</h2>
+      <ul>
+        <li>Distal subungual onychomycosis</li>
+        <li>White superficial onychomycosis</li>
+        <li>Proximal subungual onychomycosis</li>
+      </ul>
+
+      <p>
+        Early detection and proper foot care are essential to prevent progression.
       </p>
     `
   }

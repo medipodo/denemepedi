@@ -542,7 +542,7 @@ const BlogUreNedir = () => {
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl">
               <p className="text-lg font-semibold text-blue-800 mb-2">💡 Uzman Tavsiyesi:</p>
               <p className="text-blue-900">
-                İleri düzey ayak problemlerinde profesyonel değerlendirme için <strong>Medipodo podoloji kliniğine</strong> başvurmanız önerilir.
+                İleri düzey ayak problemlerinde profesyonel değerlendirme için <strong>podoloji kliniğine</strong> başvurmanız önerilir.
               </p>
             </div>
           </div>

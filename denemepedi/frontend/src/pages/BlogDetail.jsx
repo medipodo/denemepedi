@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { 
   ArrowLeft, Calendar, Clock, User, AlertTriangle, CheckCircle, 
@@ -11,9 +10,11 @@ import { blogPosts, products } from '../mock';
 import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
 import BlogUreNedir from '../components/BlogUreNedir';
+import LocalizedLink from '../components/LocalizedLink';
+import { useLanguage } from '../i18n/LanguageContext';
 
 const BlogDetail = () => {
-  const { slug } = useParams();
+  const { slug } = useLanguage();
   const post = blogPosts.find(p => p.slug === slug);
   const [openFaq, setOpenFaq] = useState(null);
   const [copied, setCopied] = useState(false);

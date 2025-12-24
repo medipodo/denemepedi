@@ -131,3 +131,7 @@ denemepedi/.git/objects/pack/pack-0909ec2252a6f9d0ab17fc9c1213558dfc9d7026.pack
 # Environment files
 *.env
 *.env.*
+-e 
+# Environment files
+*.env
+*.env.*

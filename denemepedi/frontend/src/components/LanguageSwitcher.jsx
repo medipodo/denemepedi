@@ -29,11 +29,11 @@ const LanguageSwitcher = () => {
         aria-label="Dil seçin"
       >
         <span className="text-xl">{currentInfo.flag}</span>
-        <span className="text-sm font-medium text-gray-700 hidden sm:inline">
+        <span className="text-sm font-medium text-white hidden sm:inline">
           {currentLang.toUpperCase()}
         </span>
         <svg 
-          className={`w-4 h-4 text-gray-500 transition-transform ${isOpen ? 'rotate-180' : ''}`} 
+          className={`w-4 h-4 text-white/70 transition-transform ${isOpen ? 'rotate-180' : ''}`} 
           fill="none" 
           stroke="currentColor" 
           viewBox="0 0 24 24"

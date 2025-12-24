@@ -86,6 +86,7 @@ export const blogPosts = [
     date: '24 Aralık 2025',
     readTime: '12 dk',
     author: 'Podolog',
+    tags: ['Üre', 'Cilt Bakımı', 'Ayak Bakımı'],
     isCustomComponent: true
   },
   {

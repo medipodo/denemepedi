@@ -30,7 +30,7 @@ const BlogDetail = () => {
   }
 
   // Ayak mantarı blogu için İngilizce component
-  if (slug === 'ayak-mantari-nedir' && currentLang === 'en') {
+  if (slug === 'what-is-foot-fungus' && currentLang === 'en') {
     return <BlogAyakMantariEN />;
   }
 

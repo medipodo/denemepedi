@@ -47,6 +47,11 @@ const LanguageContent = () => {
     
     // EN için belirli içeriklere izin ver
     if (lang === 'en') {
+      // Blog listesi - en az 1 blog varsa göster
+      if (page === 'blog' && !slug && enAvailableContent.blogs.length > 0) {
+        return true;
+      }
+      // Belirli blog detayı
       if (page === 'blog' && slug && enAvailableContent.blogs.includes(slug)) {
         return true;
       }

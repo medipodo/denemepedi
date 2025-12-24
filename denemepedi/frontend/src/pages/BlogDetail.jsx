@@ -10,11 +10,12 @@ import { blogPosts, products } from '../mock';
 import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
 import BlogUreNedir from '../components/BlogUreNedir';
+import BlogAyakMantariEN from '../components/BlogAyakMantariEN';
 import LocalizedLink from '../components/LocalizedLink';
 import { useLanguage } from '../i18n/LanguageContext';
 
 const BlogDetail = () => {
-  const { slug } = useLanguage();
+  const { slug, currentLang } = useLanguage();
   const post = blogPosts.find(p => p.slug === slug);
   const [openFaq, setOpenFaq] = useState(null);
   const [copied, setCopied] = useState(false);
@@ -23,9 +24,14 @@ const BlogDetail = () => {
     window.scrollTo(0, 0);
   }, [slug]);
 
-  // Üre blogu için özel component
-  if (slug === 'ure-nedir') {
+  // Üre blogu için özel component (TR)
+  if (slug === 'ure-nedir' && currentLang === 'tr') {
     return <BlogUreNedir />;
+  }
+
+  // Ayak mantarı blogu için İngilizce component
+  if (slug === 'ayak-mantari-nedir' && currentLang === 'en') {
+    return <BlogAyakMantariEN />;
   }
 
   const handleCopyLink = () => {

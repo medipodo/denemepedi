@@ -88,6 +88,7 @@ function App() {
           <Route path="/kullanim-sartlari" element={<Navigate to={`/${DEFAULT_LANGUAGE}/kullanim-sartlari`} replace />} />
           
           {/* Dil bazlı route'lar */}
+          <Route path="/:lang" element={<LanguageContent />} />
           <Route path="/:lang/*" element={<LanguageContent />} />
         </Routes>
       </BrowserRouter>

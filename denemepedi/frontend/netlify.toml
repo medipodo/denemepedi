@@ -5,8 +5,8 @@
   # Directory with the build output
   publish = "build"
   
-  # Base directory
-  base = "frontend"
+  # Base directory - relative to repo root
+  base = "denemepedi/frontend"
 
 [build.environment]
   NODE_VERSION = "20"

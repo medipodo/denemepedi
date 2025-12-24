@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import LocalizedLink from './LocalizedLink';
 import { Helmet } from 'react-helmet';
 import { Calendar, Clock, User, ChevronRight, Droplets, Sparkles, Shield, CheckCircle, ArrowRight } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
@@ -98,9 +98,9 @@ const BlogUreNedir = () => {
       <section className="pt-24 pb-4 bg-gray-50">
         <div className="container mx-auto px-4">
           <nav className="flex items-center space-x-2 text-sm text-gray-600">
-            <Link to="/" className="hover:text-red-600">Ana Sayfa</Link>
+            <LocalizedLink to="/" className="hover:text-red-600">Ana Sayfa</LocalizedLink>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/blog" className="hover:text-red-600">Blog</Link>
+            <LocalizedLink to="/blog" className="hover:text-red-600">Blog</LocalizedLink>
             <ChevronRight className="w-4 h-4" />
             <span className="text-gray-900 font-medium">Üre Nedir?</span>
           </nav>
@@ -417,9 +417,9 @@ const BlogUreNedir = () => {
                 <p className="text-gray-700">
                   Üre, kalınlaşmış topuk derisini yumuşatırken aynı anda nem dengesini destekler.
                 </p>
-                <Link to="/blog/medikal-ayak-bakimi-nedir" className="text-red-600 hover:text-red-700 font-semibold mt-3 inline-block">
+                <LocalizedLink to="/blog/medikal-ayak-bakimi-nedir" className="text-red-600 hover:text-red-700 font-semibold mt-3 inline-block">
                   Medikal ayak bakımının bilimsel temeli →
-                </Link>
+                </LocalizedLink>
               </div>
 
               <div className="bg-white rounded-2xl p-6 shadow-lg">
@@ -429,9 +429,9 @@ const BlogUreNedir = () => {
                 <p className="text-gray-700">
                   Basınç altında oluşan sert tabakaların zamanla incelmesine yardımcı olur.
                 </p>
-                <Link to="/blog/medikal-ayak-bakimi-nedir" className="text-red-600 hover:text-red-700 font-semibold mt-3 inline-block">
+                <LocalizedLink to="/blog/medikal-ayak-bakimi-nedir" className="text-red-600 hover:text-red-700 font-semibold mt-3 inline-block">
                   Profesyonel ayak bakımında ürenin yeri →
-                </Link>
+                </LocalizedLink>
               </div>
             </div>
           </div>
@@ -504,11 +504,11 @@ const BlogUreNedir = () => {
                 <p className="text-gray-700 font-semibold">destek olur.</p>
               </div>
 
-              <Link to="/urun/ureli-krem">
+              <LocalizedLink to="/urun/ureli-krem">
                 <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4">
                   %15 Üre İçeren Profesyonel Ayak Kremi →
                 </Button>
-              </Link>
+              </LocalizedLink>
             </div>
 
             {/* Görsel 8 - Ürün */}
@@ -606,7 +606,7 @@ const BlogUreNedir = () => {
 
             <div className="bg-red-50 border-l-4 border-red-600 p-6 rounded-r-xl mb-8">
               <p className="text-lg text-gray-800">
-                👉 <Link to="/urun/ureli-krem" className="text-red-600 hover:text-red-700 font-bold">PediZone® %15 Üreli Krem</Link>, ayak bakım rutininize bilimsel temelli güçlü bir destek sunar.
+                👉 <LocalizedLink to="/urun/ureli-krem" className="text-red-600 hover:text-red-700 font-bold">PediZone® %15 Üreli Krem</LocalizedLink>, ayak bakım rutininize bilimsel temelli güçlü bir destek sunar.
               </p>
             </div>
 
@@ -640,24 +640,24 @@ const BlogUreNedir = () => {
             {/* Ana İçerik (Pillar) */}
             <div className="mb-6">
               <p className="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wide">Ana Rehber</p>
-              <Link to="/blog/medikal-ayak-bakimi-nedir" className="block bg-gradient-to-r from-red-50 to-orange-50 hover:from-red-100 hover:to-orange-100 border-2 border-red-200 rounded-xl p-6 transition-colors">
+              <LocalizedLink to="/blog/medikal-ayak-bakimi-nedir" className="block bg-gradient-to-r from-red-50 to-orange-50 hover:from-red-100 hover:to-orange-100 border-2 border-red-200 rounded-xl p-6 transition-colors">
                 <p className="font-bold text-gray-900 text-lg mb-2">Medikal Ayak Bakımı Nedir? Kimler İçin Gereklidir?</p>
                 <p className="text-gray-600">Profesyonel ayak bakımının bilimsel temeli, kullanılan aktif bileşenler ve tedavi süreçleri hakkında kapsamlı rehber.</p>
-              </Link>
+              </LocalizedLink>
             </div>
 
             {/* Destek Bloglar */}
             <div className="mb-6">
               <p className="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wide">İlgili Konular</p>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link to="/blog/ayak-hijyeni-ipuclari" className="block bg-gray-50 hover:bg-gray-100 rounded-xl p-5 transition-colors">
+                <LocalizedLink to="/blog/ayak-hijyeni-ipuclari" className="block bg-gray-50 hover:bg-gray-100 rounded-xl p-5 transition-colors">
                   <p className="font-semibold text-gray-900 mb-1">Ayak Hijyeni İpuçları</p>
                   <p className="text-sm text-gray-600">Günlük bakım önerileri ve hijyen rutini</p>
-                </Link>
-                <Link to="/blog/ayak-mantari-nedir" className="block bg-gray-50 hover:bg-gray-100 rounded-xl p-5 transition-colors">
+                </LocalizedLink>
+                <LocalizedLink to="/blog/ayak-mantari-nedir" className="block bg-gray-50 hover:bg-gray-100 rounded-xl p-5 transition-colors">
                   <p className="font-semibold text-gray-900 mb-1">Ayak Mantarı Belirtileri</p>
                   <p className="text-sm text-gray-600">Mantar enfeksiyonu ve korunma yöntemleri</p>
-                </Link>
+                </LocalizedLink>
               </div>
             </div>
 
@@ -665,18 +665,18 @@ const BlogUreNedir = () => {
             <div>
               <p className="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wide">Önerilen Ürünler</p>
               <div className="grid md:grid-cols-3 gap-4">
-                <Link to="/urun/ureli-krem" className="block bg-red-50 hover:bg-red-100 border border-red-200 rounded-xl p-4 transition-colors text-center">
+                <LocalizedLink to="/urun/ureli-krem" className="block bg-red-50 hover:bg-red-100 border border-red-200 rounded-xl p-4 transition-colors text-center">
                   <p className="font-semibold text-red-700 mb-1">%15 Üreli Krem</p>
                   <p className="text-xs text-red-600">Çatlak topuk bakımı</p>
-                </Link>
-                <Link to="/urun/foot-nail-care-serum" className="block bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-xl p-4 transition-colors text-center">
+                </LocalizedLink>
+                <LocalizedLink to="/urun/foot-nail-care-serum" className="block bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-xl p-4 transition-colors text-center">
                   <p className="font-semibold text-gray-900 mb-1">Ayak & Tırnak Serumu</p>
                   <p className="text-xs text-gray-600">Antifungal destek</p>
-                </Link>
-                <Link to="/urun/temizleme-kopugu" className="block bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-xl p-4 transition-colors text-center">
+                </LocalizedLink>
+                <LocalizedLink to="/urun/temizleme-kopugu" className="block bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-xl p-4 transition-colors text-center">
                   <p className="font-semibold text-gray-900 mb-1">Temizleme Köpüğü</p>
                   <p className="text-xs text-gray-600">Günlük hijyen</p>
-                </Link>
+                </LocalizedLink>
               </div>
             </div>
           </div>

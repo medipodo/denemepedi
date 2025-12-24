@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import LocalizedLink from './LocalizedLink';
 import { Helmet } from 'react-helmet';
 import { CheckCircle, Star, ShieldCheck, Droplets, Sparkles, Award, Phone, Mail, MapPin, BookOpen } from 'lucide-react';
 import { Button } from './ui/button';
@@ -21,9 +21,9 @@ const SerumProductContent = ({ product, productImages }) => {
       <section className="pt-24 pb-4 bg-gray-50">
         <div className="container mx-auto px-4">
           <nav className="flex items-center space-x-2 text-sm text-gray-600">
-            <Link to="/" className="hover:text-red-600">Ana Sayfa</Link>
+            <LocalizedLink to="/" className="hover:text-red-600">Ana Sayfa</LocalizedLink>
             <span>/</span>
-            <Link to="/#urunler" className="hover:text-red-600">Ürünler</Link>
+            <LocalizedLink to="/#urunler" className="hover:text-red-600">Ürünler</LocalizedLink>
             <span>/</span>
             <span className="text-gray-900 font-medium">Serum</span>
           </nav>
@@ -131,12 +131,12 @@ const SerumProductContent = ({ product, productImages }) => {
                 <p className="text-sm text-gray-600 mb-4">
                   <strong>Satın almak için</strong> yetkili satış noktalarımızdan ulaşabilirsiniz.
                 </p>
-                <Link to="/bayiler">
+                <LocalizedLink to="/bayiler">
                   <Button className="w-full bg-red-600 hover:bg-red-700 text-white py-6 text-lg font-semibold">
                     <MapPin className="mr-2" />
                     Satış Noktalarını Görüntüle
                   </Button>
-                </Link>
+                </LocalizedLink>
               </div>
             </div>
           </div>
@@ -474,7 +474,7 @@ const SerumProductContent = ({ product, productImages }) => {
           <div className="max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">İlgili Bilgilendirici İçerikler</h3>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link to="/blog/ayak-mantari-nedir" className="block p-5 bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-xl hover:shadow-lg transition-shadow">
+              <LocalizedLink to="/blog/ayak-mantari-nedir" className="block p-5 bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-xl hover:shadow-lg transition-shadow">
                 <div className="flex items-start gap-3">
                   <BookOpen className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
                   <div>
@@ -482,9 +482,9 @@ const SerumProductContent = ({ product, productImages }) => {
                     <p className="text-sm text-gray-600">Ayak ve tırnaklarda mantar oluşumuna elverişli ortamlar</p>
                   </div>
                 </div>
-              </Link>
+              </LocalizedLink>
 
-              <Link to="/blog/ayak-kokusu-nedenleri" className="block p-5 bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-xl hover:shadow-lg transition-shadow">
+              <LocalizedLink to="/blog/ayak-kokusu-nedenleri" className="block p-5 bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-xl hover:shadow-lg transition-shadow">
                 <div className="flex items-start gap-3">
                   <BookOpen className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
                   <div>
@@ -492,9 +492,9 @@ const SerumProductContent = ({ product, productImages }) => {
                     <p className="text-sm text-gray-600">Koku ve mantar ilişkisinin doğru yönetimi</p>
                   </div>
                 </div>
-              </Link>
+              </LocalizedLink>
 
-              <Link to="/blog/tirnak-mantari-turleri" className="block p-5 bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-xl hover:shadow-lg transition-shadow">
+              <LocalizedLink to="/blog/tirnak-mantari-turleri" className="block p-5 bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-xl hover:shadow-lg transition-shadow">
                 <div className="flex items-start gap-3">
                   <BookOpen className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
                   <div>
@@ -502,9 +502,9 @@ const SerumProductContent = ({ product, productImages }) => {
                     <p className="text-sm text-gray-600">Tırnak yüzeyinde kalınlaşma ve mantar bağlantısı</p>
                   </div>
                 </div>
-              </Link>
+              </LocalizedLink>
 
-              <Link to="/blog/ayak-hijyeni-ipuclari" className="block p-5 bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-xl hover:shadow-lg transition-shadow">
+              <LocalizedLink to="/blog/ayak-hijyeni-ipuclari" className="block p-5 bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-xl hover:shadow-lg transition-shadow">
                 <div className="flex items-start gap-3">
                   <BookOpen className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
                   <div>
@@ -512,7 +512,7 @@ const SerumProductContent = ({ product, productImages }) => {
                     <p className="text-sm text-gray-600">Evde mantar eğilimli ayak bakımı nasıl yapılmalı?</p>
                   </div>
                 </div>
-              </Link>
+              </LocalizedLink>
             </div>
           </div>
         </div>
@@ -547,12 +547,12 @@ const SerumProductContent = ({ product, productImages }) => {
                   {siteInfo.phone}
                 </Button>
               </a>
-              <Link to="/iletisim">
+              <LocalizedLink to="/iletisim">
                 <Button className="bg-red-800 hover:bg-red-900 text-white px-8 py-6 text-lg">
                   <Mail className="mr-2" />
                   İletişim Formu
                 </Button>
-              </Link>
+              </LocalizedLink>
             </div>
           </div>
         </div>

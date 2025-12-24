@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Phone } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import LocalizedLink from './LocalizedLink';
 import { Button } from './ui/button';
 
 const HeroSlider = () => {
@@ -87,11 +87,11 @@ const HeroSlider = () => {
                       {slide.description}
                     </p>
                     <div className="flex flex-col gap-2 px-4">
-                      <Link to={slide.ctaLink} className="w-full">
+                      <LocalizedLink to={slide.ctaLink} className="w-full">
                         <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 text-sm w-full">
                           {slide.cta}
                         </Button>
-                      </Link>
+                      </LocalizedLink>
                       <a href="tel:905456569747" className="w-full">
                         <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-6 py-3 text-sm w-full">
                           <Phone className="mr-2" size={16} />
@@ -153,11 +153,11 @@ const HeroSlider = () => {
                         {slide.description}
                       </p>
                       <div className="flex items-center justify-center gap-3">
-                        <Link to={slide.ctaLink}>
+                        <LocalizedLink to={slide.ctaLink}>
                           <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-base">
                             {slide.cta}
                           </Button>
-                        </Link>
+                        </LocalizedLink>
                         <a href="tel:905456569747">
                           <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 text-base">
                             <Phone className="mr-2" size={18} />

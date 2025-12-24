@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import LocalizedLink from './LocalizedLink';
 import { Helmet } from 'react-helmet';
 import { CheckCircle, Star, ShieldCheck, Droplets, Sparkles, Award, Phone, Mail, MapPin, BookOpen, Leaf, Wind, Heart } from 'lucide-react';
 import { Button } from './ui/button';
@@ -20,9 +20,9 @@ const FoamProductContent = ({ product, productImages }) => {
       <section className="pt-24 pb-4 bg-gray-50">
         <div className="container mx-auto px-4">
           <nav className="flex items-center space-x-2 text-sm text-gray-600">
-            <Link to="/" className="hover:text-red-600">Ana Sayfa</Link>
+            <LocalizedLink to="/" className="hover:text-red-600">Ana Sayfa</LocalizedLink>
             <span>/</span>
-            <Link to="/#urunler" className="hover:text-red-600">Ürünler</Link>
+            <LocalizedLink to="/#urunler" className="hover:text-red-600">Ürünler</LocalizedLink>
             <span>/</span>
             <span className="text-gray-900 font-medium">Temizleme Köpüğü</span>
           </nav>
@@ -130,12 +130,12 @@ const FoamProductContent = ({ product, productImages }) => {
                 <p className="text-sm text-gray-600 mb-4">
                   <strong>Satın almak için</strong> yetkili satış noktalarımızdan ulaşabilirsiniz.
                 </p>
-                <Link to="/bayiler">
+                <LocalizedLink to="/bayiler">
                   <Button className="w-full bg-red-600 hover:bg-red-700 text-white py-6 text-lg font-semibold">
                     <MapPin className="mr-2" />
                     Satış Noktalarını Görüntüle
                   </Button>
-                </Link>
+                </LocalizedLink>
               </div>
             </div>
           </div>
@@ -468,29 +468,29 @@ const FoamProductContent = ({ product, productImages }) => {
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Bakım Rutini Önerisi</h3>
             
             <div className="grid md:grid-cols-3 gap-6">
-              <Link to="/urun/temizleme-kopugu" className="block bg-gradient-to-br from-red-50 to-white border-2 border-red-200 rounded-2xl p-6 hover:shadow-lg transition-shadow">
+              <LocalizedLink to="/urun/temizleme-kopugu" className="block bg-gradient-to-br from-red-50 to-white border-2 border-red-200 rounded-2xl p-6 hover:shadow-lg transition-shadow">
                 <div className="text-center">
                   <div className="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center mx-auto mb-3 text-xl font-bold">1</div>
                   <p className="text-sm text-red-600 font-semibold mb-2">TEMİZLİK</p>
                   <p className="font-bold text-gray-900 text-sm">PediZone® Fresh-Guard Ayak Temizleme Köpüğü</p>
                 </div>
-              </Link>
+              </LocalizedLink>
 
-              <Link to="/urun/foot-nail-care-serum" className="block bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-shadow hover:border-red-200">
+              <LocalizedLink to="/urun/foot-nail-care-serum" className="block bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-shadow hover:border-red-200">
                 <div className="text-center">
                   <div className="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center mx-auto mb-3 text-xl font-bold">2</div>
                   <p className="text-sm text-gray-600 font-semibold mb-2">BAKIM</p>
                   <p className="font-bold text-gray-900 text-sm">PediZone® Foot & Nail Care Serum</p>
                 </div>
-              </Link>
+              </LocalizedLink>
 
-              <Link to="/urun/ureli-krem" className="block bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-shadow hover:border-red-200">
+              <LocalizedLink to="/urun/ureli-krem" className="block bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-shadow hover:border-red-200">
                 <div className="text-center">
                   <div className="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center mx-auto mb-3 text-xl font-bold">3</div>
                   <p className="text-sm text-gray-600 font-semibold mb-2">ONARIM</p>
                   <p className="font-bold text-gray-900 text-sm">PediZone® %15 Urea Intense Repair Cream</p>
                 </div>
-              </Link>
+              </LocalizedLink>
             </div>
           </div>
         </div>
@@ -511,12 +511,12 @@ const FoamProductContent = ({ product, productImages }) => {
                   {siteInfo.phone}
                 </Button>
               </a>
-              <Link to="/iletisim">
+              <LocalizedLink to="/iletisim">
                 <Button className="bg-red-800 hover:bg-red-900 text-white px-8 py-6 text-lg">
                   <Mail className="mr-2" />
                   İletişim Formu
                 </Button>
-              </Link>
+              </LocalizedLink>
             </div>
           </div>
         </div>

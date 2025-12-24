@@ -629,7 +629,7 @@ const BlogUreNedir = () => {
         </div>
       </section>
 
-      {/* İç Linkler */}
+      {/* İç Linkler - SEO Stratejik */}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -637,23 +637,47 @@ const BlogUreNedir = () => {
               Ayak Sağlığı Hakkında Daha Fazla Bilgi
             </h3>
             
-            <div className="grid md:grid-cols-2 gap-4">
-              <Link to="/blog/medikal-ayak-bakimi-nedir" className="block bg-gray-50 hover:bg-gray-100 rounded-xl p-5 transition-colors">
-                <p className="font-semibold text-gray-900 mb-1">Medikal Ayak Bakımı Nedir?</p>
-                <p className="text-sm text-gray-600">Profesyonel ayak bakımının bilimsel temeli</p>
+            {/* Ana İçerik (Pillar) */}
+            <div className="mb-6">
+              <p className="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wide">Ana Rehber</p>
+              <Link to="/blog/medikal-ayak-bakimi-nedir" className="block bg-gradient-to-r from-red-50 to-orange-50 hover:from-red-100 hover:to-orange-100 border-2 border-red-200 rounded-xl p-6 transition-colors">
+                <p className="font-bold text-gray-900 text-lg mb-2">Medikal Ayak Bakımı Nedir? Kimler İçin Gereklidir?</p>
+                <p className="text-gray-600">Profesyonel ayak bakımının bilimsel temeli, kullanılan aktif bileşenler ve tedavi süreçleri hakkında kapsamlı rehber.</p>
               </Link>
-              <Link to="/blog/ayak-hijyeni-ipuclari" className="block bg-gray-50 hover:bg-gray-100 rounded-xl p-5 transition-colors">
-                <p className="font-semibold text-gray-900 mb-1">Ayak Hijyeni İpuçları</p>
-                <p className="text-sm text-gray-600">Günlük bakım önerileri</p>
-              </Link>
-              <Link to="/urun/ureli-krem" className="block bg-red-50 hover:bg-red-100 rounded-xl p-5 transition-colors">
-                <p className="font-semibold text-red-700 mb-1">PediZone® %15 Üreli Krem</p>
-                <p className="text-sm text-red-600">Üre bazlı profesyonel ayak bakımı</p>
-              </Link>
-              <Link to="/urun/foot-nail-care-serum" className="block bg-gray-50 hover:bg-gray-100 rounded-xl p-5 transition-colors">
-                <p className="font-semibold text-gray-900 mb-1">Ayak ve Tırnak Bakım Serumu</p>
-                <p className="text-sm text-gray-600">Antifungal destek formülü</p>
-              </Link>
+            </div>
+
+            {/* Destek Bloglar */}
+            <div className="mb-6">
+              <p className="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wide">İlgili Konular</p>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link to="/blog/ayak-hijyeni-ipuclari" className="block bg-gray-50 hover:bg-gray-100 rounded-xl p-5 transition-colors">
+                  <p className="font-semibold text-gray-900 mb-1">Ayak Hijyeni İpuçları</p>
+                  <p className="text-sm text-gray-600">Günlük bakım önerileri ve hijyen rutini</p>
+                </Link>
+                <Link to="/blog/ayak-mantari-nedir" className="block bg-gray-50 hover:bg-gray-100 rounded-xl p-5 transition-colors">
+                  <p className="font-semibold text-gray-900 mb-1">Ayak Mantarı Belirtileri</p>
+                  <p className="text-sm text-gray-600">Mantar enfeksiyonu ve korunma yöntemleri</p>
+                </Link>
+              </div>
+            </div>
+
+            {/* Ürün Sayfaları */}
+            <div>
+              <p className="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wide">Önerilen Ürünler</p>
+              <div className="grid md:grid-cols-3 gap-4">
+                <Link to="/urun/ureli-krem" className="block bg-red-50 hover:bg-red-100 border border-red-200 rounded-xl p-4 transition-colors text-center">
+                  <p className="font-semibold text-red-700 mb-1">%15 Üreli Krem</p>
+                  <p className="text-xs text-red-600">Çatlak topuk bakımı</p>
+                </Link>
+                <Link to="/urun/foot-nail-care-serum" className="block bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-xl p-4 transition-colors text-center">
+                  <p className="font-semibold text-gray-900 mb-1">Ayak & Tırnak Serumu</p>
+                  <p className="text-xs text-gray-600">Antifungal destek</p>
+                </Link>
+                <Link to="/urun/temizleme-kopugu" className="block bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-xl p-4 transition-colors text-center">
+                  <p className="font-semibold text-gray-900 mb-1">Temizleme Köpüğü</p>
+                  <p className="text-xs text-gray-600">Günlük hijyen</p>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

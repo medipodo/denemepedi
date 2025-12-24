@@ -78,6 +78,17 @@ export const products = [
 // Blog Yazıları
 export const blogPosts = [
   {
+    id: 'ure-nedir',
+    title: 'Üre Nedir ve Kuru Ciltler İçin Neden Mucizevidir?',
+    slug: 'ure-nedir',
+    excerpt: 'Cildinizin unutulmuş kahramanı: Üre. Dermatolojinin gizli kahramanı olan ürenin bilimsel temelleri ve ayak bakımındaki kritik rolü.',
+    image: blogUreNedir,
+    date: '24 Aralık 2025',
+    readTime: '12 dk',
+    author: 'Podolog',
+    isCustomComponent: true
+  },
+  {
     id: 'medikal-ayak-bakimi-nedir',
     title: 'Medikal Ayak Bakımı Nedir? Kimler İçin Gereklidir?',
     slug: 'medikal-ayak-bakimi-nedir',

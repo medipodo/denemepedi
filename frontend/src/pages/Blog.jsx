@@ -1,121 +1,73 @@
 import React from 'react';
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
-import { blogPosts } from '../blog_content';
+import { blogPosts } from '../blog_content'; // ❗ MOCK DEĞİL
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import LocalizedLink from '../components/LocalizedLink';
 import { useLanguage } from '../i18n/LanguageContext';
-import { useTranslation } from '../i18n/useTranslation';
 
 const Blog = () => {
   const { currentLang } = useLanguage();
-  const { t } = useTranslation();
 
-  // ✅ TEK VE DOĞRU FİLTRE
-  const posts = blogPosts.filter(
-    post => post.lang === currentLang
-  );
-
-  const texts = {
-    tr: {
-      title: 'PediZone Blog',
-      subtitle:
-        'Ayak sağlığı, podoloji ve ayak bakımı hakkında faydalı bilgiler ve uzman tavsiyeleri.',
-      readMore: 'Devamını Oku'
-    },
-    en: {
-      title: 'PediZone Blog',
-      subtitle:
-        'Useful information and expert advice on foot health, podiatry, and foot care.',
-      readMore: 'Read More'
-    },
-    de: {
-      title: 'PediZone Blog',
-      subtitle:
-        'Nützliche Informationen und Expertenrat zu Fußgesundheit, Podologie und Fußpflege.',
-      readMore: 'Weiterlesen'
-    }
-  };
-
-  const content = texts[currentLang] || texts.tr;
+  // ✅ TEK SATIR, TÜM SORUNU ÇÖZÜYOR
+  const posts = blogPosts.filter(p => p.lang === currentLang);
 
   return (
     <div className="min-h-screen">
-      <section className="pt-32 pb-16 bg-gradient-to-br from-red-50 via-white to-red-50">
+      <section className="pt-32 pb-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              {content.title}
-            </h1>
-            <p className="text-lg text-gray-600">{content.subtitle}</p>
-          </div>
-        </div>
-      </section>
+          <h1 className="text-4xl font-bold text-center mb-6">
+            PediZone Blog
+          </h1>
 
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.map((post) => (
-              <Card
-                key={post.id}
-                className="hover:shadow-xl transition-all hover:-translate-y-1"
-              >
+            {posts.map(post => (
+              <Card key={post.id}>
                 <CardContent className="p-0">
+
+                  {/* GÖRSEL */}
                   {post.image && (
-                    <div className="relative aspect-video overflow-hidden">
-                      <img
-                        src={post.image}
-                        alt={post.title}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                        loading="lazy"
-                      />
-                    </div>
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-48 object-cover"
+                    />
                   )}
+
                   <div className="p-6">
-                    <div className="flex flex-wrap gap-2 mb-3">
-                      {post.tags?.slice(0, 2).map((tag) => (
-                        <Badge
-                          key={tag}
-                          className="bg-red-100 text-red-700"
-                        >
-                          {tag}
-                        </Badge>
+                    <div className="flex gap-2 mb-2">
+                      {post.tags?.slice(0,2).map(tag => (
+                        <Badge key={tag}>{tag}</Badge>
                       ))}
                     </div>
-                    <h2 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
+
+                    <h2 className="text-xl font-bold mb-2">
                       {post.title}
                     </h2>
-                    <div className="flex items-center text-sm text-gray-500 mb-4">
-                      <Calendar size={16} className="mr-1" />
-                      <span>{post.date}</span>
-                      <span className="mx-2">•</span>
-                      <Clock size={16} className="mr-1" />
-                      <span>{post.readTime}</span>
+
+                    <div className="flex text-sm text-gray-500 mb-3">
+                      <Calendar size={14} className="mr-1" />
+                      {post.date}
+                      <Clock size={14} className="ml-3 mr-1" />
+                      {post.readTime}
                     </div>
-                    <p className="text-gray-600 mb-4 line-clamp-3">
+
+                    <p className="text-gray-600 mb-4">
                       {post.excerpt}
                     </p>
+
                     <LocalizedLink to={`/blog/${post.slug}`}>
-                      <Button
-                        variant="link"
-                        className="text-red-600 p-0 h-auto font-semibold"
-                      >
-                        {content.readMore}
-                        <ArrowRight className="ml-1" size={16} />
+                      <Button variant="link">
+                        Devamını Oku <ArrowRight size={16} />
                       </Button>
                     </LocalizedLink>
+
                   </div>
                 </CardContent>
               </Card>
             ))}
           </div>
-
-          {posts.length === 0 && (
-            <p className="text-center text-gray-500 mt-12">
-              Bu dil için blog içeriği bulunamadı.
-            </p>
-          )}
         </div>
       </section>
     </div>

@@ -41,9 +41,9 @@ const BlogAyakMantariEN = () => {
         <title>What Is Foot Fungus? Causes, Symptoms, Types, and Prevention | PediZone</title>
         <meta name="description" content="Foot fungus is a common fungal infection affecting the skin of the feet. Learn what foot fungus is, why it occurs, common symptoms, how it spreads, and effective prevention methods." />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://denemepedi.netlify.app/en/blog/ayak-mantari-nedir" />
+        <link rel="canonical" href="https://denemepedi.netlify.app/en/blog/what-is-foot-fungus" />
         <link rel="alternate" hrefLang="tr" href="https://denemepedi.netlify.app/tr/blog/ayak-mantari-nedir" />
-        <link rel="alternate" hrefLang="en" href="https://denemepedi.netlify.app/en/blog/ayak-mantari-nedir" />
+        <link rel="alternate" hrefLang="en" href="https://denemepedi.netlify.app/en/blog/what-is-foot-fungus" />
         <link rel="alternate" hrefLang="x-default" href="https://denemepedi.netlify.app/tr/blog/ayak-mantari-nedir" />
         
         {/* Article Schema */}

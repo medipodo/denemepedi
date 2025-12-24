@@ -64,7 +64,8 @@ export const translations = {
       blog: 'Blog',
       certificates: 'Certificates',
       dealers: 'Dealers',
-      contact: 'Contact'
+      contact: 'Contact',
+      footAnalysis: 'Foot Analysis'
     },
     footer: {
       quickLinks: 'Quick Links',

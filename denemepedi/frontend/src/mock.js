@@ -14,7 +14,7 @@ import blogAyakKokusu from './assets/blog/ayak-kokusu-blog.jpg';
 import blogAyakHijyeni from './assets/blog/ayak-hijyeni-blog.jpg';
 
 // Üre blogu kapak görseli - public klasöründen
-const blogUreNedir = '/blog-images/ure-nedir/1.jpg';
+const blogUreNedir = '/blog-images/ure-nedir/3.jpg';
 
 // Ayak mantarı blog görselleri
 import ayakParmakArasiMantar from './assets/blog/ayak-mantari/ayak-parmak-arasi-mantar.jpg';

@@ -1,0 +1,130 @@
+{
+  "dealers": [
+    {
+      "id": 1,
+      "name": "Medipodo Podoloji Merkezi",
+      "city": "Ankara",
+      "address": "Bağlıca Mah. Mert Cad. No 4/2 3. Noter Karşısı Etimesgut",
+      "phone": "+90 545 656 9747",
+      "email": "medipodotr@gmail.com",
+      "lat": 39.897163,
+      "lng": 32.648102,
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "name": "Podosis Ayak Bakım Merkezi",
+      "city": "Ankara",
+      "address": "Atakent Mah 1512 cad, ELVANKENT 104/D, 06796 Etimesgut",
+      "phone": "+90 543 543 0082",
+      "email": "info@pedizone.com",
+      "lat": 39.955546,
+      "lng": 32.612111,
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "name": "OrtoMek Ortez-Protez Uygulama Merkezi",
+      "city": "Ankara",
+      "address": "Işınlar Mah. Ragıp Tüzün Cad. No 15/B Yenimahalle",
+      "phone": "+90 534 729 0182",
+      "email": "info@ortomek.com",
+      "lat": 39.961196,
+      "lng": 32.8159394,
+      "isActive": true
+    },
+    {
+      "id": 4,
+      "name": "Anka Eczanesi",
+      "city": "Ankara",
+      "address": "Maltepe, Gazi Mustafa Kemal Blv. 47/A, 06570 Çankaya",
+      "phone": "0312 229 2898",
+      "lat": 39.925908,
+      "lng": 32.8473816,
+      "isActive": true
+    },
+    {
+      "id": 5,
+      "name": "Bağlıca Merkez Eczanesi",
+      "city": "Ankara",
+      "address": "Yeni Bağlıca Mah. Bağlıca Bulvarı No 48/CA (Total Benzinlik Karşısı)",
+      "phone": "05396430123",
+      "lat": 39.898341,
+      "lng": 32.648548,
+      "isActive": true
+    },
+    {
+      "id": 6,
+      "name": "Damla Eczanesi",
+      "city": "Antalya",
+      "address": "Şirinyalı Mah. Tekelioğlu Cad. No18/A Medicalpark Hastanesi Karşısı Lara",
+      "phone": "0242 324 3491",
+      "email": "eibisoglu@hotmail.com",
+      "lat": 36.85656,
+      "lng": 30.746258,
+      "isActive": true
+    },
+    {
+      "id": 7,
+      "name": "Medpark Konya Tırnak Batması Ayak Sağlığı Merkezi",
+      "city": "Konya",
+      "address": "Konevi, Sait Paşa Cd No:9/1-2-3-4, 42040 Meram",
+      "phone": "0530 511 2442",
+      "web": "https://www.medparkkonya.com/",
+      "lat": 37.866825,
+      "lng": 32.487416,
+      "isActive": true
+    },
+    {
+      "id": 8,
+      "name": "Hacer Aslan",
+      "city": "Kocaeli",
+      "address": "Alikahya Fatih, Uğur Mumcu Cd., 41310 İzmit/Kocaeli",
+      "phone": "0507 238 9414",
+      "lat": 40.780046,
+      "lng": 29.99446,
+      "isActive": true
+    },
+    {
+      "id": 9,
+      "name": "Yaşare KADER",
+      "city": "Antalya",
+      "address": "Hurma, 254. Sk. No:11 / B, 07130 Konyaaltı",
+      "phone": "0505 215 0028",
+      "lat": 36.856421,
+      "lng": 30.6091082,
+      "isActive": true
+    },
+    {
+      "id": 10,
+      "name": "Hanife Karataş",
+      "city": "Bursa",
+      "address": "Orhaniye, D200 125-126, 16400 İnegöl",
+      "phone": "0542 617 9865",
+      "lat": 40.092142,
+      "lng": 29.489278,
+      "isActive": true
+    },
+    {
+      "id": 11,
+      "name": "Podolara El ve Ayak Bakım Merkezi",
+      "city": "Bitlis",
+      "address": "Halk Bankası Karşısı, Saray, Cumhuriyet Cd. Kat: 2 No: 2, 13200 Tatvan/Bitlis",
+      "phone": "05427180713",
+      "web": "https://podolara.com/",
+      "lat": 38.49997971,
+      "lng": 42.282908,
+      "isActive": true
+    },
+    {
+      "id": 12,
+      "name": "Kıvanç Eczanesi",
+      "city": "Niğde",
+      "address": "Ahmet Kuddusi, Doğan Baran Cd. No: 72/A, 51700 Bor/Niğde",
+      "phone": "03883130201",
+      "lat": 37.91379585,
+      "lng": 34.56008998,
+      "isActive": true
+    }
+  ]
+}

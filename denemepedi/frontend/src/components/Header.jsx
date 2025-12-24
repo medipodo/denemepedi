@@ -95,9 +95,7 @@ const Header = () => {
           {/* Right side: Language Switcher + Contact */}
           <div className="hidden lg:flex items-center space-x-4">
             {/* Language Switcher */}
-            <div className="bg-white/10 rounded-lg backdrop-blur-sm">
-              <LanguageSwitcher />
-            </div>
+            <LanguageSwitcher />
             
             {/* Contact Button */}
             <a
@@ -110,10 +108,8 @@ const Header = () => {
           </div>
 
           {/* Mobile: Language + Menu Button */}
-          <div className="lg:hidden flex items-center space-x-2">
-            <div className="bg-white/10 rounded-lg backdrop-blur-sm">
-              <LanguageSwitcher />
-            </div>
+          <div className="lg:hidden flex items-center space-x-3">
+            <LanguageSwitcher />
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-white p-2"

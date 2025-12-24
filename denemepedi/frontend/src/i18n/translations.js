@@ -8,7 +8,8 @@ export const translations = {
       blog: 'Blog',
       certificates: 'Sertifikalar',
       dealers: 'Bayiler',
-      contact: 'İletişim'
+      contact: 'İletişim',
+      footAnalysis: 'Ayak Analizi'
     },
     // Footer
     footer: {

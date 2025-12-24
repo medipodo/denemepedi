@@ -49,6 +49,14 @@ export const LanguageProvider = ({ children }) => {
   const switchLanguage = (newLang) => {
     if (!SUPPORTED_LANGUAGES.includes(newLang)) return;
     
+    const targetLangInfo = LANGUAGE_INFO[newLang];
+    
+    // Hedef dilde içerik yoksa, o dilin ana sayfasına yönlendir
+    if (!targetLangInfo.hasContent) {
+      navigate(`/${newLang}`);
+      return;
+    }
+    
     // Mevcut path'ten dili çıkar ve yeni dil ile değiştir
     const pathWithoutLang = location.pathname.replace(/^\/(tr|en|de)/, '');
     const newPath = `/${newLang}${pathWithoutLang || ''}`;

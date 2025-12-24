@@ -1,12 +1,9 @@
 [build]
   # Build command
-  command = "yarn build"
+  command = "yarn install && yarn build"
   
-  # Directory with the build output
+  # Directory with the build output (relative to base)
   publish = "build"
-  
-  # Base directory - relative to repo root
-  base = "denemepedi/frontend"
 
 [build.environment]
   NODE_VERSION = "20"

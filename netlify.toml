@@ -1,0 +1,11 @@
+[build]
+  command = "cd denemepedi/frontend && yarn install && yarn build"
+  publish = "denemepedi/frontend/build"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

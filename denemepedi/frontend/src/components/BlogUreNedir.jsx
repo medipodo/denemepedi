@@ -12,6 +12,86 @@ const BlogUreNedir = () => {
         <title>Üre Nedir ve Kuru Ciltler İçin Neden Mucizevidir? | PediZone Blog</title>
         <meta name="description" content="Üre nedir, ciltte nasıl çalışır? Dermatolojinin gizli kahramanı ürenin bilimsel temelleri ve ayak bakımındaki kritik rolü." />
         <meta name="robots" content="noindex, nofollow" />
+        
+        {/* Article Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Üre Nedir ve Kuru Ciltler İçin Neden Mucizevidir?",
+            "description": "Dermatolojinin gizli kahramanı ürenin bilimsel temelleri, cilt üzerindeki etkileri ve ayak bakımındaki kritik rolü.",
+            "image": "https://denemepedi.netlify.app/blog-images/ure-nedir/3.jpg",
+            "author": {
+              "@type": "Organization",
+              "name": "PediZone"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "PediZone",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://denemepedi.netlify.app/logo.png"
+              }
+            },
+            "datePublished": "2025-12-24",
+            "dateModified": "2025-12-24",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://denemepedi.netlify.app/blog/ure-nedir"
+            }
+          })}
+        </script>
+
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Üre içeren ürünler günlük kullanıma uygun mu?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Evet. %15 üre içeren formüller düzenli kullanım için uygundur."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Üre ciltte ne zaman fark edilir?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Düzenli kullanımda ilk haftalardan itibaren cilt yumuşaklığında fark hissedilir."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Üre içeren ürünler kimler için özellikle uygundur?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Aşırı kuru ayak cildi, çatlak topuk ve kalınlaşma problemi yaşayan bireyler için idealdir."
+                }
+              }
+            ]
+          })}
+        </script>
+
+        {/* MedicalWebPage Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalWebPage",
+            "about": {
+              "@type": "MedicalCondition",
+              "name": "Kuru Cilt ve Çatlak Topuk"
+            },
+            "lastReviewed": "2025-12-24",
+            "medicalAudience": {
+              "@type": "MedicalAudience",
+              "audienceType": "Patient"
+            }
+          })}
+        </script>
       </Helmet>
 
       {/* Breadcrumb */}

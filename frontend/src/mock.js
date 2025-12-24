@@ -1,11 +1,22 @@
-/**
- * ⚠️ MOCK DATA DEVRE DIŞI
- *
- * Bu dosya GERÇEK BLOG KAYNAĞI DEĞİLDİR.
- * Bloglar yalnızca `blog_content.js` üzerinden yönetilir.
- *
- * Yanlışlıkla tekrar kullanılırsa site bozulmasın diye
- * boş array export edilir.
- */
+// frontend/src/mock.js
+// ⚠️ Compatibility layer (NO SEO, NO BRAND SIGNAL)
 
+export const siteInfo = {
+  name: '',
+  fullName: '',
+  tagline: '',
+  phone: '',
+  phoneLink: '',
+  whatsapp: '',
+  address: '',
+  email: '',
+  workingHours: '',
+  logo: ''
+};
+
+// Mock content disabled — real content lives elsewhere
 export const mockPosts = [];
+export const services = [];
+export const galleryImages = [];
+export const teamMembers = [];
+export const whyChooseUs = [];

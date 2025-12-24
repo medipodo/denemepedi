@@ -411,6 +411,13 @@ const FoamProductContent = ({ product, productImages }) => {
                   <p className="text-gray-700">PediZone® Ayak Temizleme Köpüğü, mantar oluşumuna elverişli ortamın azaltılmasına yardımcı olan, günlük temizlik ve hijyen desteği sunan bir bakım ürünüdür. PediZone Serum ve Krem ile desteklenmesi önerilir. Düzenli kullanım, ayak hijyeninin korunmasına katkı sağlar.</p>
                 </CardContent>
               </Card>
+
+              <Card className="border-gray-200">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">PediZone Fresh Guard Foot Foam Nasıl Kokuyor?</h3>
+                  <p className="text-gray-700">Misket limonunun baskın olduğu ferahlatıcı etki, çay ağacı yağı ve medikal ferah bir kokuyla devam ediyor.</p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>

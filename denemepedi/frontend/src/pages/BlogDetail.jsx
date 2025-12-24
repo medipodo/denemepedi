@@ -13,6 +13,7 @@ import BlogUreNedir from '../components/BlogUreNedir';
 import BlogAyakMantariEN from '../components/BlogAyakMantariEN';
 import BlogTirnakMantariEN from '../components/BlogTirnakMantariEN';
 import BlogFootOdorEN from '../components/BlogFootOdorEN';
+import BlogPreventFootFungusEN from '../components/BlogPreventFootFungusEN';
 import LocalizedLink from '../components/LocalizedLink';
 import { useLanguage } from '../i18n/LanguageContext';
 
@@ -44,6 +45,11 @@ const BlogDetail = () => {
   // Ayak kokusu blogu için İngilizce component
   if (slug === 'what-causes-foot-odor' && currentLang === 'en') {
     return <BlogFootOdorEN />;
+  }
+
+  // Ayak mantarı önleme blogu için İngilizce component
+  if (slug === 'how-to-prevent-foot-fungus' && currentLang === 'en') {
+    return <BlogPreventFootFungusEN />;
   }
 
   const handleCopyLink = () => {

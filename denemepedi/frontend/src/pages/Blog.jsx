@@ -29,6 +29,16 @@ const enBlogPosts = [
     date: 'January 20, 2025',
     readTime: '10 min',
     tags: ['Nail Fungus', 'Onychomycosis', 'Foot Care']
+  },
+  {
+    id: 'what-causes-foot-odor',
+    title: 'What Causes Foot Odor? Common Reasons, Risk Factors, and Prevention',
+    slug: 'what-causes-foot-odor',
+    excerpt: 'Foot odor is usually caused by sweat and bacteria, but underlying conditions can make it worse. Learn what causes foot odor, common risk factors, and how to prevent it.',
+    image: '',
+    date: 'January 22, 2025',
+    readTime: '8 min',
+    tags: ['Foot Odor', 'Foot Care', 'Prevention']
   }
 ];
 

@@ -37,7 +37,7 @@ const LanguageContent = () => {
 
   // İngilizce için mevcut içerikler (kademeli eklenecek)
   const enAvailableContent = {
-    blogs: ['what-is-foot-fungus', 'types-of-nail-fungus'], // İngilizce mevcut bloglar
+    blogs: ['what-is-foot-fungus', 'types-of-nail-fungus', 'what-causes-foot-odor'], // İngilizce mevcut bloglar
     products: [] // İngilizce mevcut ürünler
   };
 

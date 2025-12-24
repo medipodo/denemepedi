@@ -1,14 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import LocalizedLink from '../components/LocalizedLink';
 import { ArrowLeft } from 'lucide-react';
 
 const TermsOfService = () => {
   return (
     <div className="min-h-screen pt-24">
       <div className="container mx-auto px-4 py-12">
-        <Link to="/" className="inline-flex items-center text-red-600 hover:text-red-700 mb-8">
+        <LocalizedLink to="/" className="inline-flex items-center text-red-600 hover:text-red-700 mb-8">
           <ArrowLeft size={18} className="mr-2" /> Ana Sayfa
-        </Link>
+        </LocalizedLink>
         <div className="max-w-4xl mx-auto prose prose-lg">
           <h1 className="text-4xl font-bold text-gray-900 mb-8">Kullanım Şartları</h1>
           <p className="text-gray-500 mb-8">Son güncelleme: Aralık 2024</p>

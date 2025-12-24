@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import LocalizedLink from '../components/LocalizedLink';
 
 const AyakAnalizi = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -333,12 +334,12 @@ const AyakAnalizi = () => {
             </div>
 
             {/* CTA Buttons */}
-            <Link 
+            <LocalizedLink 
               to="/bayiler" 
               className="inline-block bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-3 rounded-xl font-semibold transition-all hover:shadow-lg hover:scale-[1.02] mb-4"
             >
               Satış Noktalarını Göster
-            </Link>
+            </LocalizedLink>
             <br />
             <button 
               onClick={handleRestart}

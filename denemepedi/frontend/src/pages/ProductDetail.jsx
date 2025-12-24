@@ -50,7 +50,7 @@ const ProductDetail = () => {
       <div className="min-h-screen pt-32">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-3xl font-bold text-gray-900 mb-4">Ürün Bulunamadı</h1>
-          <Link to="/"><Button className="bg-red-600 hover:bg-red-700 text-white"><ArrowLeft className="mr-2" /> Ana Sayfaya Dön</Button></Link>
+          <LocalizedLink to="/"><Button className="bg-red-600 hover:bg-red-700 text-white"><ArrowLeft className="mr-2" /> Ana Sayfaya Dön</Button></LocalizedLink>
         </div>
       </div>
     );
@@ -94,9 +94,9 @@ const ProductDetail = () => {
       <section className="pt-24 pb-4 bg-gray-50">
         <div className="container mx-auto px-4">
           <nav className="flex items-center space-x-2 text-sm text-gray-600">
-            <Link to="/" className="hover:text-red-600">Ana Sayfa</Link>
+            <LocalizedLink to="/" className="hover:text-red-600">Ana Sayfa</LocalizedLink>
             <span>/</span>
-            <Link to="/#urunler" className="hover:text-red-600">Ürünler</Link>
+            <LocalizedLink to="/#urunler" className="hover:text-red-600">Ürünler</LocalizedLink>
             <span>/</span>
             <span className="text-gray-900 font-medium">%15 Üreli Krem</span>
           </nav>
@@ -231,12 +231,12 @@ const ProductDetail = () => {
                 <p className="text-sm text-gray-600 mb-4">
                   <strong>Satın almak için</strong> yetkili satış noktalarımızdan ulaşabilirsiniz.
                 </p>
-                <Link to="/bayiler">
+                <LocalizedLink to="/bayiler">
                   <Button className="w-full bg-red-600 hover:bg-red-700 text-white py-6 text-lg font-semibold">
                     <MapPin className="mr-2" />
                     Satış Noktalarını Görüntüle
                   </Button>
-                </Link>
+                </LocalizedLink>
               </div>
             </div>
           </div>
@@ -649,7 +649,7 @@ const ProductDetail = () => {
                   <p className="text-lg text-gray-600 mb-4 leading-relaxed">
                     Ayak sağlığınızı korumak için günlük bakım alışkanlıklarınızı öğrenin
                   </p>
-                  <Link 
+                  <LocalizedLink 
                     to="/blog/ayak-hijyeni-ipuclari"
                     className="inline-flex items-center gap-3 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-xl transition-all hover:gap-4 shadow-md hover:shadow-lg group"
                   >
@@ -658,7 +658,7 @@ const ProductDetail = () => {
                     <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
-                  </Link>
+                  </LocalizedLink>
                 </div>
               </div>
             </div>
@@ -673,7 +673,7 @@ const ProductDetail = () => {
                   <p className="text-lg text-gray-600 mb-4 leading-relaxed">
                     Üre ciltte nasıl çalışır? Bilimsel olarak kanıtlanmış etkilerini keşfedin
                   </p>
-                  <Link 
+                  <LocalizedLink 
                     to="/blog/ure-nedir"
                     className="inline-flex items-center gap-3 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-all hover:gap-4 shadow-md hover:shadow-lg group"
                   >
@@ -682,7 +682,7 @@ const ProductDetail = () => {
                     <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
-                  </Link>
+                  </LocalizedLink>
                 </div>
               </div>
             </div>
@@ -720,12 +720,12 @@ const ProductDetail = () => {
                   {siteInfo.phone}
                 </Button>
               </a>
-              <Link to="/iletisim">
+              <LocalizedLink to="/iletisim">
                 <Button className="bg-red-800 hover:bg-red-900 text-white px-8 py-6 text-lg">
                   <Mail className="mr-2" />
                   İletişim Formu
                 </Button>
-              </Link>
+              </LocalizedLink>
             </div>
           </div>
         </div>

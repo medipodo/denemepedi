@@ -38,11 +38,11 @@ const BlogDetail = () => {
       <div className="min-h-screen pt-32 pb-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-3xl font-bold text-gray-900 mb-4">Yazı Bulunamadı</h1>
-          <Link to="/blog">
+          <LocalizedLink to="/blog">
             <Button className="bg-red-600 hover:bg-red-700 text-white">
               <ArrowLeft className="mr-2" size={18} /> Blog'a Dön
             </Button>
-          </Link>
+          </LocalizedLink>
         </div>
       </div>
     );
@@ -109,9 +109,9 @@ const BlogDetail = () => {
           <div className="max-w-4xl mx-auto">
             {/* Breadcrumb */}
             <nav className="flex items-center space-x-2 text-sm text-gray-500 mt-0 mb-2">
-              <Link to="/" className="hover:text-red-600 transition-colors">Ana Sayfa</Link>
+              <LocalizedLink to="/" className="hover:text-red-600 transition-colors">Ana Sayfa</LocalizedLink>
               <span className="text-gray-300">/</span>
-              <Link to="/blog" className="hover:text-red-600 transition-colors">Blog</Link>
+              <LocalizedLink to="/blog" className="hover:text-red-600 transition-colors">Blog</LocalizedLink>
               <span className="text-gray-300">/</span>
               <span className="text-gray-700 font-medium truncate max-w-[200px]">{post.title.split(' ').slice(0, 3).join(' ')}...</span>
             </nav>
@@ -282,7 +282,7 @@ const BlogDetail = () => {
                     <p className="text-gray-600 mb-4 leading-relaxed">
                       Ayak sağlığınızı korumak için günlük bakım alışkanlıklarınızı öğrenin
                     </p>
-                    <Link 
+                    <LocalizedLink 
                       to="/blog/ayak-hijyeni-ipuclari"
                       className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-xl transition-all hover:gap-3 shadow-md hover:shadow-lg"
                     >
@@ -292,7 +292,7 @@ const BlogDetail = () => {
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
-                    </Link>
+                    </LocalizedLink>
                   </div>
                 </div>
               </div>
@@ -313,7 +313,7 @@ const BlogDetail = () => {
             </div>
             <div className="grid md:grid-cols-3 gap-6">
               {products.map((product) => (
-                <Link 
+                <LocalizedLink 
                   key={product.id} 
                   to={`/urun/${product.id}`}
                   className="bg-white rounded-2xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group"
@@ -330,7 +330,7 @@ const BlogDetail = () => {
                     {product.shortName}
                   </h3>
                   <p className="text-sm text-gray-500">{product.volume}</p>
-                </Link>
+                </LocalizedLink>
               ))}
             </div>
           </div>
@@ -350,7 +350,7 @@ const BlogDetail = () => {
               </h2>
               <div className="grid md:grid-cols-3 gap-6">
                 {relatedPosts.map((relatedPost) => (
-                  <Link 
+                  <LocalizedLink 
                     key={relatedPost.slug} 
                     to={`/blog/${relatedPost.slug}`}
                     className="group"
@@ -366,7 +366,7 @@ const BlogDetail = () => {
                       {relatedPost.title}
                     </h3>
                     <span className="text-sm text-gray-500">{relatedPost.readTime} okuma</span>
-                  </Link>
+                  </LocalizedLink>
                 ))}
               </div>
             </div>
@@ -382,16 +382,16 @@ const BlogDetail = () => {
             PediZone® ürünleri ile profesyonel ayak bakımını evinize taşıyın.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/#urunler">
+            <LocalizedLink to="/#urunler">
               <Button className="bg-white text-red-700 hover:bg-red-50 px-8 font-semibold shadow-lg">
                 Ürünleri İncele
               </Button>
-            </Link>
-            <Link to="/blog">
+            </LocalizedLink>
+            <LocalizedLink to="/blog">
               <Button variant="outline" className="border-2 border-white text-white hover:bg-white/10 px-8 font-semibold">
                 Tüm Yazılar
               </Button>
-            </Link>
+            </LocalizedLink>
           </div>
         </div>
       </section>
@@ -623,7 +623,7 @@ const BlogSection = ({ section, index }) => {
               )}
               <p className="text-gray-700 leading-relaxed">{section.content}</p>
               {section.link && (
-                <Link 
+                <LocalizedLink 
                   to={section.link} 
                   className="inline-flex items-center mt-3 text-red-600 font-semibold hover:text-red-700 transition-colors"
                 >
@@ -631,7 +631,7 @@ const BlogSection = ({ section, index }) => {
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </Link>
+                </LocalizedLink>
               )}
             </div>
           </div>
@@ -659,7 +659,7 @@ const BlogSection = ({ section, index }) => {
             </ul>
           )}
           {section.link && (
-            <Link 
+            <LocalizedLink 
               to={section.link} 
               className="inline-flex items-center mt-4 px-4 py-2 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-colors"
             >
@@ -667,7 +667,7 @@ const BlogSection = ({ section, index }) => {
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </Link>
+            </LocalizedLink>
           )}
         </div>
       );
@@ -779,7 +779,7 @@ const BlogSection = ({ section, index }) => {
       return (
         <div className="my-8 grid md:grid-cols-2 gap-4">
           {section.articles.map((article, i) => (
-            <Link 
+            <LocalizedLink 
               key={i}
               to={article.link}
               className="group bg-gradient-to-br from-red-50 to-rose-50 border-2 border-red-100 hover:border-red-300 rounded-2xl p-5 transition-all duration-300 hover:shadow-lg"
@@ -801,7 +801,7 @@ const BlogSection = ({ section, index }) => {
                   </span>
                 </div>
               </div>
-            </Link>
+            </LocalizedLink>
           ))}
         </div>
       );

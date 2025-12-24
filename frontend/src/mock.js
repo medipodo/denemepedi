@@ -1,5 +1,7 @@
 // frontend/src/mock.js
-// ⚠️ Compatibility layer (NO SEO, NO BRAND SIGNAL)
+// ⚠️ Compatibility-only mock layer
+// ❌ NOT USED FOR SEO
+// ❌ NOT USED FOR REAL CONTENT
 
 export const siteInfo = {
   name: '',
@@ -14,7 +16,8 @@ export const siteInfo = {
   logo: ''
 };
 
-// Mock content disabled — real content lives elsewhere
+// ⛑️ Build-safe empty exports
+export const blogPosts = [];
 export const mockPosts = [];
 export const services = [];
 export const galleryImages = [];

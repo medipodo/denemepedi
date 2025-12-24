@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
-import { blogPosts } from '../mock';
+import { blogPosts } from '../blog_content';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
@@ -8,49 +8,14 @@ import LocalizedLink from '../components/LocalizedLink';
 import { useLanguage } from '../i18n/LanguageContext';
 import { useTranslation } from '../i18n/useTranslation';
 
-// İngilizce blog verileri
-const enBlogPosts = [
-  {
-    id: 'what-is-foot-fungus',
-    title: 'What Is Foot Fungus? Causes, Symptoms, Types, and Prevention',
-    slug: 'what-is-foot-fungus',
-    excerpt:
-      'Foot fungus is a common fungal infection affecting the skin of the feet. Learn what foot fungus is, why it occurs, common symptoms, and prevention methods.',
-    image: '/blog-images/ayak-mantari/ayak-mantari-cover.jpg',
-    date: 'January 15, 2025',
-    readTime: '8 min',
-    tags: ['Foot Fungus', 'Foot Care', 'Prevention']
-  },
-  {
-    id: 'types-of-nail-fungus',
-    title: 'Types of Nail Fungus (Onychomycosis): Symptoms, Causes, and Early Signs',
-    slug: 'types-of-nail-fungus',
-    excerpt:
-      'Nail fungus, also known as onychomycosis, has different types affecting the nails. Learn the most common types, early symptoms, causes, and why early care matters.',
-    image: '/blog-images/tirnak-mantari/Tırnak-Mantarı-Neden-Oluşur.jpg',
-    date: 'January 20, 2025',
-    readTime: '10 min',
-    tags: ['Nail Fungus', 'Onychomycosis', 'Foot Care']
-  },
-  {
-    id: 'what-causes-foot-odor',
-    title: 'What Causes Foot Odor?',
-    slug: 'what-causes-foot-odor',
-    excerpt:
-      'Foot odor occurs when sweat and bacteria interact. Learn the most common causes of foot odor and how to prevent it effectively.',
-    image: '', // kapak görseli sonra eklenecek
-    date: 'January 25, 2025',
-    readTime: '7 min',
-    tags: ['Foot Odor', 'Foot Hygiene', 'Foot Care']
-  }
-];
-
 const Blog = () => {
   const { currentLang } = useLanguage();
   const { t } = useTranslation();
 
-  // Dile göre blog listesini belirle
-  const posts = currentLang === 'en' ? enBlogPosts : blogPosts;
+  // ✅ TEK VE DOĞRU FİLTRE
+  const posts = blogPosts.filter(
+    post => post.lang === currentLang
+  );
 
   const texts = {
     tr: {
@@ -109,15 +74,14 @@ const Blog = () => {
                   )}
                   <div className="p-6">
                     <div className="flex flex-wrap gap-2 mb-3">
-                      {post.tags &&
-                        post.tags.slice(0, 2).map((tag) => (
-                          <Badge
-                            key={tag}
-                            className="bg-red-100 text-red-700"
-                          >
-                            {tag}
-                          </Badge>
-                        ))}
+                      {post.tags?.slice(0, 2).map((tag) => (
+                        <Badge
+                          key={tag}
+                          className="bg-red-100 text-red-700"
+                        >
+                          {tag}
+                        </Badge>
+                      ))}
                     </div>
                     <h2 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
                       {post.title}
@@ -137,7 +101,7 @@ const Blog = () => {
                         variant="link"
                         className="text-red-600 p-0 h-auto font-semibold"
                       >
-                        {content.readMore}{' '}
+                        {content.readMore}
                         <ArrowRight className="ml-1" size={16} />
                       </Button>
                     </LocalizedLink>
@@ -146,6 +110,12 @@ const Blog = () => {
               </Card>
             ))}
           </div>
+
+          {posts.length === 0 && (
+            <p className="text-center text-gray-500 mt-12">
+              Bu dil için blog içeriği bulunamadı.
+            </p>
+          )}
         </div>
       </section>
     </div>

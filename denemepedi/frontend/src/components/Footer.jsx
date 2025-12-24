@@ -1,8 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import LocalizedLink from './LocalizedLink';
+import { useTranslation } from '../i18n/useTranslation';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-gradient-to-r from-red-700 to-red-600 text-white">
       <div className="container mx-auto px-4 py-12">
@@ -16,37 +19,37 @@ const Footer = () => {
               <span className="text-2xl font-bold">PediZone®</span>
             </div>
             <p className="text-red-100 text-sm leading-relaxed">
-              Podologların önerileri ve beklentilerine yönelik hazırlanan profesyonel ayak bakım ürünleri.
+              {t('footer.tagline')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Hızlı Linkler</h3>
+            <h3 className="font-semibold text-lg mb-4">{t('footer.quickLinks')}</h3>
             <ul className="space-y-2">
-              <li><Link to="/" className="text-red-100 hover:text-white transition-colors text-sm">Ana Sayfa</Link></li>
-              <li><Link to="/#urunler" className="text-red-100 hover:text-white transition-colors text-sm">Ürünler</Link></li>
-              <li><Link to="/blog" className="text-red-100 hover:text-white transition-colors text-sm">Blog</Link></li>
-              <li><Link to="/sertifikalar" className="text-red-100 hover:text-white transition-colors text-sm">Sertifikalar</Link></li>
+              <li><LocalizedLink to="/" className="text-red-100 hover:text-white transition-colors text-sm">{t('nav.home')}</LocalizedLink></li>
+              <li><LocalizedLink to="/#urunler" className="text-red-100 hover:text-white transition-colors text-sm">{t('footer.products')}</LocalizedLink></li>
+              <li><LocalizedLink to="/blog" className="text-red-100 hover:text-white transition-colors text-sm">{t('nav.blog')}</LocalizedLink></li>
+              <li><LocalizedLink to="/sertifikalar" className="text-red-100 hover:text-white transition-colors text-sm">{t('nav.certificates')}</LocalizedLink></li>
             </ul>
           </div>
 
           {/* Legal */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Yasal</h3>
+            <h3 className="font-semibold text-lg mb-4">{t('footer.legal')}</h3>
             <ul className="space-y-2">
-              <li><Link to="/gizlilik-politikasi" className="text-red-100 hover:text-white transition-colors text-sm">Gizlilik Politikası</Link></li>
-              <li><Link to="/kullanim-sartlari" className="text-red-100 hover:text-white transition-colors text-sm">Kullanım Şartları</Link></li>
+              <li><LocalizedLink to="/gizlilik-politikasi" className="text-red-100 hover:text-white transition-colors text-sm">{t('footer.privacyPolicy')}</LocalizedLink></li>
+              <li><LocalizedLink to="/kullanim-sartlari" className="text-red-100 hover:text-white transition-colors text-sm">{t('footer.termsOfService')}</LocalizedLink></li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">İletişim</h3>
+            <h3 className="font-semibold text-lg mb-4">{t('footer.contact')}</h3>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin size={18} className="text-red-200 mt-0.5 flex-shrink-0" />
-                <span className="text-red-100 text-sm">Bağlıca Mah. Mert Cad. No 4/2 Etimesgut ANKARA</span>
+                <span className="text-red-100 text-sm">Ankara / Turkey</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={18} className="text-red-200 flex-shrink-0" />
@@ -62,7 +65,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-red-500 mt-8 pt-8 text-center">
-          <p className="text-red-200 text-sm">© {new Date().getFullYear()} PediZone®. Tüm hakları saklıdır.</p>
+          <p className="text-red-200 text-sm">© {new Date().getFullYear()} PediZone®. {t('footer.allRightsReserved')}</p>
         </div>
       </div>
     </footer>

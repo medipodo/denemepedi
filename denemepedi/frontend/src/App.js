@@ -70,27 +70,28 @@ const LanguageContent = () => {
       return <NoContentPage />;
     }
 
+    // hasContentForPage() true döndüyse, içerik var demektir
     switch (page) {
       case '':
-        return hasContent ? <Home /> : <NoContentPage />;
+        return <Home />;
       case 'blog':
-        return slug ? <BlogDetail /> : (hasContent ? <Blog /> : <NoContentPage />);
+        return slug ? <BlogDetail /> : <Blog />;
       case 'urun':
-        return slug ? <ProductDetail /> : <NoContentPage />;
+        return <ProductDetail />;
       case 'sertifikalar':
-        return hasContent ? <Certificates /> : <NoContentPage />;
+        return <Certificates />;
       case 'bayiler':
-        return hasContent ? <Dealers /> : <NoContentPage />;
+        return <Dealers />;
       case 'ayak-analizi':
-        return hasContent ? <AyakAnalizi /> : <NoContentPage />;
+        return <AyakAnalizi />;
       case 'iletisim':
-        return hasContent ? <Contact /> : <NoContentPage />;
+        return <Contact />;
       case 'gizlilik-politikasi':
-        return hasContent ? <PrivacyPolicy /> : <NoContentPage />;
+        return <PrivacyPolicy />;
       case 'kullanim-sartlari':
-        return hasContent ? <TermsOfService /> : <NoContentPage />;
+        return <TermsOfService />;
       default:
-        return hasContent ? <Home /> : <NoContentPage />;
+        return <Home />;
     }
   };
 

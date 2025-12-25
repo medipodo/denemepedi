@@ -88,12 +88,12 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Right side: Static language flags (decorative) */}
+          {/* Right side: Language flags */}
           <div className="flex items-center space-x-3 lg:space-x-4">
-            {/* Static language flags - decorative only */}
+            {/* Language flags - TR active, EN/DE link to ComingSoon */}
             <div className="flex items-center gap-0.5">
               {/* TR - Active with white border */}
-              <div className="p-1.5 rounded-lg bg-white/20 ring-2 ring-white">
+              <div className="p-1.5 rounded-lg bg-white/20 ring-2 ring-white cursor-default">
                 <img 
                   src="/assets/flags/turkey.svg" 
                   alt="Türkçe"
@@ -102,23 +102,31 @@ const Header = () => {
                 />
               </div>
               
-              {/* EN - Disabled/Coming soon */}
-              <div className="p-1.5 rounded-lg opacity-50 cursor-not-allowed" title="Yakında">
+              {/* EN - Links to ComingSoon page */}
+              <a 
+                href="/en"
+                className="p-1.5 rounded-lg transition-all hover:bg-white/10"
+                title="English (Coming soon)"
+              >
                 <img 
                   src="/assets/flags/uk.svg" 
-                  alt="English (Coming soon)"
-                  className="w-8 h-8 object-contain grayscale"
+                  alt="English"
+                  className="w-8 h-8 object-contain"
                 />
-              </div>
+              </a>
               
-              {/* DE - Disabled/Coming soon */}
-              <div className="p-1.5 rounded-lg opacity-50 cursor-not-allowed" title="Yakında">
+              {/* DE - Links to ComingSoon page */}
+              <a 
+                href="/de"
+                className="p-1.5 rounded-lg transition-all hover:bg-white/10"
+                title="Deutsch (Coming soon)"
+              >
                 <img 
                   src="/assets/flags/germany.svg" 
-                  alt="Deutsch (Coming soon)"
-                  className="w-8 h-8 object-contain grayscale"
+                  alt="Deutsch"
+                  className="w-8 h-8 object-contain"
                 />
-              </div>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}

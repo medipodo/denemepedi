@@ -88,18 +88,10 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Right side: Language indicator (static, decorative only) */}
+          {/* Right side: Language Switcher */}
           <div className="flex items-center space-x-3 lg:space-x-4">
-            {/* Static TR flag - decorative only, not clickable */}
-            <div className="flex items-center gap-2 bg-white/10 rounded-lg px-3 py-2 backdrop-blur-sm">
-              <img 
-                src="/assets/flags/turkey.svg" 
-                alt="Türkçe"
-                className="w-8 h-8 object-contain"
-                title="Site dili: Türkçe"
-              />
-              <span className="hidden sm:inline text-white text-sm font-medium">TR</span>
-            </div>
+            {/* Language Switcher */}
+            <LanguageSwitcher />
 
             {/* Mobile Menu Button */}
             <button

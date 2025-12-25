@@ -40,6 +40,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><LocalizedLink to="/gizlilik-politikasi" className="text-red-100 hover:text-white transition-colors text-sm">{t('footer.privacyPolicy')}</LocalizedLink></li>
               <li><LocalizedLink to="/kullanim-sartlari" className="text-red-100 hover:text-white transition-colors text-sm">{t('footer.termsOfService')}</LocalizedLink></li>
+              <li><a href="https://pedizone.xyz/" target="_blank" rel="noopener noreferrer" className="text-red-100 hover:text-white transition-colors text-sm">CRM</a></li>
             </ul>
           </div>
 

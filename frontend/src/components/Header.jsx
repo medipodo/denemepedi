@@ -88,10 +88,10 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Right side: Language Switcher (always visible) */}
+          {/* Right side: Mobile Menu Button */}
           <div className="flex items-center space-x-3 lg:space-x-4">
-            {/* Language Switcher - HER ZAMAN GÖRÜNÜR */}
-            <LanguageSwitcher />
+            {/* Language Switcher - DISABLED for single language mode */}
+            {/* <LanguageSwitcher /> */}
 
             {/* Mobile Menu Button */}
             <button

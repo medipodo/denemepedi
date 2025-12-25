@@ -92,16 +92,11 @@ const TRContent = ({ page }) => {
   );
 };
 
-// Redirect /blog/:slug to /tr/blog/:slug
-const LegacyBlogRedirect = () => {
-  const { slug } = useParams();
-  return <Navigate to={`/tr/blog/${slug}`} replace />;
-};
-
-// Redirect /urun/:slug to /tr/urun/:slug
-const LegacyProductRedirect = () => {
-  const { slug } = useParams();
-  return <Navigate to={`/tr/urun/${slug}`} replace />;
+// Redirect /tr/* to root /*
+const LegacyTRRedirect = () => {
+  const location = window.location.pathname;
+  const newPath = location.replace(/^\/tr/, '');
+  return <Navigate to={newPath || '/'} replace />;
 };
 // deploy trigger
 

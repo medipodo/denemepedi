@@ -153,6 +153,7 @@ const Dealers = () => {
       city: "Tokat",
       address: "Pazar Mah. Kayra Sok. Turhal",
       phone: "0552 873 1407",
+      email: "gamzebetulb@gmail.com",
       type: "Uzman Podolog",
       lat: 40.385326,
       lng: 36.0729861

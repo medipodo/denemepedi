@@ -115,11 +115,11 @@ const Certificates = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section - Beyaz arka plan */}
-      <section className="pt-32 pb-8 bg-white">
+      <section className="pt-32 pb-4 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Sertifikalarımız</h1>
-            <p className="text-xl text-gray-600 mb-8">Test Sonuçları ve Kalite Belgeleri</p>
+            <p className="text-xl text-gray-600">Test Sonuçları ve Kalite Belgeleri</p>
           </div>
         </div>
       </section>

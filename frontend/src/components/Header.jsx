@@ -69,8 +69,7 @@ const Header = () => {
               <span className="text-white font-bold text-xl">P</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-white">PediZone</span>
-              <span className="text-xs text-red-100">Ayak Sağlığı</span>
+              <span className="text-xl font-bold text-white">PediZone<span style={{ fontSize: '0.5em', verticalAlign: 'super' }}>®</span></span>
             </div>
           </LocalizedLink>
 

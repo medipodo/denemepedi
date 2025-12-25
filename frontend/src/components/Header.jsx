@@ -124,13 +124,6 @@ const Header = () => {
                   {link.name}
                 </LocalizedLink>
               ))}
-              <a
-                href="tel:+905068860326"
-                className="flex items-center justify-center space-x-2 bg-white text-red-700 px-6 py-2.5 rounded-lg hover:bg-red-50 transition-colors font-semibold mt-4"
-              >
-                <Phone size={18} />
-                <span>0506 886 03 26</span>
-              </a>
             </nav>
           </div>
         )}

@@ -102,7 +102,7 @@ const Dealers = () => {
       city: "Kocaeli",
       address: "Alikahya Fatih, Uğur Mumcu Cd., 41310 İzmit/Kocaeli",
       phone: "0507 238 9414",
-      type: "Uzman Podolog",
+      type: "Podolog",
       lat: 40.7667,
       lng: 29.9167
     },
@@ -112,7 +112,7 @@ const Dealers = () => {
       city: "Antalya",
       address: "Hurma, 254. Sk. No:11 / B, 07130 Konyaaltı",
       phone: "0505 215 0028",
-      type: "Uzman Podolog",
+      type: "Podolog",
       lat: 36.8833,
       lng: 30.6333
     },
@@ -122,7 +122,7 @@ const Dealers = () => {
       city: "Bursa",
       address: "Orhaniye, D200 125-126, 16400 İnegöl",
       phone: "0542 617 9865",
-      type: "Uzman Podolog",
+      type: "Podolog",
       lat: 40.0833,
       lng: 29.5167
     },
@@ -154,7 +154,7 @@ const Dealers = () => {
       address: "Pazar Mah. Kayra Sok. Turhal",
       phone: "0552 873 1407",
       email: "gamzebetulb@gmail.com",
-      type: "Uzman Podolog",
+      type: "Podolog",
       lat: 40.385326,
       lng: 36.0729861
     }

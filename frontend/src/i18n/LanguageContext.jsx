@@ -34,31 +34,37 @@ export const LanguageProvider = ({ children }) => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // SINGLE LANGUAGE MODE: Always use TR
-  const currentLang = 'tr';
+  // URL'den dil kodunu al
+  const pathLang = location.pathname.split('/')[1];
+  const currentLang = SUPPORTED_LANGUAGES.includes(pathLang) ? pathLang : DEFAULT_LANGUAGE;
   const slug = params.slug || null;
 
-  // Dil değiştirme fonksiyonu - disabled in single language mode
+  // Dil değiştirme fonksiyonu
   const switchLanguage = (newLang) => {
-    console.warn('Language switching is disabled in single-language mode');
-    // No action - language is locked to TR
+    if (!SUPPORTED_LANGUAGES.includes(newLang)) return;
+    
+    // Mevcut path'i yeni dil ile değiştir
+    const pathWithoutLang = location.pathname.replace(/^\/(tr|en|de)/, '');
+    const newPath = `/${newLang}${pathWithoutLang || ''}`;
+    navigate(newPath);
   };
 
-  // URL oluşturma helper'ı - no language prefix
+  // URL oluşturma helper'ı
   const getLocalizedPath = (path) => {
-    // Single language mode: return path as-is
-    return path;
+    // Eğer path zaten dil prefix'i ile başlıyorsa, olduğu gibi dön
+    if (/^\/(tr|en|de)/.test(path)) {
+      return path;
+    }
+    return `/${currentLang}${path}`;
   };
 
   // Diğer dillerdeki aynı sayfanın URL'lerini al (hreflang için)
   const getAlternateUrls = () => {
-    // Single language mode: only TR
-    return [
-      {
-        lang: 'tr',
-        url: location.pathname
-      }
-    ];
+    const pathWithoutLang = location.pathname.replace(/^\/(tr|en|de)/, '');
+    return SUPPORTED_LANGUAGES.map(langCode => ({
+      lang: langCode,
+      url: `/${langCode}${pathWithoutLang || ''}`
+    }));
   };
 
   const value = useMemo(() => ({
@@ -68,7 +74,7 @@ export const LanguageProvider = ({ children }) => {
     getLocalizedPath,
     getAlternateUrls,
     languageInfo: LANGUAGE_INFO[currentLang],
-    hasContent: true // Always true for TR
+    hasContent: LANGUAGE_INFO[currentLang]?.hasContent ?? false
   }), [currentLang, slug, location.pathname]);
 
   return (

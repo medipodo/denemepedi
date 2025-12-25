@@ -67,15 +67,6 @@ const Contact = () => {
                       <p className="text-gray-600">{siteInfo.address}</p>
                     </div>
                   </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-14 h-14 bg-gray-500 rounded-full flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="flex-1 bg-gray-50 rounded-xl p-4">
-                      <h3 className="font-semibold text-gray-900 mb-1">Çalışma Saatleri</h3>
-                      <p className="text-gray-600">Pazartesi - Cumartesi: 09:00 - 18:00</p>
-                    </div>
-                  </div>
                 </div>
               </div>
 

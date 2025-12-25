@@ -6,7 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTop from './components/ScrollToTop';
-// import NoContentPage from './components/NoContentPage'; // Not needed in single-language mode
+import ComingSoon from './pages/ComingSoon';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';

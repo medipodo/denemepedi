@@ -75,7 +75,7 @@ const Home = () => {
               </h1>
               
               <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-red-600">
-                Pedizone®
+                Pedizone<span style={{ fontSize: '0.5em', verticalAlign: 'super' }}>®</span>
               </h2>
               
               <p className="text-lg text-gray-600 leading-relaxed max-w-lg">

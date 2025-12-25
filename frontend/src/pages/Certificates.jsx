@@ -106,8 +106,8 @@ const certificates = [
     status: "Onaylandı",
     statusColor: "bg-green-100 text-green-700",
     description: "PediZone markası, 6769 sayılı Sınai Mülkiyet Kanunu kapsamında 26.06.2025 tarihinden itibaren 10 yıl süreyle korunmak üzere tescil edilmiştir.",
-    image: "/certificates/pedizone-marka-tescil-belgesi.jpg",
-    detailLink: "/certificates/pedizone-marka-tescil-belgesi.jpg"
+    image: "/certificates/pedizone-trademark.jpg",
+    detailLink: "/certificates/pedizone-trademark.jpg"
   }
 ];
 

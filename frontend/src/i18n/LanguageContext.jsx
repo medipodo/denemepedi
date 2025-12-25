@@ -3,9 +3,9 @@ import { useParams, useNavigate, useLocation } from 'react-router-dom';
 
 // Desteklenen diller
 export const SUPPORTED_LANGUAGES = ['tr', 'en', 'de'];
-export const DEFAULT_LANGUAGE = 'tr';
+export const DEFAULT_LANGUAGE = 'tr'; // LOCKED: Site is TR-only
 
-// Dil bilgileri
+// Dil bilgileri - i18n infrastructure kept for future use
 export const LANGUAGE_INFO = {
   tr: {
     code: 'tr',

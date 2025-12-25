@@ -146,6 +146,16 @@ const Dealers = () => {
       type: "Eczane",
       lat: 37.8833,
       lng: 34.5500
+    },
+    {
+      id: 13,
+      name: "Podolog Gamze Betül Başaran",
+      city: "Tokat",
+      address: "Pazar Mah. Kayra Sok. Turhal",
+      phone: "0552 873 1407",
+      type: "Uzman Podolog",
+      lat: 40.385326,
+      lng: 36.0729861
     }
   ];
 

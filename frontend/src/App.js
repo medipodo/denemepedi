@@ -24,35 +24,29 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
-          {/* Multi-language routes */}
-          <Route path="/" element={<Navigate to="/tr" replace />} />
+          {/* SINGLE LANGUAGE MODE: All routes under root (/) */}
           
-          {/* TR - Full content */}
-          <Route path="/tr" element={<TRContent page="" />} />
-          <Route path="/tr/blog" element={<TRContent page="blog" />} />
-          <Route path="/tr/blog/:slug" element={<TRContent page="blog" />} />
-          <Route path="/tr/urun/:slug" element={<TRContent page="urun" />} />
-          <Route path="/tr/sertifikalar" element={<TRContent page="sertifikalar" />} />
-          <Route path="/tr/bayiler" element={<TRContent page="bayiler" />} />
-          <Route path="/tr/ayak-analizi" element={<TRContent page="ayak-analizi" />} />
-          <Route path="/tr/iletisim" element={<TRContent page="iletisim" />} />
-          <Route path="/tr/gizlilik-politikasi" element={<TRContent page="gizlilik-politikasi" />} />
-          <Route path="/tr/kullanim-sartlari" element={<TRContent page="kullanim-sartlari" />} />
+          {/* Main routes - TR content at root */}
+          <Route path="/" element={<TRContent page="" />} />
+          <Route path="/blog" element={<TRContent page="blog" />} />
+          <Route path="/blog/:slug" element={<TRContent page="blog" />} />
+          <Route path="/urun/:slug" element={<TRContent page="urun" />} />
+          <Route path="/sertifikalar" element={<TRContent page="sertifikalar" />} />
+          <Route path="/bayiler" element={<TRContent page="bayiler" />} />
+          <Route path="/ayak-analizi" element={<TRContent page="ayak-analizi" />} />
+          <Route path="/iletisim" element={<TRContent page="iletisim" />} />
+          <Route path="/gizlilik-politikasi" element={<TRContent page="gizlilik-politikasi" />} />
+          <Route path="/kullanim-sartlari" element={<TRContent page="kullanim-sartlari" />} />
           
-          {/* EN & DE - Coming Soon page */}
+          {/* Legacy redirects from old multi-language structure */}
+          <Route path="/tr" element={<Navigate to="/" replace />} />
+          <Route path="/tr/*" element={<LegacyTRRedirect />} />
+          
+          {/* EN & DE - Coming Soon (not linked yet) */}
           <Route path="/en" element={<ComingSoon />} />
           <Route path="/en/*" element={<ComingSoon />} />
           <Route path="/de" element={<ComingSoon />} />
           <Route path="/de/*" element={<ComingSoon />} />
-          
-          {/* Legacy redirects */}
-          <Route path="/blog" element={<Navigate to="/tr/blog" replace />} />
-          <Route path="/blog/:slug" element={<LegacyBlogRedirect />} />
-          <Route path="/urun/:slug" element={<LegacyProductRedirect />} />
-          <Route path="/sertifikalar" element={<Navigate to="/tr/sertifikalar" replace />} />
-          <Route path="/bayiler" element={<Navigate to="/tr/bayiler" replace />} />
-          <Route path="/ayak-analizi" element={<Navigate to="/tr/ayak-analizi" replace />} />
-          <Route path="/iletisim" element={<Navigate to="/tr/iletisim" replace />} />
         </Routes>
       </BrowserRouter>
     </div>

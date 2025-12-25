@@ -208,7 +208,7 @@ const Dealers = () => {
           <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200">
             <MapContainer 
               center={turkeyCenter} 
-              zoom={6} 
+              zoom={5} 
               style={{ height: '400px', width: '100%', zIndex: 0 }}
               scrollWheelZoom={false}
             >

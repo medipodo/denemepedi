@@ -91,19 +91,10 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Right side: Language Switcher (always visible) + Contact (desktop only) */}
+          {/* Right side: Language Switcher (always visible) */}
           <div className="flex items-center space-x-3 lg:space-x-4">
             {/* Language Switcher - HER ZAMAN GÖRÜNÜR */}
             <LanguageSwitcher />
-            
-            {/* Contact Button - Sadece Desktop */}
-            <a
-              href="tel:+905068860326"
-              className="hidden lg:flex items-center space-x-2 bg-white text-red-700 px-5 py-2.5 rounded-lg hover:bg-red-50 transition-colors font-semibold"
-            >
-              <Phone size={18} />
-              <span>0506 886 03 26</span>
-            </a>
 
             {/* Mobile Menu Button */}
             <button

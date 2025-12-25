@@ -41,37 +41,37 @@ const Contact = () => {
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">İletişim Bilgileri</h2>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-6 h-6 text-red-600" />
+                    <div className="w-14 h-14 bg-[#E53935] rounded-full flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-6 h-6 text-white" />
                     </div>
-                    <div>
+                    <div className="flex-1 bg-[#FFECEE] rounded-xl p-4">
+                      <h3 className="font-semibold text-gray-900 mb-1">Telefon</h3>
+                      <a href={`tel:${siteInfo.phoneLink}`} className="text-red-600 hover:text-red-700 font-medium">{siteInfo.phone}</a>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-14 h-14 bg-[#1976D2] rounded-full flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1 bg-[#E3F2FD] rounded-xl p-4">
+                      <h3 className="font-semibold text-gray-900 mb-1">E-posta</h3>
+                      <a href={`mailto:${siteInfo.email}`} className="text-blue-600 hover:text-blue-700 font-medium">{siteInfo.email}</a>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-14 h-14 bg-[#4CAF50] rounded-full flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1 bg-[#E8F5E9] rounded-xl p-4">
                       <h3 className="font-semibold text-gray-900 mb-1">Adres</h3>
                       <p className="text-gray-600">{siteInfo.address}</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-red-600" />
+                    <div className="w-14 h-14 bg-gray-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Clock className="w-6 h-6 text-white" />
                     </div>
-                    <div>
-                      <h3 className="font-semibold text-gray-900 mb-1">Telefon</h3>
-                      <a href={`tel:${siteInfo.phoneLink}`} className="text-gray-600 hover:text-red-600">{siteInfo.phone}</a>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6 text-red-600" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-gray-900 mb-1">E-posta</h3>
-                      <a href={`mailto:${siteInfo.email}`} className="text-gray-600 hover:text-red-600">{siteInfo.email}</a>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-6 h-6 text-red-600" />
-                    </div>
-                    <div>
+                    <div className="flex-1 bg-gray-50 rounded-xl p-4">
                       <h3 className="font-semibold text-gray-900 mb-1">Çalışma Saatleri</h3>
                       <p className="text-gray-600">Pazartesi - Cumartesi: 09:00 - 18:00</p>
                     </div>

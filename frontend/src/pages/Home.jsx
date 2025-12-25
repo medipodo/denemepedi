@@ -530,43 +530,37 @@ const Home = () => {
             <p className="text-lg text-gray-600">Sorularınız için buradayız</p>
           </div>
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            <div className="space-y-4">
-              {/* Telefon Butonu */}
-              <a 
-                href={`tel:${siteInfo.phoneLink}`}
-                className="flex items-center gap-4 bg-white border-2 border-gray-200 hover:border-red-500 rounded-2xl p-5 transition-all hover:shadow-lg group"
-              >
-                <div className="w-14 h-14 bg-red-100 group-hover:bg-red-600 rounded-xl flex items-center justify-center transition-colors">
-                  <Phone className="w-6 h-6 text-red-600 group-hover:text-white transition-colors" />
+            <div className="space-y-6">
+              {/* Telefon */}
+              <div className="flex items-start space-x-4">
+                <div className="w-14 h-14 bg-[#E53935] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-6 h-6 text-white" />
                 </div>
-                <div>
-                  <p className="text-sm text-gray-500 mb-1">Telefon</p>
-                  <p className="text-lg font-bold text-gray-900">{siteInfo.phone}</p>
+                <div className="flex-1 bg-[#FFECEE] rounded-xl p-4">
+                  <h3 className="font-semibold text-gray-900 mb-1">Telefon</h3>
+                  <a href={`tel:${siteInfo.phoneLink}`} className="text-red-600 hover:text-red-700 font-medium">{siteInfo.phone}</a>
                 </div>
-              </a>
+              </div>
 
-              {/* E-posta Butonu */}
-              <a 
-                href={`mailto:${siteInfo.email}`}
-                className="flex items-center gap-4 bg-white border-2 border-gray-200 hover:border-red-500 rounded-2xl p-5 transition-all hover:shadow-lg group"
-              >
-                <div className="w-14 h-14 bg-red-100 group-hover:bg-red-600 rounded-xl flex items-center justify-center transition-colors">
-                  <Mail className="w-6 h-6 text-red-600 group-hover:text-white transition-colors" />
+              {/* E-posta */}
+              <div className="flex items-start space-x-4">
+                <div className="w-14 h-14 bg-[#1976D2] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-6 h-6 text-white" />
                 </div>
-                <div>
-                  <p className="text-sm text-gray-500 mb-1">E-posta</p>
-                  <p className="text-lg font-bold text-gray-900">{siteInfo.email}</p>
+                <div className="flex-1 bg-[#E3F2FD] rounded-xl p-4">
+                  <h3 className="font-semibold text-gray-900 mb-1">E-posta</h3>
+                  <a href={`mailto:${siteInfo.email}`} className="text-blue-600 hover:text-blue-700 font-medium">{siteInfo.email}</a>
                 </div>
-              </a>
+              </div>
 
-              {/* Adres Butonu */}
-              <div className="flex items-center gap-4 bg-white border-2 border-gray-200 rounded-2xl p-5">
-                <div className="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-red-600" />
+              {/* Adres */}
+              <div className="flex items-start space-x-4">
+                <div className="w-14 h-14 bg-[#4CAF50] rounded-full flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-6 h-6 text-white" />
                 </div>
-                <div>
-                  <p className="text-sm text-gray-500 mb-1">Adres</p>
-                  <p className="text-lg font-bold text-gray-900">Ankara / Turkey</p>
+                <div className="flex-1 bg-[#E8F5E9] rounded-xl p-4">
+                  <h3 className="font-semibold text-gray-900 mb-1">Adres</h3>
+                  <p className="text-gray-600">Ankara / Turkey</p>
                 </div>
               </div>
             </div>

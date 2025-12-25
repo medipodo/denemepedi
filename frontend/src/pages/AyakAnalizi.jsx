@@ -159,7 +159,8 @@ const AyakAnalizi = () => {
       options: [
         { value: "sik", label: "Evet, sık sık (Kronik sorun)" },
         { value: "nadiren", label: "Evet, ama nadiren" },
-        { value: "hayir", label: "Hayır, ilk kez" }
+        { value: "hayir", label: "Hayır, ilk kez" },
+        { value: "hic", label: "Hiç Mantar Sorunu Yaşamadım" }
       ]
     },
     {

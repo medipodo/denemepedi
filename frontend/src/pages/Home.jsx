@@ -38,7 +38,7 @@ const dealers = [
   { id: 10, name: "Hanife Karataş", city: "Bursa", address: "Orhaniye, D200 125-126", phone: "0542 617 9865", lat: 40.0833, lng: 29.5167 },
   { id: 11, name: "Podolara", city: "Bitlis", address: "Saray, Cumhuriyet Cd. Kat: 2 No: 2", phone: "05427180713", lat: 38.5000, lng: 42.2833 },
   { id: 12, name: "Kıvanç Eczanesi", city: "Niğde", address: "Ahmet Kuddusi, Doğan Baran Cd. No: 72/A", phone: "03883130201", lat: 37.8833, lng: 34.5500 },
-  { id: 13, name: "Podolog Gamze Betül Başaran", city: "Tokat", address: "Pazar Mah. Kayra Sok. Turhal", phone: "0552 873 1407", lat: 40.385326, lng: 36.0729861 }
+  { id: 13, name: "Podolog Gamze Betül Başaran", city: "Tokat", address: "Pazar Mah. Kayra Sok. Turhal", phone: "0552 873 1407", email: "gamzebetulb@gmail.com", lat: 40.385326, lng: 36.0729861 }
 ];
 
 const Home = () => {

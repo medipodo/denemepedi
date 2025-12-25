@@ -64,12 +64,9 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <LocalizedLink to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center backdrop-blur-sm">
-              <span className="text-white font-bold text-xl">P</span>
-            </div>
+          <LocalizedLink to="/" className="flex items-center">
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-white">PediZone<span style={{ fontSize: '0.5em', verticalAlign: 'super' }}>®</span></span>
+              <span className="text-2xl font-bold text-white">PediZone<span style={{ fontSize: '0.5em', verticalAlign: 'super' }}>®</span></span>
             </div>
           </LocalizedLink>
 

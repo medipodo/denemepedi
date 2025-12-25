@@ -34,37 +34,23 @@ export const LanguageProvider = ({ children }) => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // URL'den dil kodunu al
-  const pathLang = location.pathname.split('/')[1];
-  const currentLang = SUPPORTED_LANGUAGES.includes(pathLang) ? pathLang : DEFAULT_LANGUAGE;
+  // SINGLE LANGUAGE MODE: Always use TR
+  const currentLang = 'tr';
   const slug = params.slug || null;
 
-  // Dil değiştirme fonksiyonu
+  // Dil değiştirme fonksiyonu - disabled
   const switchLanguage = (newLang) => {
-    if (!SUPPORTED_LANGUAGES.includes(newLang)) return;
-    
-    // Mevcut path'i yeni dil ile değiştir
-    const pathWithoutLang = location.pathname.replace(/^\/(tr|en|de)/, '');
-    const newPath = `/${newLang}${pathWithoutLang || ''}`;
-    navigate(newPath);
+    console.warn('Language switching is disabled in single-language mode');
   };
 
-  // URL oluşturma helper'ı
+  // URL oluşturma helper'ı - no language prefix
   const getLocalizedPath = (path) => {
-    // Eğer path zaten dil prefix'i ile başlıyorsa, olduğu gibi dön
-    if (/^\/(tr|en|de)/.test(path)) {
-      return path;
-    }
-    return `/${currentLang}${path}`;
+    return path;
   };
 
-  // Diğer dillerdeki aynı sayfanın URL'lerini al (hreflang için)
+  // Alternate URLs - only TR
   const getAlternateUrls = () => {
-    const pathWithoutLang = location.pathname.replace(/^\/(tr|en|de)/, '');
-    return SUPPORTED_LANGUAGES.map(langCode => ({
-      lang: langCode,
-      url: `/${langCode}${pathWithoutLang || ''}`
-    }));
+    return [{ lang: 'tr', url: location.pathname }];
   };
 
   const value = useMemo(() => ({
@@ -74,7 +60,7 @@ export const LanguageProvider = ({ children }) => {
     getLocalizedPath,
     getAlternateUrls,
     languageInfo: LANGUAGE_INFO[currentLang],
-    hasContent: LANGUAGE_INFO[currentLang]?.hasContent ?? false
+    hasContent: true
   }), [currentLang, slug, location.pathname]);
 
   return (

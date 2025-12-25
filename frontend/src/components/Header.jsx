@@ -88,10 +88,38 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Right side: Language Switcher */}
+          {/* Right side: Static language flags (decorative) */}
           <div className="flex items-center space-x-3 lg:space-x-4">
-            {/* Language Switcher */}
-            <LanguageSwitcher />
+            {/* Static language flags - decorative only */}
+            <div className="flex items-center gap-0.5">
+              {/* TR - Active with white border */}
+              <div className="p-1.5 rounded-lg bg-white/20 ring-2 ring-white">
+                <img 
+                  src="/assets/flags/turkey.svg" 
+                  alt="Türkçe"
+                  className="w-8 h-8 object-contain"
+                  title="Aktif dil: Türkçe"
+                />
+              </div>
+              
+              {/* EN - Disabled/Coming soon */}
+              <div className="p-1.5 rounded-lg opacity-50 cursor-not-allowed" title="Yakında">
+                <img 
+                  src="/assets/flags/uk.svg" 
+                  alt="English (Coming soon)"
+                  className="w-8 h-8 object-contain grayscale"
+                />
+              </div>
+              
+              {/* DE - Disabled/Coming soon */}
+              <div className="p-1.5 rounded-lg opacity-50 cursor-not-allowed" title="Yakında">
+                <img 
+                  src="/assets/flags/germany.svg" 
+                  alt="Deutsch (Coming soon)"
+                  className="w-8 h-8 object-contain grayscale"
+                />
+              </div>
+            </div>
 
             {/* Mobile Menu Button */}
             <button

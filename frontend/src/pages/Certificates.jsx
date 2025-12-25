@@ -124,27 +124,6 @@ const Certificates = () => {
         </div>
       </section>
 
-      {/* Bilimsel Kanıtlarla Section */}
-      <section className="py-12 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <FlaskConical className="w-6 h-6 text-red-600" />
-                </div>
-                <div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-3">Bilimsel Kanıtlarla Desteklenen Kalite</h2>
-                  <p className="text-gray-600 leading-relaxed">
-                    PediZone® ürünleri, bağımsız laboratuvarlar tarafından gerçekleştirilen kapsamlı testlerle güvenlik ve etkinlik açısından doğrulanmıştır. Podologların güvenle tavsiye ettiği ürünlerimizin arkasında bilimsel kanıtlar bulunmaktadır.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Sertifikalar Grid */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">

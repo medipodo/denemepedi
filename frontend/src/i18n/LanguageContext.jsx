@@ -34,51 +34,31 @@ export const LanguageProvider = ({ children }) => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // URL'den dil ve slug bilgilerini parse et
-  const lang = params.lang;
-  const restPath = params['*'] || '';
-  const pathParts = restPath.split('/').filter(Boolean);
-  
-  // Slug bilgisi (blog/:slug veya urun/:slug için)
-  const slug = pathParts.length > 1 ? pathParts[1] : null;
+  // SINGLE LANGUAGE MODE: Always use TR
+  const currentLang = 'tr';
+  const slug = params.slug || null;
 
-  // Geçerli dil (varsayılan: tr)
-  const currentLang = SUPPORTED_LANGUAGES.includes(lang) ? lang : DEFAULT_LANGUAGE;
-
-  // Dil değiştirme fonksiyonu
+  // Dil değiştirme fonksiyonu - disabled in single language mode
   const switchLanguage = (newLang) => {
-    if (!SUPPORTED_LANGUAGES.includes(newLang)) return;
-    
-    const targetLangInfo = LANGUAGE_INFO[newLang];
-    
-    // Hedef dilde içerik yoksa, o dilin ana sayfasına yönlendir
-    if (!targetLangInfo.hasContent) {
-      navigate(`/${newLang}`);
-      return;
-    }
-    
-    // Mevcut path'ten dili çıkar ve yeni dil ile değiştir
-    const pathWithoutLang = location.pathname.replace(/^\/(tr|en|de)/, '');
-    const newPath = `/${newLang}${pathWithoutLang || ''}`;
-    navigate(newPath);
+    console.warn('Language switching is disabled in single-language mode');
+    // No action - language is locked to TR
   };
 
-  // URL oluşturma helper'ı
+  // URL oluşturma helper'ı - no language prefix
   const getLocalizedPath = (path) => {
-    // Eğer path zaten dil prefix'i ile başlıyorsa, değiştirme
-    if (/^\/(tr|en|de)/.test(path)) {
-      return path;
-    }
-    return `/${currentLang}${path}`;
+    // Single language mode: return path as-is
+    return path;
   };
 
   // Diğer dillerdeki aynı sayfanın URL'lerini al (hreflang için)
   const getAlternateUrls = () => {
-    const pathWithoutLang = location.pathname.replace(/^\/(tr|en|de)/, '');
-    return SUPPORTED_LANGUAGES.map(langCode => ({
-      lang: langCode,
-      url: `/${langCode}${pathWithoutLang || ''}`
-    }));
+    // Single language mode: only TR
+    return [
+      {
+        lang: 'tr',
+        url: location.pathname
+      }
+    ];
   };
 
   const value = useMemo(() => ({
@@ -88,7 +68,7 @@ export const LanguageProvider = ({ children }) => {
     getLocalizedPath,
     getAlternateUrls,
     languageInfo: LANGUAGE_INFO[currentLang],
-    hasContent: LANGUAGE_INFO[currentLang]?.hasContent ?? false
+    hasContent: true // Always true for TR
   }), [currentLang, slug, location.pathname]);
 
   return (

@@ -176,7 +176,7 @@ const Dealers = () => {
       case 'Ayak Bakım Merkezi': return 'bg-blue-100 text-blue-700';
       case 'Ayak Sağlığı Merkezi': return 'bg-blue-100 text-blue-700';
       case 'Eczane': return 'bg-green-100 text-green-700';
-      case 'Uzman Podolog': return 'bg-purple-100 text-purple-700';
+      case 'Podolog': return 'bg-purple-100 text-purple-700';
       case 'Ortez-Protez Merkezi': return 'bg-orange-100 text-orange-700';
       default: return 'bg-gray-100 text-gray-700';
     }

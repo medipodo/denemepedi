@@ -6,7 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTop from './components/ScrollToTop';
-import NoContentPage from './components/NoContentPage';
+// import NoContentPage from './components/NoContentPage'; // Not needed in single-language mode
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';
@@ -17,97 +17,6 @@ import AyakAnalizi from './pages/AyakAnalizi';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import Contact from './pages/Contact';
-
-// Dil destekli içerik wrapper
-const LanguageContent = () => {
-  const { lang, "*": rest } = useParams();
-  
-  // Geçersiz dil kodu kontrolü
-  if (!SUPPORTED_LANGUAGES.includes(lang)) {
-    return <Navigate to={`/${DEFAULT_LANGUAGE}`} replace />;
-  }
-
-  // İçerik var mı kontrolü
-  const hasContent = LANGUAGE_INFO[lang]?.hasContent ?? false;
-
-  // Path'i parse et
-  const pathParts = rest ? rest.split('/') : [];
-  const page = pathParts[0] || '';
-  const slug = pathParts[1] || '';
-
-  // İngilizce için mevcut içerikler (kademeli eklenecek)
-const enAvailableContent = {
-  blogs: [
-    'what-is-foot-fungus',
-    'types-of-nail-fungus',
-    'what-causes-foot-odor'
-  ], // İngilizce mevcut bloglar
-  products: [] // İngilizce mevcut ürünler
-};
-
-  // Belirli içerik için dil kontrolü
-  const hasContentForPage = () => {
-    if (hasContent) return true; // TR için her zaman true
-    
-    // EN için belirli içeriklere izin ver
-    if (lang === 'en') {
-      // Blog listesi - en az 1 blog varsa göster
-      if (page === 'blog' && !slug && enAvailableContent.blogs.length > 0) {
-        return true;
-      }
-      // Belirli blog detayı
-      if (page === 'blog' && slug && enAvailableContent.blogs.includes(slug)) {
-        return true;
-      }
-      if (page === 'urun' && slug && enAvailableContent.products.includes(slug)) {
-        return true;
-      }
-    }
-    
-    return false;
-  };
-
-  // Sayfa render - içerik yoksa NoContentPage göster
-  const renderPage = () => {
-    // İçerik yoksa NoContentPage
-    if (!hasContentForPage()) {
-      return <NoContentPage />;
-    }
-
-    // hasContentForPage() true döndüyse, içerik var demektir
-    switch (page) {
-      case '':
-        return <Home />;
-      case 'blog':
-        return slug ? <BlogDetail /> : <Blog />;
-      case 'urun':
-        return <ProductDetail />;
-      case 'sertifikalar':
-        return <Certificates />;
-      case 'bayiler':
-        return <Dealers />;
-      case 'ayak-analizi':
-        return <AyakAnalizi />;
-      case 'iletisim':
-        return <Contact />;
-      case 'gizlilik-politikasi':
-        return <PrivacyPolicy />;
-      case 'kullanim-sartlari':
-        return <TermsOfService />;
-      default:
-        return <Home />;
-    }
-  };
-
-  return (
-    <LanguageProvider>
-      <Header />
-      {renderPage()}
-      <Footer />
-      <WhatsAppButton />
-    </LanguageProvider>
-  );
-};
 
 function App() {
   return (

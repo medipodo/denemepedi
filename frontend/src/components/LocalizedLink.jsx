@@ -1,15 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useLanguage } from '../i18n/LanguageContext';
+// import { useLanguage } from '../i18n/LanguageContext'; // DISABLED: Single language mode
 
 /**
- * LocalizedLink component - Adds language prefix to links
+ * LocalizedLink component - Single language (TR) mode
  * Usage: <LocalizedLink to="/blog">Blog</LocalizedLink>
- * Output: /tr/blog or /en/blog (based on current language)
+ * Output: /blog (no language prefix)
  */
 const LocalizedLink = ({ to, children, ...props }) => {
-  const { getLocalizedPath } = useLanguage();
-  
   // Harici linkler için normal anchor kullan
   if (to.startsWith('http') || to.startsWith('mailto:') || to.startsWith('tel:')) {
     return <a href={to} {...props}>{children}</a>;
@@ -20,9 +18,8 @@ const LocalizedLink = ({ to, children, ...props }) => {
     return <a href={to} {...props}>{children}</a>;
   }
 
-  // Dil prefix'i ekle
-  const localizedTo = getLocalizedPath(to);
-  return <Link to={localizedTo} {...props}>{children}</Link>;
+  // Single language mode: direct link without language prefix
+  return <Link to={to} {...props}>{children}</Link>;
 };
 
 export default LocalizedLink;

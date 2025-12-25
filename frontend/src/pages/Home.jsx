@@ -67,7 +67,7 @@ const Home = () => {
             {/* Sol Taraf - Metin */}
             <div className="space-y-6">
               <Badge className="bg-red-100 text-red-700 px-4 py-2 text-sm font-medium">
-                Podologların Tavsiyesi
+                🏆 Podologların Tavsiyesi
               </Badge>
               
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">

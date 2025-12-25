@@ -416,7 +416,7 @@ const Home = () => {
               <div className="block lg:hidden">
                 <MapContainer 
                   center={[39.0, 35.0]} 
-                  zoom={3.5} 
+                  zoom={4.5} 
                   style={{ height: '350px', width: '100%', zIndex: 0 }}
                   scrollWheelZoom={false}
                 >

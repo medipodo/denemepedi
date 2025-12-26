@@ -59,7 +59,7 @@ const Contact = () => {
         <meta property="og:title" content="İletişim - PediZone®" />
         <meta property="og:description" content="PediZone® ile iletişime geçin. Sorularınız için telefon, e-posta veya iletişim formu ile bize ulaşabilirsiniz." />
         <meta property="og:url" content="https://pedizone.com/iletisim" />
-        <meta property="og:image" content="https://pedizone.com/pedizone-og-home-v2.jpg" />
+        <meta property="og:image" content="https://pedizone.com/images/pedizone-og-home-v2.jpg" />
         
         <script type="application/ld+json">
           {JSON.stringify(webPageSchema)}

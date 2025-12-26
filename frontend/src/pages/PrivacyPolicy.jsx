@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
         <meta property="og:title" content="Gizlilik Politikası - PediZone®" />
         <meta property="og:description" content="PediZone® web sitesi gizlilik politikası. Kişisel verilerinizin güvenliği ve KVKK uyum bilgileri." />
         <meta property="og:url" content="https://pedizone.com/gizlilik-politikasi" />
-        <meta property="og:image" content="https://pedizone.com/pedizone-og-home-v2.jpg" />
+        <meta property="og:image" content="https://pedizone.com/images/pedizone-og-home-v2.jpg" />
       </Helmet>
       
       <div className="container mx-auto px-4 py-12">

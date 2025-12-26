@@ -30,9 +30,8 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Images - Force HTTP 200 (no range requests for Meta crawlers)
+# Images - HTTP 200 only, no range support
 [[headers]]
   for = "/images/*"
   [headers.values]
-    Accept-Ranges = "none"
     Cache-Control = "public, max-age=31536000, immutable"

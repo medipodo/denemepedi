@@ -70,6 +70,20 @@ const SerumProductContent = ({ product, productImages }) => {
       <Helmet>
         <title>PediZone® Foot and Nail Care Serum | Antifungal Ayak ve Tırnak Bakım Serumu</title>
         <meta name="description" content="Mantar eğilimi, koku problemi ve tırnak bakımı için profesyonel serum. İnce moleküler yapı, hızlı emilim. 50ml." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqData.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })}
+        </script>
       </Helmet>
 
       {/* Breadcrumb */}

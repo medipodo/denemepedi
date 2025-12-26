@@ -218,6 +218,15 @@ const Dealers = () => {
         <title>Satış Noktalarımız - PediZone® Yetkili Bayiler</title>
         <meta name="description" content="PediZone® ürünlerini alabileceğiniz yetkili satış noktaları, bayiler ve podoloji merkezleri. Türkiye genelinde eczane ve podoloji merkezlerinde." />
         <link rel="canonical" href="https://pedizone.com/bayiler" />
+        
+        {/* Open Graph */}
+        <meta property="og:site_name" content="PediZone®" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Satış Noktalarımız - PediZone® Yetkili Bayiler" />
+        <meta property="og:description" content="PediZone® ürünlerini alabileceğiniz yetkili satış noktaları. Türkiye genelinde eczane ve podoloji merkezlerinde." />
+        <meta property="og:url" content="https://pedizone.com/bayiler" />
+        <meta property="og:image" content="https://pedizone.com/og-image-dealers.jpg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(webPageSchema)}
         </script>

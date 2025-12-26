@@ -108,6 +108,18 @@ const ProductDetail = () => {
       <Helmet>
         <title>PediZone® %15 Urea Intense Repair Cream | Profesyonel Ayak Kremi</title>
         <meta name="description" content="Çatlak topuklar ve aşırı kuruluk için geliştirilmiş profesyonel bakım kremi. %15 üre, bitkisel antifungal destek. Dermatolojik olarak test edilmiştir." />
+        <link rel="canonical" href={`https://pedizone.com/urun/${slug}`} />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:site_name" content="PediZone®" />
+        <meta property="og:type" content="product" />
+        <meta property="og:title" content={product?.name || "PediZone® Ürün"} />
+        <meta property="og:description" content={product?.description || "Profesyonel ayak bakım ürünü"} />
+        <meta property="og:url" content={`https://pedizone.com/urun/${slug}`} />
+        <meta property="og:image" content={`https://pedizone.com${product?.image || '/og-image-product.jpg'}`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        
         <script type="application/ld+json">{JSON.stringify(productSchema)}</script>
       </Helmet>
 

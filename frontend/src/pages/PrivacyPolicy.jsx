@@ -1,11 +1,26 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import LocalizedLink from '../components/LocalizedLink';
 import { ArrowLeft } from 'lucide-react';
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen pt-24">
+      <Helmet>
+        <title>Gizlilik Politikası - PediZone®</title>
+        <meta name="description" content="PediZone® web sitesi gizlilik politikası. Kişisel verilerinizin güvenliği ve KVKK uyum bilgileri." />
+        <link rel="canonical" href="https://pedizone.com/gizlilik-politikasi" />
+        
+        {/* Open Graph */}
+        <meta property="og:site_name" content="PediZone®" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Gizlilik Politikası - PediZone®" />
+        <meta property="og:description" content="PediZone® web sitesi gizlilik politikası. Kişisel verilerinizin güvenliği ve KVKK uyum bilgileri." />
+        <meta property="og:url" content="https://pedizone.com/gizlilik-politikasi" />
+        <meta property="og:image" content="https://pedizone.com/og-image-default.jpg" />
+      </Helmet>
+      
       <div className="container mx-auto px-4 py-12">
         <LocalizedLink to="/" className="inline-flex items-center text-red-600 hover:text-red-700 mb-8">
           <ArrowLeft size={18} className="mr-2" /> Ana Sayfa

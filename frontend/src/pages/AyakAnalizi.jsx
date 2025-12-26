@@ -237,6 +237,20 @@ const AyakAnalizi = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-600 to-red-700 flex justify-center items-center py-24 px-4">
+      <Helmet>
+        <title>Ayak Analizi - Size Uygun Ürünü Bulun | PediZone®</title>
+        <meta name="description" content="6 basit soruyla ayak sağlığınızı analiz edin ve size özel PediZone® ürün önerisi alın. Ücretsiz, hızlı ve kolay ayak analizi." />
+        <link rel="canonical" href="https://pedizone.com/ayak-analizi" />
+        
+        {/* Open Graph */}
+        <meta property="og:site_name" content="PediZone®" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Ayak Analizi - Size Uygun Ürünü Bulun" />
+        <meta property="og:description" content="6 basit soruyla ayak sağlığınızı analiz edin ve size özel PediZone® ürün önerisi alın." />
+        <meta property="og:url" content="https://pedizone.com/ayak-analizi" />
+        <meta property="og:image" content="https://pedizone.com/og-image-analiz.jpg" />
+      </Helmet>
+      
       <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full p-8 md:p-10">
         {!showResult ? (
           <>

@@ -37,6 +37,15 @@ const TermsOfService = () => {
         <title>Kullanım Şartları - PediZone®</title>
         <meta name="description" content="PediZone® web sitesi kullanım şartları ve koşulları." />
         <link rel="canonical" href="https://pedizone.com/kullanim-sartlari" />
+        
+        {/* Open Graph */}
+        <meta property="og:site_name" content="PediZone®" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Kullanım Şartları - PediZone®" />
+        <meta property="og:description" content="PediZone® web sitesi kullanım şartları ve koşulları." />
+        <meta property="og:url" content="https://pedizone.com/kullanim-sartlari" />
+        <meta property="og:image" content="https://pedizone.com/og-image-default.jpg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(webPageSchema)}
         </script>

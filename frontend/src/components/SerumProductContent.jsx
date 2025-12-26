@@ -484,7 +484,7 @@ const SerumProductContent = ({ product, productImages }) => {
                     loading="lazy"
                   />
                 </picture>
-                <p className="text-center text-sm text-gray-600 mt-2 px-2">Psödomikoz (Pseudo-onychomycosis) - Düzenli kullanım öncesi ve sonrası</p>
+                <p className="text-center text-sm text-gray-600 mt-2 px-2">Psödomikoz - Düzenli kullanım öncesi ve sonrası</p>
               </div>
             </div>
 

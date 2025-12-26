@@ -535,26 +535,31 @@ const SerumProductContent = ({ product, productImages }) => {
             <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">Sık Sorulan Sorular</h2>
             
             <div className="space-y-4">
-              <Card className="border-gray-200">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Serum mu krem mi kullanmalıyım?</h3>
-                  <p className="text-gray-700">Mantar eğilimi ve tırnak problemlerinde serum daha etkilidir, ince moleküler yapısı sayesinde zor yüzeylere ulaşabilir.</p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-gray-200">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Günlük kullanıma uygun mu?</h3>
-                  <p className="text-gray-700">Evet. İnce yapısı sayesinde uzun süreli ve düzenli kullanıma uygundur.</p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-gray-200">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Koku probleminde etkili olur mu?</h3>
-                  <p className="text-gray-700">Mikrobiyal dengenin desteklenmesi sayesinde kötü koku oluşumunun azalmasına yardımcı olur.</p>
-                </CardContent>
-              </Card>
+              {faqData.map((faq, index) => (
+                <Card key={index} className="border-gray-200 overflow-hidden">
+                  <button
+                    onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
+                    className="w-full text-left p-6 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                    aria-expanded={openFAQ === index}
+                  >
+                    <h3 className="text-lg font-bold text-gray-900 pr-4">{faq.question}</h3>
+                    <ChevronDown 
+                      className={`w-6 h-6 text-red-600 flex-shrink-0 transition-transform duration-300 ${
+                        openFAQ === index ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </button>
+                  <div 
+                    className={`transition-all duration-300 ease-in-out ${
+                      openFAQ === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+                    }`}
+                  >
+                    <div className="px-6 pb-6">
+                      <p className="text-gray-700">{faq.answer}</p>
+                    </div>
+                  </div>
+                </Card>
+              ))}
             </div>
           </div>
         </div>

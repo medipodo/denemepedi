@@ -474,10 +474,10 @@ const SerumProductContent = ({ product, productImages }) => {
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-lg">
                 <picture>
-                  <source media="(max-width: 640px)" srcSet="https://pedizone.com/images/products/serum/serum-main-new.jpg?w=640&q=75" />
-                  <source media="(max-width: 1024px)" srcSet="https://pedizone.com/images/products/serum/serum-main-new.jpg?w=1024&q=80" />
+                  <source media="(max-width: 640px)" srcSet="/images/products/serum/pedizone-serum97.jpg?w=640&q=75" />
+                  <source media="(max-width: 1024px)" srcSet="/images/products/serum/pedizone-serum97.jpg?w=1024&q=80" />
                   <img 
-                    src="https://pedizone.com/images/products/serum/serum-main-new.jpg" 
+                    src="/images/products/serum/pedizone-serum97.jpg" 
                     alt="Psödomikoz (Pseudo-onychomycosis) - Düzenli kullanım öncesi ve sonrası" 
                     className="w-full object-cover"
                     loading="lazy"

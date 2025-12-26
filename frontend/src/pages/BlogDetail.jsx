@@ -109,9 +109,26 @@ const BlogDetail = () => {
       <Helmet>
         <title>{post.title} | PediZone Blog</title>
         <meta name="description" content={post.excerpt} />
+        <link rel="canonical" href={`https://pedizone.com/blog/${slug}`} />
+        
+        {/* Open Graph */}
+        <meta property="og:site_name" content="PediZone®" />
+        <meta property="og:type" content="article" />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />
-        <meta property="og:type" content="article" />
+        <meta property="og:url" content={`https://pedizone.com/blog/${slug}`} />
+        <meta property="og:image" content={`https://pedizone.com${post.image}`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="article:published_time" content={post.date} />
+        <meta property="article:author" content={post.author} />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:description" content={post.excerpt} />
+        <meta name="twitter:image" content={`https://pedizone.com${post.image}`} />
+        
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
       </Helmet>

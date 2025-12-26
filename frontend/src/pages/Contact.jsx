@@ -52,6 +52,15 @@ const Contact = () => {
         <title>İletişim - PediZone®</title>
         <meta name="description" content="PediZone® ile iletişime geçin. Sorularınız için telefon, e-posta veya iletişim formu ile bize ulaşabilirsiniz." />
         <link rel="canonical" href="https://pedizone.com/iletisim" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:site_name" content="PediZone®" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="İletişim - PediZone®" />
+        <meta property="og:description" content="PediZone® ile iletişime geçin. Sorularınız için telefon, e-posta veya iletişim formu ile bize ulaşabilirsiniz." />
+        <meta property="og:url" content="https://pedizone.com/iletisim" />
+        <meta property="og:image" content="https://pedizone.com/og-image-contact.jpg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(webPageSchema)}
         </script>

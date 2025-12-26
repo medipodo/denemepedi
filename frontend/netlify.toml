@@ -31,9 +31,31 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
+  for = "/images/*.jpg"
+  [headers.values]
+    Content-Type = "image/jpeg"
+    Accept-Ranges = "none"
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*.jpeg"
+  [headers.values]
+    Content-Type = "image/jpeg"
+    Accept-Ranges = "none"
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*.png"
+  [headers.values]
+    Content-Type = "image/png"
+    Accept-Ranges = "none"
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
   for = "/images/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+    Accept-Ranges = "none"
 
 # OG Images - Force HTTP 200 (no range requests for Meta crawlers)
 [[headers]]

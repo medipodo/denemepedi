@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route, Navigate, useParams } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
@@ -20,6 +20,31 @@ import TermsOfService from './pages/TermsOfService';
 import Contact from './pages/Contact';
 
 function App() {
+  // Load rrweb scripts only in staging/preview environments
+  useEffect(() => {
+    const isProduction = window.location.hostname === 'pedizone.com' || 
+                        window.location.hostname === 'www.pedizone.com';
+    
+    // Only load rrweb in non-production environments
+    if (!isProduction) {
+      // Load rrweb library
+      const rrwebScript = document.createElement('script');
+      rrwebScript.src = 'https://unpkg.com/rrweb@latest/dist/rrweb.min.js';
+      rrwebScript.async = true;
+      document.head.appendChild(rrwebScript);
+      
+      // Load rrweb recorder
+      const recorderScript = document.createElement('script');
+      recorderScript.src = 'https://d2adkz2s9zrlge.cloudfront.net/rrweb-recorder-20250919-1.js';
+      recorderScript.async = true;
+      document.head.appendChild(recorderScript);
+      
+      console.log('rrweb loaded (staging/preview mode)');
+    } else {
+      console.log('rrweb disabled (production mode)');
+    }
+  }, []);
+
   return (
     <HelmetProvider>
       <div className="App" style={{ margin: 0, padding: 0, border: 'none' }}>

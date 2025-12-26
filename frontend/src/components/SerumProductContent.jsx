@@ -471,6 +471,7 @@ const SerumProductContent = ({ product, productImages }) => {
                     loading="lazy"
                   />
                 </picture>
+                <p className="text-center text-sm text-gray-600 mt-2 px-2">Onikoliz - hasarlı tırnağın, tekrar sağlıklı uzaması</p>
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-lg">
                 <picture>

@@ -466,7 +466,7 @@ const SerumProductContent = ({ product, productImages }) => {
                   <source media="(max-width: 1024px)" srcSet="/images/products/serum/serum-main-new.jpg?w=1024&q=80" />
                   <img 
                     src="/images/products/serum/serum-main-new.jpg" 
-                    alt="PediZone Serum Öncesi-Sonrası" 
+                    alt="Onikoliz öncesi ve sonrası sağlıklı tırnak uzaması" 
                     className="w-full object-cover"
                     loading="lazy"
                   />

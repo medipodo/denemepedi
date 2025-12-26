@@ -108,6 +108,17 @@ const Blog = () => {
         <title>PediZone Blog - Ayak Sağlığı ve Bakım Bilgileri</title>
         <meta name="description" content="Ayak sağlığı, podoloji ve ayak bakımı hakkında faydalı bilgiler ve uzman tavsiyeleri." />
         <link rel="canonical" href="https://pedizone.com/blog" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:site_name" content="PediZone®" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="PediZone Blog - Ayak Sağlığı ve Bakım Bilgileri" />
+        <meta property="og:description" content="Ayak sağlığı, podoloji ve ayak bakımı hakkında faydalı bilgiler ve uzman tavsiyeleri." />
+        <meta property="og:url" content="https://pedizone.com/blog" />
+        <meta property="og:image" content="https://pedizone.com/og-image-blog.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        
         <script type="application/ld+json">
           {JSON.stringify(webPageSchema)}
         </script>

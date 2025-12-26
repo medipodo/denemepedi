@@ -20,13 +20,22 @@ import TermsOfService from './pages/TermsOfService';
 import Contact from './pages/Contact';
 
 function App() {
-  // Load rrweb scripts only in staging/preview environments
+  // Load rrweb scripts only in staging/preview/development environments
   useEffect(() => {
-    const isProduction = window.location.hostname === 'pedizone.com' || 
-                        window.location.hostname === 'www.pedizone.com';
+    // Method 1: Check environment variable (preferred)
+    const appEnvironment = process.env.REACT_APP_ENVIRONMENT;
     
-    // Only load rrweb in non-production environments
-    if (!isProduction) {
+    // Method 2: Fallback to hostname detection
+    const hostname = window.location.hostname;
+    const isProductionHostname = hostname === 'pedizone.com' || 
+                                 hostname === 'www.pedizone.com';
+    
+    // Determine if we should load rrweb
+    const shouldLoadRrweb = appEnvironment 
+      ? appEnvironment !== 'production'  // Use env variable if available
+      : !isProductionHostname;            // Fallback to hostname check
+    
+    if (shouldLoadRrweb) {
       // Load rrweb library
       const rrwebScript = document.createElement('script');
       rrwebScript.src = 'https://unpkg.com/rrweb@latest/dist/rrweb.min.js';
@@ -39,9 +48,16 @@ function App() {
       recorderScript.async = true;
       document.head.appendChild(recorderScript);
       
-      console.log('rrweb loaded (staging/preview mode)');
+      console.log('✅ rrweb loaded', {
+        environment: appEnvironment || 'detected from hostname',
+        hostname: hostname,
+        mode: appEnvironment || (isProductionHostname ? 'production' : 'staging/preview')
+      });
     } else {
-      console.log('rrweb disabled (production mode)');
+      console.log('🚫 rrweb disabled (production mode)', {
+        environment: appEnvironment,
+        hostname: hostname
+      });
     }
   }, []);
 

@@ -479,7 +479,7 @@ const SerumProductContent = ({ product, productImages }) => {
                   <source media="(max-width: 1024px)" srcSet="/images/products/serum/pedizone-serum97.jpg?w=1024&q=80" />
                   <img 
                     src="/images/products/serum/pedizone-serum97.jpg" 
-                    alt="Psödomikoz (Pseudo-onychomycosis) - Düzenli kullanım öncesi ve sonrası" 
+                    alt="Psödomikoz öncesi ve sonrası düzenli kullanım sonuçları" 
                     className="w-full object-cover"
                     loading="lazy"
                   />

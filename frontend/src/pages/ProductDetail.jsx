@@ -116,7 +116,7 @@ const ProductDetail = () => {
         <meta property="og:title" content={product?.name || "PediZone® Ürün"} />
         <meta property="og:description" content={product?.description || "Profesyonel ayak bakım ürünü"} />
         <meta property="og:url" content={`https://pedizone.com/urun/${slug}`} />
-        <meta property="og:image" content={`https://pedizone.com${product?.image || '/og-image-product.jpg'}`} />
+        <meta property="og:image" content={`https://pedizone.com${product?.image || '/images/pedizone-og-home-v2.jpg'}`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         

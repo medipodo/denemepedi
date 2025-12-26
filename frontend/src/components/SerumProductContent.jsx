@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import LocalizedLink from './LocalizedLink';
 import { Helmet } from 'react-helmet-async';
-import { CheckCircle, Star, ShieldCheck, Droplets, Sparkles, Award, Phone, Mail, MapPin, BookOpen } from 'lucide-react';
+import { CheckCircle, Star, ShieldCheck, Droplets, Sparkles, Award, Phone, Mail, MapPin, BookOpen, ChevronDown } from 'lucide-react';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Card, CardContent } from './ui/card';
@@ -9,8 +9,37 @@ import { siteInfo } from '../mock';
 
 const SerumProductContent = ({ product, productImages }) => {
   const [selectedImage, setSelectedImage] = useState(0);
+  const [openFAQ, setOpenFAQ] = useState(null);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
+
+  // FAQ Data
+  const faqData = [
+    {
+      question: "Serum mu krem mi kullanmalıyım?",
+      answer: "Mantar eğilimi ve tırnak problemlerinde serum daha etkilidir, ince moleküler yapısı sayesinde zor yüzeylere ulaşabilir."
+    },
+    {
+      question: "Günlük kullanıma uygun mu?",
+      answer: "Evet. İnce yapısı sayesinde uzun süreli ve düzenli kullanıma uygundur."
+    },
+    {
+      question: "Koku probleminde etkili olur mu?",
+      answer: "Mikrobiyal dengenin desteklenmesi sayesinde kötü koku oluşumunun azalmasına yardımcı olur."
+    },
+    {
+      question: "Onikoliz (tırnak yatağından ayrılma) durumunda serum kullanılabilir mi?",
+      answer: "Onikoliz durumunda, tırnak altındaki nem dengesinin sağlanması ve bakımın desteklenmesi önemlidir. PediZone® Foot and Nail Care Serum, ince moleküler yapısı sayesinde onikoliz alanlarına ulaşarak bakım rutininin desteklenmesine yardımcı olur."
+    },
+    {
+      question: "Tırnak altı boşluklara ulaşabilir mi?",
+      answer: "Evet. Serum formu, krem ürünlere kıyasla tırnak altı boşluklara daha kolay nüfuz edebilir ve bu alanlarda bakım desteği sağlar."
+    },
+    {
+      question: "Sarı, kalınlaşmış ve mat tırnaklarda kullanılabilir mi?",
+      answer: "Düzenli kullanımda, tırnak yüzeyindeki matlaşma ve kalınlaşmanın azalmasına yardımcı olur. Sağlıklı yeni tırnak uzamasını destekler."
+    }
+  ];
 
   // Swipe handlers
   const handleTouchStart = (e) => {

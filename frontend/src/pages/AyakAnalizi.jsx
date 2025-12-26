@@ -248,7 +248,7 @@ const AyakAnalizi = () => {
         <meta property="og:title" content="Ayak Analizi - Size Uygun Ürünü Bulun" />
         <meta property="og:description" content="6 basit soruyla ayak sağlığınızı analiz edin ve size özel PediZone® ürün önerisi alın." />
         <meta property="og:url" content="https://pedizone.com/ayak-analizi" />
-        <meta property="og:image" content="https://pedizone.com/og-image-analiz.jpg" />
+        <meta property="og:image" content="https://pedizone.com/pedizone-og-home-v2.jpg" />
       </Helmet>
       
       <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full p-8 md:p-10">

@@ -44,7 +44,7 @@ const TermsOfService = () => {
         <meta property="og:title" content="Kullanım Şartları - PediZone®" />
         <meta property="og:description" content="PediZone® web sitesi kullanım şartları ve koşulları." />
         <meta property="og:url" content="https://pedizone.com/kullanim-sartlari" />
-        <meta property="og:image" content="https://pedizone.com/og-image-default.jpg" />
+        <meta property="og:image" content="https://pedizone.com/pedizone-og-home-v2.jpg" />
         
         <script type="application/ld+json">
           {JSON.stringify(webPageSchema)}

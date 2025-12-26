@@ -115,7 +115,7 @@ const Blog = () => {
         <meta property="og:title" content="PediZone Blog - Ayak Sağlığı ve Bakım Bilgileri" />
         <meta property="og:description" content="Ayak sağlığı, podoloji ve ayak bakımı hakkında faydalı bilgiler ve uzman tavsiyeleri." />
         <meta property="og:url" content="https://pedizone.com/blog" />
-        <meta property="og:image" content="https://pedizone.com/og-image-blog.jpg" />
+        <meta property="og:image" content="https://pedizone.com/pedizone-og-home-v2.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         

@@ -104,7 +104,7 @@ const Home = () => {
         <meta property="og:title" content="PediZone® - Profesyonel Ayak Bakım Ürünleri" />
         <meta property="og:description" content="Podologların tavsiyesi PediZone® ayak bakım ürünleri. Tırnak mantarı, çatlak topuk ve ayak kokusu için profesyonel çözümler." />
         <meta property="og:url" content="https://pedizone.com/" />
-        <meta property="og:image" content="https://pedizone.com/og-image-home.jpg" />
+        <meta property="og:image" content="https://pedizone.com/images/pedizone-og-home.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         
@@ -112,7 +112,7 @@ const Home = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="PediZone® - Profesyonel Ayak Bakım Ürünleri" />
         <meta name="twitter:description" content="Podologların tavsiyesi PediZone® ayak bakım ürünleri. Tırnak mantarı, çatlak topuk ve ayak kokusu için profesyonel çözümler." />
-        <meta name="twitter:image" content="https://pedizone.com/og-image-home.jpg" />
+        <meta name="twitter:image" content="https://pedizone.com/images/pedizone-og-home.jpg" />
       </Helmet>
 
       {/* Schema.org - Organization & WebSite */}

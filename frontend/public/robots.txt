@@ -1,0 +1,15 @@
+# PediZone® - Production Robots.txt
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Block EN and DE pages (Coming Soon)
+Disallow: /en
+Disallow: /de
+
+# Allow sitemap
+Sitemap: https://pedizone.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1

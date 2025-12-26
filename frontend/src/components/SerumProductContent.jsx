@@ -417,7 +417,7 @@ const SerumProductContent = ({ product, productImages }) => {
             {/* Ürün Görseli 2 */}
             <div className="mb-12">
               <img 
-                src="/images/products/serum/serum-main-new.jpg" 
+                src="/images/products/serum/pedizone-before-after5.jpg" 
                 alt="PediZone Serum Detay" 
                 className="w-full max-w-3xl mx-auto rounded-2xl shadow-lg"
               />

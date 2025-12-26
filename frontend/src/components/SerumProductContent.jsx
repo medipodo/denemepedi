@@ -462,6 +462,18 @@ const SerumProductContent = ({ product, productImages }) => {
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="relative rounded-2xl overflow-hidden shadow-lg">
                 <picture>
+                  <source media="(max-width: 640px)" srcSet="/images/products/serum/pedizone-before-after5.jpg?w=640&q=75" />
+                  <source media="(max-width: 1024px)" srcSet="/images/products/serum/pedizone-before-after5.jpg?w=1024&q=80" />
+                  <img 
+                    src="/images/products/serum/pedizone-before-after5.jpg" 
+                    alt="PediZone Serum Öncesi-Sonrası" 
+                    className="w-full object-cover"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+              <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                <picture>
                   <source media="(max-width: 640px)" srcSet="https://pedizone.com/images/products/serum/serum-main-new.jpg?w=640&q=75" />
                   <source media="(max-width: 1024px)" srcSet="https://pedizone.com/images/products/serum/serum-main-new.jpg?w=1024&q=80" />
                   <img 
@@ -472,18 +484,6 @@ const SerumProductContent = ({ product, productImages }) => {
                   />
                 </picture>
                 <p className="text-center text-sm text-gray-600 mt-2 px-2">Psödomikoz (Pseudo-onychomycosis) - Düzenli kullanım öncesi ve sonrası</p>
-              </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-lg">
-                <picture>
-                  <source media="(max-width: 640px)" srcSet="/images/products/serum/pedizone-before-after5.jpg?w=640&q=75" />
-                  <source media="(max-width: 1024px)" srcSet="/images/products/serum/pedizone-before-after5.jpg?w=1024&q=80" />
-                  <img 
-                    src="/images/products/serum/pedizone-before-after5.jpg" 
-                    alt="PediZone Serum Öncesi-Sonrası" 
-                    className="w-full object-cover"
-                    loading="lazy"
-                  />
-                </picture>
               </div>
             </div>
 

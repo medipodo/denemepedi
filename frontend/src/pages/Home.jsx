@@ -92,6 +92,29 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>PediZone® - Profesyonel Ayak Bakım Ürünleri | Podolog Onaylı</title>
+        <meta name="description" content="Podologların tavsiyesi PediZone® ayak bakım ürünleri. Tırnak mantarı, çatlak topuk ve ayak kokusu için profesyonel çözümler. Klinik testli, dermatolojik onaylı." />
+        <link rel="canonical" href="https://pedizone.com/" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:site_name" content="PediZone®" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="PediZone® - Profesyonel Ayak Bakım Ürünleri" />
+        <meta property="og:description" content="Podologların tavsiyesi PediZone® ayak bakım ürünleri. Tırnak mantarı, çatlak topuk ve ayak kokusu için profesyonel çözümler." />
+        <meta property="og:url" content="https://pedizone.com/" />
+        <meta property="og:image" content="https://pedizone.com/og-image-home.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="PediZone® - Profesyonel Ayak Bakım Ürünleri" />
+        <meta name="twitter:description" content="Podologların tavsiyesi PediZone® ayak bakım ürünleri. Tırnak mantarı, çatlak topuk ve ayak kokusu için profesyonel çözümler." />
+        <meta name="twitter:image" content="https://pedizone.com/og-image-home.jpg" />
+      </Helmet>
+
       {/* Schema.org - Organization & WebSite */}
       <script type="application/ld+json">
         {JSON.stringify(organizationSchema)}

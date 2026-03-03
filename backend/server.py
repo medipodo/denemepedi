@@ -1,4 +1,5 @@
 from fastapi import FastAPI, APIRouter
+from fastapi.responses import RedirectResponse
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
@@ -36,6 +37,24 @@ class StatusCheck(BaseModel):
 
 class StatusCheckCreate(BaseModel):
     client_name: str
+
+# 301 Redirects for old JPG images to new WEBP versions
+IMAGE_REDIRECTS = {
+    "pedizone-serum-new.e1c3220b805233b3ba3c.jpg": "pedizone-serum-new.e1c3220b805233b3ba3c.webp",
+    "pedizone-foot-foam-new.8cce45cbeeed5e6e2bb0.jpg": "pedizone-foot-foam-new.8cce45cbeeed5e6e2bb0.webp",
+    "pedizone-catlaktopuk-kremi.78f06c814d7f414b7a12.jpg": "pedizone-catlaktopuk-kremi.78f06c814d7f414b7a12.webp"
+}
+
+@api_router.get("/redirect/static/media/{image_name}")
+async def redirect_old_images(image_name: str):
+    """301 redirect for old JPG images to new WEBP versions"""
+    if image_name in IMAGE_REDIRECTS:
+        new_image = IMAGE_REDIRECTS[image_name]
+        return RedirectResponse(
+            url=f"/static/media/{new_image}",
+            status_code=301
+        )
+    return {"error": "Image not found"}
 
 # Add your routes to the router instead of directly to app
 @api_router.get("/")

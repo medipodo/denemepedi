@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html, body {
     margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+
+body {
     font-family:
         -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
         "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -112,4 +118,11 @@ code {
         border-top-color: inherit;
         border-bottom-color: inherit;
     }
+}
+
+/* Masaüstünde harita yüksekliği */
+@media (min-width: 1024px) {
+  .leaflet-container.lg\:\!h-\[540px\] {
+    height: 540px !important;
+  }
 }

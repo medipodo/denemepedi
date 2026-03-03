@@ -123,6 +123,8 @@ const TRContent = ({ page }) => {
         return <PrivacyPolicy />;
       case 'kullanim-sartlari':
         return <TermsOfService />;
+      case 'sss':
+        return <FAQ />;
       default:
         return <Home />;
     }

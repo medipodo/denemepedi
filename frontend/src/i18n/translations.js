@@ -66,7 +66,8 @@ export const translations = {
       certificates: 'Certificates',
       dealers: 'Dealers',
       contact: 'Contact',
-      footAnalysis: 'Foot Analysis'
+      footAnalysis: 'Foot Analysis',
+      faq: 'FAQ'
     },
     footer: {
       quickLinks: 'Quick Links',

@@ -118,7 +118,8 @@ export const translations = {
       certificates: 'Zertifikate',
       dealers: 'Händler',
       contact: 'Kontakt',
-      footAnalysis: 'Fußanalyse'
+      footAnalysis: 'Fußanalyse',
+      faq: 'FAQ'
     },
     footer: {
       quickLinks: 'Schnelllinks',

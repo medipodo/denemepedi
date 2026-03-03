@@ -27,6 +27,7 @@ const Header = () => {
     { name: t('nav.footAnalysis'), path: '/ayak-analizi' },
     { name: t('nav.dealers'), path: '/bayiler' },
     { name: t('nav.blog'), path: '/blog' },
+    { name: t('nav.faq'), path: '/sss' },
     { name: t('nav.certificates'), path: '/sertifikalar' },
     { name: t('nav.contact'), path: '/iletisim' }
   ];

@@ -30,6 +30,7 @@ const Footer = () => {
               <li><LocalizedLink to="/" className="text-red-100 hover:text-white transition-colors text-sm">{t('nav.home')}</LocalizedLink></li>
               <li><LocalizedLink to="/#urunler" className="text-red-100 hover:text-white transition-colors text-sm">{t('footer.products')}</LocalizedLink></li>
               <li><LocalizedLink to="/blog" className="text-red-100 hover:text-white transition-colors text-sm">{t('nav.blog')}</LocalizedLink></li>
+              <li><LocalizedLink to="/sss" className="text-red-100 hover:text-white transition-colors text-sm">{t('nav.faq')}</LocalizedLink></li>
               <li><LocalizedLink to="/sertifikalar" className="text-red-100 hover:text-white transition-colors text-sm">{t('nav.certificates')}</LocalizedLink></li>
             </ul>
           </div>

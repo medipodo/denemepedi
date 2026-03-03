@@ -79,6 +79,7 @@ function App() {
           <Route path="/bayiler" element={<TRContent page="bayiler" />} />
           <Route path="/ayak-analizi" element={<TRContent page="ayak-analizi" />} />
           <Route path="/iletisim" element={<TRContent page="iletisim" />} />
+          <Route path="/sss" element={<TRContent page="sss" />} />
           <Route path="/gizlilik-politikasi" element={<TRContent page="gizlilik-politikasi" />} />
           <Route path="/kullanim-sartlari" element={<TRContent page="kullanim-sartlari" />} />
           

@@ -9,7 +9,8 @@ export const translations = {
       certificates: 'Sertifikalar',
       dealers: 'Bayiler',
       contact: 'İletişim',
-      footAnalysis: 'Ayak Analizi'
+      footAnalysis: 'Ayak Analizi',
+      faq: 'S.S.S.'
     },
     // Footer
     footer: {

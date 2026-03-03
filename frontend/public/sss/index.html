@@ -7,637 +7,267 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://pedizone.com/sss">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      font-family: Arial, sans-serif;
       line-height: 1.6;
-      color: #1f2937;
-      background: #fff;
-    }
-    a {
-      color: #dc2626;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Header */
-    .header {
-      background: #fff;
-      border-bottom: 1px solid #f3f4f6;
-      padding: 16px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .header-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .logo {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #dc2626;
-    }
-    .logo span {
-      color: #1f2937;
-    }
-    .nav-links {
-      display: flex;
-      gap: 24px;
-    }
-    .nav-links a {
-      color: #4b5563;
-      font-size: 0.95rem;
-      font-weight: 500;
-    }
-    .nav-links a:hover {
-      color: #dc2626;
-      text-decoration: none;
-    }
-
-    /* Main Content */
-    .main {
+      margin: 20px;
       max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px 60px;
+      color: #333;
     }
-    .page-header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .page-header h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #1f2937;
-      margin-bottom: 8px;
-    }
-    .page-header .update-date {
-      color: #6b7280;
-      font-size: 0.9rem;
-    }
-
-    /* Intro */
-    .intro {
-      background: #fef2f2;
-      border: 1px solid #fecaca;
-      border-radius: 12px;
-      padding: 20px 24px;
-      margin-bottom: 40px;
-      font-size: 0.95rem;
-      color: #374151;
-    }
-    .intro a {
-      font-weight: 500;
-    }
-
-    /* Category */
-    .category {
-      margin-bottom: 32px;
-    }
-    .category h2 {
-      font-size: 1.25rem;
-      font-weight: 600;
-      color: #1f2937;
-      margin-bottom: 16px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid #dc2626;
-      display: inline-block;
-    }
-
+    h1, h2 { color: #1f2937; }
+    h1 { font-size: 1.75rem; margin-bottom: 8px; }
+    h2 { font-size: 1.2rem; margin-top: 32px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #dc2626; display: inline-block; }
+    a { color: #dc2626; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .update-date { color: #666; font-size: 0.9rem; font-style: italic; margin-bottom: 24px; }
+    .intro { background: #fef2f2; border-left: 4px solid #dc2626; padding: 16px 20px; margin-bottom: 32px; font-size: 0.95rem; }
+    
     /* Accordion */
-    .accordion {
-      margin-bottom: 8px;
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      overflow: hidden;
-      background: #fff;
-    }
-    .accordion:hover {
-      border-color: #d1d5db;
-    }
-    .accordion input[type="checkbox"] {
-      display: none;
-    }
+    .accordion { margin-bottom: 8px; border: 1px solid #e5e7eb; border-radius: 6px; overflow: hidden; }
+    .accordion input[type="checkbox"] { display: none; }
     .accordion label {
-      display: block;
-      padding: 16px 48px 16px 20px;
-      cursor: pointer;
-      font-weight: 500;
-      color: #1f2937;
-      font-size: 0.95rem;
-      position: relative;
-      transition: background 0.2s;
+      display: block; padding: 14px 44px 14px 16px; cursor: pointer;
+      font-weight: 600; color: #1f2937; font-size: 0.95rem; position: relative;
     }
-    .accordion label:hover {
-      background: #f9fafb;
-    }
+    .accordion label:hover { background: #f9fafb; }
     .accordion label::after {
-      content: "+";
-      position: absolute;
-      right: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 1.25rem;
-      color: #dc2626;
-      font-weight: 600;
+      content: "+"; position: absolute; right: 16px; top: 50%;
+      transform: translateY(-50%); font-size: 1.2rem; color: #dc2626;
     }
-    .accordion input[type="checkbox"]:checked + label::after {
-      content: "−";
-    }
-    .accordion input[type="checkbox"]:checked + label {
-      background: #fef2f2;
-      border-bottom: 1px solid #fecaca;
-    }
-    .accordion-content {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease;
-    }
-    .accordion input[type="checkbox"]:checked ~ .accordion-content {
-      max-height: 600px;
-    }
-    .accordion-inner {
-      padding: 16px 20px 20px;
-      color: #4b5563;
-      font-size: 0.95rem;
-      line-height: 1.7;
-    }
-    .accordion-inner p {
-      margin-bottom: 12px;
-    }
-    .accordion-inner .link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      color: #dc2626;
-      font-weight: 500;
-      font-size: 0.9rem;
-    }
-    .accordion-inner .link::before {
-      content: "→";
-    }
+    .accordion input:checked + label::after { content: "−"; }
+    .accordion input:checked + label { background: #fef2f2; }
+    .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s; }
+    .accordion input:checked ~ .accordion-content { max-height: 500px; }
+    .accordion-inner { padding: 14px 16px 18px; color: #4b5563; font-size: 0.95rem; border-top: 1px solid #e5e7eb; }
+    .accordion-inner p { margin: 0 0 10px; }
+    .link-item { color: #dc2626; font-weight: 500; font-size: 0.9rem; }
+    .link-item::before { content: "→ "; }
 
-    /* CTA Section */
-    .cta-section {
-      background: linear-gradient(135deg, #fef2f2 0%, #fff 100%);
-      border: 1px solid #fecaca;
-      border-radius: 16px;
-      padding: 40px 30px;
-      text-align: center;
-      margin-top: 50px;
-    }
-    .cta-section h2 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: #1f2937;
-      margin-bottom: 12px;
-    }
-    .cta-section p {
-      color: #6b7280;
-      margin-bottom: 24px;
-    }
-    .cta-buttons {
-      display: flex;
-      gap: 12px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .cta-btn {
-      display: inline-block;
-      padding: 12px 28px;
-      border-radius: 9999px;
-      font-weight: 600;
-      font-size: 0.95rem;
-      transition: all 0.2s;
-    }
-    .cta-btn:hover {
-      text-decoration: none;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-    .cta-btn-primary {
-      background: #dc2626;
-      color: #fff;
-    }
-    .cta-btn-secondary {
-      background: #1f2937;
-      color: #fff;
-    }
+    /* CTA */
+    .cta-box { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 24px; text-align: center; margin-top: 40px; }
+    .cta-box h3 { margin: 0 0 8px; font-size: 1.1rem; color: #1f2937; }
+    .cta-box p { margin: 0 0 16px; color: #666; font-size: 0.95rem; }
+    .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .cta-btn { padding: 10px 24px; border-radius: 6px; font-weight: 600; font-size: 0.9rem; }
+    .cta-btn-red { background: #dc2626; color: #fff; }
+    .cta-btn-dark { background: #1f2937; color: #fff; }
 
-    /* Disclaimer */
-    .disclaimer {
-      margin-top: 40px;
-      padding: 16px 20px;
-      background: #f9fafb;
-      border-radius: 8px;
-      font-size: 0.85rem;
-      color: #6b7280;
-      line-height: 1.6;
-    }
+    .disclaimer { margin-top: 32px; padding: 14px; background: #f9fafb; font-size: 0.85rem; color: #666; border-radius: 6px; }
+    footer { margin-top: 40px; font-size: 0.9em; color: #666; text-align: center; }
 
-    /* Footer */
-    .footer {
-      background: #1f2937;
-      color: #9ca3af;
-      padding: 40px 20px;
-      margin-top: 60px;
-    }
-    .footer-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .footer-top {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 32px;
-      margin-bottom: 32px;
-    }
-    .footer-col h4 {
-      color: #fff;
-      font-size: 1rem;
-      font-weight: 600;
-      margin-bottom: 16px;
-    }
-    .footer-col ul {
-      list-style: none;
-    }
-    .footer-col li {
-      margin-bottom: 10px;
-    }
-    .footer-col a {
-      color: #9ca3af;
-      font-size: 0.9rem;
-    }
-    .footer-col a:hover {
-      color: #fff;
-    }
-    .footer-bottom {
-      border-top: 1px solid #374151;
-      padding-top: 24px;
-      text-align: center;
-      font-size: 0.85rem;
-    }
-    .footer-bottom a {
-      color: #9ca3af;
-    }
-
-    /* Mobile */
-    @media (max-width: 768px) {
-      .nav-links {
-        display: none;
-      }
-      .page-header h1 {
-        font-size: 1.5rem;
-      }
-      .category h2 {
-        font-size: 1.1rem;
-      }
-      .accordion label {
-        padding: 14px 44px 14px 16px;
-        font-size: 0.9rem;
-      }
-      .cta-section {
-        padding: 30px 20px;
-      }
-      .cta-buttons {
-        flex-direction: column;
-      }
-      .cta-btn {
-        width: 100%;
-        text-align: center;
-      }
-      .footer-top {
-        grid-template-columns: 1fr 1fr;
-      }
+    @media (max-width: 600px) {
+      body { margin: 15px; }
+      .cta-buttons { flex-direction: column; }
+      .cta-btn { width: 100%; text-align: center; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="https://pedizone.com" class="logo"><span>Pedi</span>Zone<sup style="font-size:0.5em">®</sup></a>
-      <nav class="nav-links">
-        <a href="https://pedizone.com/#urunler">Ürünler</a>
-        <a href="https://pedizone.com/blog">Blog</a>
-        <a href="https://pedizone.com/bayiler">Bayiler</a>
-        <a href="https://pedizone.com/sss">S.S.S.</a>
-        <a href="https://pedizone.com/#iletisim">İletişim</a>
-      </nav>
+  <h1>Sık Sorulan Sorular</h1>
+  <p class="update-date">Son Güncelleme: Mart 2026</p>
+
+  <div class="intro">
+    Ayak sağlığı çoğu zaman ihmal edilir; mantar, koku, çatlak ve tırnak problemleri günlük yaşam kalitesini ciddi şekilde etkileyebilir. Bu sayfada en sık karşılaştığımız soruları anlaşılır, detaylı ve pratik ipuçlarıyla yanıtladık. Eğer sorunuz burada yoksa bizimle <a href="mailto:info@pedizone.com">iletişime geçebilirsiniz</a>.
+  </div>
+
+  <h2>Ayak Mantarı</h2>
+
+  <div class="accordion">
+    <input type="checkbox" id="q1">
+    <label for="q1">Ayak mantarı kaç günde geçer?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Ayak mantarı kaç günde geçer? sorusunun cevabı enfeksiyonun derecesine ve günlük bakıma bağlıdır. Hafif vakalarda düzenli temizlik ve uygun ürün kullanımıyla 2–4 hafta içinde iyileşme görülür. Ancak tedavi yarım bırakılırsa mantar tekrar edebilir ve süreci uzatır.</p>
+      <a href="https://pedizone.com/blog/ayak-mantari-neden-tekrarlar" class="link-item">Ayak Mantarı Neden Tekrarlar?</a>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="q2">
+    <label for="q2">Ayak mantarı bulaşıcı mı?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Ayak mantarı bulaşıcıdır ve ortak terlik, havlu veya nemli zeminler yoluyla kolayca geçebilir. Aile içinde aynı banyo veya ayakkabı kullanımı riski artırır. Bu nedenle kişisel eşyaların ayrı tutulması ve düzenli ayak hijyeni önemlidir.</p>
+      <a href="https://pedizone.com/blog/ayak-hijyeni-ipuclari" class="link-item">Ayak Hijyeni İpuçları</a>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="q3">
+    <label for="q3">Ayak mantarı evde geçer mi?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Erken dönemde evde düzenli temizlik, mantar önleyici ürünler ve kuru ortam sağlamak ile mantar kontrol altına alınabilir. Ancak ileri vakalarda dermatolojik destek ve profesyonel ürünler gerekir.</p>
+      <a href="https://pedizone.com/urun/foot-nail-care-serum" class="link-item">Foot Nail Care Serum</a>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="q4">
+    <label for="q4">Ayak mantarı neden tekrarlar?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>En sık sebep tedavinin erken bırakılmasıdır. Ayrıca ayakların nemli kalması, uygun olmayan ayakkabı seçimi ve hijyen eksikliği de tekrar riskini artırır. Düzenli bakım ve önleyici ürün kullanımı tekrar riskini azaltır.</p>
+      <a href="https://pedizone.com/blog/ayak-mantari-neden-tekrarlar" class="link-item">Ayak Mantarı Neden Tekrarlar?</a>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="q5">
+    <label for="q5">Ayak mantarı ile egzama nasıl ayırt edilir?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Mantar genellikle kaşıntı ve soyulma ile belirgindir, egzama ise kuru, kızarık ve bazen çatlaklı bir görünüm verir. Kesin ayırım için dermatolojik muayene gereklidir.</p>
+      <a href="https://pedizone.com/blog/ayak-mantari-mi-egzama-mi" class="link-item">Ayak Mantarı mı Egzama mı?</a>
+    </div></div>
+  </div>
+
+  <h2>Tırnak Problemleri</h2>
+
+  <div class="accordion">
+    <input type="checkbox" id="q6">
+    <label for="q6">Tırnak mantarı bulaşıcı mı?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Evet, tırnak mantarı bulaşıcıdır. Ortak tırnak makası veya manikür malzemeleri risk yaratır. Düzenli temizlik ve kişisel hijyen kurallarına uymak bulaşmayı önler.</p>
+      <a href="https://pedizone.com/blog/tirnak-mantari-cesitleri" class="link-item">Tırnak Mantarı Çeşitleri</a>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="q7">
+    <label for="q7">Tırnak mantarı ne kadar sürede düzelir?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Tırnak mantarının iyileşmesi yavaş olabilir çünkü tırnak uzama hızı düşüktür. Düzenli bakım, mantar önleyici serum ve sabır ile birkaç ayda fark edilir sonuç alınabilir.</p>
+      <a href="https://pedizone.com/urun/foot-nail-care-serum" class="link-item">Foot Nail Care Serum</a>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="q8">
+    <label for="q8">Tırnak sararması her zaman mantar mıdır?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Hayır. Oje kullanımı, tırnak travmaları veya bazı cilt sorunları da sararmaya neden olabilir. Doğru tespit için dermatolojik değerlendirme gerekir.</p>
+    </div></div>
+  </div>
+
+  <h2>Ürün Kullanımı</h2>
+
+  <div class="accordion">
+    <input type="checkbox" id="q9">
+    <label for="q9">Üreli krem her gün kullanılır mı?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Cilt tipine göre değişir, ancak genellikle günlük kullanıma uygundur. Topuk çatlağı ve aşırı kuruluk problemlerinde düzenli kullanım iyileşmeyi hızlandırır.</p>
+      <a href="https://pedizone.com/urun/ureli-krem" class="link-item">Üreli Krem</a>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="q10">
+    <label for="q10">Üre oranı kaç olmalı?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Kuruluk yoğunluğuna göre değişir. Hassas ciltlerde düşük, topuk çatlağı veya aşırı kurulukta yüksek oran önerilir.</p>
+      <a href="https://pedizone.com/blog/ure-nedir" class="link-item">Üre Nedir?</a>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="q11">
+    <label for="q11">Serum ne kadar sürede etki eder?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Düzenli kullanımda ilk etkiler birkaç hafta içinde fark edilir. Tam sonuç için kullanım süresine devam etmek gerekir.</p>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="q12">
+    <label for="q12">Temizleme köpüğü ne işe yarar?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Ayaktaki ter, kir ve bakterileri temizleyerek kötü koku ve mantar oluşum riskini azaltır. Düzenli kullanım ile hijyen ve konfor sağlar.</p>
+      <a href="https://pedizone.com/urun/temizleme-kopugu" class="link-item">Temizleme Köpüğü</a>
+    </div></div>
+  </div>
+
+  <h2>Genel Ayak Sağlığı</h2>
+
+  <div class="accordion">
+    <input type="checkbox" id="q13">
+    <label for="q13">Ayak kokusu neden olur?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Genellikle terleme ve bakteriyel çoğalma kaynaklıdır. Kapalı, hava almayan ayakkabılar ve nemli ortamlar riski artırır. Düzenli temizlik ve ürün kullanımı kokuyu önler.</p>
+      <a href="https://pedizone.com/blog/ayak-kokusu-nedenleri" class="link-item">Ayak Kokusu Nedenleri</a>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="q14">
+    <label for="q14">Ayak terlemesi mantara neden olur mu?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Evet. Nemli ortam mantar oluşumu için uygun zemin sağlar. Kurutma, havalandırma ve mantar önleyici ürünler koruyucudur.</p>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="q15">
+    <label for="q15">Topuk çatlağı neden olur?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Kuruluk, yanlış ayakkabı seçimi ve bakım eksikliği en sık nedenlerdir. Düzenli nemlendirme ile çatlaklar azaltılabilir.</p>
+      <a href="https://pedizone.com/urun/ureli-krem" class="link-item">Üreli Krem</a>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="q16">
+    <label for="q16">Medikal ayak bakımı nedir?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Profesyonel ortamda yapılan, tıbbi kurallara uygun ayak bakımıdır. Sorunlu tırnak, mantar veya topuk çatlağı vakalarında en etkili çözümdür.</p>
+      <a href="https://pedizone.com/blog/medikal-ayak-bakimi-nedir" class="link-item">Medikal Ayak Bakımı Nedir?</a>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="q17">
+    <label for="q17">Evde ayak bakımı nasıl yapılır?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Ayaklar temiz, kuru ve nemli tutulmalı; düzenli bakım yapılmalı ve uygun ürünler kullanılmalıdır. Ayrıca çorap ve ayakkabı hijyeni çok önemlidir.</p>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="q18">
+    <label for="q18">Ürünler hassas ciltler için uygun mu?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Cilt tipine göre değişebilir. Hassas ciltlerde küçük bir bölgede test edilmesi önerilir. Olumsuz bir durum görülürse kullanım durdurulmalıdır.</p>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="q19">
+    <label for="q19">Hamileler kullanabilir mi?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Genel olarak topikal ürünler güvenlidir ancak doktor onayı alınması tavsiye edilir.</p>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="q20">
+    <label for="q20">Ürünler ne kadar sürede sonuç verir?</label>
+    <div class="accordion-content"><div class="accordion-inner">
+      <p>Sorunun derecesine bağlıdır. Düzenli kullanım ile genellikle 2–4 hafta içinde fark edilmeye başlanır, tam sonuç için süre uzayabilir.</p>
+    </div></div>
+  </div>
+
+  <div class="cta-box">
+    <h3>Hâlâ kararsız mısınız?</h3>
+    <p>Sorununuzla ilgili daha detaylı bilgi için blog yazılarımıza göz atabilir veya ürünlerimizi inceleyebilirsiniz.</p>
+    <div class="cta-buttons">
+      <a href="https://pedizone.com/blog" class="cta-btn cta-btn-red">Blog'a Git</a>
+      <a href="https://pedizone.com/#urunler" class="cta-btn cta-btn-dark">Ürünleri İncele</a>
     </div>
-  </header>
+  </div>
 
-  <!-- Main Content -->
-  <main class="main">
-    <div class="page-header">
-      <h1>Sık Sorulan Sorular</h1>
-      <p class="update-date">Son Güncelleme: Mart 2026</p>
-    </div>
+  <div class="disclaimer">
+    Bu sayfadaki bilgiler genel bilgilendirme amaçlıdır ve tıbbi tanı, teşhis veya tedavi yerine geçmez. Herhangi bir sağlık sorunu yaşıyorsanız mutlaka bir sağlık uzmanına danışınız.
+  </div>
 
-    <div class="intro">
-      Ayak sağlığı çoğu zaman ihmal edilir; mantar, koku, çatlak ve tırnak problemleri günlük yaşam kalitesini ciddi şekilde etkileyebilir. Bu sayfada en sık karşılaştığımız soruları anlaşılır, detaylı ve pratik ipuçlarıyla yanıtladık. Her sorunun cevabında ilgili ürünler veya blog yazılarına da yönlendirmeler bulabilirsiniz. Eğer sorunuz burada yoksa bizimle <a href="mailto:info@pedizone.com">iletişime geçebilirsiniz</a>.
-    </div>
-
-    <!-- KATEGORİ 1: Ayak Mantarı -->
-    <section class="category">
-      <h2>Ayak Mantarı</h2>
-
-      <div class="accordion">
-        <input type="checkbox" id="q1">
-        <label for="q1">Ayak mantarı kaç günde geçer?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Ayak mantarı kaç günde geçer? sorusunun cevabı enfeksiyonun derecesine ve günlük bakıma bağlıdır. Hafif vakalarda düzenli temizlik ve uygun ürün kullanımıyla 2–4 hafta içinde iyileşme görülür. Ancak tedavi yarım bırakılırsa mantar tekrar edebilir ve süreci uzatır. Ayakları kuru tutmak, nemli ayakkabı ve terliklerden kaçınmak ve mantar önleyici ürünler kullanmak süreci hızlandırır.</p>
-            <a href="https://pedizone.com/blog/ayak-mantari-neden-tekrarlar" class="link" target="_self">Detaylı bilgi: Ayak Mantarı Neden Tekrarlar?</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <input type="checkbox" id="q2">
-        <label for="q2">Ayak mantarı bulaşıcı mı?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Ayak mantarı bulaşıcıdır ve ortak terlik, havlu veya nemli zeminler yoluyla kolayca geçebilir. Aile içinde aynı banyo veya ayakkabı kullanımı riski artırır. Bu nedenle kişisel eşyaların ayrı tutulması ve düzenli ayak hijyeni önemlidir.</p>
-            <a href="https://pedizone.com/blog/ayak-hijyeni-ipuclari" class="link" target="_self">Blog yazısı: Ayak Hijyeni İpuçları</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <input type="checkbox" id="q3">
-        <label for="q3">Ayak mantarı evde geçer mi?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Erken dönemde evde düzenli temizlik, mantar önleyici ürünler ve kuru ortam sağlamak ile mantar kontrol altına alınabilir. Ancak ileri vakalarda dermatolojik destek ve profesyonel ürünler gerekir.</p>
-            <a href="https://pedizone.com/urun/foot-nail-care-serum" class="link" target="_self">Ürün önerisi: Foot Nail Care Serum</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <input type="checkbox" id="q4">
-        <label for="q4">Ayak mantarı neden tekrarlar?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>En sık sebep tedavinin erken bırakılmasıdır. Ayrıca ayakların nemli kalması, uygun olmayan ayakkabı seçimi ve hijyen eksikliği de tekrar riskini artırır. Düzenli bakım ve önleyici ürün kullanımı tekrar riskini azaltır.</p>
-            <a href="https://pedizone.com/blog/ayak-mantari-neden-tekrarlar" class="link" target="_self">Blog linki: Ayak Mantarı Neden Tekrarlar?</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <input type="checkbox" id="q5">
-        <label for="q5">Ayak mantarı ile egzama nasıl ayırt edilir?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Mantar genellikle kaşıntı ve soyulma ile belirgindir, egzama ise kuru, kızarık ve bazen çatlaklı bir görünüm verir. Kesin ayırım için dermatolojik muayene gereklidir. Düzenli bakım ve uygun ürün kullanımı belirtileri hafifletebilir.</p>
-            <a href="https://pedizone.com/blog/ayak-mantari-mi-egzama-mi" class="link" target="_self">Blog linki: Ayak Mantarı mı Egzama mı?</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- KATEGORİ 2: Tırnak Problemleri -->
-    <section class="category">
-      <h2>Tırnak Problemleri</h2>
-
-      <div class="accordion">
-        <input type="checkbox" id="q6">
-        <label for="q6">Tırnak mantarı bulaşıcı mı?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Evet, tırnak mantarı bulaşıcıdır. Ortak tırnak makası veya manikür malzemeleri risk yaratır. Düzenli temizlik ve kişisel hijyen kurallarına uymak bulaşmayı önler.</p>
-            <a href="https://pedizone.com/blog/tirnak-mantari-cesitleri" class="link" target="_self">Blog: Tırnak Mantarı Çeşitleri</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <input type="checkbox" id="q7">
-        <label for="q7">Tırnak mantarı ne kadar sürede düzelir?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Tırnak mantarının iyileşmesi yavaş olabilir çünkü tırnak uzama hızı düşüktür. Düzenli bakım, mantar önleyici serum ve sabır ile birkaç ayda fark edilir sonuç alınabilir.</p>
-            <a href="https://pedizone.com/urun/foot-nail-care-serum" class="link" target="_self">Ürün yönlendirme: Foot Nail Care Serum</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <input type="checkbox" id="q8">
-        <label for="q8">Tırnak sararması her zaman mantar mıdır?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Hayır. Oje kullanımı, tırnak travmaları veya bazı cilt sorunları da sararmaya neden olabilir. Doğru tespit için dermatolojik değerlendirme gerekir.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- KATEGORİ 3: Ürün Kullanımı -->
-    <section class="category">
-      <h2>Ürün Kullanımı</h2>
-
-      <div class="accordion">
-        <input type="checkbox" id="q9">
-        <label for="q9">Üreli krem her gün kullanılır mı?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Cilt tipine göre değişir, ancak genellikle günlük kullanıma uygundur. Topuk çatlağı ve aşırı kuruluk problemlerinde düzenli kullanım iyileşmeyi hızlandırır.</p>
-            <a href="https://pedizone.com/urun/ureli-krem" class="link" target="_self">Ürün linki: Üreli Krem</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <input type="checkbox" id="q10">
-        <label for="q10">Üre oranı kaç olmalı?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Kuruluk yoğunluğuna göre değişir. Hassas ciltlerde düşük, topuk çatlağı veya aşırı kurulukta yüksek oran önerilir.</p>
-            <a href="https://pedizone.com/blog/ure-nedir" class="link" target="_self">Blog linki: Üre Nedir?</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <input type="checkbox" id="q11">
-        <label for="q11">Serum ne kadar sürede etki eder?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Düzenli kullanımda ilk etkiler birkaç hafta içinde fark edilir. Tam sonuç için kullanım süresine devam etmek gerekir. Serumun etkinliği, mantar veya kuruluk seviyesine göre değişebilir.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <input type="checkbox" id="q12">
-        <label for="q12">Temizleme köpüğü ne işe yarar?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Ayaktaki ter, kir ve bakterileri temizleyerek kötü koku ve mantar oluşum riskini azaltır. Düzenli kullanım ile hijyen ve konfor sağlar.</p>
-            <a href="https://pedizone.com/urun/temizleme-kopugu" class="link" target="_self">Ürün linki: Temizleme Köpüğü</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- KATEGORİ 4: Genel Ayak Sağlığı -->
-    <section class="category">
-      <h2>Genel Ayak Sağlığı</h2>
-
-      <div class="accordion">
-        <input type="checkbox" id="q13">
-        <label for="q13">Ayak kokusu neden olur?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Genellikle terleme ve bakteriyel çoğalma kaynaklıdır. Kapalı, hava almayan ayakkabılar ve nemli ortamlar riski artırır. Düzenli temizlik ve ürün kullanımı kokuyu önler.</p>
-            <a href="https://pedizone.com/blog/ayak-kokusu-nedenleri" class="link" target="_self">Blog: Ayak Kokusu Nedenleri</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <input type="checkbox" id="q14">
-        <label for="q14">Ayak terlemesi mantara neden olur mu?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Evet. Nemli ortam mantar oluşumu için uygun zemin sağlar. Kurutma, havalandırma ve mantar önleyici ürünler koruyucudur.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <input type="checkbox" id="q15">
-        <label for="q15">Topuk çatlağı neden olur?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Kuruluk, yanlış ayakkabı seçimi ve bakım eksikliği en sık nedenlerdir. Düzenli nemlendirme ile çatlaklar azaltılabilir.</p>
-            <a href="https://pedizone.com/urun/ureli-krem" class="link" target="_self">Ürün yönlendirme: Üreli Krem</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <input type="checkbox" id="q16">
-        <label for="q16">Medikal ayak bakımı nedir?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Profesyonel ortamda yapılan, tıbbi kurallara uygun ayak bakımıdır. Sorunlu tırnak, mantar veya topuk çatlağı vakalarında en etkili çözümdür.</p>
-            <a href="https://pedizone.com/blog/medikal-ayak-bakimi-nedir" class="link" target="_self">Blog: Medikal Ayak Bakımı Nedir?</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <input type="checkbox" id="q17">
-        <label for="q17">Evde ayak bakımı nasıl yapılır?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Ayaklar temiz, kuru ve nemli tutulmalı; düzenli bakım yapılmalı ve uygun ürünler kullanılmalıdır. Ayrıca çorap ve ayakkabı hijyeni çok önemlidir.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <input type="checkbox" id="q18">
-        <label for="q18">Ürünler hassas ciltler için uygun mu?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Cilt tipine göre değişebilir. Hassas ciltlerde küçük bir bölgede test edilmesi önerilir. Olumsuz bir durum görülürse kullanım durdurulmalıdır.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <input type="checkbox" id="q19">
-        <label for="q19">Hamileler kullanabilir mi?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Genel olarak topikal ürünler güvenlidir ancak doktor onayı alınması tavsiye edilir.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <input type="checkbox" id="q20">
-        <label for="q20">Ürünler ne kadar sürede sonuç verir?</label>
-        <div class="accordion-content">
-          <div class="accordion-inner">
-            <p>Sorunun derecesine bağlıdır. Düzenli kullanım ile genellikle 2–4 hafta içinde fark edilmeye başlanır, tam sonuç için süre uzayabilir.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <div class="cta-section">
-      <h2>Hâlâ kararsız mısınız?</h2>
-      <p>Sorununuzla ilgili daha detaylı bilgi için blog yazılarımıza göz atabilir veya ürünlerimizi inceleyebilirsiniz.</p>
-      <div class="cta-buttons">
-        <a href="https://pedizone.com/blog" class="cta-btn cta-btn-primary" target="_self">Blog'a Git</a>
-        <a href="https://pedizone.com/#urunler" class="cta-btn cta-btn-secondary" target="_self">Ürünleri İncele</a>
-      </div>
-    </div>
-
-    <!-- Disclaimer -->
-    <div class="disclaimer">
-      Bu sayfadaki bilgiler genel bilgilendirme amaçlıdır ve tıbbi tanı, teşhis veya tedavi yerine geçmez. Herhangi bir sağlık sorunu yaşıyorsanız mutlaka bir sağlık uzmanına danışınız.
-    </div>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div class="footer-col">
-          <h4>Ürünler</h4>
-          <ul>
-            <li><a href="https://pedizone.com/urun/foot-nail-care-serum">Foot Nail Care Serum</a></li>
-            <li><a href="https://pedizone.com/urun/temizleme-kopugu">Temizleme Köpüğü</a></li>
-            <li><a href="https://pedizone.com/urun/ureli-krem">Üreli Krem</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Bilgi</h4>
-          <ul>
-            <li><a href="https://pedizone.com/blog">Blog</a></li>
-            <li><a href="https://pedizone.com/sss">S.S.S.</a></li>
-            <li><a href="https://pedizone.com/sertifikalar">Sertifikalar</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Kurumsal</h4>
-          <ul>
-            <li><a href="https://pedizone.com/bayiler">Bayiler</a></li>
-            <li><a href="https://pedizone.com/#iletisim">İletişim</a></li>
-            <li><a href="https://pedizone.com/privacy">Gizlilik Politikası</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>İletişim</h4>
-          <ul>
-            <li><a href="mailto:info@pedizone.com">info@pedizone.com</a></li>
-            <li><a href="tel:+905068860326">0506 886 03 26</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        © 2026 Pedizone. Tüm hakları saklıdır. | <a href="https://pedizone.com/privacy">Gizlilik</a> · <a href="https://pedizone.com/support">Destek</a>
-      </div>
-    </div>
+  <footer>
+    <p>&copy; 2026 Pedizone. Tüm hakları saklıdır.</p>
   </footer>
 
 </body>

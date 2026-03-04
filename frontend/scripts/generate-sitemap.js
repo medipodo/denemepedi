@@ -183,6 +183,14 @@ ${productIds.map(id => `  <url>
     <priority>0.3</priority>
   </url>
 
+  <!-- Sık Sorulan Sorular -->
+  <url>
+    <loc>https://pedizone.com/sss</loc>
+    <lastmod>${pageCreationDates['sss']}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
 `;
 

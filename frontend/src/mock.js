@@ -424,6 +424,228 @@ export const blogPosts = [
     disclaimer: 'Bu içerik genel bilgilendirme amaçlıdır ve tıbbi tanı, teşhis veya tedavi yerine geçmez. Herhangi bir sağlık sorunu yaşıyorsanız mutlaka bir sağlık uzmanına danışınız.'
   },
   {
+    id: 'nasir-sigil-farklari',
+    title: 'Nasır ve Siğil Arasındaki Farklar: Ayakta Doğru Teşhis ve Etkili Tedavi',
+    slug: 'nasir-sigil-farklari',
+    excerpt: 'Ayakta nasır ve siğil arasındaki farkları keşfedin. Doğru teşhis, evde uygulamalar ve medikal müdahale yöntemleri hakkında kapsamlı rehber.',
+    metaTitle: 'Nasır ve Siğil Farkları | Ayakta Doğru Teşhis ve Tedavi',
+    metaDescription: 'Ayakta nasır ve siğil arasındaki farkları keşfedin. Doğru teşhis, evde uygulamalar ve medikal müdahale yöntemleri hakkında kapsamlı rehber.',
+    image: '/blog-images/nasir-sigil-farklari/nasir-sigil-kapak.webp',
+    date: '4 Mart 2026',
+    readTime: '10 dk',
+    author: 'Podolog Serdar Ceylan',
+    tags: ['Nasır', 'Siğil', 'Plantar Siğil', 'Ayak Sağlığı', 'Medikal Ayak Bakımı', 'Podoloji'],
+    sections: [
+      {
+        type: 'intro',
+        content: 'Ayağımızın tabanında veya parmak aralarında oluşan sertlikler çoğu zaman kafa karıştırır. Nasır mı, siğil mi? Ayırmak önemlidir çünkü tedavi yöntemleri tamamen farklıdır. Yanlış müdahale hem ağrıyı artırır hem de tedavi süresini uzatır.'
+      },
+      {
+        type: 'heading',
+        content: 'Nasır Nedir?'
+      },
+      {
+        type: 'paragraph',
+        content: 'Nasır, sürekli basınç veya sürtünmeye maruz kalan bölgelerde oluşan sert, kalın deri tabakasıdır. Vücut, bu bölgeleri korumak için deriyi kalınlaştırır.'
+      },
+      {
+        type: 'bulletList',
+        items: [
+          'Sert ve sarımsı görünüm',
+          'Basınca duyarlı, genellikle ağrıya sebep olur',
+          'Metatars başları, topuk, parmak araları ve ayak kenarlarında sık görülür'
+        ]
+      },
+      {
+        type: 'image',
+        src: '/blog-images/nasir-sigil-farklari/ayak-nasiri.webp',
+        alt: 'Ayak tabanında metatars başında oluşan sert nasır görüntüsü',
+        caption: 'Ayak tabanında basınca bağlı oluşan tipik nasır görünümü'
+      },
+      {
+        type: 'paragraph',
+        content: 'Evde yeni nasırlar ıslak ponza ve <a href="/urun/ureli-krem" class="text-red-600 hover:underline">üreli kremler</a>le yumuşatılabilir, ancak kalınlaşmış deriler profesyonel bakım gerektirir.'
+      },
+      {
+        type: 'infoBox',
+        variant: 'tip',
+        title: 'Nasır hakkında detaylı bilgi',
+        content: 'Nasırın neden oluştuğu, çeşitleri ve tedavi yöntemleri hakkında kapsamlı rehberimize göz atın.',
+        link: '/blog/nasir-nedir-evde-gecer-mi'
+      },
+      {
+        type: 'heading',
+        content: 'Siğil Nedir?'
+      },
+      {
+        type: 'paragraph',
+        content: 'Siğil, Human Papilloma Virüsü (HPV) kaynaklı enfeksiyondur. Ayak tabanında deriye yerleşir ve çoğunlukla içe doğru büyüyerek ağrıya sebep olur.'
+      },
+      {
+        type: 'bulletList',
+        items: [
+          'Bulaşıcıdır',
+          'Siyah noktalar (pıhtılaşmış kan damarları) içerebilir',
+          'Bastığında yanlardan ağrı hissi oluşur',
+          'Bulaşma: Ortak zeminler, nemli ortamlar, mikroçatlaklar'
+        ]
+      },
+      {
+        type: 'image',
+        src: '/blog-images/nasir-sigil-farklari/plantar-sigil.webp',
+        alt: 'Ayak tabanında oluşan plantar siğil ve siyah noktalar',
+        caption: 'Plantar siğilde karakteristik siyah noktalar görülebilir'
+      },
+      {
+        type: 'paragraph',
+        content: 'Siğiller genellikle kendi başına kaybolabilir, ancak tedavi süresi uzun olabilir ve ağrı şiddetli olabilir.'
+      },
+      {
+        type: 'heading',
+        content: 'Nasır ve Siğil Arasındaki Farklar'
+      },
+      {
+        type: 'comparisonTable',
+        headers: ['Özellik', 'Nasır', 'Siğil'],
+        rows: [
+          ['Oluşum nedeni', 'Basınç ve sürtünme', 'HPV enfeksiyonu'],
+          ['Bulaşıcı mı?', 'Hayır', 'Evet'],
+          ['Renk ve yapı', 'Sarımsı, sert, düzgün', 'Beyaz-gri, pütürlü, siyah noktalar içerir'],
+          ['Ağrı tipi', 'Direkt basınca bağlı', 'Kenarlardan sıkıştırmada batıcı ağrı'],
+          ['Yerleşim', 'Basınca maruz bölgeler', 'Ayak tabanı her yerde'],
+          ['Tekrar riski', 'Basınç devam ederse', 'Virüs devam ettiği sürece']
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Nasır ve Siğil Nasıl Ayırt Edilir?'
+      },
+      {
+        type: 'numberedSection',
+        number: 1,
+        title: 'Baskı Testi',
+        content: 'Nasır direkt basınca duyarlıyken, siğil kenarlardan bastığında ağrır. Bu basit test ayrım için önemli ipucu verir.'
+      },
+      {
+        type: 'numberedSection',
+        number: 2,
+        title: 'Görünüm',
+        content: 'Nasır düz ve sert yapıdadır; siğil ise pütürlü görünüme sahiptir ve içinde siyah noktalar barındırabilir.'
+      },
+      {
+        type: 'numberedSection',
+        number: 3,
+        title: 'Yerleşim',
+        content: 'Metatars başı, topuk, parmak arası → nasır; ayak tabanının çeşitli bölgeleri → siğil.'
+      },
+      {
+        type: 'image',
+        src: '/blog-images/nasir-sigil-farklari/kumelesmis-plantar-sigil.webp',
+        alt: 'Ayak tabanında kümelenmiş plantar siğil lezyonları',
+        caption: 'Kümelenmiş plantar siğiller tedavi edilmezse yayılabilir'
+      },
+      {
+        type: 'heading',
+        content: 'Nasır Çeşitleri ve Yerleşim Bölgeleri'
+      },
+      {
+        type: 'bulletList',
+        items: [
+          '<strong>Metatars başı nasırı:</strong> Yürürken batma hissi, dar ayakkabı ile artar',
+          '<strong>Parmak arası yumuşak nasır:</strong> Nemli, beyazımsı, hassas',
+          '<strong>Ayak kenarı nasırı:</strong> Uzun, çizgisel kalınlaşma, yürüyüş bozukluğuna bağlı',
+          '<strong>Topuk nasırı:</strong> Sert zemin ve kurulukla artar',
+          '<strong>Parmak üstü nasır:</strong> Dar ayakkabı ve çekiç parmakta sık görülür'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Evde ve Medikal Tedavi'
+      },
+      {
+        type: 'subheading',
+        content: 'Nasır İçin Ev Bakımı'
+      },
+      {
+        type: 'checkList',
+        items: [
+          'Ilık suda ayak bekletme',
+          'Ponza taşıyla yumuşatma',
+          '<a href="/urun/ureli-krem" class="text-red-600 hover:underline">Üreli krem</a> ile nemlendirme',
+          'Basınç azaltıcı tabanlık veya ayakkabı düzeltmeleri'
+        ]
+      },
+      {
+        type: 'subheading',
+        content: 'Siğil İçin Tedavi'
+      },
+      {
+        type: 'checkList',
+        items: [
+          'Asitli siğil bantları veya solüsyonlar',
+          '<a href="/blog/ayak-hijyeni-ipuclari" class="text-red-600 hover:underline">Hijyen</a> ve ayak kuruluğu kontrolü',
+          '<a href="/blog/medikal-ayak-bakimi-nedir" class="text-red-600 hover:underline">Medikal müdahale</a>: Podolojik temizlik, kriyoterapi veya lazer'
+        ]
+      },
+      {
+        type: 'infoBox',
+        variant: 'warning',
+        title: 'Uyarı',
+        content: 'Evde kesme veya sert müdahale enfeksiyon riski yaratır. Özellikle siğillerde kesici aletlerle müdahale virüsün yayılmasına neden olabilir.'
+      },
+      {
+        type: 'heading',
+        content: 'Ne Zaman Profesyonel Destek Alınmalı?'
+      },
+      {
+        type: 'warningList',
+        items: [
+          'Ağrılı veya derinleşmiş nasır veya siğil',
+          'Diyabet veya dolaşım problemi varsa',
+          'Evde uygulamalar etkisizse',
+          'Siğil yayılıyorsa veya çoğalıyorsa'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Sık Sorulan Sorular'
+      }
+    ],
+    faqs: [
+      {
+        question: 'Nasır ve siğil aynı anda olabilir mi?',
+        answer: 'Evet, aynı ayakta hem mekanik kaynaklı nasır hem de viral kaynaklı siğil birlikte görülebilir. Bu durumda her iki lezyonun ayrı ayrı değerlendirilmesi ve uygun tedavi yaklaşımının belirlenmesi için profesyonel bir değerlendirme önerilir. İki farklı oluşum olduğu için tedavi yöntemleri de farklı uygulanmalıdır.'
+      },
+      {
+        question: 'Siğil bulaşıcı mıdır?',
+        answer: 'Evet, siğiller HPV virüsü kaynaklı olduğu için bulaşıcıdır. Özellikle havuz kenarları, duşlar, spor salonları gibi ortak nemli zeminlerde yalın ayak dolaşmak bulaşma riskini artırır. Aile içinde ortak havlu veya terlik kullanımı da bulaşmaya neden olabilir. Korunmak için ortak alanlarda terlik kullanılmalı ve ayaklar kuru tutulmalıdır.'
+      },
+      {
+        question: 'Evde nasır kesmek güvenli mi?',
+        answer: 'Hayır, evde kesici aletlerle nasır kesmeye çalışmak ciddi enfeksiyon riski taşır. Steril olmayan aletler bakteri girişine neden olabilir, ayrıca yanlış kesim sağlıklı dokuya zarar verebilir. Özellikle diyabet hastaları için bu risk çok daha yüksektir. Profesyonel podolojik müdahale her zaman daha güvenlidir.'
+      },
+      {
+        question: 'Üreli krem siğile etkili mi?',
+        answer: 'Hayır, üreli kremler sadece nasırın yumuşatılması ve kuru cildin nemlendirilmesi için uygundur. Siğil viral kaynaklı bir enfeksiyon olduğu için üre içeren ürünlerle tedavi edilemez. Siğil tedavisi için salisilik asit içeren ürünler veya profesyonel müdahale gerekir.'
+      },
+      {
+        question: 'Nasır tekrarlar mı?',
+        answer: 'Evet, nasır oluşumuna neden olan basınç ve sürtünme faktörleri devam ederse nasır tekrar oluşabilir. Kalıcı çözüm için yanlış ayakkabı kullanımı düzeltilmeli, gerekirse ortopedik tabanlık kullanılmalı ve ayak yapısal problemleri değerlendirilmelidir. Düzenli nemlendirme de tekrarlamayı azaltmaya yardımcı olur.'
+      }
+    ],
+    relatedLinks: [
+      { text: 'Nasır Nedir? Evde Geçer mi?', url: '/blog/nasir-nedir-evde-gecer-mi' },
+      { text: 'Medikal Ayak Bakımı Nedir?', url: '/blog/medikal-ayak-bakimi-nedir' },
+      { text: 'Ayak Hijyeni İpuçları', url: '/blog/ayak-hijyeni-ipuclari' },
+      { text: 'Üreli Krem', url: '/urun/ureli-krem' }
+    ],
+    conclusion: {
+      title: 'Sonuç',
+      content: 'Nasır ve siğil ayakta farklı nedenlere bağlı oluşan lezyonlardır. Nasır mekanik basınç sonucu gelişirken, siğil viral bir enfeksiyondur. Tedavi yöntemleri farklı olduğu için doğru teşhis kritik öneme sahiptir. Basit baskı testi ve görsel inceleme ayırımda yardımcı olabilir, ancak şüphe durumunda profesyonel değerlendirme önerilir.'
+    },
+    disclaimer: 'Bu içerik genel bilgilendirme amaçlıdır ve tıbbi tanı, teşhis veya tedavi yerine geçmez. Herhangi bir sağlık sorunu yaşıyorsanız mutlaka bir sağlık uzmanına danışınız.'
+  },
+  {
     id: 'ayak-mantari-evde-nasil-gecer',
     title: 'Ayak Mantarı Evde Nasıl Geçer? İşe Yarayabilecek Yöntemler ve Yapılan Hatalar',
     slug: 'ayak-mantari-evde-nasil-gecer',

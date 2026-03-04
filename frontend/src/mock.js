@@ -1403,6 +1403,12 @@ export const blogPosts = [
         type: 'relatedArticles',
         articles: [
           {
+            title: 'Nasır Nedir? Evde Geçer mi?',
+            description: 'Nasır neden oluşur, evde geçer mi, ne zaman medikal müdahale gerekir? Detaylı rehber.',
+            link: '/blog/nasir-nedir-evde-gecer-mi',
+            icon: '🦶'
+          },
+          {
             title: 'Üre Nedir ve Kuru Ciltler İçin Neden Mucizevidir?',
             description: 'Dermatolojinin gizli kahramanı ürenin bilimsel temelleri ve ayak bakımındaki kritik rolü.',
             link: '/blog/ure-nedir',

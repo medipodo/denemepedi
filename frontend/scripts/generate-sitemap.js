@@ -88,7 +88,8 @@ const pageCreationDates = {
   'ayak-analizi': '2025-10-01',
   iletisim: '2025-09-01',
   'gizlilik-politikasi': '2025-08-01',
-  'kullanim-sartlari': '2025-08-01'
+  'kullanim-sartlari': '2025-08-01',
+  'sss': '2026-03-03'
 };
 
 // Ürün tarihleri (ürün ekleme tarihleri)

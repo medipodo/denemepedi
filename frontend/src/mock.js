@@ -82,6 +82,348 @@ export const products = [
 // Blog Yazıları
 export const blogPosts = [
   {
+    id: 'nasir-nedir-evde-gecer-mi',
+    title: 'Nasır Nedir? Evde Geçer mi? Ne Zaman Medikal Müdahale Gerekir?',
+    slug: 'nasir-nedir-evde-gecer-mi',
+    excerpt: 'Nasır neden oluşur? Evde geçer mi? Hangi durumlarda medikal ayak bakımı gerekir? Nasır tedavisi ve önleme yöntemleri hakkında detaylı rehber.',
+    metaTitle: 'Nasır Nedir? Evde Geçer mi? | Medikal Müdahale Ne Zaman Gerekir?',
+    metaDescription: 'Nasır neden oluşur? Evde geçer mi? Hangi durumlarda medikal ayak bakımı gerekir? Nasır tedavisi ve önleme yöntemleri hakkında detaylı rehber.',
+    image: '/blog-images/nasir-nedir/nasir-nedir-kapak.webp',
+    date: '4 Mart 2026',
+    readTime: '12 dk',
+    author: 'Podolog Serdar Ceylan',
+    tags: ['Nasır', 'Ayak Sağlığı', 'Kallus', 'Medikal Ayak Bakımı', 'Nasır Tedavisi', 'Topuk Nasırı'],
+    sections: [
+      {
+        type: 'intro',
+        content: 'Ayakta oluşan sert, kalın ve bazen ağrılı deri tabakası çoğu zaman "küçük bir sorun" gibi görülür. Oysa nasır, ayağın maruz kaldığı basınç ve sürtünmeye karşı geliştirdiği savunma mekanizmasıdır. Görmezden gelindiğinde ilerleyebilir, yürüyüş konforunu bozabilir ve kronik hale gelebilir. Bu yazıda nasırın ne olduğunu, neden oluştuğunu, evde geçip geçmeyeceğini ve hangi durumlarda medikal müdahale gerektiğini detaylı şekilde ele alıyoruz.'
+      },
+      {
+        type: 'heading',
+        content: 'Nasır Nedir?'
+      },
+      {
+        type: 'paragraph',
+        content: 'Nasır (kallus), cildin sürekli basınç ve sürtünmeye maruz kalan bölgelerinde koruyucu olarak kalınlaşmasıdır. Genellikle ayak tabanında, topuk bölgesinde, parmak üstlerinde ve parmak aralarında görülür.'
+      },
+      {
+        type: 'paragraph',
+        content: 'Derinin üst tabakasındaki keratin hücreleri yoğunlaşır ve sertleşir. Başlangıçta ağrı yapmayabilir; ancak ilerleyen durumlarda batma, yanma ve hassasiyet oluşabilir.'
+      },
+      {
+        type: 'heading',
+        content: 'Nasır Çeşitleri ve Yerleşim Bölgelerine Göre Özellikleri'
+      },
+      {
+        type: 'paragraph',
+        content: 'Nasır sadece "sert deri" değildir. Oluştuğu bölgeye göre hem yapısı hem verdiği rahatsızlık farklılık gösterebilir. Özellikle ayakta belirli anatomik noktalarda görülen nasırlar daha ağrılı olabilir.'
+      },
+      {
+        type: 'image',
+        src: '/blog-images/nasir-nedir/plantar-nasir.webp',
+        alt: 'Ayak tabanında metatars başlarında oluşan plantar nasır görüntüsü',
+        caption: 'Metatars başlarındaki nasır yürürken batma hissi oluşturur'
+      },
+      {
+        type: 'subheading',
+        content: 'Metatars Başlarındaki Nasır (Ayak Tabanı Ön Bölge)'
+      },
+      {
+        type: 'paragraph',
+        content: 'Metatars başları, ayak tabanının ön kısmında yer alan kemik çıkıntılarıdır. Yürürken vücut ağırlığının önemli bir bölümü bu noktaya biner.'
+      },
+      {
+        type: 'bulletList',
+        title: 'Bu bölgede oluşan nasırlar genellikle:',
+        items: [
+          'Yuvarlak ve serttir',
+          'Yürürken batma hissi oluşturur',
+          'İnce tabanlı ayakkabılarla artış gösterir',
+          'Uzun süre ayakta kalan kişilerde sık görülür'
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: 'Metatars bölgesindeki nasırlar çoğunlukla basınç dağılımı bozukluğuna bağlıdır. Ortopedik destek kullanılmadığında tekrar etme eğilimindedir.'
+      },
+      {
+        type: 'image',
+        src: '/blog-images/nasir-nedir/parmak-arasi-nasir.webp',
+        alt: 'Parmak aralarında oluşan yumuşak nasır (heloma molle) görüntüsü',
+        caption: 'Parmak arası nasırlar nemli ortam nedeniyle beyazımsı ve yumuşaktır'
+      },
+      {
+        type: 'subheading',
+        content: 'Parmak Arası Nasır (Yumuşak Nasır)'
+      },
+      {
+        type: 'paragraph',
+        content: 'Parmak aralarında oluşan nasırlar genellikle nemli ortam nedeniyle beyazımsı ve yumuşaktır. Tıbbi olarak "yumuşak heloma" olarak adlandırılır.'
+      },
+      {
+        type: 'bulletList',
+        title: 'Özellikleri:',
+        items: [
+          'Nemli ve hassas yapı',
+          'Yanma hissi',
+          'Dar ayakkabıyla artan ağrı',
+          'İki parmak arasında sürtünmeye bağlı gelişim'
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: 'Parmak arası nasırlar çoğu zaman çekiç parmak deformitesi veya sıkışık ayakkabı kullanımına bağlıdır.'
+      },
+      {
+        type: 'subheading',
+        content: 'Ayak Kenarı Nasırı'
+      },
+      {
+        type: 'paragraph',
+        content: 'Ayak iç kenarı (medial) veya dış kenarında (lateral) görülebilir. Genellikle yürüyüş bozukluğu veya yanlış basma alışkanlığı ile ilişkilidir.'
+      },
+      {
+        type: 'bulletList',
+        title: 'Bu tip nasırlar:',
+        items: [
+          'Uzun ve çizgisel kalınlaşma şeklindedir',
+          'Sporcularda daha sık görülür',
+          'Yanlış taban desteğiyle artabilir'
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: 'Ayak kenarında oluşan nasırlar genellikle yaygın kallus formundadır ve erken müdahale edilmezse kalın tabaka haline gelebilir.'
+      },
+      {
+        type: 'subheading',
+        content: 'Topuk Nasırı'
+      },
+      {
+        type: 'paragraph',
+        content: 'Topuk bölgesinde görülen nasırlar genellikle yaygın kalınlaşma şeklindedir. Kuruluk eşlik ediyorsa çatlak oluşabilir.'
+      },
+      {
+        type: 'bulletList',
+        items: [
+          'Sert zemin üzerinde uzun süre kalmak',
+          'Fazla kilo',
+          'Nem eksikliği'
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: 'topuk nasırının temel nedenlerindendir.'
+      },
+      {
+        type: 'image',
+        src: '/blog-images/nasir-nedir/parmak-ustu-nasir.webp',
+        alt: 'Ayak parmağı üstünde oluşan nasır ve çekirdekli nasır görüntüsü',
+        caption: 'Parmak üstü nasırları dar ayakkabı basıncına bağlı gelişir'
+      },
+      {
+        type: 'subheading',
+        content: 'Parmak Üstü Nasırı'
+      },
+      {
+        type: 'paragraph',
+        content: 'Genellikle dar ayakkabının parmak üstüne baskı yapması sonucu oluşur.'
+      },
+      {
+        type: 'bulletList',
+        items: [
+          'Küçük ama derin olabilir',
+          'Ortasında çekirdek gelişebilir',
+          'Çekiç parmak deformitesiyle sık görülür'
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: 'Bu tip nasırlar basınç devam ettiği sürece ilerleme eğilimindedir.'
+      },
+      {
+        type: 'infoBox',
+        variant: 'tip',
+        title: 'Önemli Nokta',
+        content: 'Nasırın yeri bize sebep hakkında ipucu verir: Metatars başı → basınç dağılım sorunu, Parmak arası → sürtünme + nem, Ayak kenarı → yanlış basma, Topuk → kuruluk + yük, Parmak üstü → dar ayakkabı. Bu nedenle nasır tedavisinde sadece temizleme değil, basınç analizi ve ayak değerlendirmesi gerekir.'
+      },
+      {
+        type: 'heading',
+        content: 'Nasır Neden Oluşur?'
+      },
+      {
+        type: 'numberedSection',
+        number: 1,
+        title: 'Yanlış Ayakkabı Seçimi',
+        content: 'Dar, sert veya ayağın anatomisine uygun olmayan ayakkabılar belirli noktalara fazla yük bindirir.'
+      },
+      {
+        type: 'numberedSection',
+        number: 2,
+        title: 'Ayak Yapısal Problemleri',
+        content: 'Düz tabanlık, yüksek kavis veya çekiç parmak gibi durumlar basınç dağılımını bozar.'
+      },
+      {
+        type: 'numberedSection',
+        number: 3,
+        title: 'Uzun Süre Ayakta Kalmak',
+        content: 'Özellikle aktif çalışan kişilerde sık görülür.'
+      },
+      {
+        type: 'numberedSection',
+        number: 4,
+        title: 'Cilt Kuruluğu',
+        content: 'Kuruyan deri elastikiyetini kaybeder ve kalınlaşmaya daha yatkın hale gelir. Bu nedenle düzenli nemlendirme önemlidir. Özellikle <a href="/blog/ure-nedir" class="text-red-600 hover:underline">üre içeren kremler</a> bu noktada destekleyicidir.'
+      },
+      {
+        type: 'heading',
+        content: 'Nasır Çeşitleri'
+      },
+      {
+        type: 'subheading',
+        content: 'Sert Nasır'
+      },
+      {
+        type: 'paragraph',
+        content: 'Genellikle ortasında yoğun bir çekirdek bulunur ve bastıkça ağrı yapar.'
+      },
+      {
+        type: 'subheading',
+        content: 'Yumuşak Nasır'
+      },
+      {
+        type: 'paragraph',
+        content: 'Parmak aralarında görülür. Nemli yapısı nedeniyle hassastır.'
+      },
+      {
+        type: 'subheading',
+        content: 'Yaygın Nasır (Kallus)'
+      },
+      {
+        type: 'paragraph',
+        content: 'Topuk ve ayak tabanında geniş alana yayılan kalınlaşma şeklindedir.'
+      },
+      {
+        type: 'heading',
+        content: 'Nasır Evde Geçer mi?'
+      },
+      {
+        type: 'paragraph',
+        content: 'Yeni oluşmuş ve yüzeysel nasırlarda ev bakımı destekleyici olabilir:'
+      },
+      {
+        type: 'checkList',
+        items: [
+          'Ilık su banyosu',
+          'Yüzeysel ponza taşı uygulaması',
+          'Düzenli nemlendirme',
+          'Basıncı azaltan ayakkabı kullanımı'
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: 'Ancak önemli olan sadece kalınlığı azaltmak değil, sebebi ortadan kaldırmaktır. Derin, ağrılı ve çekirdekli nasırlar ev uygulamalarıyla tamamen geçmeyebilir.'
+      },
+      {
+        type: 'infoBox',
+        variant: 'tip',
+        title: 'Cilt Bariyerini Koruyun',
+        content: 'Nasır oluşumunu önlemede düzenli nemlendirme çok önemlidir.',
+        link: '/urun/ureli-krem'
+      },
+      {
+        type: 'image',
+        src: '/blog-images/nasir-nedir/nasir-tedavisi.webp',
+        alt: 'Profesyonel medikal ayak bakımı ile nasır tedavisi uygulaması',
+        caption: 'Medikal ayak bakımında steril ekipmanlar ve freze cihazı kullanılır'
+      },
+      {
+        type: 'heading',
+        content: 'Ne Zaman Medikal Müdahale Gerekir?'
+      },
+      {
+        type: 'paragraph',
+        content: 'Aşağıdaki durumlarda <a href="/blog/medikal-ayak-bakimi-nedir" class="text-red-600 hover:underline">profesyonel ayak bakımı</a> önerilir:'
+      },
+      {
+        type: 'warningList',
+        items: [
+          'Yürürken batma ve zonklama varsa',
+          'Nasırın ortasında sert çekirdek oluşmuşsa',
+          'Tekrar ediyorsa',
+          'Diyabet gibi sistemik hastalık varsa',
+          'Ev bakımı sonuç vermiyorsa'
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: 'Medikal ayak bakımında steril ekipmanlar ve freze cihazı ile kontrollü temizlik yapılır. Amaç sadece yüzeyi almak değil, basınç noktasını doğru şekilde azaltmaktır.'
+      },
+      {
+        type: 'heading',
+        content: 'Nasır ile Siğil Arasındaki Fark'
+      },
+      {
+        type: 'bulletList',
+        items: [
+          'Nasır basınca bağlıdır.',
+          'Siğil viral kökenlidir.',
+          'Siğilde siyah noktalar görülebilir.',
+          'Nasır direkt bastırınca ağrır; siğil yanlardan sıkıştırıldığında hassastır.'
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: 'Doğru teşhis doğru tedavi için kritiktir.'
+      },
+      {
+        type: 'infoBox',
+        variant: 'warning',
+        title: 'Nasır mı Siğil mi?',
+        content: 'Ayak tabanındaki lezyonların nasır mı siğil mi olduğunu ayırt etmek için detaylı rehberimizi inceleyin.',
+        link: '/blog/nasir-sigil-farklari'
+      },
+      {
+        type: 'heading',
+        content: 'Sık Sorulan Sorular'
+      }
+    ],
+    faqs: [
+      {
+        question: 'Nasırın kökü var mı?',
+        answer: 'Nasırın kök gibi yayılan bir yapısı yoktur. Ancak merkezde sertleşmiş bir çekirdek bulunabilir. Bu yapı derinleştiğinde ağrı artabilir.'
+      },
+      {
+        question: 'Nasır bandı kullanmak güvenli mi?',
+        answer: 'Asitli bantlar yüzey dokuyu yakarak inceltir. Yanlış kullanım sağlıklı dokunun zarar görmesine yol açabilir. Özellikle diyabet hastalarında önerilmez.'
+      },
+      {
+        question: 'Nasır kesilir mi?',
+        answer: 'Evde kesici aletle müdahale edilmesi enfeksiyon riskini artırır. Profesyonel uygulama dışında önerilmez.'
+      },
+      {
+        question: 'Nasır tamamen geçer mi?',
+        answer: 'Sebep ortadan kaldırılırsa kontrol altına alınabilir. Ancak basınç devam ederse tekrar edebilir.'
+      },
+      {
+        question: 'Nasır neden sürekli tekrarlar?',
+        answer: 'Yanlış ayakkabı, ortopedik destek eksikliği veya ayak yapısal problemi devam ediyorsa nasır yeniden oluşabilir.'
+      }
+    ],
+    relatedLinks: [
+      { text: 'Üre Nedir?', url: '/blog/ure-nedir' },
+      { text: 'Medikal Ayak Bakımı Nedir?', url: '/blog/medikal-ayak-bakimi-nedir' },
+      { text: 'Ayak Hijyeni İpuçları', url: '/blog/ayak-hijyeni-ipuclari' },
+      { text: 'Nasır Siğil Farkları', url: '/blog/nasir-sigil-farklari' },
+      { text: 'Üreli Krem', url: '/urun/ureli-krem' }
+    ],
+    conclusion: {
+      title: 'Sonuç',
+      content: 'Nasır, ayağın basınca karşı oluşturduğu doğal bir savunma mekanizmasıdır. Hafif vakalarda ev bakımı destekleyici olabilir, ancak tekrarlayan, derin veya ağrılı nasırlarda profesyonel değerlendirme önemlidir. Doğru ayakkabı seçimi, düzenli nemlendirme ve gerektiğinde medikal ayak bakımı ile nasır kontrol altına alınabilir.'
+    },
+    disclaimer: 'Bu içerik genel bilgilendirme amaçlıdır ve tıbbi tanı, teşhis veya tedavi yerine geçmez. Herhangi bir sağlık sorunu yaşıyorsanız mutlaka bir sağlık uzmanına danışınız.'
+  },
+  {
     id: 'ayak-mantari-evde-nasil-gecer',
     title: 'Ayak Mantarı Evde Nasıl Geçer? İşe Yarayabilecek Yöntemler ve Yapılan Hatalar',
     slug: 'ayak-mantari-evde-nasil-gecer',

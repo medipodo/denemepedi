@@ -34,28 +34,66 @@ const BlogTirnakMantariNedenGecmez = () => {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Tırnak Mantarı Neden Geçmez? (7 Kritik Sebep) | PediZone Blog</title>
-        <meta name="description" content="Tırnak mantarı neden aylarca geçmez? En sık yapılan hataları ve doğru bakım yöntemlerini öğrenin." />
+        {/* Primary Meta Tags */}
+        <title>Tırnak Mantarı Neden Geçmez? 7 Kritik Hata ve Çözümleri | PediZone</title>
+        <meta name="title" content="Tırnak Mantarı Neden Geçmez? 7 Kritik Hata ve Çözümleri | PediZone" />
+        <meta name="description" content="Tırnak mantarı neden aylarca geçmez? Podolog uzmanından: en sık yapılan 7 kritik hata, doğru bakım yöntemleri ve etkili tedavi önerileri. Hemen okuyun!" />
+        <meta name="keywords" content="tırnak mantarı, tırnak mantarı tedavisi, tırnak mantarı neden geçmez, onikomikoz, ayak mantarı, tırnak bakımı, mantar tedavisi, podoloji" />
+        <meta name="author" content="Podolog Serdar Ceylan" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://pedizone.com/blog/tirnak-mantari-neden-gecmez" />
         
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://pedizone.com/blog/tirnak-mantari-neden-gecmez" />
+        <meta property="og:title" content="Tırnak Mantarı Neden Geçmez? 7 Kritik Hata ve Çözümleri" />
+        <meta property="og:description" content="Tırnak mantarı neden aylarca geçmez? En sık yapılan 7 kritik hata ve doğru bakım yöntemlerini podolog uzmanından öğrenin." />
+        <meta property="og:image" content="https://pedizone.com/images/blog/tirnak-mantari-neden-gecmez/tirnak-mantari-neden-gecmez.webp" />
+        <meta property="og:locale" content="tr_TR" />
+        <meta property="og:site_name" content="PediZone" />
+        <meta property="article:published_time" content="2026-03-18" />
+        <meta property="article:author" content="Podolog Serdar Ceylan" />
+        <meta property="article:section" content="Ayak Sağlığı" />
+        <meta property="article:tag" content="Tırnak Mantarı" />
+        <meta property="article:tag" content="Ayak Bakımı" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://pedizone.com/blog/tirnak-mantari-neden-gecmez" />
+        <meta name="twitter:title" content="Tırnak Mantarı Neden Geçmez? 7 Kritik Hata" />
+        <meta name="twitter:description" content="Tırnak mantarı neden aylarca geçmez? En sık yapılan hataları ve doğru bakım yöntemlerini öğrenin." />
+        <meta name="twitter:image" content="https://pedizone.com/images/blog/tirnak-mantari-neden-gecmez/tirnak-mantari-neden-gecmez.webp" />
+
         {/* Article Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Tırnak Mantarı Neden Geçmez? En Sık Yapılan 7 Kritik Hata",
-            "description": "Tırnak mantarı neden aylarca geçmez? En sık yapılan hataları ve doğru bakım yöntemlerini öğrenin.",
-            "image": "https://pedizone.com/images/blog/tirnak-mantari-neden-gecmez/tirnak-mantari-neden-gecmez.webp",
+            "description": "Tırnak mantarı neden aylarca geçmez? En sık yapılan 7 kritik hata ve doğru bakım yöntemlerini podolog uzmanından öğrenin.",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://pedizone.com/images/blog/tirnak-mantari-neden-gecmez/tirnak-mantari-neden-gecmez.webp",
+              "width": 1200,
+              "height": 630
+            },
             "author": {
               "@type": "Person",
-              "name": "Podolog Serdar Ceylan"
+              "name": "Podolog Serdar Ceylan",
+              "jobTitle": "Podolog",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "PediZone"
+              }
             },
             "publisher": {
               "@type": "Organization",
               "name": "PediZone",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://pedizone.com/logo.png"
+                "url": "https://pedizone.com/logo.png",
+                "width": 200,
+                "height": 60
               }
             },
             "datePublished": "2026-03-18",
@@ -63,7 +101,37 @@ const BlogTirnakMantariNedenGecmez = () => {
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": "https://pedizone.com/blog/tirnak-mantari-neden-gecmez"
-            }
+            },
+            "articleSection": "Ayak Sağlığı",
+            "keywords": "tırnak mantarı, tırnak mantarı tedavisi, onikomikoz, ayak mantarı, tırnak bakımı"
+          })}
+        </script>
+
+        {/* BreadcrumbList Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Ana Sayfa",
+                "item": "https://pedizone.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://pedizone.com/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Tırnak Mantarı Neden Geçmez?",
+                "item": "https://pedizone.com/blog/tirnak-mantari-neden-gecmez"
+              }
+            ]
           })}
         </script>
 
@@ -80,6 +148,28 @@ const BlogTirnakMantariNedenGecmez = () => {
                 "text": faq.answer
               }
             }))
+          })}
+        </script>
+
+        {/* MedicalWebPage Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalWebPage",
+            "about": {
+              "@type": "MedicalCondition",
+              "name": "Onikomikoz (Tırnak Mantarı)",
+              "alternateName": "Tırnak Mantarı"
+            },
+            "lastReviewed": "2026-03-18",
+            "medicalAudience": {
+              "@type": "MedicalAudience",
+              "audienceType": "Patient"
+            },
+            "specialty": {
+              "@type": "MedicalSpecialty",
+              "name": "Podoloji"
+            }
           })}
         </script>
       </Helmet>

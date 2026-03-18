@@ -61,6 +61,7 @@ export const LanguageProvider = ({ children }) => {
     getAlternateUrls,
     languageInfo: LANGUAGE_INFO[currentLang],
     hasContent: true
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }), [currentLang, slug, location.pathname]);
 
   return (

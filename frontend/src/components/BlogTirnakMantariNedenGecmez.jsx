@@ -107,7 +107,7 @@ const BlogTirnakMantariNedenGecmez = () => {
             <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-8">
               <span className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
-                26 Aralık 2025
+                18 Mart 2026
               </span>
               <span className="flex items-center">
                 <Clock className="w-4 h-4 mr-2" />
@@ -115,7 +115,7 @@ const BlogTirnakMantariNedenGecmez = () => {
               </span>
               <span className="flex items-center">
                 <User className="w-4 h-4 mr-2" />
-                Podolog
+                Podolog Serdar Ceylan
               </span>
             </div>
 

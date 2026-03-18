@@ -88,7 +88,7 @@ export const blogPosts = [
     slug: 'tirnak-mantari-neden-gecmez',
     excerpt: 'Tırnak mantarı neden aylarca geçmez? En sık yapılan hataları ve doğru bakım yöntemlerini öğrenin.',
     image: blogTirnakMantariNedenGecmez,
-    date: '26 Aralık 2025',
+    date: '18 Mart 2026',
     readTime: '8 dk',
     author: 'Podolog Serdar Ceylan',
     tags: ['Tırnak Mantarı', 'Ayak Bakımı', 'Mantar Tedavisi'],

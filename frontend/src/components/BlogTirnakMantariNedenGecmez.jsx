@@ -1,7 +1,7 @@
 import React from 'react';
 import LocalizedLink from './LocalizedLink';
 import { Helmet } from 'react-helmet-async';
-import { Calendar, Clock, User, ChevronRight, CheckCircle, AlertTriangle, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
+import { Calendar, Clock, User, ChevronRight, CheckCircle, AlertTriangle, ArrowRight, ChevronDown, ChevronUp, Share2 } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
 
@@ -193,28 +193,60 @@ const BlogTirnakMantariNedenGecmez = () => {
       <section className="py-8 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
-              <span className="flex items-center gap-1">
-                <Calendar className="w-4 h-4" />
-                18 Mart 2026
-              </span>
-              <span className="flex items-center gap-1">
-                <Clock className="w-4 h-4" />
-                8 dk okuma
-              </span>
-              <span className="flex items-center gap-1">
-                <User className="w-4 h-4" />
-                Podolog Serdar Ceylan
-              </span>
+            {/* Tags */}
+            <div className="flex flex-wrap gap-2 mb-4">
+              <span className="px-3 py-1 text-sm bg-red-50 text-red-600 rounded-full border border-red-200">Tırnak Mantarı</span>
+              <span className="px-3 py-1 text-sm bg-red-50 text-red-600 rounded-full border border-red-200">Ayak Bakımı</span>
+              <span className="px-3 py-1 text-sm bg-red-50 text-red-600 rounded-full border border-red-200">Mantar Tedavisi</span>
             </div>
-            
+
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Tırnak Mantarı Neden Geçmez? En Sık Yapılan 7 Kritik Hata
             </h1>
-            
-            <p className="text-xl text-gray-600 leading-relaxed mb-8">
-              Tırnak mantarı yaşayan birçok kişi aynı soruyu sorar: <strong>"Aylar geçti ama neden hâlâ geçmedi?"</strong> Aslında sorun çoğu zaman mantarın kendisi değil, yanlış yaklaşımdır.
-            </p>
+
+            {/* Author, Date, Read Time, Share */}
+            <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
+              <div className="flex items-center gap-4">
+                {/* Author Avatar */}
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center">
+                    <User className="w-5 h-5 text-red-600" />
+                  </div>
+                  <span className="font-medium text-gray-900">Podolog Serdar Ceylan</span>
+                </div>
+                
+                {/* Date */}
+                <div className="flex items-center gap-1.5 text-gray-500">
+                  <Calendar className="w-4 h-4" />
+                  <span>18 Mart 2026</span>
+                </div>
+                
+                {/* Read Time */}
+                <div className="flex items-center gap-1.5 text-gray-500">
+                  <Clock className="w-4 h-4" />
+                  <span>8 dk okuma</span>
+                </div>
+              </div>
+
+              {/* Share Button */}
+              <button 
+                onClick={() => {
+                  if (navigator.share) {
+                    navigator.share({
+                      title: 'Tırnak Mantarı Neden Geçmez?',
+                      url: window.location.href
+                    });
+                  } else {
+                    navigator.clipboard.writeText(window.location.href);
+                    alert('Link kopyalandı!');
+                  }
+                }}
+                className="flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-red-600 border border-gray-200 rounded-full hover:border-red-200 transition-colors"
+              >
+                <Share2 className="w-4 h-4" />
+                <span>Paylaş</span>
+              </button>
+            </div>
 
             {/* Kapak Görseli */}
             <div className="rounded-2xl overflow-hidden shadow-xl mb-8">
@@ -224,6 +256,10 @@ const BlogTirnakMantariNedenGecmez = () => {
                 className="w-full object-cover"
               />
             </div>
+
+            <p className="text-xl text-gray-600 leading-relaxed mb-4">
+              Tırnak mantarı yaşayan birçok kişi aynı soruyu sorar: <strong>"Aylar geçti ama neden hâlâ geçmedi?"</strong> Aslında sorun çoğu zaman mantarın kendisi değil, yanlış yaklaşımdır.
+            </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
               Tırnak mantarı çoğu zaman tek başına ortaya çıkmaz. Özellikle ayak mantarı ile birlikte görülebilir. Eğer bu farkı bilmiyorsan <LocalizedLink to="/blog/ayak-mantari-mi-egzama-mi" className="text-red-600 hover:text-red-700 font-semibold">ayak mantarı mı egzama mı</LocalizedLink> yazısına da göz atabilirsin.

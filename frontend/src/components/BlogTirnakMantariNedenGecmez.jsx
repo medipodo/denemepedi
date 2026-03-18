@@ -1,7 +1,7 @@
 import React from 'react';
 import LocalizedLink from './LocalizedLink';
 import { Helmet } from 'react-helmet-async';
-import { Calendar, Clock, User, ChevronRight, CheckCircle, AlertTriangle, ArrowRight, ChevronDown, ChevronUp, Share2 } from 'lucide-react';
+import { Calendar, Clock, User, CheckCircle, AlertTriangle, ArrowRight, ChevronDown, ChevronUp, Share2 } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
 
@@ -175,59 +175,51 @@ const BlogTirnakMantariNedenGecmez = () => {
       </Helmet>
 
       {/* Breadcrumb */}
-      <section className="pt-24 pb-4 bg-gray-50">
+      <section className="pt-20 md:pt-24 pb-6 md:pb-8 bg-gradient-to-br from-gray-50 via-white to-red-50/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <nav className="flex items-center space-x-2 text-sm text-gray-600">
-              <LocalizedLink to="/" className="hover:text-red-600">Ana Sayfa</LocalizedLink>
-              <ChevronRight className="w-4 h-4" />
-              <LocalizedLink to="/blog" className="hover:text-red-600">Blog</LocalizedLink>
-              <ChevronRight className="w-4 h-4" />
-              <span className="text-gray-900 font-medium">Tırnak Mantarı Neden Geçmez?</span>
+            {/* Breadcrumb */}
+            <nav className="flex items-center space-x-2 text-sm text-gray-500 mt-0 mb-2">
+              <LocalizedLink to="/" className="hover:text-red-600 transition-colors">Ana Sayfa</LocalizedLink>
+              <span className="text-gray-300">/</span>
+              <LocalizedLink to="/blog" className="hover:text-red-600 transition-colors">Blog</LocalizedLink>
+              <span className="text-gray-300">/</span>
+              <span className="text-gray-700 font-medium truncate max-w-[200px]">Tırnak Mantarı Neden...</span>
             </nav>
-          </div>
-        </div>
-      </section>
 
-      {/* Hero */}
-      <section className="py-8 bg-gradient-to-b from-gray-50 to-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
             {/* Tags */}
-            <div className="flex flex-wrap gap-2 mb-4">
-              <span className="px-3 py-1 text-sm bg-red-50 text-red-600 rounded-full border border-red-200">Tırnak Mantarı</span>
-              <span className="px-3 py-1 text-sm bg-red-50 text-red-600 rounded-full border border-red-200">Ayak Bakımı</span>
-              <span className="px-3 py-1 text-sm bg-red-50 text-red-600 rounded-full border border-red-200">Mantar Tedavisi</span>
+            <div className="flex flex-wrap gap-2 mt-0 mb-3">
+              <span className="bg-red-50 text-red-600 border border-red-200 font-medium px-3 py-1 rounded-md text-sm">Tırnak Mantarı</span>
+              <span className="bg-red-50 text-red-600 border border-red-200 font-medium px-3 py-1 rounded-md text-sm">Ayak Bakımı</span>
+              <span className="bg-red-50 text-red-600 border border-red-200 font-medium px-3 py-1 rounded-md text-sm">Mantar Tedavisi</span>
             </div>
 
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            {/* Title */}
+            <h1 className="text-2xl md:text-4xl lg:text-[2.75rem] font-bold text-gray-900 mt-0 mb-2 leading-[1.2]">
               Tırnak Mantarı Neden Geçmez? En Sık Yapılan 7 Kritik Hata
             </h1>
 
-            {/* Author, Date, Read Time, Share */}
-            <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
-              <div className="flex items-center gap-4">
-                {/* Author Avatar */}
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center">
-                    <User className="w-5 h-5 text-red-600" />
+            {/* Meta Info Bar */}
+            <div className="flex flex-wrap items-center justify-between gap-4 py-3 border-y border-gray-100 mb-0">
+              <div className="flex flex-wrap items-center gap-5 text-gray-600">
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mr-3 shadow-sm">
+                    <User size={18} className="text-white" />
                   </div>
-                  <span className="font-medium text-gray-900">Podolog Serdar Ceylan</span>
+                  <div>
+                    <span className="font-semibold text-gray-900 block text-sm">Podolog Serdar Ceylan</span>
+                  </div>
                 </div>
-                
-                {/* Date */}
-                <div className="flex items-center gap-1.5 text-gray-500">
-                  <Calendar className="w-4 h-4" />
+                <div className="flex items-center text-sm">
+                  <Calendar size={16} className="mr-2 text-red-500" />
                   <span>18 Mart 2026</span>
                 </div>
-                
-                {/* Read Time */}
-                <div className="flex items-center gap-1.5 text-gray-500">
-                  <Clock className="w-4 h-4" />
+                <div className="flex items-center text-sm">
+                  <Clock size={16} className="mr-2 text-red-500" />
                   <span>8 dk okuma</span>
                 </div>
               </div>
-
+              
               {/* Share Button */}
               <button 
                 onClick={() => {
@@ -241,22 +233,36 @@ const BlogTirnakMantariNedenGecmez = () => {
                     alert('Link kopyalandı!');
                   }
                 }}
-                className="flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-red-600 border border-gray-200 rounded-full hover:border-red-200 transition-colors"
+                className="hidden md:flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors text-sm font-medium text-gray-700"
               >
-                <Share2 className="w-4 h-4" />
-                <span>Paylaş</span>
+                <Share2 size={16} />
+                Paylaş
               </button>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Kapak Görseli */}
-            <div className="rounded-2xl overflow-hidden shadow-xl mb-8">
+      {/* Featured Image */}
+      <section className="py-2 md:py-4">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src="/images/blog/tirnak-mantari-neden-gecmez/tirnak-mantari-neden-gecmez.webp" 
                 alt="Tırnak Mantarı Neden Geçmez?" 
-                className="w-full object-cover"
+                className="w-full aspect-[16/9] object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
+          </div>
+        </div>
+      </section>
 
+      {/* Intro */}
+      <section className="py-6">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-600 leading-relaxed mb-4">
               Tırnak mantarı yaşayan birçok kişi aynı soruyu sorar: <strong>"Aylar geçti ama neden hâlâ geçmedi?"</strong> Aslında sorun çoğu zaman mantarın kendisi değil, yanlış yaklaşımdır.
             </p>

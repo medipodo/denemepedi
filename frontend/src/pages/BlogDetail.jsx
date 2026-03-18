@@ -13,6 +13,7 @@ import BlogUreNedir from '../components/BlogUreNedir';
 import BlogAyakMantariEN from '../components/BlogAyakMantariEN';
 import BlogTirnakMantariEN from '../components/BlogTirnakMantariEN';
 import BlogTirnakMantariNedenGecmez from '../components/BlogTirnakMantariNedenGecmez';
+import BlogAyakMantariBaslangici from '../components/BlogAyakMantariBaslangici';
 import LocalizedLink from '../components/LocalizedLink';
 import { useLanguage } from '../i18n/LanguageContext';
 
@@ -44,6 +45,11 @@ const BlogDetail = () => {
   // Tırnak mantarı neden geçmez blogu
   if (slug === 'tirnak-mantari-neden-gecmez') {
     return <BlogTirnakMantariNedenGecmez />;
+  }
+
+  // Ayak mantarı başlangıcı blogu
+  if (slug === 'ayak-mantari-baslangici-nasil-anlasilir') {
+    return <BlogAyakMantariBaslangici />;
   }
 
   const handleCopyLink = () => {

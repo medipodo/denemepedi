@@ -16,6 +16,7 @@ import blogAyakHijyeni from './assets/blog/ayak-hijyeni-blog.webp';
 // Üre blogu kapak görseli - public klasöründen
 const blogUreNedir = '/blog-images/ure-nedir/ure-kapak.webp';
 const blogTirnakMantariNedenGecmez = '/images/blog/tirnak-mantari-neden-gecmez/tirnak-mantari-neden-gecmez.webp';
+const blogAyakMantariBaslangici = '/images/blog/ayak-mantari-baslangici-nasil-anlasilir/ayak-mantari-belirtileri.webp';
 
 // Ayak mantarı blog görselleri
 import ayakParmakArasiMantar from './assets/blog/ayak-mantari/ayak-parmak-arasi-mantar.jpg';
@@ -82,6 +83,18 @@ export const products = [
 
 // Blog Yazıları
 export const blogPosts = [
+  {
+    id: 'ayak-mantari-baslangici-nasil-anlasilir',
+    title: 'Ayak Mantarı Başlangıcı Nasıl Anlaşılır? Erken Belirtiler ve Dikkat Edilmesi Gerekenler',
+    slug: 'ayak-mantari-baslangici-nasil-anlasilir',
+    excerpt: 'Ayak mantarı nasıl başlar? İlk belirtiler nelerdir? Parmak arası kaşıntı, kızarıklık ve pullanma gibi erken evreleri tanıyın.',
+    image: blogAyakMantariBaslangici,
+    date: '18 Mart 2026',
+    readTime: '10 dk',
+    author: 'Podolog Serdar Ceylan',
+    tags: ['Ayak Mantarı', 'Ayak Sağlığı', 'Erken Teşhis'],
+    isCustomComponent: true
+  },
   {
     id: 'tirnak-mantari-neden-gecmez',
     title: 'Tırnak Mantarı Neden Geçmez? En Sık Yapılan 7 Kritik Hata',

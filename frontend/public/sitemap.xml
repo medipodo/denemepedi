@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   
   <!-- Ana Sayfa -->
   <url>
@@ -23,84 +24,132 @@
     <lastmod>2026-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/images/blog/ayak-mantari-baslangici-nasil-anlasilir/ayak-mantari-belirtileri.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://pedizone.com/images/blog/ayak-mantari-baslangici-nasil-anlasilir/ayak-kasintisi.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://pedizone.com/blog/tirnak-mantari-neden-gecmez</loc>
     <lastmod>2026-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/images/blog/tirnak-mantari-neden-gecmez/tirnak-mantari-neden-gecmez.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://pedizone.com/images/blog/tirnak-mantari-neden-gecmez/tirnak-mantari-neden-olur.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://pedizone.com/blog/nasir-nedir-evde-gecer-mi</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/blog-images/nasir-nedir/nasir-nedir-kapak.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://pedizone.com/blog/nasir-sigil-farklari</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/blog-images/nasir-sigil-farklari/nasir-sigil-kapak.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://pedizone.com/blog/ayak-mantari-evde-nasil-gecer</loc>
     <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/blog-images/ayak-mantari-evde/ayak-mantari-evde-gecer-mi-kapak-gorseli.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://pedizone.com/blog/ayak-mantari-mi-egzama-mi</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/blog-images/ayak-mantari-egzama/mantar-mi-egzama-mi-kapak-gorseli.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://pedizone.com/blog/ayak-mantari-neden-tekrarlar</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/blog-images/ayak-mantari-tekrar/ayakmantari-neden-tekrarlar.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://pedizone.com/blog/ure-nedir</loc>
     <lastmod>2025-12-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/blog-images/ure-nedir/ure-kapak.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://pedizone.com/blog/medikal-ayak-bakimi-nedir</loc>
     <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/blog-images/medikal-ayak-bakimi/medikal-ayak-bakimi.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://pedizone.com/blog/ayak-mantari-nedir</loc>
     <lastmod>2025-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/blog-images/ayak-parmak-arasi-mantar.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://pedizone.com/blog/tirnak-mantari-cesitleri</loc>
     <lastmod>2025-12-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/blog-images/tirnak-mantari/tirnak-mantari-cesitleri.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://pedizone.com/blog/serum-kullanim-onemi</loc>
     <lastmod>2025-12-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/blog-images/serum-kullanimi/pedizone-serum-kullanimi.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://pedizone.com/blog/ayak-kokusu-nedenleri</loc>
     <lastmod>2025-12-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/blog-images/ayak-kokusu/ayak-kokusu-blog.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://pedizone.com/blog/ayak-hijyeni-ipuclari</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/blog-images/ayak-hijyeni/ayak-hijyeni-blog.webp</image:loc>
+    </image:image>
   </url>
 
   <!-- Ürün Sayfaları -->
@@ -109,18 +158,36 @@
     <lastmod>2025-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/assets/pedizone-serum-card.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://pedizone.com/assets/pedizone-serum-main.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://pedizone.com/urun/temizleme-kopugu</loc>
     <lastmod>2025-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/assets/pedizone-kopuk-card.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://pedizone.com/assets/pedizone-foot-foam.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://pedizone.com/urun/ureli-krem</loc>
     <lastmod>2025-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/assets/pedizone-krem-card.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://pedizone.com/assets/pedizone-catlaktopuk-kremi.webp</image:loc>
+    </image:image>
   </url>
 
   <!-- Sertifikalar -->
@@ -129,6 +196,15 @@
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/documents/pedizone-gs1-sertifika.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://pedizone.com/documents/pedizone-klinik-test-sonuclari-seo.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://pedizone.com/documents/pedizone-laboratuvar-test-sonuclari-seo.png</image:loc>
+    </image:image>
   </url>
 
   <!-- Bayiler -->
@@ -177,14 +253,6 @@
     <lastmod>2025-08-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-  </url>
-
-  <!-- Sık Sorulan Sorular -->
-  <url>
-    <loc>https://pedizone.com/sss</loc>
-    <lastmod>2026-03-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 
 </urlset>

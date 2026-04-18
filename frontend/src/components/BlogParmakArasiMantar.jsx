@@ -476,6 +476,26 @@ const BlogParmakArasiMantar = () => {
               </p>
             </div>
 
+            {/* Klinik Örnek Vaka */}
+            <div className="mb-8">
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                <span className="inline-block w-2 h-6 bg-red-600 rounded"></span>
+                Klinik Örnek Vaka: İnterdigital Tinea Pedis
+              </h3>
+              <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+                <img
+                  src="/images/blog/parmak-arasi-mantar-nasil-gecer/klinik-ornek-vaka-interdigital-tinea-pedis.webp"
+                  alt="Klinik Örnek Vaka- İnterdigital tinea pedis Parmak arasında mantar; beyazlaşmış, yumuşamış (macerasyon), çatlakyarık ve iltihaplı doku görünüyor."
+                  title="Klinik Örnek Vaka - İnterdigital tinea pedis: beyazlaşma, macerasyon, çatlak ve iltihaplı doku"
+                  loading="lazy"
+                  className="w-full object-cover"
+                />
+                <figcaption className="bg-gray-50 px-4 py-3 text-sm text-gray-600 italic border-t border-gray-200">
+                  <strong className="not-italic text-gray-800">Klinik Örnek Vaka – İnterdigital Tinea Pedis:</strong> Parmak arasında mantar; beyazlaşmış, yumuşamış (macerasyon), çatlak-yarık ve iltihaplı doku görünüyor. Bu tablo, parmak arası mantarın ileri evre tipik bulgularını birlikte gösterir.
+                </figcaption>
+              </div>
+            </div>
+
             {/* Kaşıntı görseli */}
             <div className="rounded-2xl overflow-hidden shadow-lg mb-4">
               <img

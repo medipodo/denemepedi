@@ -345,7 +345,7 @@ const BlogAyakMantariBaslangici = () => {
                     <div className="space-y-2">
                       <p className="flex items-center gap-2 text-gray-700">
                         <AlertTriangle className="w-5 h-5 text-red-500" />
-                        4. ve 5. parmak arası en sık görülen bölgedir
+                        4. ve 5. parmak arası en sık görülen bölgedir (detay: <LocalizedLink to="/blog/parmak-arasi-mantar-nasil-gecer" className="text-red-600 hover:text-red-700 font-semibold">parmak arası mantar nasıl geçer</LocalizedLink>)
                       </p>
                       <p className="flex items-center gap-2 text-gray-700">
                         <AlertTriangle className="w-5 h-5 text-red-500" />
@@ -711,6 +711,10 @@ const BlogAyakMantariBaslangici = () => {
             <div className="mb-6">
               <p className="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wide">İlgili Konular</p>
               <div className="grid md:grid-cols-2 gap-4">
+                <LocalizedLink to="/blog/parmak-arasi-mantar-nasil-gecer" className="block bg-gray-50 hover:bg-gray-100 rounded-xl p-5 transition-colors">
+                  <p className="font-semibold text-gray-900 mb-1">Parmak Arası Mantar Nasıl Geçer?</p>
+                  <p className="text-sm text-gray-600">Kaşıntı ve kokuya kesin çözüm</p>
+                </LocalizedLink>
                 <LocalizedLink to="/blog/ayak-mantari-mi-egzama-mi" className="block bg-gray-50 hover:bg-gray-100 rounded-xl p-5 transition-colors">
                   <p className="font-semibold text-gray-900 mb-1">Ayak Mantarı mı Egzama mı?</p>
                   <p className="text-sm text-gray-600">Belirtileri ayırt etmeyi öğrenin</p>

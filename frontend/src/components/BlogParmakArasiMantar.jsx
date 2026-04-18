@@ -11,27 +11,35 @@ const BlogParmakArasiMantar = () => {
   const faqs = [
     {
       question: "Parmak arası mantar kendiliğinden geçer mi?",
-      answer: "Hayır. Uygun bakım ve antifungal destek olmadan genellikle ilerler veya tekrar eder. Ayağı kuru tutmak ve düzenli bakım en kritik adımlardır."
+      answer: "Parmak arası mantar genellikle kendiliğinden geçmez. Uygun bakım ve antifungal destek olmadan bırakıldığında çoğu zaman ilerler veya bir süre sonra tekrar eder. İyileşme için ayağı kuru tutmak, parmak aralarını günde birkaç kez kurulamak ve düzenli antifungal krem kullanmak gerekir. Klinik gözlemlerimizde, sadece 'geçer' diye beklenen hafif vakaların bile 4–6 hafta içinde tırnağa yayıldığı çok sık görülür."
     },
     {
       question: "Parmak arası mantar bulaşıcı mı?",
-      answer: "Evet. Ortak terlik, havlu, duş zemini ve havuz çevresi gibi nemli ortak kullanım alanları üzerinden kolayca bulaşabilir."
+      answer: "Evet, parmak arası mantar (tinea pedis interdigital) oldukça bulaşıcı bir mantar enfeksiyonudur. Ortak terlik, havlu, paspas, duş zemini, spor salonu soyunma odası ve havuz çevresi gibi nemli ortak kullanım alanları üzerinden kolayca bulaşabilir. Aynı evde yaşayan bireylerin ayrı havlu ve terlik kullanması, duş sonrası zemini kurutması bulaşma riskini ciddi şekilde azaltır."
     },
     {
       question: "Parmak arası mantar tırnağa geçer mi?",
-      answer: "Evet. Erken dönemde müdahale edilmediğinde mantar tırnak yatağına geçerek tırnak mantarına dönüşebilir ve tedavi süresi ciddi şekilde uzar."
+      answer: "Evet, tedavi edilmeyen parmak arası mantar büyük olasılıkla tırnağa geçer. Mantar, parmak arasındaki nemli ortamdan tırnak yatağına ilerleyerek tırnak mantarına (onikomikoz) dönüşür. Tırnak mantarının tedavi süresi 6–12 aya kadar uzayabildiği için, parmak arası mantarı erken dönemde kontrol altına almak çok daha kolay bir süreçtir."
     },
     {
       question: "Parmak arası mantar için en etkili çözüm nedir?",
-      answer: "Üç temel adımın birlikte uygulanması: ayağı kuru tutmak, düzenli antifungal kullanmak ve günlük ayak hijyenine (çorap–ayakkabı) dikkat etmek."
+      answer: "En etkili çözüm üç temel adımın birlikte uygulanmasıdır: 1) Ayağı her gün kuru tutmak ve parmak aralarını duş sonrası tek tek kurulamak, 2) Antifungal içerikli bir krem veya serumu en az 2–3 hafta boyunca düzenli kullanmak, 3) Çorap ve ayakkabı hijyenine dikkat etmek (günlük çorap değişimi, ayakkabıyı havalandırma). Sadece tek bir adıma odaklanmak çoğu zaman yetersiz kalır."
     },
     {
       question: "Parmak arası mantar kaç günde geçer?",
-      answer: "Hafif vakalar 7–10 gün, orta seviye vakalar 2–3 hafta, ileri vakalar 3–4 hafta içinde kontrol altına alınabilir. Yanlış bakım yapılırsa süre aylara uzayabilir."
+      answer: "Hafif vakalar düzenli bakımla 7–10 gün içinde kontrol altına alınabilir. Orta seviye vakalar 2–3 hafta, daha ileri vakalar ise 3–4 hafta sürebilir. Belirtiler geçtikten sonra bile antifungal ürüne en az 1 hafta daha devam etmek tekrarlamayı önler. Yanlış bakım yapıldığında ise süreç aylarca uzayabilir."
     },
     {
       question: "Ayak kokusu parmak arası mantar belirtisi midir?",
-      answer: "Evet, sürekli devam eden ve yıkamaya rağmen geçmeyen koku çoğu zaman mantar + bakteri birleşimine işaret eder."
+      answer: "Evet, özellikle yıkamaya rağmen geçmeyen, keskin ve sürekli devam eden ayak kokusu çoğu zaman parmak arası mantar ile bakteriyel enfeksiyonun birleşimine işaret eder. Nemli parmak aralarında hem mantar hem de kötü koku yapan bakteriler birlikte çoğalır. Bu durumda yalnızca temizlik değil, antifungal bakım da gereklidir."
+    },
+    {
+      question: "Parmak arası mantara evde sirke işe yarar mı?",
+      answer: "Elma sirkesi veya beyaz sirke ile ayak banyosu halk arasında yaygın bir yöntem olsa da tek başına parmak arası mantarı geçiren kanıtlanmış bir tedavi değildir. Sirke bölgeyi asidik tutarak mantarın çoğalmasını yavaşlatabilir, ancak derin dokuya işleyemediği için mantarı tamamen yok etmez. Ayrıca yoğun kullanıldığında ciltte tahriş, yanma ve çatlak oluşturabilir. Sirke banyosu en fazla destekleyici bir yöntem olarak değerlendirilmeli, esas tedavi mutlaka düzenli antifungal krem veya serum olmalıdır."
+    },
+    {
+      question: "Parmak arası mantar için hangi krem en etkilidir?",
+      answer: "Parmak arası mantar için en etkili kremler, terbinafin, klotrimazol, mikonazol ya da doğal antifungal etkisi bilinen Tea Tree Oil (çay ağacı yağı) içeren ürünlerdir. Kremin günde 1–2 kez, sadece görünür bölgeye değil 2 cm çevresine de uygulanması ve belirtiler geçse bile en az 1 hafta daha kullanılması gerekir. Yüksek terlemesi olan kişilerde antifungal etkili bir bakım serumu veya köpük ile birlikte kullanım, kremin etkisini artırır ve tekrarlama riskini azaltır."
     }
   ];
 
@@ -308,7 +316,7 @@ const BlogParmakArasiMantar = () => {
             </div>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              Parmak arası mantar, <strong>ayak arası mantar</strong> olarak da bilinen ve genellikle nemli, havasız ortamda oluşan yaygın bir cilt enfeksiyonudur. En sık kaşıntı, koku ve kızarıklık ile kendini gösterir. Erken müdahale edilmezse yayılabilir ve tedavi süresi uzayabilir.
+              Parmak arası mantar, <strong>ayak arası mantar</strong> olarak da bilinen ve genellikle nemli, havasız ortamda oluşan yaygın bir cilt enfeksiyonudur. Klinik pratiğimizde <strong>en sık gördüğümüz durum</strong>, kişinin kaşıntıyı aylarca "kuruluk" sanıp nemlendirici sürmesi ve bu süreçte mantarın sessizce yayılmasıdır. En sık kaşıntı, koku ve kızarıklık ile kendini gösterir; erken müdahale edilmezse yayılabilir ve tedavi süresi uzayabilir.
             </p>
 
             {/* Özet Kutu */}
@@ -355,7 +363,7 @@ const BlogParmakArasiMantar = () => {
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Parmak arası mantar, yani <strong>ayak arası mantar</strong>, en sık <strong>4. ve 5. parmak arasında</strong> görülür. Bunun nedeni:
+              Parmak arası mantar, yani <strong>ayak arası mantar</strong>, en sık <strong>4. ve 5. parmak arasında</strong> görülür. Daha geniş tıbbi arka plan için <LocalizedLink to="/blog/ayak-mantari-nedir" className="text-red-600 hover:text-red-700 font-semibold">ayak mantarı nedir</LocalizedLink> içeriğimize göz atabilirsiniz. 4–5. parmak arasının bu kadar sık etkilenmesinin nedenleri şöyle:
             </p>
 
             <div className="grid md:grid-cols-3 gap-4 mb-6">
@@ -415,37 +423,56 @@ const BlogParmakArasiMantar = () => {
               Parmak arasında oluşan her yara mantar değildir. Ancak çoğu kişi bu noktada kararsız kalır.
             </p>
 
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Mantar ile tahriş farkı</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Mantar ile tahriş farkı (karşılaştırma tablosu)</h3>
 
-            <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <Card className="border-red-200">
-                <CardContent className="p-6">
-                  <h4 className="text-lg font-bold text-red-600 mb-3">Mantar</h4>
-                  <div className="space-y-2">
-                    <p className="flex items-center gap-2 text-gray-700"><CheckCircle className="w-5 h-5 text-red-500" /> Kaşıntı vardır</p>
-                    <p className="flex items-center gap-2 text-gray-700"><CheckCircle className="w-5 h-5 text-red-500" /> Koku eşlik eder</p>
-                    <p className="flex items-center gap-2 text-gray-700"><CheckCircle className="w-5 h-5 text-red-500" /> Beyazlaşma görülür</p>
-                    <p className="flex items-center gap-2 text-gray-700"><CheckCircle className="w-5 h-5 text-red-500" /> Genellikle yayılır</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-gray-200">
-                <CardContent className="p-6">
-                  <h4 className="text-lg font-bold text-gray-700 mb-3">Tahriş</h4>
-                  <div className="space-y-2">
-                    <p className="flex items-center gap-2 text-gray-700"><AlertTriangle className="w-5 h-5 text-gray-500" /> Ağrı ön plandadır</p>
-                    <p className="flex items-center gap-2 text-gray-700"><AlertTriangle className="w-5 h-5 text-gray-500" /> Koku yoktur</p>
-                    <p className="flex items-center gap-2 text-gray-700"><AlertTriangle className="w-5 h-5 text-gray-500" /> Kısa sürede iyileşir</p>
-                    <p className="flex items-center gap-2 text-gray-700"><AlertTriangle className="w-5 h-5 text-gray-500" /> Yayılım göstermez</p>
-                  </div>
-                </CardContent>
-              </Card>
+            {/* Comparison Table - Google snippet friendly */}
+            <div className="overflow-x-auto mb-6 rounded-xl border border-gray-200 shadow-sm">
+              <table className="w-full text-left bg-white">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th className="px-4 py-3 text-sm font-bold text-gray-900 border-b border-gray-200">Belirti</th>
+                    <th className="px-4 py-3 text-sm font-bold text-red-600 border-b border-gray-200">Parmak Arası Mantar</th>
+                    <th className="px-4 py-3 text-sm font-bold text-gray-700 border-b border-gray-200">Tahriş</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100">
+                  <tr>
+                    <td className="px-4 py-3 text-gray-900 font-semibold">Kaşıntı</td>
+                    <td className="px-4 py-3 text-gray-700">Belirgin, özellikle terleme sonrası artar</td>
+                    <td className="px-4 py-3 text-gray-700">Genellikle yoktur veya çok hafif</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-gray-900 font-semibold">Koku</td>
+                    <td className="px-4 py-3 text-gray-700">Eşlik eder, yıkamaya rağmen geçmez</td>
+                    <td className="px-4 py-3 text-gray-700">Yoktur</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-gray-900 font-semibold">Görünüm</td>
+                    <td className="px-4 py-3 text-gray-700">Beyazlaşma, pullanma, kızarıklık</td>
+                    <td className="px-4 py-3 text-gray-700">Kızarıklık, hafif şişme</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-gray-900 font-semibold">Ağrı</td>
+                    <td className="px-4 py-3 text-gray-700">İkinci planda, batma hissi olabilir</td>
+                    <td className="px-4 py-3 text-gray-700">Ön planda, dokunmakla artar</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-gray-900 font-semibold">Yayılım</td>
+                    <td className="px-4 py-3 text-gray-700">Diğer parmak aralarına ve tırnağa yayılır</td>
+                    <td className="px-4 py-3 text-gray-700">Sadece tahriş olan bölgede kalır</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-gray-900 font-semibold">İyileşme süresi</td>
+                    <td className="px-4 py-3 text-gray-700">Antifungal olmadan geçmez, 1–3 hafta</td>
+                    <td className="px-4 py-3 text-gray-700">Neden ortadan kalkınca kendiliğinden geçer</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
 
             <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-xl mb-8">
               <p className="text-lg text-yellow-800">
-                👉 Eğer <strong>kaşıntı + koku</strong> birlikteyse büyük ihtimalle mantardır.
+                👉 Eğer <strong>kaşıntı + koku</strong> birlikteyse büyük ihtimalle mantardır. En sık gördüğümüz durum: kişi aylarca "tahriş" sanarak nemlendirici sürer, oysa altta yatan neden ilerleyen bir mantar enfeksiyonudur. Şüphede kaldığınızda <LocalizedLink to="/blog/ayak-mantari-mi-egzama-mi" className="text-red-600 hover:text-red-700 font-semibold">ayak mantarı mı egzama mı</LocalizedLink> rehberimiz ayırıcı belirtileri detaylı şekilde anlatıyor.
               </p>
             </div>
 
@@ -661,6 +688,9 @@ const BlogParmakArasiMantar = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-3">En Sık Yapılan Hatalar (Klinik Gözlemlere Göre)</h3>
+                    <p className="text-gray-700 mb-3">
+                      Çoğu kişi tam burada hata yapıyor. Aşağıdaki davranışlar yüzünden mantar aylarca geçmiyor:
+                    </p>
                     <div className="space-y-2">
                       <p className="flex items-start gap-2 text-gray-700">
                         <AlertTriangle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-1" />
@@ -812,19 +842,19 @@ const BlogParmakArasiMantar = () => {
             </h2>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              Parmak arası mantar tedavisinde en büyük hata sadece krem kullanmaktır.
+              Parmak arası mantar tedavisinde en büyük hata sadece krem kullanmaktır. <strong>Çoğu kişi burada hata yapıyor</strong>: belirti azalır azalmaz krem kesiliyor, ardından mantar birkaç hafta içinde tekrar çıkıyor.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              Klinik olarak, sadece krem kullanan kişilerde tekrar oranı oldukça yüksektir. Düzenli bakım ile birlikte antifungal içerikli ürünlerin kullanılması, hem iyileşme süresini kısaltır hem de tekrar riskini ciddi şekilde azaltır.
+              Klinik olarak, sadece krem kullanan kişilerde tekrar oranı oldukça yüksektir. Düzenli bakım ile birlikte <LocalizedLink to="/urun/foot-nail-care-serum" className="text-red-600 hover:text-red-700 font-semibold">antifungal içerikli bakım ürünleri</LocalizedLink> kullanmak, hem iyileşme süresini kısaltır hem de tekrar riskini ciddi şekilde azaltır.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              👉 Özellikle düzenli bakım alışkanlığı oluşturmak ve uygun ürünlerle desteklemek, hem tedavi sürecini hızlandırır hem de tekrar riskini minimuma indirir.
+              👉 Özellikle düzenli bakım alışkanlığı oluşturmak ve uygun ürünlerle desteklemek, hem tedavi sürecini hızlandırır hem de tekrar riskini minimuma indirir. Ayak kokusu eşlik ediyorsa <LocalizedLink to="/blog/ayak-kokusu-nedenleri" className="text-red-600 hover:text-red-700 font-semibold">ayak kokusu nedenleri</LocalizedLink> rehberimizi, tekrarlayan vakalar için ise <LocalizedLink to="/blog/ayak-mantari-neden-tekrarlar" className="text-red-600 hover:text-red-700 font-semibold">ayak mantarı neden tekrarlar</LocalizedLink> yazımızı incelemenizi öneririz.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              👉 Eğer mantar tekrarlıyor veya kısa sürede geçmiyorsa, profesyonel ayak bakımı ile destek almak süreci ciddi şekilde hızlandırabilir.
+              👉 Eğer mantar tekrarlıyor veya kısa sürede geçmiyorsa, <LocalizedLink to="/blog/medikal-ayak-bakimi-nedir" className="text-red-600 hover:text-red-700 font-semibold">medikal ayak bakımı</LocalizedLink> ile destek almak süreci ciddi şekilde hızlandırabilir.
             </p>
 
             {/* Ürün Önerisi */}
@@ -852,6 +882,13 @@ const BlogParmakArasiMantar = () => {
             <p className="text-lg text-gray-700 leading-relaxed mt-6">
               👉 Parmak arası mantar, doğru bakım ve düzenli uygulama ile büyük oranda kontrol altına alınabilen bir sorundur.
             </p>
+
+            {/* Uzman Notu / Disclaimer */}
+            <div className="mt-8 bg-gray-50 border-l-4 border-gray-400 p-5 rounded-r-xl">
+              <p className="text-sm text-gray-600 italic leading-relaxed">
+                <strong className="not-italic text-gray-800">Uzman notu:</strong> Bu içerik, podoloji alanında aktif olarak hasta deneyimi bulunan Podolog Serdar Ceylan'ın klinik gözlemleri doğrultusunda hazırlanmıştır. Bilgilendirme amaçlıdır, tanı ve tedavi yerine geçmez.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -864,29 +901,42 @@ const BlogParmakArasiMantar = () => {
               Sık Sorulan Sorular
             </h2>
 
-            <div className="space-y-4">
+            <div className="space-y-4" itemScope itemType="https://schema.org/FAQPage">
               {faqs.map((faq, index) => (
-                <Card key={index} className="border-gray-200">
+                <Card key={index} className="border-gray-200" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                   <CardContent className="p-0">
                     <button
                       onClick={() => setOpenFaq(openFaq === index ? null : index)}
                       className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
                       data-testid={`faq-toggle-${index}`}
                     >
-                      <h3 className="text-lg font-bold text-gray-900 pr-4">{faq.question}</h3>
+                      <h3 className="text-lg font-bold text-gray-900 pr-4" itemProp="name">{faq.question}</h3>
                       {openFaq === index ? (
                         <ChevronUp className="w-5 h-5 text-gray-500 flex-shrink-0" />
                       ) : (
                         <ChevronDown className="w-5 h-5 text-gray-500 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 pt-0">
-                        <p className="text-gray-700">{faq.answer}</p>
-                      </div>
-                    )}
+                    <div
+                      className={`px-6 pb-6 pt-0 ${openFaq === index ? 'block' : 'hidden'}`}
+                      itemScope
+                      itemProp="acceptedAnswer"
+                      itemType="https://schema.org/Answer"
+                    >
+                      <p className="text-gray-700" itemProp="text">{faq.answer}</p>
+                    </div>
                   </CardContent>
                 </Card>
+              ))}
+            </div>
+
+            {/* SEO: Tüm FAQ cevapları her zaman DOM'da, görsel olarak gizli */}
+            <div className="sr-only" aria-hidden="true">
+              {faqs.map((faq, index) => (
+                <div key={`seo-${index}`}>
+                  <h4>{faq.question}</h4>
+                  <p>{faq.answer}</p>
+                </div>
               ))}
             </div>
           </div>

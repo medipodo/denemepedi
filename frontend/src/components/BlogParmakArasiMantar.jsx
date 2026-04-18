@@ -350,6 +350,27 @@ const BlogParmakArasiMantar = () => {
         </div>
       </section>
 
+      {/* Özgün Pull-Quote: Sinsi Evre */}
+      <section className="py-6 md:py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <figure className="relative bg-white border-l-4 border-red-600 shadow-md rounded-r-2xl px-6 md:px-10 py-6 md:py-8">
+              <span className="absolute -top-5 left-6 bg-red-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
+                Klinik Uyarı
+              </span>
+              <blockquote>
+                <p className="text-lg md:text-xl text-gray-800 italic leading-relaxed">
+                  "Parmak arası mantar, çoğu kişi tarafından önemsenmeyen bir sorun gibi görülür. Kaşıntı azaldığında geçtiği sanılır; <strong className="not-italic text-red-700">ancak klinik gözlemlerimizde sık rastladığımız gibi</strong> bu, <strong className="not-italic">tırnak mantarına ilerleyebilen ve bulaşıcılığı devam eden</strong> ciddi bir enfeksiyonun <strong className="not-italic">en sinsi evresidir</strong>."
+                </p>
+              </blockquote>
+              <figcaption className="mt-4 text-sm text-gray-500 not-italic">
+                — Podolog Serdar Ceylan, klinik gözlem notları
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
       {/* Parmak Arası Mantar Nedir */}
       <section className="py-8 bg-gray-50">
         <div className="container mx-auto px-4">

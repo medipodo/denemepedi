@@ -32,6 +32,12 @@ Mevcut React uygulamasına (PediZone — pedizone.com) "Nasır Neden Sürekli Te
 - 🐛 ÖNCEDEN VAR OLAN HATA DÜZELTİLDİ: BlogDetail.jsx Helmet `<title>{post.title} | PediZone Blog</title>` karışık children nedeniyle TÜM sections tabanlı blog sayfalarını çökertiyordu (react-helmet-async v3 + React 19). Template literal ile düzeltildi: `<title>{\`${post.title} | PediZone Blog\`}</title>`. Bu düzeltme repo'ya push edilmeli — production'ı da etkiliyor olabilir.
 - Test: 3 sayfa da render oluyor, her birinde yeni bloga 2 link (infoBox + İlgili Makaleler) doğrulandı.
 
+## Yapılanlar - 3. Görev: Ham HTML Render Hatası (12 Haziran 2026)
+- Kullanıcı nasir-sigil-farklari sayfasında liste maddelerinde ham `<a href=...>` kodunun metin olarak göründüğünü bildirdi.
+- Kök neden: mock.js içinde 6 yerde (paragraph x2, numberedSection x1, checkList x3) içeriğe ham HTML link yazılmış; ancak BlogDetail.jsx render bileşeni düz metin basıyordu (repo'da önceden var olan hata).
+- Düzeltme: BlogDetail.jsx'te `paragraph`, `numberedSection` ve `checkList` render'ları dangerouslySetInnerHTML ile HTML işleyecek şekilde güncellendi.
+- Test: nasir-sigil-farklari ve nasir-nedir sayfalarında ham HTML kalmadığı, linklerin tıklanabilir olduğu doğrulandı.
+
 ## Bekleyen / Sonraki Adımlar
 - Kullanıcının preview onayı → "Save to GitHub" (kullanıcı yapacak).
 - Kullanıcı taslak bölümleri (giriş + basış analizi) değiştirmek isterse revize edilecek.

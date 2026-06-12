@@ -488,9 +488,7 @@ const BlogSection = ({ section, index }) => {
 
     case 'paragraph':
       return (
-        <p className="text-gray-700 mb-6 leading-relaxed text-lg">
-          {section.content}
-        </p>
+        <p className="text-gray-700 mb-6 leading-relaxed text-lg" dangerouslySetInnerHTML={{ __html: section.content }} />
       );
 
     case 'image':
@@ -568,7 +566,7 @@ const BlogSection = ({ section, index }) => {
                   </p>
                 </div>
               )}
-              <p className="text-gray-700 leading-relaxed">{section.content}</p>
+              <p className="text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: section.content }} />
             </div>
           </div>
         </div>
@@ -588,7 +586,9 @@ const BlogSection = ({ section, index }) => {
                     {item.bold && <strong className="text-gray-900">{item.bold} </strong>}
                     {item.text}
                   </>
-                ) : item}
+                ) : (
+                  <span dangerouslySetInnerHTML={{ __html: item }} />
+                )}
               </span>
             </li>
           ))}
@@ -604,7 +604,7 @@ const BlogSection = ({ section, index }) => {
                 <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                   <CheckCircle className="w-4 h-4 text-white" />
                 </div>
-                <span className="text-gray-700">{item}</span>
+                <span className="text-gray-700" dangerouslySetInnerHTML={{ __html: item }} />
               </li>
             ))}
           </ul>

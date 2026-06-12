@@ -1,0 +1,54 @@
+# ================================
+# 301 Redirects - FINAL VERSION
+# ================================
+
+# --- STATIC FILES ---
+/sitemap.xml   /sitemap.xml   200!
+/robots.txt    /robots.txt    200!
+
+# --- IMAGE REDIRECTS ---
+/static/media/pedizone-serum-new.e1c3220b805233b3ba3c.jpg         /static/media/pedizone-serum-new.e1c3220b805233b3ba3c.webp        301!
+/static/media/pedizone-foot-foam-new.8cce45cbeeed5e6e2bb0.jpg     /static/media/pedizone-foot-foam-new.8cce45cbeeed5e6e2bb0.webp    301!
+/static/media/pedizone-catlaktopuk-kremi.78f06c814d7f414b7a12.jpg /static/media/pedizone-catlaktopuk-kremi.78f06c814d7f414b7a12.webp 301!
+/static/media/pedizone-kopuk-card.1d211cf74fc8ad39adb3.jpg        /static/media/pedizone-kopuk-card.1d211cf74fc8ad39adb3.webp       301!
+/blog-images/ure-nedir/3.jpg                                     /blog-images/ure-nedir/ure-kapak.webp                             301!
+
+# --- PRODUCT SYSTEM ---
+/product/*   /urun/:splat   301!
+
+/product/bakim-serumu   /urun/foot-nail-care-serum   301!
+/urun/bakim-serumu      /urun/foot-nail-care-serum   301!
+
+/product      /#urunler     301!
+/urun         /#urunler     301!
+
+# --- BLOG CLEAN ---
+/blog/*.html   /tr/blog/:splat   301!
+
+/blog/ayak-mantari-evde-nasil-gecer.html /tr/blog/ayak-mantari-evde-nasil-gecer 301!
+/blog/ayak-mantari-nedir.html           /tr/blog/ayak-mantari-nedir           301!
+/blog/ayak-mantari-mi-egzama-mi.html    /tr/blog/ayak-mantari-mi-egzama-mi    301!
+/blog/ayak-mantari-neden-tekrarlar.html /tr/blog/ayak-mantari-neden-tekrarlar 301!
+/blog/ure-nedir.html                    /tr/blog/ure-nedir                    301!
+/blog/medikal-ayak-bakimi-nedir.html    /tr/blog/medikal-ayak-bakimi-nedir    301!
+/blog/tirnak-mantari-cesitleri.html     /tr/blog/tirnak-mantari-cesitleri     301!
+/blog/serum-kullanim-onemi.html         /tr/blog/serum-kullanim-onemi         301!
+/blog/ayak-kokusu-nedenleri.html        /tr/blog/ayak-kokusu-nedenleri        301!
+/blog/ayak-hijyeni-ipuclari.html        /tr/blog/ayak-hijyeni-ipuclari        301!
+
+/blog          /tr/blog        301
+/blog/*        /tr/blog/:splat 301
+
+# --- HOME ---
+/   /tr   301
+
+# --- OTHER PAGES ---
+/sertifikalar        /tr/sertifikalar        301
+/bayiler             /tr/bayiler             301
+/ayak-analizi        /tr/ayak-analizi        301
+/iletisim            /tr/iletisim            301
+/gizlilik-politikasi /tr/gizlilik-politikasi 301
+/kullanim-sartlari   /tr/kullanim-sartlari   301
+
+# --- SPA FALLBACK (LAST LINE) ---
+/:lang/*   /index.html   200

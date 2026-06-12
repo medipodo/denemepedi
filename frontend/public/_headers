@@ -1,0 +1,17 @@
+# Netlify Headers Configuration
+# Only sitemap/robots/favicon Content-Type overrides here.
+# (Full image/security header rules are preserved in _headers.backup for reference.)
+
+# ========================================
+# SEO Static Files - Force correct Content-Type
+# ========================================
+
+/sitemap.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=3600
+  X-Content-Type-Options: nosniff
+
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+  X-Content-Type-Options: nosniff

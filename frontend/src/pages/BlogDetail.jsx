@@ -131,7 +131,7 @@ const BlogDetail = () => {
     <div className="min-h-screen bg-white">
       {/* SEO Schema */}
       <Helmet>
-        <title>{post.title} | PediZone Blog</title>
+        <title>{`${post.title} | PediZone Blog`}</title>
         <meta name="description" content={post.excerpt} />
         <link rel="canonical" href={`https://pedizone.com/blog/${slug}`} />
         

@@ -23,6 +23,15 @@ Mevcut React uygulamasına (PediZone — pedizone.com) "Nasır Neden Sürekli Te
 - NOT: Giriş paragrafı ve "Ayak Basış Analizi Neden Önemlidir?" bölümü kullanıcının paylaştığı metinde yoktu (Görsel 4 bu bölüme bağlıydı); ajan tarafından temkinli tıbbi üslupla taslak yazıldı — kullanıcı onayı bekleniyor.
 - Test: Screenshot ile doğrulandı — 5 görsel yükleniyor, blog listesinde kart görünüyor.
 
+## Yapılanlar - 2. Görev: İç Linkler (12 Haziran 2026)
+- Kullanıcı sitemap'te anasayfa + blog tarihlerini kendisi güncelledi.
+- 3 eski blogdan yeni bloga bağlamsal infoBox linki eklendi (mock.js sections):
+  1. nasir-nedir-evde-gecer-mi → "Metatars... basınç dağılımı bozukluğu" paragrafı sonrası (variant: tip)
+  2. nasir-sigil-farklari → "Nasır İçin Ev Bakımı" checkList sonrası (variant: tip)
+  3. medikal-ayak-bakimi-nedir → "Nasırlar sürekli geri geliyor" bullet listesi sonrası (variant: info)
+- 🐛 ÖNCEDEN VAR OLAN HATA DÜZELTİLDİ: BlogDetail.jsx Helmet `<title>{post.title} | PediZone Blog</title>` karışık children nedeniyle TÜM sections tabanlı blog sayfalarını çökertiyordu (react-helmet-async v3 + React 19). Template literal ile düzeltildi: `<title>{\`${post.title} | PediZone Blog\`}</title>`. Bu düzeltme repo'ya push edilmeli — production'ı da etkiliyor olabilir.
+- Test: 3 sayfa da render oluyor, her birinde yeni bloga 2 link (infoBox + İlgili Makaleler) doğrulandı.
+
 ## Bekleyen / Sonraki Adımlar
 - Kullanıcının preview onayı → "Save to GitHub" (kullanıcı yapacak).
 - Kullanıcı taslak bölümleri (giriş + basış analizi) değiştirmek isterse revize edilecek.

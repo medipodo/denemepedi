@@ -202,6 +202,13 @@ export const blogPosts = [
         content: 'Metatars bölgesindeki nasırlar çoğunlukla basınç dağılımı bozukluğuna bağlıdır. Ortopedik destek kullanılmadığında tekrar etme eğilimindedir.'
       },
       {
+        type: 'infoBox',
+        variant: 'tip',
+        title: 'Nasırınız Sürekli Tekrar mı Ediyor?',
+        content: 'Aynı bölgede tekrar eden nasırların altında ayak basış bozukluğu ve dengesiz basınç dağılımı olabilir. Nedenlerini ve çözüm yollarını detaylı rehberimizde inceleyin.',
+        link: '/blog/nasir-neden-surekli-tekrar-eder'
+      },
+      {
         type: 'image',
         src: '/blog-images/nasir-nedir/parmak-arasi-nasir.webp',
         alt: 'Parmak aralarında oluşan yumuşak nasır (heloma molle) görüntüsü',
@@ -625,6 +632,13 @@ export const blogPosts = [
           '<a href="/urun/ureli-krem" class="text-red-600 hover:underline">Üreli krem</a> ile nemlendirme',
           'Basınç azaltıcı tabanlık veya ayakkabı düzeltmeleri'
         ]
+      },
+      {
+        type: 'infoBox',
+        variant: 'tip',
+        title: 'Nasırınız Tekrarlıyor mu?',
+        content: 'Basınç devam ettiği sürece nasır aynı bölgede yeniden oluşabilir. Tekrarlayan nasırların ayak basış bozukluğuyla ilişkisini detaylı yazımızda ele aldık.',
+        link: '/blog/nasir-neden-surekli-tekrar-eder'
       },
       {
         type: 'subheading',
@@ -1510,6 +1524,13 @@ export const blogPosts = [
         title: 'Detaylı Bilgi',
         content: 'Ayak mantarı belirtileri ve tedavi yöntemleri hakkında detaylı bilgi almak için ana içeriğimizi inceleyin.',
         link: '/blog/ayak-mantari-nedir'
+      },
+      {
+        type: 'infoBox',
+        variant: 'info',
+        title: 'Nasırlarınız Sürekli Geri mi Geliyor?',
+        content: 'Aynı bölgede tekrarlayan nasırlar çoğu zaman ayak basış bozukluğu ve dengesiz basınç dağılımıyla ilişkilidir. Detaylı rehberimize göz atın.',
+        link: '/blog/nasir-neden-surekli-tekrar-eder'
       },
       {
         type: 'heading',

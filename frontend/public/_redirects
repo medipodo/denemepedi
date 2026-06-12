@@ -1,5 +1,7 @@
 # ================================
-# 301 Redirects - FINAL VERSION
+# 301 Redirects - Kök (/) yapısına göre güncellendi
+# Eski /tr yapısı kaldırıldı; .html uzantılı eski URL'ler
+# doğrudan temiz URL'lere 301 yönlendirilir.
 # ================================
 
 # --- STATIC FILES ---
@@ -13,42 +15,36 @@
 /static/media/pedizone-kopuk-card.1d211cf74fc8ad39adb3.jpg        /static/media/pedizone-kopuk-card.1d211cf74fc8ad39adb3.webp       301!
 /blog-images/ure-nedir/3.jpg                                     /blog-images/ure-nedir/ure-kapak.webp                             301!
 
-# --- PRODUCT SYSTEM ---
-/product/*   /urun/:splat   301!
-
+# --- PRODUCT SYSTEM (özel kurallar wildcard'dan ÖNCE gelmeli) ---
 /product/bakim-serumu   /urun/foot-nail-care-serum   301!
 /urun/bakim-serumu      /urun/foot-nail-care-serum   301!
+/product/*   /urun/:splat   301!
 
 /product      /#urunler     301!
 /urun         /#urunler     301!
 
-# --- BLOG CLEAN ---
-/blog/*.html   /tr/blog/:splat   301!
+# --- ESKİ .html UZANTILI BLOG URL'LERİ → TEMİZ URL (301) ---
+/blog/nasir-neden-surekli-tekrar-eder.html         /blog/nasir-neden-surekli-tekrar-eder         301!
+/blog/parmak-arasi-mantar-nasil-gecer.html         /blog/parmak-arasi-mantar-nasil-gecer         301!
+/blog/ayak-mantari-baslangici-nasil-anlasilir.html /blog/ayak-mantari-baslangici-nasil-anlasilir 301!
+/blog/tirnak-mantari-neden-gecmez.html             /blog/tirnak-mantari-neden-gecmez             301!
+/blog/nasir-nedir-evde-gecer-mi.html               /blog/nasir-nedir-evde-gecer-mi               301!
+/blog/nasir-sigil-farklari.html                    /blog/nasir-sigil-farklari                    301!
+/blog/ayak-mantari-evde-nasil-gecer.html           /blog/ayak-mantari-evde-nasil-gecer           301!
+/blog/ayak-mantari-mi-egzama-mi.html               /blog/ayak-mantari-mi-egzama-mi               301!
+/blog/ayak-mantari-neden-tekrarlar.html            /blog/ayak-mantari-neden-tekrarlar            301!
+/blog/ure-nedir.html                               /blog/ure-nedir                               301!
+/blog/medikal-ayak-bakimi-nedir.html               /blog/medikal-ayak-bakimi-nedir               301!
+/blog/ayak-mantari-nedir.html                      /blog/ayak-mantari-nedir                      301!
+/blog/tirnak-mantari-cesitleri.html                /blog/tirnak-mantari-cesitleri                301!
+/blog/serum-kullanim-onemi.html                    /blog/serum-kullanim-onemi                    301!
+/blog/ayak-kokusu-nedenleri.html                   /blog/ayak-kokusu-nedenleri                   301!
+/blog/ayak-hijyeni-ipuclari.html                   /blog/ayak-hijyeni-ipuclari                   301!
+/blog.html                                         /blog                                         301!
 
-/blog/ayak-mantari-evde-nasil-gecer.html /tr/blog/ayak-mantari-evde-nasil-gecer 301!
-/blog/ayak-mantari-nedir.html           /tr/blog/ayak-mantari-nedir           301!
-/blog/ayak-mantari-mi-egzama-mi.html    /tr/blog/ayak-mantari-mi-egzama-mi    301!
-/blog/ayak-mantari-neden-tekrarlar.html /tr/blog/ayak-mantari-neden-tekrarlar 301!
-/blog/ure-nedir.html                    /tr/blog/ure-nedir                    301!
-/blog/medikal-ayak-bakimi-nedir.html    /tr/blog/medikal-ayak-bakimi-nedir    301!
-/blog/tirnak-mantari-cesitleri.html     /tr/blog/tirnak-mantari-cesitleri     301!
-/blog/serum-kullanim-onemi.html         /tr/blog/serum-kullanim-onemi         301!
-/blog/ayak-kokusu-nedenleri.html        /tr/blog/ayak-kokusu-nedenleri        301!
-/blog/ayak-hijyeni-ipuclari.html        /tr/blog/ayak-hijyeni-ipuclari        301!
+# --- ESKİ /tr YAPISI → KÖK (sunucu tarafı 301) ---
+/tr        /            301!
+/tr/*      /:splat      301!
 
-/blog          /tr/blog        301
-/blog/*        /tr/blog/:splat 301
-
-# --- HOME ---
-/   /tr   301
-
-# --- OTHER PAGES ---
-/sertifikalar        /tr/sertifikalar        301
-/bayiler             /tr/bayiler             301
-/ayak-analizi        /tr/ayak-analizi        301
-/iletisim            /tr/iletisim            301
-/gizlilik-politikasi /tr/gizlilik-politikasi 301
-/kullanim-sartlari   /tr/kullanim-sartlari   301
-
-# --- SPA FALLBACK (LAST LINE) ---
-/:lang/*   /index.html   200
+# --- SPA FALLBACK (SON SATIR) ---
+/*   /index.html   200

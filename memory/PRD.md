@@ -38,6 +38,17 @@ Mevcut React uygulamasına (PediZone — pedizone.com) "Nasır Neden Sürekli Te
 - Düzeltme: BlogDetail.jsx'te `paragraph`, `numberedSection` ve `checkList` render'ları dangerouslySetInnerHTML ile HTML işleyecek şekilde güncellendi.
 - Test: nasir-sigil-farklari ve nasir-nedir sayfalarında ham HTML kalmadığı, linklerin tıklanabilir olduğu doğrulandı.
 
+## Yapılanlar - 4. Görev: 301 Yönlendirme Düzeltmesi (12 Haziran 2026)
+- Sorun: Google'da indexli eski `.html` uzantılı blog URL'leri (örn. /blog/ayak-mantari-nedir.html) "Yazı Bulunamadı"ya düşebiliyordu.
+- Kök neden: public/_redirects dosyası ESKİ /tr yapısına göre yazılmıştı; .html URL'leri VE temiz URL'leri /tr/blog/...'a 301'liyor, oradan istemci tarafı JS ile geri dönüyordu (Googlebot için kırık zincir + SEO zararı).
+- Düzeltme (_redirects tamamen yeniden yazıldı, hosting: Netlify):
+  - 16 blog slug'ı + /blog.html için açık `.html → temiz URL` 301 kuralları (tek atlama)
+  - Temiz /blog URL'lerine artık 301 YOK → doğrudan 200
+  - /tr ve /tr/* → kök dizine sunucu tarafı 301
+  - /product özel kuralları wildcard'ın önüne alındı (sıralama hatası düzeltildi)
+  - SPA fallback: /* → /index.html 200
+- NOT: _redirects yalnızca Netlify'da çalışır; etkisi "Save to GitHub" + Netlify deploy sonrası görülür. Preview'da test edilemez.
+
 ## Bekleyen / Sonraki Adımlar
 - Kullanıcının preview onayı → "Save to GitHub" (kullanıcı yapacak).
 - Kullanıcı taslak bölümleri (giriş + basış analizi) değiştirmek isterse revize edilecek.

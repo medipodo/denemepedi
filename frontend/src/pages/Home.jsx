@@ -12,6 +12,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import LocalizedLink from '../components/LocalizedLink';
 import MarketplacesSection from '../components/MarketplacesSection';
+import BayiOl from '../components/BayiOl';
 
 // ---- Türkçe tarih parse yardımcısı (blog sıralaması için) ----
 const TR_MONTHS = {
@@ -239,11 +240,11 @@ const Home = () => {
                 🏆 Podologların Tavsiyesi
               </Badge>
               
-              <h1 className="fluid-h1 font-bold text-gray-900 leading-tight mb-0">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-0">
                 Profesyonel Ayak Bakım Çözümleri
               </h1>
               
-              <h2 className="fluid-h2 font-bold text-red-600 mb-0">
+              <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-red-600 mb-0">
                 Pedizone<span style={{ fontSize: '0.5em', verticalAlign: 'super' }}>®</span>
               </h2>
               
@@ -673,6 +674,9 @@ const Home = () => {
           </div>
         </section>
       )}
+
+      {/* Bayimiz Olmak İster misiniz? - CTA */}
+      <BayiOl />
 
       {/* Bayilerimiz Harita Section */}
       <section className="py-12 bg-gray-50">

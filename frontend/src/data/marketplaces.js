@@ -20,7 +20,7 @@ export const marketplaces = [
     id: 'amazon',
     name: 'Amazon',
     logo: '/marketplaces/amazon.svg',
-    url: 'https://www.amazon.com.tr/sp?ie=UTF8&seller=AMMP0XZD7GV7U&asin=B0FNX5L6HL&ref_=dp_merchant_link',
+    url: 'https://www.amazon.com.tr/s?me=AMMP0XZD7GV7U&marketplaceID=A33AVAJ2PDY3EV',
     accent: '#FF9900',
     tint: 'rgba(255,153,0,0.10)',
   },

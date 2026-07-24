@@ -90,19 +90,19 @@ const Header = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: 'auto' })}
             data-testid="header-logo"
           >
-            <span className="text-2xl md:text-3xl font-extrabold text-white md:text-red-600 tracking-tight transition-colors">
-              PediZone<sup className="text-[0.5em] font-bold align-super">®</sup>
-            </span>
+            <div className="flex flex-col">
+              <span className="text-2xl font-bold text-white md:text-red-600 transition-colors">PediZone<span style={{ fontSize: '0.5em', verticalAlign: 'super' }}>®</span></span>
+            </div>
           </LocalizedLink>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-6 xl:gap-7">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-6">
             {navLinks.map((link) => (
               <LocalizedLink
                 key={link.path}
                 to={link.path}
                 onClick={() => handleNavClick(link.path)}
-                className={`fluid-nav font-medium transition-colors ${
+                className={`text-sm font-medium whitespace-nowrap transition-colors ${
                   isActive(link.path)
                     ? 'text-red-600'
                     : 'text-gray-700 hover:text-red-600'
@@ -114,11 +114,11 @@ const Header = () => {
           </nav>
 
           {/* Right side actions */}
-          <div className="flex items-center gap-2 md:gap-3">
-            {/* Uzman Desteği button (sadece web) */}
+          <div className="flex items-center gap-2 md:gap-3 shrink-0">
+            {/* Uzman Desteği button (geniş ekran) */}
             <a
               href="tel:+905054000326"
-              className="hidden md:inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-600 to-red-500 px-4 md:px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-red-500/30 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-red-500/40"
+              className="hidden xl:inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-600 to-red-500 px-4 xl:px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-red-500/30 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-red-500/40"
               data-testid="uzman-destegi-btn"
             >
               <Phone size={16} />
@@ -161,7 +161,7 @@ const Header = () => {
               data-testid="mobile-menu-toggle"
               aria-label="Menü"
             >
-              {isMobileMenuOpen ? <X size={30} /> : <Menu size={30} />}
+              {isMobileMenuOpen ? <X size={32} /> : <Menu size={32} />}
             </button>
           </div>
         </div>
@@ -169,13 +169,13 @@ const Header = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="lg:hidden mt-4 pb-4 border-t border-red-500/30 md:border-gray-200 pt-4">
-            <nav className="flex flex-col space-y-1">
+            <nav className="flex flex-col space-y-3">
               {navLinks.map((link) => (
                 <LocalizedLink
                   key={link.path}
                   to={link.path}
                   onClick={() => handleNavClick(link.path)}
-                  className={`fluid-nav font-medium py-2.5 px-4 rounded-lg transition-colors ${
+                  className={`text-sm font-medium py-2 px-4 rounded transition-colors ${
                     isActive(link.path)
                       ? 'bg-white/20 text-white md:bg-red-50 md:text-red-600'
                       : 'text-red-100 hover:bg-white/10 hover:text-white md:text-gray-700 md:hover:bg-red-50 md:hover:text-red-600'

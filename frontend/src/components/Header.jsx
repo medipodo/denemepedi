@@ -108,7 +108,7 @@ const Header = () => {
             </a>
 
             {/* Language flags */}
-            <div className="hidden sm:flex items-center gap-0.5 rounded-xl border border-gray-200 p-1">
+            <div className="flex items-center gap-0.5 rounded-xl border border-gray-200 p-1">
               {/* TR - Active */}
               <div className="p-1 rounded-lg bg-red-50 ring-2 ring-red-500 cursor-default">
                 <img
@@ -167,26 +167,6 @@ const Header = () => {
                 </LocalizedLink>
               ))}
             </nav>
-            <a
-              href="tel:+905054000326"
-              className="mt-4 flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-red-600 to-red-500 px-5 py-3 text-sm font-semibold text-white shadow-md"
-              data-testid="uzman-destegi-btn-mobile"
-            >
-              <Phone size={16} />
-              <span>Uzman Desteği</span>
-            </a>
-            {/* Flags (mobile) */}
-            <div className="mt-4 flex items-center justify-center gap-1">
-              <div className="p-1 rounded-lg bg-red-50 ring-2 ring-red-500">
-                <img src="/assets/flags/turkey.svg" alt="Türkçe" className="w-7 h-7 object-contain" />
-              </div>
-              <a href="/en" className="p-1 rounded-lg hover:bg-red-50">
-                <img src="/assets/flags/uk.svg" alt="English" className="w-7 h-7 object-contain" />
-              </a>
-              <a href="https://pedizone.de" className="p-1 rounded-lg hover:bg-red-50">
-                <img src="/assets/flags/germany.svg" alt="Deutsch" className="w-7 h-7 object-contain" />
-              </a>
-            </div>
           </div>
         )}
       </div>

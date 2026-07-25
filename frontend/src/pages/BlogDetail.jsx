@@ -380,33 +380,7 @@ const BlogDetail = () => {
                 </div>
               </div>
 
-              {/* Internal Link - Related Content */}
-              <div className="mt-12 bg-gradient-to-br from-red-50 via-white to-orange-50 border-2 border-red-100 rounded-2xl p-8 hover:shadow-xl transition-shadow">
-                <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
-                    <BookOpen className="w-7 h-7 text-white" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      İlgili İçerik
-                    </h3>
-                    <p className="text-gray-600 mb-4 leading-relaxed">
-                      Ayak sağlığınızı korumak için günlük bakım alışkanlıklarınızı öğrenin
-                    </p>
-                    <LocalizedLink 
-                      to="/blog/ayak-hijyeni-ipuclari"
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-xl transition-all hover:gap-3 shadow-md hover:shadow-lg"
-                    >
-                      <Footprints className="w-5 h-5" />
-                      <span>Ayak Hijyeni İpuçları</span>
-                      <span className="text-sm font-normal opacity-90">(Sağlıklı cilt için bakım önerileri)</span>
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </LocalizedLink>
-                  </div>
-                </div>
-              </div>
+              {/* Internal Link - Related Content REMOVED: duplicate of "İlgili Makaleler" below */}
             </article>
           </div>
         </div>

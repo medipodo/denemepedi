@@ -220,10 +220,9 @@ export const enrichedBlogPosts = [
         "product": ""
       },
       {
-        "type": "infoBox",
-        "variant": "info",
-        "title": "Podolog ve hekim ayrımı",
-        "content": "Podolog, ayak ve tırnak bakımında destek sağlar; tırnak kalınlığının güvenli azaltılması, basınç noktalarının değerlendirilmesi ve bakım eğitimi gibi alanlarda rol alır. Mantar tanısı, gerekirse laboratuvar incelemesi ve ilaç tedavisi ise dermatoloji hekiminin alanıdır."
+        "type": "quickFact",
+        "title": "Kısa hatırlatma",
+        "content": "Belirti üç haftadan uzun sürdüyse ya da tırnakta değişiklik başladıysa, evde kontrolsüz ürün denemeleri yerine önce bir uzman göziyle değerlendirme yaptırmak zaman kaybını azaltır."
       },
       {
         "type": "heading",
@@ -258,6 +257,12 @@ export const enrichedBlogPosts = [
       {
         "type": "paragraph",
         "content": "Diyabeti olan kişilerde, his kaybı yaşayanlarda veya dolaşım problemi bulunanlarda küçük çatlaklar bile yakından izlenmelidir. Bu grupta evde kesme, kazıma veya asitli ürünlerle müdahale riskli olabilir. Açık yara, akıntı, yayılan kızarıklık veya şiddetli ağrı varsa gecikmeden sağlık profesyoneline başvurulmalıdır."
+      },
+      {
+        "type": "image",
+        "src": "/blog-images/nail-fungus/content/parmak-arasi-mantar-tirnaga-yayilim-infografik.webp",
+        "alt": "Parmak arası mantarın tırnağa yayılım sürecini 4 aşamada özetleyen infografik: nemli ortam, deride çatlak, deri mantarı, tırnağa geçiş",
+        "caption": "Süreç adım adım: nem birikmesi, deride çatlak, deri mantarının yerleşmesi ve tırnağa geçiş. Erken bakım her aşamada riski azaltır."
       },
       {
         "type": "heading",

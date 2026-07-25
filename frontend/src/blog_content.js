@@ -54,7 +54,7 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "paragraph",
-        "content": "Parmak arası mantar, tıbbi adıyla <strong>tinea pedis</strong>, ayak derisinde görülen mantar enfeksiyonunu ifade eder. Parmak arası bölge için sık kullanılan <strong>interdigital</strong> terimi ise parmakların arasındaki alan anlamına gelir. Bu bölgede deri ince, nem tutmaya yatkın ve sürtünmeye açıktır. Deride çatlama olduğunda mantarların çevre dokuya ilerlemesi kolaylaşabilir."
+        "content": "Parmak arası mantar, tıbbi adıyla <strong>tinea pedis</strong>, ayak derisinde görülen mantar enfeksiyonunu ifade eder. Parmak arası bölge için sık kullanılan <strong>interdigital</strong> terimi ise parmakların arasındaki alan anlamına gelir. Bu bölgede deri ince, nem tutmaya yatkın ve sürtünmeye açıktır. Deride çatlama olduğunda mantarların çevre dokuya ilerlemesi kolaylaşabilir. Deri düzeyinde ortaya çıkan kaşıntı ve soyulmanın seyri, günlük bakım adımları için <a href=\"/blog/parmak-arasi-mantar-nasil-gecer\">parmak arası mantar nasıl geçer</a> rehberinde daha kapsamlı ele alınıyor."
       },
       {
         "type": "image",
@@ -64,7 +64,7 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "paragraph",
-        "content": "Tırnak mantarı ise <strong>onikomikoz</strong> olarak adlandırılır. Mantarlar, tırnağın ana yapısını oluşturan <strong>keratin</strong> adlı proteini kullanarak tırnak plağına yerleşebilir. Tırnak plağı, dışarıdan gördüğümüz sert tırnak tabakasıdır. Parmak arası mantar tırnak kenarına, tırnak altındaki serbest uca veya tırnak çevresi deriye yaklaştığında tırnağa geçiş ihtimali artar."
+        "content": "Tırnak mantarı ise <strong>onikomikoz</strong> olarak adlandırılır. Mantarlar, tırnağın ana yapısını oluşturan <strong>keratin</strong> adlı proteini kullanarak tırnak plağına yerleşebilir. Tırnak plağı, dışarıdan gördüğümüz sert tırnak tabakasıdır. Parmak arası mantar tırnak kenarına, tırnak altındaki serbest uca veya tırnak çevresi deriye yaklaştığında tırnağa geçiş ihtimali artar. Tırnak mantarı tek bir görünümle sınırlı değildir; farklı klinik biçimleri hakkında <a href=\"/blog/tirnak-mantari-cesitleri\">tırnak mantarı çeşitleri</a> yazısı ayırıcı tanı açısından yardımcı olur."
       },
       {
         "type": "paragraph",
@@ -82,7 +82,7 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "paragraph",
-        "content": "Parmak arası mantar tırnağa yaklaştığında ilk değişiklikler çoğu zaman tırnağın serbest ucunda ya da yan kenarında görülür. Başlangıçta belirgin ağrı olmayabilir. Bu yüzden kişi sorunu yalnızca kozmetik bir renk değişikliği sanabilir. Oysa erken dönemde fark edilen küçük bulgular, yayılımı sınırlamak açısından değerlidir."
+        "content": "Parmak arası mantar tırnağa yaklaştığında ilk değişiklikler çoğu zaman tırnağın serbest ucunda ya da yan kenarında görülür. Başlangıçta belirgin ağrı olmayabilir. Bu yüzden kişi sorunu yalnızca kozmetik bir renk değişikliği sanabilir. Oysa erken dönemde fark edilen küçük bulgular, yayılımı sınırlamak açısından değerlidir. Ayak mantarının farklı bölgelerdeki erken bulgularını görmek isteyenler için <a href=\"/blog/ayak-mantari-baslangici-nasil-anlasilir\">ayak mantarı başlangıcı nasıl anlaşılır</a> yazısı ilk işaretleri karşılaştırmalı olarak açıklıyor."
       },
       {
         "type": "image",
@@ -175,7 +175,7 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "paragraph",
-        "content": "Korunmada amaç ayağı kuru, temiz ve hava alabilir tutmaktır. Mantarlar nemli ortamı sevdiği için parmak aralarının düzenli kurulanması en temel adımdır. Ancak deriyi tahriş edecek sert ovalama, kolonya veya yoğun kimyasal uygulamalar cildi daha hassas hale getirebilir."
+        "content": "Korunmada amaç ayağı kuru, temiz ve hava alabilir tutmaktır. Mantarlar nemli ortamı sevdiği için parmak aralarının düzenli kurulanması en temel adımdır. Ancak deriyi tahriş edecek sert ovalama, kolonya veya yoğun kimyasal uygulamalar cildi daha hassas hale getirebilir. Genel ayak hijyeni prensiplerini bir arada görmek isteyenler <a href=\"/blog/ayak-hijyeni-ipuclari\">ayak hijyeni ipuçları</a> yazısına da göz atabilir."
       },
       {
         "type": "checkList",
@@ -231,7 +231,7 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "paragraph",
-        "content": "Piyasada mantar karşıtı birçok krem, sprey, solüsyon veya bakım ürünü bulunur. Ancak deri mantarı ile tırnak mantarının seyri aynı değildir. Tırnak plağı sert bir yapı olduğu için kullanılan ürünlerin etkisi, uygulama düzeni ve problemin derinliği kişiden kişiye değişebilir. Reçeteli ilaçlar, kortizonlu ürünler veya antibiyotik içeren ürünler hekim önerisi olmadan kullanılmamalıdır."
+        "content": "Piyasada mantar karşıtı birçok krem, sprey, solüsyon veya bakım ürünü bulunur. Ancak deri mantarı ile tırnak mantarının seyri aynı değildir. Tırnak plağı sert bir yapı olduğu için kullanılan ürünlerin etkisi, uygulama düzeni ve problemin derinliği kişiden kişiye değişebilir. Reçeteli ilaçlar, kortizonlu ürünler veya antibiyotik içeren ürünler hekim önerisi olmadan kullanılmamalıdır. Uzun süredir devam eden ve düzelmeyen tabloların neden zor iyileştiğini <a href=\"/blog/tirnak-mantari-neden-gecmez\">tırnak mantarı neden geçmez</a> yazısında ayrıntılı ele alıyoruz."
       },
       {
         "type": "paragraph",
@@ -269,7 +269,7 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "paragraph",
-        "content": "Tırnakta renk değişikliği, kalınlaşma veya ufalanma başladıysa sorunu yalnızca estetik görmemek gerekir. Podolojik bakım ayak konforunu ve doğru bakım düzenini destekleyebilir; tanı ve ilaç gerektiren durumlarda dermatoloji değerlendirmesi en güvenli adımdır."
+        "content": "Tırnakta renk değişikliği, kalınlaşma veya ufalanma başladıysa sorunu yalnızca estetik görmemek gerekir. Podolojik bakım ayak konforunu ve doğru bakım düzenini destekleyebilir; tanı ve ilaç gerektiren durumlarda dermatoloji değerlendirmesi en güvenli adımdır. Emin olamadığınız bulgular için önce <a href=\"/podolog-degerlendirmesi\">ücretsiz podolog ön değerlendirmesi</a> alarak bir sonraki adımın ne olması gerektiğini planlayabilirsiniz."
       }
     ],
     "faqs": [

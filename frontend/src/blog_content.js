@@ -10,7 +10,292 @@ export const enrichedBlogPosts = [
   
   
   
+  
   {
+    "id": "parmak-arasi-mantar-tirnaga-yayilir-mi",
+    "title": "Parmak Arası Mantar Tırnağa Yayılır mı? İlk Belirtiler ve Korunma Yolları",
+    "slug": "parmak-arasi-mantar-tirnaga-yayilir-mi",
+    "excerpt": "Parmak arası mantarın tırnağa yayılıp yayılmayacağını, erken belirtileri ve günlük korunma alışkanlıklarını sade biçimde öğrenin.",
+    "metaTitle": "Parmak Arası Mantar Tırnağa Yayılır mı?",
+    "metaDescription": "Parmak arası mantarın tırnağa yayılma riski, ilk belirtiler, korunma yolları ve ne zaman uzman değerlendirmesi gerektiği hakkında bilgi alın.",
+    "date": "26 Temmuz 2026",
+    "readTime": "9 dk",
+    "author": "Serdar Ceylan - Podolog",
+    "imageCategory": "nail-fungus",
+    "image": "/blog-images/nail-fungus/cover/nail-fungus-01.webp",
+    "tags": [
+      "parmak arası mantar",
+      "tırnak mantarı",
+      "ayak mantarı",
+      "onikomikoz",
+      "ayak bakımı",
+      "mantar korunma"
+    ],
+    "sections": [
+      {
+        "type": "intro",
+        "content": "Parmak arası mantar çoğu zaman kaşıntı, soyulma ve koku ile fark edilir. Sorun sadece deride kalabilir; ancak nem, kapalı ayakkabı, ortak alan kullanımı ve tırnak çevresinde küçük çatlaklar varsa tırnağa doğru ilerleme riski artabilir. Bu nedenle parmak arasında başlayan değişiklikleri erken dönemde ciddiye almak, hem konfor hem de tırnak sağlığı açısından önemlidir.",
+        "highlight": "Parmak arası mantar her zaman tırnağa yayılmaz; fakat uygun ortam bulursa tırnak mantarı riskini artırabilir."
+      },
+      {
+        "type": "quickFact",
+        "title": "Kısa bilgi",
+        "content": "Mantarlar nemli, sıcak ve hava almayan ortamlarda daha kolay çoğalır. Parmak aralarının uzun süre ıslak kalması bu nedenle önemli bir risk faktörüdür."
+      },
+      {
+        "type": "image",
+        "src": "/blog-images/nail-fungus/content/parmak-aralarinda-mantar-gorsel.webp",
+        "alt": "Parmak aralarında nem ve mantar oluşumunu anlatan görsel",
+        "caption": "Uzun süre nemli kalan parmak araları, mantarın çoğalması için en uygun ortamı oluşturur."
+      },
+      {
+        "type": "heading",
+        "content": "Parmak arası mantar tırnağa nasıl yayılabilir?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Parmak arası mantar, tıbbi adıyla <strong>tinea pedis</strong>, ayak derisinde görülen mantar enfeksiyonunu ifade eder. Parmak arası bölge için sık kullanılan <strong>interdigital</strong> terimi ise parmakların arasındaki alan anlamına gelir. Bu bölgede deri ince, nem tutmaya yatkın ve sürtünmeye açıktır. Deride çatlama olduğunda mantarların çevre dokuya ilerlemesi kolaylaşabilir."
+      },
+      {
+        "type": "image",
+        "src": "/blog-images/nail-fungus/content/parmak-arasi-mantar-muayene.webp",
+        "alt": "Parmak arası mantarın tırnağa yayılıp yayılmadığını inceleyen podolog muayenesi",
+        "caption": "Parmak arasında başlayan mantarın tırnağa ilerleyip ilerlemediği, erken dönemde yapılan podolojik değerlendirmeyle daha net görülebilir."
+      },
+      {
+        "type": "paragraph",
+        "content": "Tırnak mantarı ise <strong>onikomikoz</strong> olarak adlandırılır. Mantarlar, tırnağın ana yapısını oluşturan <strong>keratin</strong> adlı proteini kullanarak tırnak plağına yerleşebilir. Tırnak plağı, dışarıdan gördüğümüz sert tırnak tabakasıdır. Parmak arası mantar tırnak kenarına, tırnak altındaki serbest uca veya tırnak çevresi deriye yaklaştığında tırnağa geçiş ihtimali artar."
+      },
+      {
+        "type": "paragraph",
+        "content": "Bu yayılım bir gecede olmaz. Genellikle uzun süre devam eden nem, tedavi edilmeyen deri mantarı, ayakların iyi kurulanmaması, sıkı ayakkabı kullanımı ve ortak havlu-terlik gibi alışkanlıklar süreci kolaylaştırır. Parmak arası mantar hakkında daha temel belirtileri okumak isterseniz <a href=\"/blog/ayak-parmak-arasi-mantar\">ayak parmak arası mantarın belirtileri ve bakım önerileri</a> yazısı konuyu deriden başlayan süreç açısından tamamlar."
+      },
+      {
+        "type": "infoBox",
+        "variant": "info",
+        "title": "Yayılım her zaman olmaz",
+        "content": "Parmak arası mantarı olan herkesin tırnağında mantar gelişmez. Tırnağa yayılım; mantarın süresi, ayak hijyeni, bağışıklık durumu, ayakkabı ortamı, tırnak travması ve kişisel risk faktörleriyle ilişkilidir."
+      },
+      {
+        "type": "heading",
+        "content": "Tırnağa yayılımın ilk belirtileri nelerdir?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Parmak arası mantar tırnağa yaklaştığında ilk değişiklikler çoğu zaman tırnağın serbest ucunda ya da yan kenarında görülür. Başlangıçta belirgin ağrı olmayabilir. Bu yüzden kişi sorunu yalnızca kozmetik bir renk değişikliği sanabilir. Oysa erken dönemde fark edilen küçük bulgular, yayılımı sınırlamak açısından değerlidir."
+      },
+      {
+        "type": "image",
+        "src": "/blog-images/nail-fungus/content/parmak-arasi-mantar-tirnaga-bulasir-mi.webp",
+        "alt": "Parmak arası mantarın tırnağa geçtiğinde tırnak ucunda oluşan sararma ve ufalanma",
+        "caption": "Tırnak ucundaki renk değişikliği ve ufalanma, mantarın deriden tırnağa geçtiğine dair erken bir işaret olabilir."
+      },
+      {
+        "type": "bulletList",
+        "title": "Dikkat edilebilecek erken bulgular",
+        "items": [
+          "Tırnak ucunda beyaz, sarımsı veya mat renk değişikliği",
+          "Tırnak kenarında ufalanma ya da küçük kırılmalar",
+          "Tırnak altında hafif birikinti veya kalınlaşma hissi",
+          "Parmak arasında geçmeyen kaşıntı, soyulma ve çatlama",
+          "Tırnak çevresinde hassasiyet veya ayakkabı içinde baskı hissi",
+          "Ayakta nemli kokuya eşlik eden deri yumuşaması"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Tırnaktaki her renk değişikliği mantar anlamına gelmez. Dar ayakkabı basısı, travma, sedef hastalığı, egzama, dolaşım sorunları veya tırnak yatağına ait farklı problemler de benzer görünüm oluşturabilir. Tırnak yatağı, tırnak plağının altında bulunan ve tırnağın destek aldığı dokudur. Bu nedenle kalıcı renk değişikliği veya kalınlaşma varsa dermatoloji değerlendirmesi gerekebilir."
+      },
+      {
+        "type": "heading",
+        "content": "Kimlerde tırnağa yayılma riski daha fazla olabilir?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Risk yalnızca mantarın varlığıyla açıklanmaz. Ayağın gün içindeki ortamı, tırnağın yapısı ve kişinin genel sağlık durumu birlikte değerlendirilir. Özellikle ayağın uzun süre kapalı kaldığı mesleklerde, sporcularda ve terleme eğilimi olan kişilerde parmak arası nem daha zor kontrol edilir."
+      },
+      {
+        "type": "riskGroups",
+        "title": "Kimlerde daha sık görülebilir?",
+        "groups": [
+          "Gün boyu kapalı ayakkabı veya iş ayakkabısı kullanan kişiler",
+          "Ayak terlemesi belirgin olan ve çorap değiştirmekte zorlanan kişiler",
+          "Havuz, spor salonu, hamam gibi ortak ıslak alanları sık kullananlar",
+          "Tırnak travması, kalınlaşma veya tırnak kenarında çatlak yaşayanlar",
+          "Diyabet, dolaşım problemi veya bağışıklıkla ilgili ek sağlık sorunu olan kişiler",
+          "Aile içinde ortak havlu, terlik ya da tırnak makası kullananlar"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Mantarın kişiden kişiye veya ayak içinde farklı bölgelere taşınmasıyla ilgili ayrıntılar için <a href=\"/blog/tirnak-mantari-bulasici-mi\">tırnak mantarının bulaşma yolları</a> konusuna da bakılabilir. Buradaki temel nokta, mantarın yalnızca deride görünmesi durumunda bile ortak eşya ve nem kontrolünün ihmal edilmemesidir."
+      },
+      {
+        "type": "heading",
+        "content": "Yayılımı kolaylaştıran günlük hatalar"
+      },
+      {
+        "type": "paragraph",
+        "content": "Parmak arası mantarın tırnağa ilerlemesini kolaylaştıran davranışlar genellikle basit ama tekrarlayan alışkanlıklardır. Ayakları yıkamak tek başına yeterli değildir; parmak aralarının kurulanması, çorabın nem tutmaması ve ayakkabının havalanması aynı derecede önemlidir."
+      },
+      {
+        "type": "comparisonBox",
+        "title": "Uygunsuz ve güvenli yaklaşım",
+        "wrong": [
+          "Duştan sonra parmak aralarını nemli bırakmak",
+          "Aynı çorabı gün boyu nemli halde kullanmak",
+          "Tırnak çevresindeki ufalanmayı kopararak temizlemeye çalışmak",
+          "Ortak tırnak makası, havlu veya terlik kullanmak"
+        ],
+        "right": [
+          "Parmak aralarını nazikçe ve tamamen kurulamak",
+          "Terleme varsa çorabı gün içinde değiştirmek",
+          "Tırnağı travmatize etmeden profesyonel değerlendirme almak",
+          "Kişisel bakım eşyalarını ayırmak ve düzenli temizlemek"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Tırnakta mantar şüphesi başladığında evde yapılan sert kazıma, tırnağı çok dipten kesme veya kontrolsüz ürün kullanımı tırnak plağını zayıflatabilir. Bu durum mantarın yerleşebileceği küçük boşlukları artırabilir. Benzer şekilde bazı alışkanlıkların süreci uzatabileceği <a href=\"/blog/tirnak-mantarinda-iyilesmeyi-geciktiren-aliskanliklar\">tırnak mantarında iyileşmeyi geciktiren alışkanlıklar</a> yazısında daha ayrıntılı ele alınır."
+      },
+      {
+        "type": "warningList",
+        "title": "Uzman değerlendirmesi gerektirebilecek durumlar",
+        "items": [
+          "Tırnakta hızla artan kalınlaşma, yaygın sararma veya belirgin ufalanma olması",
+          "Parmak arasında açık yara, akıntı, kötüleşen çatlak veya kanama görülmesi",
+          "Kızarıklığın ayağa doğru yayılması veya şiddetli ağrı eşlik etmesi",
+          "Diyabet, dolaşım bozukluğu, his kaybı veya bağışıklıkla ilgili ek risk bulunması",
+          "Evde bakıma rağmen kaşıntı, soyulma ve tırnak değişikliğinin devam etmesi"
+        ]
+      },
+      {
+        "type": "heading",
+        "content": "Korunmak için günlük bakım nasıl olmalı?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Korunmada amaç ayağı kuru, temiz ve hava alabilir tutmaktır. Mantarlar nemli ortamı sevdiği için parmak aralarının düzenli kurulanması en temel adımdır. Ancak deriyi tahriş edecek sert ovalama, kolonya veya yoğun kimyasal uygulamalar cildi daha hassas hale getirebilir."
+      },
+      {
+        "type": "checkList",
+        "title": "Günlük korunma kontrol listesi",
+        "items": [
+          "Banyo sonrası parmak aralarını yumuşak bir havluyla tamamen kurulayın.",
+          "Pamuklu veya nem transferi iyi olan çorapları tercih edin ve terleme varsa değiştirin.",
+          "Ayakkabıları her gün dönüşümlü kullanarak içlerinin kurumasına zaman tanıyın.",
+          "Ortak alanlarda çıplak ayakla dolaşmak yerine kişisel terlik kullanın.",
+          "Tırnakları çok dipten kesmeyin; kenarları deriyi yaralayacak şekilde sivri bırakmayın.",
+          "Havlu, törpü, tırnak makası ve terliği kişisel kullanıma ayırın.",
+          "Ayakkabı içinde parmakları sıkıştıran modellerden mümkün olduğunca kaçının."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Ayakkabı seçimi de korunmanın parçasıdır. Ön kısmı dar ayakkabılar parmakları birbirine bastırır, parmak aralarının havalanmasını azaltır ve tırnak kenarlarında mikrotravma oluşturabilir. Daha dengeli seçimler için <a href=\"/blog/ayak-sagligi-icin-ayakkabi-secimi\">ayak sağlığı için ayakkabı seçimi</a> rehberi pratik bir tamamlayıcı olabilir."
+      },
+      {
+        "type": "subheading",
+        "content": "Basit bir bakım sırası"
+      },
+      {
+        "type": "stepCard",
+        "step": 1,
+        "title": "Temizle ve nazik davran",
+        "content": "Ayağı günlük olarak yıkamak yeterlidir; deriyi sert liflerle kazımaya gerek yoktur. Tahriş olmuş parmak arası deri, mantar ve bakterilere karşı daha savunmasız hale gelebilir.",
+        "product": ""
+      },
+      {
+        "type": "stepCard",
+        "step": 2,
+        "title": "Parmak aralarını kurut",
+        "content": "Kurulama sırasında özellikle dördüncü ve beşinci parmak arası kontrol edilmelidir. Bu bölge dar kaldığı için nem daha uzun süre kalabilir.",
+        "product": ""
+      },
+      {
+        "type": "stepCard",
+        "step": 3,
+        "title": "Tırnağı gözlemle",
+        "content": "Haftada birkaç kez tırnak ucunda renk değişikliği, ufalanma veya kalınlaşma olup olmadığına bakılabilir. Değişiklik ilerliyorsa kendi kendine kazımak yerine uzman görüşü almak daha güvenlidir.",
+        "product": ""
+      },
+      {
+        "type": "infoBox",
+        "variant": "info",
+        "title": "Podolog ve hekim ayrımı",
+        "content": "Podolog, ayak ve tırnak bakımında destek sağlar; tırnak kalınlığının güvenli azaltılması, basınç noktalarının değerlendirilmesi ve bakım eğitimi gibi alanlarda rol alır. Mantar tanısı, gerekirse laboratuvar incelemesi ve ilaç tedavisi ise dermatoloji hekiminin alanıdır."
+      },
+      {
+        "type": "heading",
+        "content": "Evde ürün kullanırken nelere dikkat edilmeli?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Piyasada mantar karşıtı birçok krem, sprey, solüsyon veya bakım ürünü bulunur. Ancak deri mantarı ile tırnak mantarının seyri aynı değildir. Tırnak plağı sert bir yapı olduğu için kullanılan ürünlerin etkisi, uygulama düzeni ve problemin derinliği kişiden kişiye değişebilir. Reçeteli ilaçlar, kortizonlu ürünler veya antibiyotik içeren ürünler hekim önerisi olmadan kullanılmamalıdır."
+      },
+      {
+        "type": "paragraph",
+        "content": "Parmak arası bölge kızarık ve kaşıntılıyken bilinçsizce kortizonlu krem kullanmak bazı durumlarda görünümü geçici olarak sakinleştirebilir; fakat mantar tablosunu maskeleyebilir. Bu nedenle uzun süren, tekrarlayan veya tırnak değişikliğiyle birlikte görülen şikayetlerde dermatoloji muayenesi daha doğru bir yoldur."
+      },
+      {
+        "type": "paragraph",
+        "content": "Deri mantarı kontrol altına alındıktan sonra tırnağın ve çevresindeki cildin nemini dengede tutmak, tekrarların önüne geçmede yardımcı olabilir. Bu dönemde günlük bakımı desteklemek için <a href=\"/urun/foot-nail-care-serum\">PediZone® Foot &amp; Nail Care Serum</a> gibi bakım ürünlerinden yararlanılabilir. Bu tür ürünler tedavi yerine geçmez; şikâyet sürüyorsa öncelik yine uzman değerlendirmesidir."
+      },
+      {
+        "type": "image",
+        "src": "/blog-images/nail-fungus/content/pedizone-mantar-damlasi-before-after.webp",
+        "alt": "PediZone bakım kullanımı öncesi ve sonrası tırnak görünümü karşılaştırması",
+        "caption": "Düzenli bakım ve doğru hijyenle tırnak görünümü zamanla toparlanabilir. Ürün detayları için PediZone® Foot & Nail Care Serum sayfasına göz atabilirsiniz."
+      },
+      {
+        "type": "heading",
+        "content": "Podolojik değerlendirme ne sağlar?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Podolojik değerlendirmede tırnağın kalınlığı, tırnak kenarındaki baskı, parmak arası deri durumu, ayakkabı izi ve basma alışkanlıkları birlikte incelenir. Amaç tanı koymak değil, ayağın günlük yüklenme ve bakım koşullarını daha güvenli hale getirmektir. Kalınlaşmış tırnaklarda kontrollü inceltme, ayakkabı içinde basıncı azaltabilir ve hekimin önerdiği tedavinin uygulanmasını kolaylaştırabilir."
+      },
+      {
+        "type": "paragraph",
+        "content": "Diyabeti olan kişilerde, his kaybı yaşayanlarda veya dolaşım problemi bulunanlarda küçük çatlaklar bile yakından izlenmelidir. Bu grupta evde kesme, kazıma veya asitli ürünlerle müdahale riskli olabilir. Açık yara, akıntı, yayılan kızarıklık veya şiddetli ağrı varsa gecikmeden sağlık profesyoneline başvurulmalıdır."
+      },
+      {
+        "type": "heading",
+        "content": "Tırnağa yayılımı önlemede en önemli mesaj"
+      },
+      {
+        "type": "paragraph",
+        "content": "Parmak arası mantar tırnağa yayılabilir, ancak bu kaçınılmaz bir süreç değildir. Erken fark edilen kaşıntı, soyulma, çatlama ve nemlenme kontrol altına alındığında tırnak tutulum riski azaltılabilir. Ayağı kuru tutmak, ortak eşya kullanımından kaçınmak, tırnağı travmatize etmemek ve ayakkabı seçiminde parmaklara alan bırakmak günlük korunmanın temelidir."
+      },
+      {
+        "type": "paragraph",
+        "content": "Tırnakta renk değişikliği, kalınlaşma veya ufalanma başladıysa sorunu yalnızca estetik görmemek gerekir. Podolojik bakım ayak konforunu ve doğru bakım düzenini destekleyebilir; tanı ve ilaç gerektiren durumlarda dermatoloji değerlendirmesi en güvenli adımdır."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Parmak arası mantar tırnağa kesin yayılır mı?",
+        "answer": "Hayır, parmak arası mantar her zaman tırnağa yayılmaz. Ancak nem, kapalı ayakkabı, tırnak çevresinde çatlak ve uzun süre devam eden deri mantarı varsa yayılım riski artabilir. Erken bakım ve doğru hijyen bu riski azaltmaya yardımcı olur."
+      },
+      {
+        "question": "Tırnağa yayıldığını nasıl anlarım?",
+        "answer": "Tırnak ucunda sarımsı veya beyaz renk değişikliği, ufalanma, kalınlaşma ve tırnak altında birikinti hissi erken belirtiler arasında olabilir. Bu bulgular mantar dışında başka nedenlerle de görülebilir. Kalıcı veya ilerleyen değişikliklerde dermatoloji değerlendirmesi uygun olur."
+      },
+      {
+        "question": "Parmak arası mantar varken tırnak kesmek sakıncalı mı?",
+        "answer": "Tırnak kesilebilir; ancak çok dipten kesmek, kenarları koparmak veya tırnağı sertçe kazımak doğru değildir. Kullanılan tırnak makası kişisel olmalı ve temizlenmelidir. Tırnakta kalınlaşma veya ufalanma varsa podolojik destek almak daha güvenli olabilir."
+      },
+      {
+        "question": "Ayakları yıkamak mantarın yayılmasını önler mi?",
+        "answer": "Yıkamak hijyen için önemlidir fakat tek başına yeterli olmayabilir. Parmak aralarının tamamen kurulanması, çorapların nemli kalmaması ve ayakkabıların havalandırılması gerekir. Nem kontrolü, korunmada en önemli adımlardan biridir."
+      },
+      {
+        "question": "Ne zaman doktora gitmek gerekir?",
+        "answer": "Tırnakta hızlı kalınlaşma, yaygın renk değişikliği, açık yara, akıntı, yayılan kızarıklık veya şiddetli ağrı varsa uzman değerlendirmesi gerekir. Diyabet, dolaşım sorunu veya his kaybı olan kişiler daha erken başvurmalıdır. Reçeteli ilaçlar hekim önerisi olmadan kullanılmamalıdır."
+      }
+    ]
+  },
+{
     "id": "tirnak-mantari-bulasici-mi",
     "title": "Tırnak Mantarı Bulaşıcı mı? Kimlere ve Nasıl Bulaşabilir?",
     "slug": "tirnak-mantari-bulasici-mi",

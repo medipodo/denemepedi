@@ -413,22 +413,37 @@ const Home = () => {
       {/* Ücretsiz Podolog Ön Değerlendirme */}
       <FreeEvaluation />
 
-      {/* Sertifikalar Banner - tıklanınca Sertifikalar sayfası */}
-      <section className="py-10 md:py-14 bg-white" data-testid="sertifikalar-banner">
-        <div className="container mx-auto px-4">
+      {/* Sertifikalar Banner - başlık + geniş görsel, tıklanınca Sertifikalar sayfası */}
+      <section className="py-12 md:py-16 bg-white" data-testid="sertifikalar-banner">
+        <div className="container mx-auto px-4 text-center mb-8 md:mb-10">
+          <span className="inline-block rounded-full bg-red-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-red-600">
+            Kalite & Güven
+          </span>
+          <h2 className="mt-3 text-3xl lg:text-4xl font-bold text-gray-900">
+            Sertifikalı ve Bilimsel Test Edilmiş Ürünler
+          </h2>
+          <p className="mt-3 text-base text-gray-600 max-w-2xl mx-auto">
+            Tüm PediZone® ürünleri; mikrobiyolojik, dermatolojik ve laboratuvar testlerinden geçmiş,
+            resmi belgelerle güvence altına alınmıştır.
+          </p>
+        </div>
+        <div className="mx-auto max-w-6xl px-0 md:px-4">
           <LocalizedLink
             to="/sertifikalar"
             data-testid="sertifikalar-banner-link"
             aria-label="Güven belgelerimiz ve sertifikalarımız"
-            className="group block mx-auto max-w-5xl overflow-hidden rounded-3xl shadow-[0_20px_50px_-20px_rgba(0,0,0,0.2)] ring-1 ring-black/5 transition-all duration-500 hover:shadow-[0_30px_70px_-25px_rgba(220,38,38,0.3)]"
+            className="group block overflow-hidden rounded-none md:rounded-3xl md:shadow-[0_20px_50px_-20px_rgba(0,0,0,0.2)] md:ring-1 md:ring-black/5 transition-all duration-500 md:hover:shadow-[0_30px_70px_-25px_rgba(220,38,38,0.3)]"
           >
             <img
               src="/sertifikalar-banner.webp"
               alt="PediZone Güven Belgelerimiz ve Sertifikalarımız"
-              className="w-full h-auto transition-transform duration-700 ease-out group-hover:scale-[1.015]"
+              className="w-full h-auto transition-transform duration-700 ease-out md:group-hover:scale-[1.01]"
               loading="lazy"
             />
           </LocalizedLink>
+          <div className="mt-4 text-center md:hidden">
+            <span className="text-sm font-semibold text-red-600">Sertifikaları görmek için dokun →</span>
+          </div>
         </div>
       </section>
 

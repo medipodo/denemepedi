@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import LocalizedLink from '../components/LocalizedLink';
+import FreeEvaluation from '../components/FreeEvaluation';
 
 const AyakAnalizi = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -236,6 +237,7 @@ const AyakAnalizi = () => {
   }, []);
 
   return (
+    <>
     <div className="min-h-screen bg-gradient-to-br from-red-600 to-red-700 flex justify-center items-center py-24 px-4">
       <Helmet>
         <title>Ayak Analizi - Size Uygun Ürünü Bulun | PediZone®</title>
@@ -367,6 +369,8 @@ const AyakAnalizi = () => {
         )}
       </div>
     </div>
+    <FreeEvaluation />
+    </>
   );
 };
 

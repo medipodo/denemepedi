@@ -5,9 +5,13 @@
   <!-- Ana Sayfa -->
   <url>
     <loc>https://pedizone.com/</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/podolog-serdar-ceylan.webp</image:loc>
+      <image:title>Podolog Serdar Ceylan - Ücretsiz Ön Değerlendirme</image:title>
+    </image:image>
   </url>
 
   <!-- Blog Ana Sayfa -->
@@ -290,7 +294,7 @@
   <!-- Bayiler -->
   <url>
     <loc>https://pedizone.com/bayiler</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -298,9 +302,13 @@
   <!-- Ayak Analizi -->
   <url>
     <loc>https://pedizone.com/ayak-analizi</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/podolog-serdar-ceylan.webp</image:loc>
+      <image:title>Podolog Serdar Ceylan - Ücretsiz Ön Değerlendirme</image:title>
+    </image:image>
   </url>
 
   <!-- SSS Sayfası -->

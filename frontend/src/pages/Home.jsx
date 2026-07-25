@@ -270,48 +270,44 @@ const Home = () => {
                 </a>
               </div>
 
-              {/* Trust Badges - pedizone.com ile birebir aynı */}
-              <div className="flex flex-wrap justify-center lg:justify-start gap-3 pt-4">
-                {/* Üst satır: Podolog Onaylı + Klinik Testli yan yana */}
-                <div className="flex flex-row gap-3">
-                  {/* Podolog Onaylı - Yeşil */}
-                  <div className="flex items-center space-x-3 bg-white border border-gray-100 rounded-2xl px-4 py-3 shadow-sm">
-                    <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="font-bold text-gray-800 text-sm">Podolog Onaylı</p>
-                      <p className="text-xs text-gray-500">Uzman Tavsiyesi</p>
-                    </div>
+              {/* Trust Badges - mobilde 3'ü yan yana kompakt, web'de mevcut hali */}
+              <div className="flex flex-nowrap items-stretch justify-center gap-2 pt-4 lg:flex-wrap lg:justify-start lg:gap-3">
+                {/* Podolog Onaylı - Yeşil */}
+                <div className="flex flex-1 lg:flex-none items-center gap-1.5 lg:gap-3 bg-white border border-gray-100 rounded-xl lg:rounded-2xl px-2 py-1.5 lg:px-4 lg:py-3 shadow-sm">
+                  <div className="w-7 h-7 lg:w-10 lg:h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 lg:w-6 lg:h-6 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
                   </div>
-                  
-                  {/* Klinik Testli - Mavi */}
-                  <div className="flex items-center space-x-3 bg-white border border-gray-100 rounded-2xl px-4 py-3 shadow-sm">
-                    <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="font-bold text-gray-800 text-sm">Klinik Testli</p>
-                      <p className="text-xs text-gray-500">Güvenli Formül</p>
-                    </div>
+                  <div className="min-w-0">
+                    <p className="font-bold text-gray-800 text-[10px] lg:text-sm leading-tight">Podolog Onaylı</p>
+                    <p className="hidden lg:block text-xs text-gray-500">Uzman Tavsiyesi</p>
                   </div>
                 </div>
-                
-                {/* Seçili Eczanelerde - Pembe daire içinde E logosu */}
-                <div className="flex items-center space-x-3 bg-white border border-gray-100 rounded-2xl px-4 py-3 shadow-sm">
-                  <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    {/* Türk Eczane E Logosu - beyaz arka plan, kırmızı çerçeve, büyük kalın E */}
-                    <div className="w-7 h-8 bg-white border-2 border-red-600 flex items-center justify-center">
-                      <span className="text-red-600 font-black text-3xl leading-none">E</span>
+
+                {/* Klinik Testli - Mavi */}
+                <div className="flex flex-1 lg:flex-none items-center gap-1.5 lg:gap-3 bg-white border border-gray-100 rounded-xl lg:rounded-2xl px-2 py-1.5 lg:px-4 lg:py-3 shadow-sm">
+                  <div className="w-7 h-7 lg:w-10 lg:h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 lg:w-6 lg:h-6 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div className="min-w-0">
+                    <p className="font-bold text-gray-800 text-[10px] lg:text-sm leading-tight">Klinik Testli</p>
+                    <p className="hidden lg:block text-xs text-gray-500">Güvenli Formül</p>
+                  </div>
+                </div>
+
+                {/* Seçili Eczanelerde - E logosu */}
+                <div className="flex flex-1 lg:flex-none items-center gap-1.5 lg:gap-3 bg-white border border-gray-100 rounded-xl lg:rounded-2xl px-2 py-1.5 lg:px-4 lg:py-3 shadow-sm">
+                  <div className="w-7 h-7 lg:w-10 lg:h-10 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-4 h-5 lg:w-7 lg:h-8 bg-white border lg:border-2 border-red-600 flex items-center justify-center">
+                      <span className="text-red-600 font-black text-base lg:text-3xl leading-none">E</span>
                     </div>
                   </div>
-                  <div>
-                    <p className="font-bold text-gray-800 text-sm">Seçili Eczanelerde</p>
-                    <p className="text-xs text-gray-500">Güvenli Satış</p>
+                  <div className="min-w-0">
+                    <p className="font-bold text-gray-800 text-[10px] lg:text-sm leading-tight">Seçili Eczanelerde</p>
+                    <p className="hidden lg:block text-xs text-gray-500">Güvenli Satış</p>
                   </div>
                 </div>
               </div>

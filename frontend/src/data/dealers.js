@@ -218,6 +218,26 @@ export const dealers = [
   lat: 40.634544941,
   lng: 29.268377812
 },
+{
+  id: 21,
+  name: "Podolog Lale Turan",
+  city: "Aydın",
+  address: "1120. Sk. No:10, Fatih, 09020 Aydın Merkez / Aydın",
+  phone: "0553 642 06 67",
+  type: "Özel Sağlık Hizmet Birimi",
+  lat: 37.835813,
+  lng: 27.834659
+},
+{
+  id: 22,
+  name: "Podolog Sevda Karataş",
+  city: "Erzurum",
+  address: "Cumhuriyet Cd. 45-37, Rabia Ana, 25030 Yakutiye / Erzurum",
+  phone: "0537 913 31 68",
+  type: "Özel Sağlık Hizmet Birimi",
+  lat: 39.906120,
+  lng: 41.275542
+},
 ];
 
 export default dealers;

@@ -91,7 +91,7 @@ const Header = () => {
             data-testid="header-logo"
           >
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-white md:text-red-600 transition-colors">PediZone<span style={{ fontSize: '0.5em', verticalAlign: 'super' }}>®</span></span>
+              <span className="text-2xl font-bold text-white md:text-red-600 transition-colors" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif' }}>PediZone<span style={{ fontSize: '0.5em', verticalAlign: 'super' }}>®</span></span>
             </div>
           </LocalizedLink>
 

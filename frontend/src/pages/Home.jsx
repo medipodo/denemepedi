@@ -557,6 +557,9 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Bayimiz Olmak İster misiniz? - Tam genişlik banner */}
+      <BayiOl />
+
       {/* Blog Preview Section - 6 blog 2 satır */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -674,9 +677,6 @@ const Home = () => {
           </div>
         </section>
       )}
-
-      {/* Bayimiz Olmak İster misiniz? - CTA */}
-      <BayiOl />
 
       {/* Bayilerimiz Harita Section */}
       <section className="py-12 bg-gray-50">

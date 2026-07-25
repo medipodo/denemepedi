@@ -7,6 +7,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { dealers } from '../data/dealers';
+import BayiOl from '../components/BayiOl';
 
 // Kırmızı marker ikonu oluştur
 const redIcon = new L.Icon({
@@ -246,21 +247,8 @@ const getTypeColor = (type) => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-red-600 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Bayi Olmak İster Misiniz?</h2>
-          <p className="text-red-100 mb-8 max-w-2xl mx-auto">
-            PediZone® ürünlerini satışa sunmak ve yetkili bayi olmak için bizimle iletişime geçin.
-          </p>
-          <a 
-            href="mailto:info@pedizone.com?subject=Bayi%20Başvurusu" 
-            className="inline-flex items-center bg-white text-red-600 hover:bg-red-50 px-8 py-3 rounded-lg font-semibold transition-colors"
-          >
-            Bayi Başvurusu Yap
-          </a>
-        </div>
-      </section>
+      {/* Bayi Olmak İster misiniz? - Modern CTA (ana sayfayla aynı) */}
+      <BayiOl />
     </div>
   );
 };

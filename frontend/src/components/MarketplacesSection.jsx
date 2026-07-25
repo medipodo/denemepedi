@@ -37,6 +37,20 @@ const fadeUp = {
 };
 
 const MarketplacesSection = () => {
+  // Mobilde açılış animasyonu kapalı, web'de açık
+  const [isMobile, setIsMobile] = React.useState(false);
+  React.useEffect(() => {
+    const mq = window.matchMedia('(max-width: 767px)');
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener('change', update);
+    return () => mq.removeEventListener('change', update);
+  }, []);
+  const reveal = (amount) =>
+    isMobile
+      ? { initial: false, animate: 'show' }
+      : { initial: 'hidden', whileInView: 'show', viewport: { once: true, amount } };
+
   return (
     <section
       id="pazaryerleri"
@@ -77,9 +91,7 @@ const MarketplacesSection = () => {
         <motion.div
           className="mx-auto max-w-3xl text-center"
           variants={containerVariants}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
+          {...reveal(0.3)}
         >
           <motion.p
             variants={fadeUp}
@@ -106,9 +118,7 @@ const MarketplacesSection = () => {
         <motion.div
           className="mx-auto mt-14 grid max-w-5xl gap-7 md:grid-cols-3"
           variants={containerVariants}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
+          {...reveal(0.2)}
         >
           {marketplaces.map((m) => (
             <motion.a
@@ -180,9 +190,7 @@ const MarketplacesSection = () => {
         {/* Güven şeridi */}
         <motion.div
           variants={fadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.5 }}
+          {...reveal(0.5)}
           className="mx-auto mt-14 flex max-w-4xl flex-wrap items-center justify-center gap-x-10 gap-y-4 rounded-2xl border border-red-100 bg-white/60 px-8 py-5 backdrop-blur"
         >
           {stats.map(({ Icon, label }) => (

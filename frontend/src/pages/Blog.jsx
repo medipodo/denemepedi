@@ -174,10 +174,10 @@ const Blog = () => {
       <section className="pt-32 pb-8 md:pb-10 bg-gradient-to-br from-red-50 via-white to-red-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               {content.title}
             </h1>
-            <p className="text-lg text-gray-600">{content.subtitle}</p>
+            <p className="text-base text-gray-600">{content.subtitle}</p>
 
             {/* Kompakt arama kutusu */}
             <div className="mt-6 max-w-md mx-auto">
@@ -263,7 +263,7 @@ const Blog = () => {
                             </Badge>
                           ))}
                       </div>
-                      <h2 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
+                      <h2 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2">
                         {post.title}
                       </h2>
                       <div className="flex items-center text-sm text-gray-500 mb-4">

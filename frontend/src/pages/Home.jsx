@@ -260,14 +260,14 @@ const Home = () => {
                 >
                   Ürünleri Keşfedin <ArrowRight className="ml-2" size={20} />
                 </Button>
-                <a href={`tel:${siteInfo.phoneLink}`}>
+                <LocalizedLink to="/podolog-degerlendirmesi">
                   <Button 
                     variant="outline" 
                     className="border-red-600 text-red-600 hover:bg-red-50 px-8 py-3 text-lg rounded-full w-full"
                   >
                     Uzman Desteği
                   </Button>
-                </a>
+                </LocalizedLink>
               </div>
 
               {/* Trust Badges - mobilde 3'ü yan yana kompakt, web'de mevcut hali */}

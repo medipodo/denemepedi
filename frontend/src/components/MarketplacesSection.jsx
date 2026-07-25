@@ -137,7 +137,11 @@ const MarketplacesSection = () => {
                 <img
                   src={m.logo}
                   alt={`${m.name} logo`}
-                  className="max-h-11 w-auto max-w-[70%] object-contain transition-transform duration-300 group-hover:scale-105"
+                  className={
+                    m.boxed
+                      ? 'h-16 w-16 rounded-2xl object-cover shadow-sm transition-transform duration-300 group-hover:scale-105'
+                      : 'max-h-11 w-auto max-w-[70%] object-contain transition-transform duration-300 group-hover:scale-105'
+                  }
                   loading="lazy"
                 />
               </div>

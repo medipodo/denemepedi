@@ -3,10 +3,11 @@ export const marketplaces = [
   {
     id: 'trendyol',
     name: 'Trendyol',
-    logo: '/marketplaces/trendyol.svg',
+    logo: '/marketplaces/trendyol.png',
     url: 'https://www.trendyol.com/sr?mid=1114633&id=949004162%2C974106929%2C974407501%2C993719944&os=1',
     accent: '#F27A1A',
-    tint: 'rgba(242,122,26,0.10)',
+    tint: 'rgba(0,0,0,0.04)',
+    boxed: true,
   },
   {
     id: 'hepsiburada',

@@ -240,11 +240,11 @@ const Home = () => {
                 🏆 Podologların Tavsiyesi
               </Badge>
               
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-0">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-0">
                 Profesyonel Ayak Bakım Çözümleri
               </h1>
               
-              <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-red-600 mb-0">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-red-600 mb-0">
                 Pedizone<span style={{ fontSize: '0.5em', verticalAlign: 'super' }}>®</span>
               </h2>
               

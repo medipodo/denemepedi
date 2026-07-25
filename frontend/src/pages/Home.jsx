@@ -13,6 +13,7 @@ import 'leaflet/dist/leaflet.css';
 import LocalizedLink from '../components/LocalizedLink';
 import MarketplacesSection from '../components/MarketplacesSection';
 import BayiOl from '../components/BayiOl';
+import FreeEvaluation from '../components/FreeEvaluation';
 
 // ---- Türkçe tarih parse yardımcısı (blog sıralaması için) ----
 const TR_MONTHS = {
@@ -453,6 +454,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Ücretsiz Podolog Ön Değerlendirme */}
+      <FreeEvaluation />
 
       {/* Why PediZone Section - pedizone.com style */}
       <section className="py-20 bg-white">

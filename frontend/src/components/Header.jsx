@@ -122,7 +122,7 @@ const Header = () => {
               data-testid="uzman-destegi-btn"
             >
               <Phone size={16} />
-              <span>Uzman Desteği</span>
+              <span>Podolog Desteği</span>
             </a>
 
             {/* Language flags (çerçevesiz) */}

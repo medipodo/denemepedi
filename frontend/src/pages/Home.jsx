@@ -414,6 +414,9 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Ücretsiz Podolog Ön Değerlendirme */}
+      <FreeEvaluation />
+
       {/* Pazaryerleri Bölümü */}
       <MarketplacesSection />
 
@@ -454,9 +457,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Ücretsiz Podolog Ön Değerlendirme */}
-      <FreeEvaluation />
 
       {/* Why PediZone Section - pedizone.com style */}
       <section className="py-20 bg-white">

@@ -860,7 +860,7 @@ const BlogParmakArasiMantar = () => {
                 className="w-full object-cover"
               />
               <p className="text-center text-sm text-gray-500 mt-2 italic px-4 pb-2">
-                Mantar enfeksiyonu ihmal edildiğinde diğer parmak aralarına ve tırnaklara yayılabilir.
+                Mantar enfeksiyonu ihmal edildiğinde diğer parmak aralarına ve tırnaklara yayılabilir. Bu sürecin nasıl ilerlediğini merak edenler için <LocalizedLink to="/blog/parmak-arasi-mantar-tirnaga-yayilir-mi" className="not-italic text-red-600 hover:text-red-700 font-semibold">parmak arası mantar tırnağa yayılır mı</LocalizedLink> yazımız faydalı olabilir.
               </p>
             </div>
 
@@ -1019,6 +1019,10 @@ const BlogParmakArasiMantar = () => {
                 <LocalizedLink to="/blog/ayak-mantari-baslangici-nasil-anlasilir" className="block bg-gray-50 hover:bg-gray-100 rounded-xl p-5 transition-colors">
                   <p className="font-semibold text-gray-900 mb-1">Ayak Mantarı Başlangıcı Nasıl Anlaşılır?</p>
                   <p className="text-sm text-gray-600">Erken belirtileri tanıyın</p>
+                </LocalizedLink>
+                <LocalizedLink to="/blog/parmak-arasi-mantar-tirnaga-yayilir-mi" className="block bg-gray-50 hover:bg-gray-100 rounded-xl p-5 transition-colors">
+                  <p className="font-semibold text-gray-900 mb-1">Parmak Arası Mantar Tırnağa Yayılır mı?</p>
+                  <p className="text-sm text-gray-600">İlk belirtiler ve korunma yolları</p>
                 </LocalizedLink>
                 <LocalizedLink to="/blog/ayak-mantari-evde-nasil-gecer" className="block bg-gray-50 hover:bg-gray-100 rounded-xl p-5 transition-colors">
                   <p className="font-semibold text-gray-900 mb-1">Ayak Mantarı Evde Nasıl Geçer?</p>

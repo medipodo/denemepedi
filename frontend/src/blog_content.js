@@ -365,7 +365,7 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "paragraph",
-        "content": "Ayak derisindeki mantar, tırnak mantarı için önemli bir kaynak olabilir. Özellikle parmak aralarında kaşıntı, soyulma, beyazlaşma veya çatlama varsa bu durum tırnağa yayılma riskini artırabilir. Bu nedenle <a href=\"/blog/parmak-arasi-mantar-nasil-gecer\">parmak arası mantar nasıl geçer</a> yazımızdaki belirtileri tırnak değişiklikleriyle birlikte değerlendirmek önemlidir."
+        "content": "Ayak derisindeki mantar, tırnak mantarı için önemli bir kaynak olabilir. Özellikle parmak aralarında kaşıntı, soyulma, beyazlaşma veya çatlama varsa bu durum tırnağa yayılma riskini artırabilir. Bu nedenle <a href=\"/blog/parmak-arasi-mantar-nasil-gecer\">parmak arası mantar nasıl geçer</a> yazımızdaki belirtileri tırnak değişiklikleriyle birlikte değerlendirmek önemlidir. Konuya daha spesifik bakmak isteyenler için <a href=\"/blog/parmak-arasi-mantar-tirnaga-yayilir-mi\">parmak arası mantar tırnağa yayılır mı</a> yazımız bu geçiş sürecini erken belirtileriyle birlikte ele alıyor."
       },
       {
         "type": "paragraph",
@@ -914,7 +914,7 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "paragraph",
-        "content": "Duş sonrası ayakları hızlıca havluyla silmek çoğu zaman yeterli değildir. Parmak aralarının tek tek kurulanması, çorap giymeden önce ayağın tamamen kuru olduğundan emin olunması gerekir. Parmak aralarında soyulma, kaşıntı veya kötü koku eşlik ediyorsa <a href=\"/blog/parmak-arasi-mantar-nasil-gecer\">parmak arası mantar nasıl geçer</a> yazımızdaki belirtileri de birlikte değerlendirmenizde yarar var."
+        "content": "Duş sonrası ayakları hızlıca havluyla silmek çoğu zaman yeterli değildir. Parmak aralarının tek tek kurulanması, çorap giymeden önce ayağın tamamen kuru olduğundan emin olunması gerekir. Parmak aralarında soyulma, kaşıntı veya kötü koku eşlik ediyorsa <a href=\"/blog/parmak-arasi-mantar-nasil-gecer\">parmak arası mantar nasıl geçer</a> yazımızdaki belirtileri de birlikte değerlendirmenizde yarar var. Deriden başlayan mantarın tırnağa doğru ilerleyip ilerlemediğini merak edenler için <a href=\"/blog/parmak-arasi-mantar-tirnaga-yayilir-mi\">parmak arası mantar tırnağa yayılır mı</a> yazısı da bu geçiş sürecini erken bulgularıyla açıklıyor."
       },
       {
         "type": "bulletList",

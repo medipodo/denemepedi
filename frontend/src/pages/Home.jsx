@@ -270,8 +270,8 @@ const Home = () => {
                 </a>
               </div>
 
-              {/* Trust Badges - mobilde 3'ü yan yana kompakt, web'de mevcut hali */}
-              <div className="flex flex-nowrap items-stretch justify-center gap-2 pt-4 lg:flex-wrap lg:justify-start lg:gap-3">
+              {/* Trust Badges - web: sol sütun; mobil: görsellerin altında (aşağıda kopya) */}
+              <div className="hidden pt-4 lg:flex lg:flex-wrap lg:justify-start lg:gap-3">
                 {/* Podolog Onaylı - Yeşil */}
                 <div className="flex flex-1 lg:flex-none items-center gap-1.5 lg:gap-3 bg-white border border-gray-100 rounded-xl lg:rounded-2xl px-2 py-1.5 lg:px-4 lg:py-3 shadow-sm">
                   <div className="w-7 h-7 lg:w-10 lg:h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
@@ -354,6 +354,37 @@ const Home = () => {
                     loading="lazy"
                   />
                 </LocalizedLink>
+              </div>
+            </div>
+
+            {/* Trust Badges - SADECE MOBİL: ürün görsellerinin altında */}
+            <div className="flex lg:hidden items-stretch justify-center gap-2 mt-6">
+              {/* Podolog Onaylı */}
+              <div className="flex flex-1 items-center gap-1.5 bg-white border border-gray-100 rounded-xl px-2 py-1.5 shadow-sm">
+                <div className="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-4 h-4 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <p className="font-bold text-gray-800 text-[10px] leading-tight min-w-0">Podolog Onaylı</p>
+              </div>
+              {/* Klinik Testli */}
+              <div className="flex flex-1 items-center gap-1.5 bg-white border border-gray-100 rounded-xl px-2 py-1.5 shadow-sm">
+                <div className="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-4 h-4 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <p className="font-bold text-gray-800 text-[10px] leading-tight min-w-0">Klinik Testli</p>
+              </div>
+              {/* Seçili Eczanelerde */}
+              <div className="flex flex-1 items-center gap-1.5 bg-white border border-gray-100 rounded-xl px-2 py-1.5 shadow-sm">
+                <div className="w-7 h-7 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-4 h-5 bg-white border border-red-600 flex items-center justify-center">
+                    <span className="text-red-600 font-black text-base leading-none">E</span>
+                  </div>
+                </div>
+                <p className="font-bold text-gray-800 text-[10px] leading-tight min-w-0">Seçili Eczanelerde</p>
               </div>
             </div>
           </div>

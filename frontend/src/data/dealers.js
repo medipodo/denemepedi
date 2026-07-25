@@ -210,12 +210,13 @@ export const dealers = [
   id: 20,
   name: "Podolog Pelin Yarbı",
   city: "Yalova",
-  address: "Merkez / Yalova",
+  address: "Bağlarbaşı Mahallesi Kınalı Sokak No:1 Daire:22, Yalova / Merkez",
   phone: "0507 665 5570",
   email: "podologpelinyarbi@gmail.com",
+  web: "https://yalovaayaksagligi.com/",
   type: "Özel Sağlık Hizmet Birimi",
-  lat: 40.652203374,
-  lng: 29.26858936
+  lat: 40.634544941,
+  lng: 29.268377812
 },
 ];
 

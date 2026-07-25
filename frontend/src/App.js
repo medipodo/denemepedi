@@ -19,6 +19,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
+import PodologDegerlendirme from './pages/PodologDegerlendirme';
 
 function App() {
   // Load rrweb scripts only in staging/preview/development environments
@@ -78,6 +79,7 @@ function App() {
           <Route path="/sertifikalar" element={<TRContent page="sertifikalar" />} />
           <Route path="/bayiler" element={<TRContent page="bayiler" />} />
           <Route path="/ayak-analizi" element={<TRContent page="ayak-analizi" />} />
+          <Route path="/podolog-degerlendirmesi" element={<TRContent page="podolog-degerlendirmesi" />} />
           <Route path="/iletisim" element={<TRContent page="iletisim" />} />
           <Route path="/sss" element={<TRContent page="sss" />} />
           <Route path="/gizlilik-politikasi" element={<TRContent page="gizlilik-politikasi" />} />
@@ -117,6 +119,8 @@ const TRContent = ({ page }) => {
         return <Dealers />;
       case 'ayak-analizi':
         return <AyakAnalizi />;
+      case 'podolog-degerlendirmesi':
+        return <PodologDegerlendirme />;
       case 'iletisim':
         return <Contact />;
       case 'gizlilik-politikasi':

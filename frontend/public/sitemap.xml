@@ -311,6 +311,17 @@
     </image:image>
   </url>
 
+  <url>
+    <loc>https://pedizone.com/podolog-degerlendirmesi</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/podolog-serdar-ceylan.webp</image:loc>
+      <image:title>Podolog Serdar Ceylan - Ücretsiz Ön Değerlendirme</image:title>
+    </image:image>
+  </url>
+
   <!-- SSS Sayfası -->
   <url>
     <loc>https://pedizone.com/sss</loc>

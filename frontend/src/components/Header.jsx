@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Stethoscope } from 'lucide-react';
 import LocalizedLink from './LocalizedLink';
 // import LanguageSwitcher from './LanguageSwitcher'; // DISABLED: Bayraklar statik
 import { useLanguage } from '../i18n/LanguageContext';
@@ -41,6 +41,7 @@ const Header = () => {
     { name: t('nav.home'), path: '/' },
     { name: t('nav.products'), path: '/#urunler' },
     { name: t('nav.footAnalysis'), path: '/ayak-analizi' },
+    { name: 'Podolog Desteği', path: '/podolog-degerlendirmesi' },
     { name: t('nav.dealers'), path: '/bayiler' },
     { name: t('nav.blog'), path: '/blog' },
     { name: t('nav.faq'), path: '/sss' },
@@ -96,7 +97,7 @@ const Header = () => {
           </LocalizedLink>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-5 xl:gap-6">
+          <nav className="hidden xl:flex items-center gap-5">
             {navLinks.map((link) => (
               <LocalizedLink
                 key={link.path}
@@ -115,15 +116,16 @@ const Header = () => {
 
           {/* Right side actions */}
           <div className="flex items-center gap-2 md:gap-3 shrink-0">
-            {/* Uzman Desteği button (geniş ekran) */}
-            <a
-              href="tel:+905054000326"
+            {/* Podolog Desteği butonu (geniş ekran) -> Ücretsiz Ön Değerlendirme */}
+            <LocalizedLink
+              to="/podolog-degerlendirmesi"
+              onClick={() => setIsMobileMenuOpen(false)}
               className="hidden xl:inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-600 to-red-500 px-4 xl:px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-red-500/30 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-red-500/40"
               data-testid="uzman-destegi-btn"
             >
-              <Phone size={16} />
+              <Stethoscope size={16} />
               <span>Podolog Desteği</span>
-            </a>
+            </LocalizedLink>
 
             {/* Language flags (çerçevesiz) */}
             <div className="flex items-center gap-0.5">
@@ -157,7 +159,7 @@ const Header = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden text-white md:text-gray-900 p-2 transition-colors"
+              className="xl:hidden text-white md:text-gray-900 p-2 transition-colors"
               data-testid="mobile-menu-toggle"
               aria-label="Menü"
             >
@@ -168,7 +170,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 border-t border-red-500/30 md:border-gray-200 pt-4">
+          <div className="xl:hidden mt-4 pb-4 border-t border-red-500/30 md:border-gray-200 pt-4">
             <nav className="flex flex-col space-y-3">
               {navLinks.map((link) => (
                 <LocalizedLink

@@ -68,7 +68,7 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "paragraph",
-        "content": "Bu yayılım bir gecede olmaz. Genellikle uzun süre devam eden nem, tedavi edilmeyen deri mantarı, ayakların iyi kurulanmaması, sıkı ayakkabı kullanımı ve ortak havlu-terlik gibi alışkanlıklar süreci kolaylaştırır. Parmak arası mantar hakkında daha temel belirtileri okumak isterseniz <a href=\"/blog/ayak-parmak-arasi-mantar\">ayak parmak arası mantarın belirtileri ve bakım önerileri</a> yazısı konuyu deriden başlayan süreç açısından tamamlar."
+        "content": "Bu yayılım bir gecede olmaz. Genellikle uzun süre devam eden nem, tedavi edilmeyen deri mantarı, ayakların iyi kurulanmaması, sıkı ayakkabı kullanımı ve ortak havlu-terlik gibi alışkanlıklar süreci kolaylaştırır. Parmak arası mantar hakkında daha temel belirtileri okumak isterseniz <a href=\"/blog/ayak-mantari-nedir\">ayak mantarı nedir</a> yazısı konuyu deriden başlayan süreç açısından tamamlar."
       },
       {
         "type": "infoBox",
@@ -192,7 +192,7 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "paragraph",
-        "content": "Ayakkabı seçimi de korunmanın parçasıdır. Ön kısmı dar ayakkabılar parmakları birbirine bastırır, parmak aralarının havalanmasını azaltır ve tırnak kenarlarında mikrotravma oluşturabilir. Daha dengeli seçimler için <a href=\"/blog/ayak-sagligi-icin-ayakkabi-secimi\">ayak sağlığı için ayakkabı seçimi</a> rehberi pratik bir tamamlayıcı olabilir."
+        "content": "Ayakkabı seçimi de korunmanın parçasıdır. Ön kısmı dar ayakkabılar parmakları birbirine bastırır, parmak aralarının havalanmasını azaltır ve tırnak kenarlarında mikrotravma oluşturabilir. Daha dengeli seçimler için <a href=\"/blog/batik-tirnakta-ayakkabi-secimi\">batık tırnakta ayakkabı seçimi</a> rehberi pratik bir tamamlayıcı olabilir."
       },
       {
         "type": "subheading",

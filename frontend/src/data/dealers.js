@@ -218,8 +218,20 @@ export const dealers = [
   lat: 40.634544941,
   lng: 29.268377812
 },
-{
+  {
   id: 21,
+  name: "Selin Salur Master Nail Technician",
+  city: "Ankara",
+  address: "Elvan, 1945. Sk. No : 12, 06794 Etimesgut/Ankara",
+  phone: "0507 665 5570",
+  email: "selinsalur09@gmail.com",
+  web: "https://www.instagram.com/selintirnakstudyo/",
+  type: "El ve Ayak Bakım Stüdyosu",
+  lat: 39.9404173170,
+  lng: 32.6303954
+},
+{
+  id: 22,
   name: "Sn. Sinem Lale Turan",
   city: "Aydın",
   address: "1120. Sk. No:10, Fatih, 09020 Aydın Merkez / Aydın",
@@ -229,7 +241,7 @@ export const dealers = [
   lng: 27.834659
 },
 {
-  id: 22,
+  id: 23,
   name: "Pdl. Murat Karataş",
   city: "Erzurum",
   address: "Cumhuriyet Cd. 45-37, Rabia Ana, 25030 Yakutiye / Erzurum",

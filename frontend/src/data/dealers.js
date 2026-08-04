@@ -220,7 +220,7 @@ export const dealers = [
 },
 {
   id: 21,
-  name: "Sn. Lale Turan",
+  name: "Sn. Sinem Lale Turan",
   city: "Aydın",
   address: "1120. Sk. No:10, Fatih, 09020 Aydın Merkez / Aydın",
   phone: "0553 642 06 67",
@@ -230,7 +230,7 @@ export const dealers = [
 },
 {
   id: 22,
-  name: "Usta Öğretici Sevda Karataş",
+  name: "Pdl. Murat Karataş",
   city: "Erzurum",
   address: "Cumhuriyet Cd. 45-37, Rabia Ana, 25030 Yakutiye / Erzurum",
   phone: "0537 913 31 68",

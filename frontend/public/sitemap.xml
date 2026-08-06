@@ -263,6 +263,15 @@
   <image:loc>https://pedizone.com/blog-images/nail-fungus/content/tirnak-mantari-ankara.webp</image:loc>
     </image:image>
 </url>
+  <loc>https://pedizone.com/blog/batik-tirnak-nasil-baslar-ilk-belirtileri</loc>
+  <lastmod>2026-08-07</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+    <image:image>
+  <image:loc>https://pedizone.com/blog-images/ingrown/cover/ingrown-05.webp</image:loc>
+ </image:image>
+</url>
+        
   <!-- Ürün Sayfaları -->
   <url>
     <loc>https://pedizone.com/urun/foot-nail-care-serum</loc>

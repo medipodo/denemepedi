@@ -255,22 +255,36 @@
     </image:image>
 </url>
   <url>
-  <loc>https://pedizone.com/blog/tirnak-mantari-bulasici-mi</loc>
-  <lastmod>2026-07-23</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
+    <loc>https://pedizone.com/blog/tirnak-mantari-bulasici-mi</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-  <image:loc>https://pedizone.com/blog-images/nail-fungus/content/tirnak-mantari-ankara.webp</image:loc>
+      <image:loc>https://pedizone.com/blog-images/nail-fungus/content/tirnak-mantari-ankara.webp</image:loc>
     </image:image>
-</url>
-  <loc>https://pedizone.com/blog/batik-tirnak-nasil-baslar-ilk-belirtileri</loc>
-  <lastmod>2026-08-06</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pedizone.com/blog/batik-tirnak-nasil-baslar-ilk-belirtileri</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-  <image:loc>https://pedizone.com/blog-images/ingrown/cover/ingrown-05.webp</image:loc>
- </image:image>
-</url>
+      <image:loc>https://pedizone.com/blog-images/ingrown/cover/ingrown-06.webp</image:loc>
+      <image:title>Batık Tırnak Nasıl Başlar? İlk Belirtileri Nelerdir?</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pedizone.com/blog-images/ingrown/content/tirnak-batmasi-cizim.webp</image:loc>
+      <image:title>Batık tırnak oluşum mekanizması</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pedizone.com/blog-images/ingrown/content/tirnak-batmasi-niti-tel-tedavisi.webp</image:loc>
+      <image:title>Batık tırnak tel tedavisi uygulaması</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pedizone.com/blog-images/ingrown/content/podolog-serdar-ceylan-baglica.webp</image:loc>
+      <image:title>Podolog Serdar Ceylan Klinik Muayene</image:title>
+    </image:image>
+  </url>
         
   <!-- Ürün Sayfaları -->
   <url>

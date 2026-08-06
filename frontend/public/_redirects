@@ -22,6 +22,8 @@
 
 /product      /#urunler     301!
 /urun         /#urunler     301!
+/urunler      /#urunler     301!
+
 
 # --- ESKİ .html UZANTILI BLOG URL'LERİ → TEMİZ URL (301) ---
 /blog/nasir-neden-surekli-tekrar-eder.html         /blog/nasir-neden-surekli-tekrar-eder         301!

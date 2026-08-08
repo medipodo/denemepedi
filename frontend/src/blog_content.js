@@ -237,6 +237,22 @@ export const enrichedBlogPosts = [
         "type": "quickFact",
         "title": "Podolog Gözüyle Uzman Tavsiyesi",
         "content": "Aynı noktada inatla tekrarlayan nasırlarda yalnızca topuk törpüsü veya nemlendirici kullanmak geçici çözüm sunar. Ayak basış analiziniz (plantar basınç ölçümü) yapılarak yükün bindiği aks tespit edilmeli ve kişiye özel basış desteği planlanmalıdır."
+      },
+      {
+        "type": "productCard",
+        "title": "Uzman Önerisi: PediZone® %15 Üreli Çatlak Topuk ve Ayak Kremi",
+        "content": "Nasır ve sertleşmiş derinin yumuşatılmasında yüksek üre oranı kritik öneme sahiptir. %15 yoğun üre, shea butter ve avokado yağı içeren formülü ile sertleşmiş dokuyu derinlemesine nemlendirir, keratolitik etkisiyle nasırların yumuşamasını ve güvenle arındırılmasını destekler.",
+        "benefits": [
+          "%15 Urea içeriğiyle yoğun keratolitik ve nemlendirici etki",
+          "Sertleşmiş topuk ve nasırlı bölgelerde hızlı yumuşama",
+          "Shea Butter ve Avokado Yağı ile lipid bariyeri onarımı",
+          "Günlük bakım ve çatlak önleyici koruyucu bariyer"
+        ],
+        "link": {
+          "url": "/urun/ureli-krem",
+          "text": "Ürünü İncele"
+        },
+        "product": "PediZone® %15 Üreli Çatlak Topuk ve Ayak Kremi"
       }
     ],
     "faqs": [

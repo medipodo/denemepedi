@@ -232,6 +232,11 @@ export const enrichedBlogPosts = [
       {
         "type": "paragraph",
         "content": "Uygun ayakkabı, düzenli cilt bakımı ve gerektiğinde podolojik değerlendirme ile birçok kişide günlük konfor artırılabilir. Diyabet, dolaşım sorunu, açık yara, akıntı, şiddetli ağrı veya his kaybı varsa podolojik bakımın yanında hekim değerlendirmesi de ihmal edilmemelidir."
+      },
+      {
+        "type": "quickFact",
+        "title": "Podolog Gözüyle Uzman Tavsiyesi",
+        "content": "Aynı noktada inatla tekrarlayan nasırlarda yalnızca topuk törpüsü veya nemlendirici kullanmak geçici çözüm sunar. Ayak basış analiziniz (plantar basınç ölçümü) yapılarak yükün bindiği aks tespit edilmeli ve kişiye özel basış desteği planlanmalıdır."
       }
     ],
     "faqs": [

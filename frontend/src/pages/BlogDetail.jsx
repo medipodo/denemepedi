@@ -547,16 +547,15 @@ const BlogSection = ({ section, index }) => {
 
     case 'video':
       return (
-        <figure className="my-10">
-          <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-black">
+        <figure className="my-10 flex flex-col items-center">
+          <div className="max-w-xs w-full rounded-2xl overflow-hidden shadow-xl border border-gray-200">
             <video 
               src={section.src} 
-              controls 
               autoPlay 
               muted 
               loop 
               playsInline
-              className="w-full max-h-[500px] object-contain mx-auto"
+              className="w-full h-auto object-cover block"
             />
           </div>
           {section.caption && (

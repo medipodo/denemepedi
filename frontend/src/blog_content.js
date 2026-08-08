@@ -104,6 +104,12 @@ export const enrichedBlogPosts = [
         "content": "Ayak tabanında, özellikle tarak kemiği hizasında oluşan nasırlar çoğunlukla yük dağılımıyla ilişkilidir. <strong>Metatars başları</strong>, ayak tarak kemiklerinin yere yakın uç kısımlarıdır. Yürürken vücut ağırlığının önemli bir kısmı bu bölgeden geçer. Bazı kişilerde bu kemik başlarından biri diğerlerine göre daha fazla yük alabilir ve üzerinde sürekli nasır oluşabilir."
       },
       {
+        "type": "image",
+        "src": "/blog-images/corn-callus/content/ankara-nasir-tedavisi-pedizone.webp",
+        "alt": "Klinik deneyimlerde karşılaşılan ayak tabanı nasır örneği",
+        "caption": "Klinik Deneyimlerde Karşılaşılan Nasır Örnekleri: Ayak tabanında baskı odaklı yerleşen lezyon."
+      },
+      {
         "type": "paragraph",
         "content": "Tabandaki nasır bazen taş varmış hissi, yürürken batma veya uzun süre ayakta kalınca yanma şeklinde tarif edilir. Bu yakınmalar her zaman ciddi bir probleme işaret etmez; fakat nasır sık tekrarlıyor ve günlük yürüyüşü etkiliyorsa basınç dağılımının değerlendirilmesi faydalı olur."
       },
@@ -116,6 +122,12 @@ export const enrichedBlogPosts = [
         "content": "Parmak üstünde oluşan nasırlar çoğu zaman ayakkabının üst kısmına sürtünmeyle ilişkilidir. Parmak eklemi yukarı doğru belirginleştiğinde ayakkabıya daha fazla temas eder. Bu durum çekiç parmak eğilimi olan kişilerde daha sık görülebilir. Çekiç parmak, parmağın orta eklemden bükülü durmasıdır."
       },
       {
+        "type": "image",
+        "src": "/blog-images/corn-callus/content/ankara-nasir-tedavisi-pedizone-medipodo.webp",
+        "alt": "Klinik deneyimlerde karşılaşılan parmak üstü ve kenarı nasır örneği",
+        "caption": "Klinik Deneyimlerde Karşılaşılan Nasır Örnekleri: Parmak kenarı ve sürtünme bölgelerindeki lezyon."
+      },
+      {
         "type": "paragraph",
         "content": "Küçük parmak kenarında çıkan nasır ise sık ayakkabı, sivri burunlu model veya ayakkabının iç dikişleriyle ilişkili olabilir. Bazen iki parmak birbirine fazla temas eder ve parmak arasında yumuşak nasır gelişebilir. Bu tip nasırlar nemli kaldığında daha hassas hale gelebilir."
       },
@@ -126,6 +138,12 @@ export const enrichedBlogPosts = [
       {
         "type": "paragraph",
         "content": "Topukta görülen kalınlaşmalar her zaman klasik nasır gibi davranmayabilir. Topuk derisi doğal olarak daha kalındır. Kuruluk, çatlak eğilimi, açık arkalı terlik kullanımı veya uzun süre sert zeminde yürümek topuk çevresindeki sertleşmeyi artırabilir. Eğer çatlak, kanama veya ağrı eşlik ediyorsa bakım şekli daha dikkatli planlanmalıdır."
+      },
+      {
+        "type": "image",
+        "src": "/blog-images/corn-callus/content/ankara-nasir-tedavisi-pedizone-krem.webp",
+        "alt": "Klinik deneyimlerde karşılaşılan topuk ve yoğun sertleşme örneği",
+        "caption": "Klinik Deneyimlerde Karşılaşılan Nasır Örnekleri: Yoğun sertleşme ve bakım sonrası görünüm."
       },
       {
         "type": "heading",

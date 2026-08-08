@@ -46,7 +46,10 @@ const FAQ = () => {
         { id: "q17", q: "Evde ayak bakımı nasıl yapılır?", a: "Ayaklar temiz, kuru ve nemli tutulmalı; düzenli bakım yapılmalı ve uygun ürünler kullanılmalıdır. Ayrıca çorap ve ayakkabı hijyeni çok önemlidir." },
         { id: "q18", q: "Ürünler hassas ciltler için uygun mu?", a: "Cilt tipine göre değişebilir. Hassas ciltlerde küçük bir bölgede test edilmesi önerilir. Olumsuz bir durum görülürse kullanım durdurulmalıdır." },
         { id: "q19", q: "Hamileler kullanabilir mi?", a: "Genel olarak topikal ürünler güvenlidir ancak doktor onayı alınması tavsiye edilir." },
-        { id: "q20", q: "Ürünler ne kadar sürede sonuç verir?", a: "Sorunun derecesine bağlıdır. Düzenli kullanım ile genellikle 2–4 hafta içinde fark edilmeye başlanır, tam sonuç için süre uzayabilir." }
+        { id: "q20", q: "Ürünler ne kadar sürede sonuç verir?", a: "Sorunun derecesine bağlıdır. Düzenli kullanım ile genellikle 2–4 hafta içinde fark edilmeye başlanır, tam sonuç için süre uzayabilir." },
+        { id: "q109", q: "Aynı yerde sürekli nasır çıkması ne anlama gelir?", a: "Aynı noktada tekrarlayan nasır, o bölgede biyomekanik bir basış bozukluğu veya aşırı sürtünme olduğunun göstergesidir. Yalnızca yüzeydeki sertliği traş etmek yetersiz kalır; plantar basınç analizi ve kişiye özel taban desteği gerekir.", link: { text: "Aynı Yerde Sürekli Nasır Çıkması", url: "/blog/ayni-yerde-surekli-nasir-cikmasi" } },
+        { id: "q110", q: "Diyabetik ayak bakımında dikkat edilmesi gerekenler nelerdir?", a: "Diyabet (şeker hastalığı) hastalarında en küçük bir yara veya nasır bile zamanla iyileşmeyen ülserlere dönüşebilir. Ayaklar her gün yıkanıp kurulanmalı, asla kesici aletler kullanılmamalı ve yüksek üreli profesyonel nemlendiriciler tercih edilmelidir.", link: { text: "Medikal Ayak Bakımı Nedir?", url: "/blog/medikal-ayak-bakimi-nedir" } },
+        { id: "q111", q: "Topuk dikenine ne iyi gelir ve evde nasıl rahatlatılır?", a: "Topuk dikeni (plantar fasiit), taban fasyasının aşırı gerilmesi ve topuk kemiğine binen yük sonucu oluşur. Ortopedik tabanlıklar, silikon topuk yastıkları, germe egzersizleri ve düzenli masaj kremleri ağrıyı hafifletmede etkilidir." }
       ]
     }
   ];

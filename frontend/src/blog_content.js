@@ -85,7 +85,7 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "paragraph",
-        "content": "Ayakkabı seçimi bu süreçte önemli bir etkendir. Ayakkabı ayağı sıkmamalı, parmaklara hareket alanı bırakmalı ve taban desteği kişinin günlük yüklenmesine uygun olmalıdır. Ayak sağlığını koruyan ayakkabı özellikleri için <a href='/blog/ayak-sagligi-icin-ayakkabi-secimi'>ayak sağlığı için ayakkabı seçimi</a> rehberi de yararlı olabilir."
+        "content": "Ayakkabı seçimi bu süreçte önemli bir etkendir. Ayakkabı ayağı sıkmamalı, parmaklara hareket alanı bırakmalı ve taban desteği kişinin günlük yüklenmesine uygun olmalıdır. Bu konuda daha detaylı bilgi için <a href='/blog/nasir-neden-surekli-tekrar-eder'>aynı yerde sürekli nasır çıkması</a> incelemesine göz atabilirsiniz."
       },
       {
         "type": "heading",

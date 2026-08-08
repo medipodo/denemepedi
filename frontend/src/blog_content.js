@@ -26,7 +26,7 @@ export const enrichedBlogPosts = [
     "readTime": "10 dk",
     "author": "Serdar Ceylan - Podolog",
     "imageCategory": "corn-callus",
-    "image": "/blog-images/corn-callus/cover/corn-callus-01.webp",
+    "image": "/blog-images/corn-callus/cover/ayni-yerde-nasir-kapak.webp",
     "tags": [
       "nasır",
       "tekrarlayan nasır",
@@ -145,7 +145,7 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "image",
-        "src": "/blog-images/corn-callus/content/01.webp",
+        "src": "/blog-images/corn-callus/content/ayni-yerde-nasir-ic-gorsel.webp",
         "alt": "Aynı Yerde Sürekli Nasır Çıkması Ne Anlama Gelir?",
         "caption": ""
       },

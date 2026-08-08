@@ -229,6 +229,24 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "heading",
+        "content": "Podologların Sık Karşılaştığı Vakalar ve Klinik Gözlemler"
+      },
+      {
+        "type": "paragraph",
+        "content": "Podolojik kliniklerde günün büyük bölümünde karşılaşılan en yaygın tabloların başında, aynı noktada inatla tekrarlayan derin nasırlar ve yanlış ev müdahaleleri nedeniyle zedelenmiş hassas dokular gelir. Danışanlar genellikle sorunun yalnızca cilt kuruluğundan kaynaklandığını düşünerek nemlendirici kremlere veya eczanelerden bilinçsizce temin edilen asit içerikli nasır bantlarına yönelirler. Oysa klinik pratikte açıkça görülmektedir ki; özellikle tarak kemiği altındaki metatarsal çökmeler veya parmak eklemlerindeki biyomekanik sürtünmeler ortadan kaldırılmadıkça, en güçlü keratolitik kremler dahi geçici bir rahatlamadan öteye geçemez."
+      },
+      {
+        "type": "paragraph",
+        "content": "Kliniğimize başvuran vakalarda sıklıkla karşılaştığımız bir diğer kritik hata ise nasırın jilet, tırnak makası veya benzeri kesici ev aletleriyle tıraş edilmeye çalışılmasıdır. Bu tür bilinçsiz müdahaleler sağlıklı derinin bütünlüğünü bozmakla kalmaz, vücudun o bölgeyi bir travma olarak algılayıp çok daha kalın ve sert bir koruma tabakası (hiperkeratoz) üretmesine yol açar. Ayrıca diyabet, periferik arter hastalığı veya dolaşım bozukluğu bulunan bireylerde bu tür ev kazaları küçük bir kesikten öte, iyileşmesi güç kronik yaralara ve enfeksiyonlara zemin hazırlayabilir."
+      },
+      {
+        "type": "video",
+        "src": "/blog-images/corn-callus/content/nasir-pedizone-video.webm",
+        "alt": "Podolog Gözüyle Klinik Nasır Vakası ve Uygulama Görüntüsü",
+        "caption": "Podologların Sık Karşılaştığı Vakalar: Klinik ortamda profesyonel nasır değerlendirmesi ve bakım süreci."
+      },
+      {
+        "type": "heading",
         "content": "Aynı yerde çıkan nasırı azaltmak için neye odaklanmalı?"
       },
       {

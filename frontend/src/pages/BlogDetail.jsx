@@ -545,6 +545,30 @@ const BlogSection = ({ section, index }) => {
         </figure>
       );
 
+    case 'video':
+      return (
+        <figure className="my-10">
+          <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-black">
+            <video 
+              src={section.src} 
+              controls 
+              autoPlay 
+              muted 
+              loop 
+              playsInline
+              className="w-full max-h-[500px] object-contain mx-auto"
+            />
+          </div>
+          {section.caption && (
+            <figcaption className="text-center text-sm text-gray-500 mt-4 flex items-center justify-center">
+              <span className="w-8 h-px bg-gray-300 mr-3"></span>
+              {section.caption}
+              <span className="w-8 h-px bg-gray-300 ml-3"></span>
+            </figcaption>
+          )}
+        </figure>
+      );
+
     case 'beforeAfterImages':
       return (
         <div className="my-10">

@@ -248,10 +248,7 @@ export const enrichedBlogPosts = [
           "Shea Butter ve Avokado Yağı ile lipid bariyeri onarımı",
           "Günlük bakım ve çatlak önleyici koruyucu bariyer"
         ],
-        "link": {
-          "url": "/urun/ureli-krem",
-          "text": "Ürünü İncele"
-        },
+        "link": "/urun/ureli-krem",
         "product": "PediZone® %15 Üreli Çatlak Topuk ve Ayak Kremi"
       }
     ],

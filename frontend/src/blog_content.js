@@ -58,6 +58,12 @@ export const enrichedBlogPosts = [
         "content": "Bu nedenle nasırın yalnızca üstten temizlenmesi her zaman yeterli olmayabilir. Yüzeydeki sert tabaka giderilse bile alttaki baskı nedeni devam ediyorsa nasır birkaç hafta veya ay içinde aynı noktada belirginleşebilir. Daha geniş bilgi için <a href='/blog/nasir-nasil-gecer-gecmeyen-nasirin-7-nedeni'>geçmeyen nasırın temel nedenleri</a> üzerine hazırlanan rehber de bu konuyu tamamlayıcı niteliktedir."
       },
       {
+        "type": "video",
+        "src": "/blog-images/corn-callus/content/nasir-pedizone-video.webm",
+        "alt": "Podolog Gözüyle Klinik Nasır Vakası ve Uygulama Görüntüsü",
+        "caption": "Podologların Sık Karşılaştığı Vakalar: Klinik ortamda profesyonel nasır değerlendirmesi ve bakım süreci."
+      },
+      {
         "type": "quickFact",
         "title": "Tekrarlama ipucu",
         "content": "Nasırın hep aynı noktada çıkması, bakımın başarısız olduğu anlamına gelmez; çoğu zaman baskı kaynağının hâlâ devam ettiğini gösterir."
@@ -238,12 +244,6 @@ export const enrichedBlogPosts = [
       {
         "type": "paragraph",
         "content": "Kliniğimize başvuran vakalarda sıklıkla karşılaştığımız bir diğer kritik hata ise nasırın jilet, tırnak makası veya benzeri kesici ev aletleriyle tıraş edilmeye çalışılmasıdır. Bu tür bilinçsiz müdahaleler sağlıklı derinin bütünlüğünü bozmakla kalmaz, vücudun o bölgeyi bir travma olarak algılayıp çok daha kalın ve sert bir koruma tabakası (hiperkeratoz) üretmesine yol açar. Ayrıca diyabet, periferik arter hastalığı veya dolaşım bozukluğu bulunan bireylerde bu tür ev kazaları küçük bir kesikten öte, iyileşmesi güç kronik yaralara ve enfeksiyonlara zemin hazırlayabilir."
-      },
-      {
-        "type": "video",
-        "src": "/blog-images/corn-callus/content/nasir-pedizone-video.webm",
-        "alt": "Podolog Gözüyle Klinik Nasır Vakası ve Uygulama Görüntüsü",
-        "caption": "Podologların Sık Karşılaştığı Vakalar: Klinik ortamda profesyonel nasır değerlendirmesi ve bakım süreci."
       },
       {
         "type": "heading",

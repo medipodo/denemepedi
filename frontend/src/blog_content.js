@@ -345,7 +345,7 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "paragraph",
-        "content": "Evde nasır bakımı yaparken 'zarar vermeme' ilkesi esastır. Sertleşmiş deriyi yumuşatmak için üre içerikli kremler kullanmak en güvenli yoldur. Ancak nasırı kendi başınıza kesmek, özellikle diyabet hastaları için ciddi enfeksiyon riskleri taşır. Diyabetik ayak bakımı hakkında daha fazla bilgi için <a href='/blog/diyabet-ve-ayak-sagligi'>diyabet ve ayak sağlığı</a> yazımızı okuyabilirsiniz."
+        "content": "Evde nasır bakımı yaparken 'zarar vermeme' ilkesi esastır. Sertleşmiş deriyi yumuşatmak için üre içerikli kremler kullanmak en güvenli yoldur. Ancak nasırı kendi başınıza kesmek, özellikle diyabet hastaları için ciddi enfeksiyon riskleri taşır. Bu konuda daha detaylı bilgi için <a href='/blog/nasir-neden-surekli-tekrar-eder'>aynı yerde sürekli nasır çıkması</a> incelemesine göz atabilirsiniz."
       },
       {
         "type": "comparisonBox",

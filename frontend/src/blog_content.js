@@ -13,7 +13,264 @@ export const enrichedBlogPosts = [
   
   
 
+  
   {
+    "id": "nasir-nasil-gecer-gecmeyen-nasirin-7-nedeni",
+    "title": "Nasır Nasıl Geçer? Geçmeyen Nasırın 7 Nedeni",
+    "slug": "nasir-nasil-gecer-gecmeyen-nasirin-7-nedeni",
+    "excerpt": "Nasır nasıl geçer, neden tekrarlar ve evde hangi adımlar güvenlidir? Geçmeyen nasırın 7 yaygın nedenini ve doğru yaklaşımı öğrenin.",
+    "metaTitle": "Nasır Nasıl Geçer? Geçmeyen Nasırın 7 Nedeni",
+    "metaDescription": "Nasır nasıl geçer, neden tekrarlar ve ne zaman uzmana başvurmak gerekir? Basınç, ayakkabı ve bakım hatalarını sade şekilde öğrenin.",
+    "date": "8 Ağustos 2026",
+    "readTime": "10 dk",
+    "author": "Serdar Ceylan - Podolog",
+    "imageCategory": "corn-callus",
+    "image": "/blog-images/ingrown/cover/ingrown-10.webp",
+    "tags": [
+      "nasır",
+      "ayak bakımı",
+      "basınç noktası",
+      "ayakkabı seçimi",
+      "podoloji",
+      "topuk ve taban"
+    ],
+    "sections": [
+      {
+        "type": "intro",
+        "content": "Nasır, çoğu zaman ayakta tekrarlayan basınç ve sürtünmeye karşı derinin kendini koruma çabasıdır. İlk başta yalnızca sertleşme gibi görünür; fakat zamanla yürürken batma, yanma veya taş varmış hissi oluşturabilir. “Nasır nasıl geçer?” sorusunun cevabı yalnızca sert deriyi almak değildir. Asıl önemli nokta, o bölgeye neden sürekli yük bindiğini bulmaktır.",
+        "highlight": "Nasır geçmiyorsa sorun çoğu zaman deride değil, basıncın devam etmesindedir."
+      },
+      {
+        "type": "paragraph",
+        "content": "Nasır tıbbi olarak hiperkeratoz adı verilen, derinin üst tabakasının kalınlaşmasıyla oluşan bir durumdur. Hiperkeratoz, basitçe “derinin kendini kalınlaştırarak koruması” anlamına gelir. Ayakta en sık parmak üstlerinde, parmak aralarında, topukta ve metatars başları denilen ayak ön tabanındaki tarak kemiklerinin altında görülür."
+      },
+      {
+        "type": "paragraph",
+        "content": "Tek seferlik törpüleme veya evde yapılan kazıma işlemleri kısa süreli rahatlama sağlayabilir. Ancak ayakkabı baskısı, parmak deformitesi, yürüme şekli veya yanlış bakım devam ediyorsa nasır yeniden kalınlaşır. Bu nedenle kalıcı rahatlama için hem nasır dokusunun güvenli şekilde azaltılması hem de basınç kaynağının değerlendirilmesi gerekir."
+      },
+      {
+        "type": "quickFact",
+        "title": "Basınç devam ederse",
+        "content": "Nasır dokusu temizlense bile aynı bölgeye yük binmeye devam ediyorsa deri tekrar kalınlaşabilir."
+      },
+      {
+        "type": "heading",
+        "content": "Nasır nasıl geçer?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Nasırın geçmesi için ilk adım, bölgedeki kalınlaşmış derinin kontrollü ve hijyenik şekilde azaltılmasıdır. Podolojik bakımda bu işlem, sağlıklı deri korunarak yapılır. Amaç deriyi inceltirken tahriş, kesik veya açık yara oluşturmamaktır. Özellikle derin ve merkezinde sert çekirdek bulunan heloma, yani halk arasında köklü nasır olarak tarif edilen yapılar, evde kesici aletlerle çıkarılmaya çalışılmamalıdır."
+      },
+      {
+        "type": "paragraph",
+        "content": "İkinci adım basıncı azaltmaktır. Çünkü nasır çoğunlukla bir sonuçtur. Dar burunlu ayakkabı, sert taban, yüksek topuk, parmakların üst üste binmesi veya ayak tabanındaki yük dağılımının bozulması aynı noktayı sürekli zorlayabilir. Ayakta nasırın oluşma mantığını daha geniş görmek isterseniz <a href='/blog/ayakta-nasir-neden-olur-nasil-onlenir'>ayakta nasır neden olur ve nasıl önlenir</a> içeriği de bu konuda tamamlayıcı bilgi verir."
+      },
+      {
+        "type": "stepCard",
+        "step": 1,
+        "title": "Nasırın yerini ve şeklini gözlemleyin",
+        "content": "Nasır parmak üstünde mi, parmak arasında mı, topukta mı yoksa ayak tabanında mı? Yeri, genellikle baskının kaynağı hakkında ipucu verir. Parmak üstündeki nasır ayakkabı tavan baskısıyla, tabandaki nasır ise yük dağılımıyla ilişkili olabilir.",
+        "product": ""
+      },
+      {
+        "type": "stepCard",
+        "step": 2,
+        "title": "Baskıyı artıran ayakkabıyı ayırın",
+        "content": "Nasır belirli bir ayakkabıyı giydiğiniz günlerde daha çok ağrıyorsa, o ayakkabı önemli bir tetikleyici olabilir. Dar burun, sert iç dikiş, ince taban veya ayağı öne iten yüksek topuk nasır baskısını artırabilir.",
+        "product": ""
+      },
+      {
+        "type": "stepCard",
+        "step": 3,
+        "title": "Deriyi kesmeden yumuşatın",
+        "content": "Evde bakımda amaç nasırı koparmak değil, deriyi nemli ve esnek tutmaktır. Ilık suyla kısa süreli yumuşatma ve ardından uygun nemlendirme destekleyici olabilir. Kesici alet kullanmak özellikle riskli gruplarda sorun oluşturabilir.",
+        "product": ""
+      },
+      {
+        "type": "stepCard",
+        "step": 4,
+        "title": "Tekrarlıyorsa profesyonel değerlendirme alın",
+        "content": "Nasır sık tekrarlıyor, ağrı yapıyor veya derinleşiyorsa podolojik değerlendirme yararlı olur. Podolog, nasır dokusunu güvenli şekilde azaltabilir ve basınç azaltmaya yönelik bakım önerileri sunabilir. Enfeksiyon, açık yara veya dolaşım sorunu şüphesinde hekim değerlendirmesi gerekir.",
+        "product": ""
+      },
+      {
+        "type": "heading",
+        "content": "Geçmeyen nasırın 7 yaygın nedeni"
+      },
+      {
+        "type": "paragraph",
+        "content": "Geçmeyen nasır, çoğu zaman “nasır kökü kaldı” diye düşünülür. Oysa birçok vakada asıl neden, aynı noktanın her gün yeniden zorlanmasıdır. Nasırın merkezinde sert bir odak olabilir; fakat bu odak da basınç sürdüğü için tekrar belirginleşir."
+      },
+      {
+        "type": "bulletList",
+        "title": "Nasırın tekrarlamasına yol açabilen nedenler",
+        "items": [
+          "<strong>Dar veya sert ayakkabı:</strong> Parmakları sıkıştıran, iç dikişi baskı yapan veya tabanı esnemeyen ayakkabılar aynı bölgeyi sürekli tahriş edebilir.",
+          "<strong>Yanlış numara seçimi:</strong> Küçük ayakkabı baskı yaparken, büyük ayakkabı ayağın içinde kaymasına ve sürtünmeye neden olabilir.",
+          "<strong>Ayak basışındaki yük dağılımı:</strong> Biyomekanik yüklenme, yani yürürken ağırlığın ayağa nasıl dağıldığı, bazı noktalarda fazla basınç oluşturabilir.",
+          "<strong>Parmak deformiteleri:</strong> Çekiç parmak veya üst üste binen parmak gibi durumlarda kemik çıkıntıları ayakkabıya daha fazla temas eder.",
+          "<strong>Yetersiz nem:</strong> Kuru deri esnekliğini kaybeder ve basınca karşı daha çabuk sertleşebilir.",
+          "<strong>Evde kesme ve kazıma:</strong> Deriyi fazla inceltmek tahrişe, hassasiyete ve bazen daha hızlı kalınlaşmaya yol açabilir.",
+          "<strong>Nasır sanılan başka lezyonlar:</strong> Plantar siğil gibi bazı cilt lezyonları nasıra benzeyebilir ve farklı değerlendirme gerektirebilir."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Özellikle ayak tabanındaki ağrılı sertleşmelerde nasır ile siğil karışabilir. Plantar siğil, ayak tabanında görülen viral kaynaklı bir cilt lezyonudur ve üzerine basınca farklı tipte hassasiyet oluşturabilir. Ayrım her zaman çıplak gözle kolay değildir. Bu konuda <a href='/blog/nasir-sigil-farklari'>nasır ve plantar siğil farkları</a> başlıklı rehber, hangi bulguların ayırt edici olabileceğini açıklar."
+      },
+      {
+        "type": "heading",
+        "content": "Nasırın yerine göre ipuçları"
+      },
+      {
+        "type": "paragraph",
+        "content": "Nasırın bulunduğu yer, baskının yönünü anlamaya yardım eder. Parmak üstünde oluşan nasırlar çoğunlukla ayakkabının üst kısmıyla temas eden çıkıntılı eklem bölgelerinde görülür. Parmak arası nasırlarda ise iki parmağın birbirine sürtünmesi veya kemik çıkıntılarının karşılıklı baskısı etkili olabilir."
+      },
+      {
+        "type": "paragraph",
+        "content": "Ayak tabanındaki nasırlar daha çok yük taşıyan alanlarda oluşur. Metatars başları, yani ayak ön tabanındaki tarak kemiklerinin yere en çok temas eden uç kısımları, uzun süre ayakta kalan kişilerde belirgin basınca maruz kalabilir. Topuk çevresindeki kalınlaşmalar ise kuru deri, sert zemin, açık topuklu ayakkabı ve basış alışkanlıklarıyla ilişkili olabilir."
+      },
+      {
+        "type": "infoBox",
+        "variant": "info",
+        "title": "Yer önemli ipucudur",
+        "content": "Nasırın yalnızca görünümü değil, nerede oluştuğu da değerlendirilmelidir. Aynı bakım herkes için aynı sonucu vermez; çünkü parmak arası, taban ve topuk nasırlarının baskı kaynakları farklı olabilir."
+      },
+      {
+        "type": "heading",
+        "content": "Evde nasır bakımında güvenli sınırlar"
+      },
+      {
+        "type": "paragraph",
+        "content": "Evde bakım, nasırı tamamen ortadan kaldırmaktan çok deriyi desteklemeye yöneliktir. Düzenli nemlendirme, uygun ayakkabı seçimi ve sürtünmeyi azaltan basit önlemler fayda sağlayabilir. Ancak derin, ağrılı, kanamalı veya rengi değişmiş alanlarda evde müdahale etmek doğru değildir."
+      },
+      {
+        "type": "checkList",
+        "title": "Günlük bakımda uygulanabilir öneriler",
+        "items": [
+          "Ayakları yıkadıktan sonra özellikle sertleşen bölgelere düzenli nemlendirici uygulayın.",
+          "Ayakkabının burun kısmında parmakların rahat hareket edebildiğinden emin olun.",
+          "Sertleşen bölgeyi kesmeyin; gerekiyorsa nazik törpülemeyi abartmadan yapın.",
+          "Aynı ayakkabıyı her gün uzun saatler giymek yerine ayakkabıları dönüşümlü kullanın.",
+          "Çorap seçerken dikişsiz, ayağı sıkmayan ve nemi içeride tutmayan seçenekleri tercih edin.",
+          "Nasır pedlerini gelişigüzel kullanmayın; yanlış yerleştirilen ped basıncı artırabilir."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Ayakkabı seçimi nasır yönetiminde temel konulardan biridir. Taban desteği, burun genişliği ve iç yüzeydeki dikişler doğrudan sürtünmeyi etkiler. Ayakkabının ayağa etkisini daha ayrıntılı değerlendirmek için <a href='/blog/ayak-sagligi-icin-ayakkabi-secimi'>ayak sağlığı için ayakkabı seçimi</a> rehberinden yararlanabilirsiniz."
+      },
+      {
+        "type": "heading",
+        "content": "Nasır bantları ve asitli ürünler konusunda dikkat"
+      },
+      {
+        "type": "paragraph",
+        "content": "Piyasada nasır için kullanılan bazı bantlar veya solüsyonlar deriyi soymaya yönelik asitli içerikler barındırabilir. Bu ürünler sağlıklı deriye temas ettiğinde tahriş, yanma, soyulma veya yara oluşumuna neden olabilir. Özellikle diyabeti, dolaşım problemi, his kaybı veya ince hassas derisi olan kişilerde bu tür uygulamalar daha risklidir."
+      },
+      {
+        "type": "warningList",
+        "title": "Uzmana danışmayı gerektiren durumlar",
+        "items": [
+          "Nasır bölgesinde açık yara, kanama, akıntı veya kötü koku varsa gecikmeden sağlık profesyoneline başvurun.",
+          "Kızarıklık çevreye yayılıyor, bölge ısınıyor veya şiddetli ağrı oluşuyorsa hekim değerlendirmesi gerekir.",
+          "Diyabet, dolaşım bozukluğu veya ayakta his kaybı varsa evde kesme, asitli bant veya kazıma işlemi yapmayın.",
+          "Nasır hızlı büyüyor, rengi değişiyor veya siğil olabileceğinden şüpheleniliyorsa dermatoloji değerlendirmesi uygun olur.",
+          "Yürümeyi belirgin etkileyen ağrılı nasırlarda basınç kaynağı profesyonel olarak değerlendirilmelidir."
+        ]
+      },
+      {
+        "type": "riskGroups",
+        "title": "Kimlerde daha sık görülebilir?",
+        "groups": [
+          "Uzun süre ayakta çalışan kişiler",
+          "Dar burunlu veya sert tabanlı ayakkabı kullananlar",
+          "Ayak parmaklarında şekil değişikliği olan kişiler",
+          "Ayak tabanında yük dağılımı düzensiz olanlar",
+          "Diyabet veya dolaşım problemi nedeniyle ayak bakımında daha dikkatli olması gereken kişiler"
+        ]
+      },
+      {
+        "type": "heading",
+        "content": "Podolojik bakım nasırda ne sağlar?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Podolojik bakımda amaç, nasır dokusunu güvenli sınırlar içinde azaltmak ve kişiye günlük yaşamda basıncı azaltacak öneriler sunmaktır. Bu işlem sırasında sağlıklı doku korunur, bölgedeki sertleşmenin derinliği değerlendirilir ve tekrarlamaya neden olabilecek ayakkabı, basış veya parmak pozisyonu gibi faktörler konuşulur."
+      },
+      {
+        "type": "paragraph",
+        "content": "Podolog tıbbi tanı koymaz ve reçeteli ilaç önermez. Nasırın siğil, enfeksiyon, yara veya başka bir deri hastalığı ile karışabileceği durumlarda dermatoloji ya da ilgili hekime yönlendirme önemlidir. Özellikle diyabetli bireylerde ayak bakımı daha hassas planlanmalıdır; diyabetle ilgili ayak riskleri için <a href='/blog/diyabet-ve-ayak-sagligi'>diyabet hastalarında ayak sağlığı</a> içeriği destekleyici olabilir."
+      },
+      {
+        "type": "subheading",
+        "content": "Basınç azaltma neden önemlidir?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Nasır temizlendikten sonra kişi çoğu zaman hemen rahatlar. Fakat bu rahatlama, alttaki basınç nedeni çözülmezse geçici kalabilir. Parmak arası ayırıcılar, uygun taban desteği, ayakkabı düzenlemesi veya kişiye uygun koruyucu materyaller bazı durumlarda baskıyı azaltmaya yardımcı olabilir. Hangi desteğin uygun olduğu nasırın yerine, ayağın yapısına ve kişinin günlük ayakta kalma süresine göre değişir."
+      },
+      {
+        "type": "heading",
+        "content": "Geçmeyen nasırda yapılan yaygın hatalar"
+      },
+      {
+        "type": "comparisonBox",
+        "title": "Uygun ve riskli yaklaşımlar",
+        "wrong": [
+          "Nasırı makas, jilet veya bıçakla derinden kesmeye çalışmak",
+          "Asitli nasır bandını sağlam deriye taşacak şekilde kullanmak",
+          "Ağrı geçti diye aynı dar ayakkabıyı uzun süre giymeye devam etmek",
+          "Her sertleşmeyi nasır kabul edip siğil ihtimalini göz ardı etmek"
+        ],
+        "right": [
+          "Sert dokunun güvenli şekilde azaltılması için profesyonel destek almak",
+          "Ürün kullanmadan önce risk durumlarını ve cilt hassasiyetini dikkate almak",
+          "Basınç oluşturan ayakkabıyı değiştirmek veya kullanım süresini azaltmak",
+          "Şüpheli, ağrılı veya farklı görünümlü lezyonlarda uzman değerlendirmesine başvurmak"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Nasırın üzerine sürekli daha fazla baskı uygulamak, ağrıyı azaltmak yerine artırabilir. Bazı kişiler ağrıyan bölgenin üzerine kalın ped yapıştırarak rahatlamaya çalışır; fakat ped yanlış konumlanırsa yükü tam nasırın merkezine taşıyabilir. Bu nedenle koruyucu materyaller gelişigüzel değil, basıncı çevreye dağıtacak şekilde planlanmalıdır."
+      },
+      {
+        "type": "heading",
+        "content": "Nasırda kalıcı rahatlama için ana yaklaşım"
+      },
+      {
+        "type": "paragraph",
+        "content": "Nasır nasıl geçer sorusunun en doğru cevabı, sert deriyi güvenli şekilde azaltmak ve tekrar oluşmasına neden olan basıncı kontrol etmektir. Yalnızca yüzeyi kazımak çoğu zaman yeterli olmaz. Ayakkabı, basış, parmak yapısı, cilt kuruluğu ve günlük kullanım alışkanlıkları birlikte değerlendirilmelidir."
+      },
+      {
+        "type": "paragraph",
+        "content": "Geçmeyen, ağrı yapan veya sık tekrarlayan nasırlarda profesyonel podolojik bakım daha güvenli bir seçenektir. Açık yara, enfeksiyon belirtisi, diyabet, dolaşım problemi veya his kaybı varsa değerlendirme mutlaka hekim sorumluluğunda planlanmalıdır. Doğru yaklaşım, nasırı zorlayarak çıkarmak değil, ayağın neden o noktayı korumaya çalıştığını anlamaktır."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Nasır evde tamamen geçer mi?",
+        "answer": "Hafif sertleşmelerde düzenli nemlendirme, uygun ayakkabı ve sürtünmeyi azaltma ile rahatlama sağlanabilir. Ancak derin, ağrılı veya tekrarlayan nasırlarda evde yapılan işlemler çoğu zaman yeterli olmaz. Basınç kaynağı devam ediyorsa nasır yeniden oluşabilir."
+      },
+      {
+        "question": "Nasırı kesmek doğru mu?",
+        "answer": "Nasırı makas, jilet veya bıçakla kesmek sağlıklı deriye zarar verebilir. Kesik, kanama, enfeksiyon ve hassasiyet riski özellikle diyabet veya dolaşım problemi olan kişilerde daha önemlidir. Güvenli azaltma işlemi için podolojik değerlendirme tercih edilmelidir."
+      },
+      {
+        "question": "Nasır neden sürekli tekrarlar?",
+        "answer": "Nasırın tekrarlamasının en sık nedeni aynı bölgeye basınç ve sürtünmenin devam etmesidir. Dar ayakkabı, ayak basışındaki yük dağılımı, parmak deformitesi veya kuru deri bu süreci artırabilir. Yalnızca sert deriyi almak, nedeni ortadan kaldırmaz."
+      },
+      {
+        "question": "Nasır ile siğil nasıl ayırt edilir?",
+        "answer": "Nasır genellikle basınç noktalarında oluşan sert deri kalınlaşmasıdır. Siğil ise viral kaynaklı bir cilt lezyonu olabilir ve görünümü bazen nasıra benzeyebilir. Ağrı tipi, yüzey görünümü ve noktasal siyah alanlar gibi bulgular ayırt etmeye yardım etse de kesin değerlendirme için uzman görüşü gerekir."
+      },
+      {
+        "question": "Nasır için ne zaman doktora gidilmeli?",
+        "answer": "Açık yara, akıntı, yayılan kızarıklık, şiddetli ağrı, kanama veya renk değişikliği varsa hekim değerlendirmesi gerekir. Diyabet, dolaşım bozukluğu veya his kaybı olan kişiler nasırda evde müdahale etmemelidir. Şüpheli lezyonlarda dermatoloji değerlendirmesi uygun olur."
+      }
+    ]
+  },
+{
     "id": "batik-tirnak-nasil-baslar-ilk-belirtileri",
     "title": "Batık Tırnak Nasıl Başlar? İlk Belirtileri Nelerdir?",
     "slug": "batik-tirnak-nasil-baslar-ilk-belirtileri",

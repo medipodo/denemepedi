@@ -19,6 +19,7 @@ import BlogAyakMantariBaslangici from '../components/BlogAyakMantariBaslangici';
 import BlogParmakArasiMantar from '../components/BlogParmakArasiMantar';
 import BlogNasirNedenTekrarEder from '../components/BlogNasirNedenTekrarEder';
 import BlogSerumKullanimOnemi from '../components/BlogSerumKullanimOnemi';
+import BlogNasirSigilFarklari from '../components/BlogNasirSigilFarklari';
 import LocalizedLink from '../components/LocalizedLink';
 import { useLanguage } from '../i18n/LanguageContext';
 
@@ -76,6 +77,11 @@ const BlogDetail = () => {
   // PediZone serum kullanım önemi blogu
   if (slug === 'serum-kullanim-onemi') {
     return <BlogSerumKullanimOnemi />;
+  }
+
+  // Nasır ve siğil farkları blogu
+  if (slug === 'nasir-sigil-farklari') {
+    return <BlogNasirSigilFarklari />;
   }
 
   const handleCopyLink = () => {

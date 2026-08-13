@@ -213,7 +213,6 @@ const BlogNasirSigilFarklari = () => {
                   <video 
                     src="/blog-images/sigil/sigil-plantar-sigil.webm" 
                     autoPlay 
-                    muted 
                     loop 
                     playsInline
                     className="w-full h-auto object-cover block"

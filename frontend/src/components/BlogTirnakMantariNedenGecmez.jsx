@@ -334,7 +334,6 @@ const BlogTirnakMantariNedenGecmez = () => {
                   <video 
                     src="/blog-images/tirnak-mantari-neden-gecmez/tirnak-mantari-onikogrifoz.webm" 
                     autoPlay 
-                    muted 
                     loop 
                     playsInline
                     className="w-full h-auto object-cover block"

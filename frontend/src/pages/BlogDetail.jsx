@@ -564,7 +564,6 @@ const BlogSection = ({ section, index }) => {
             <video 
               src={section.src} 
               autoPlay 
-              muted 
               loop 
               playsInline
               className="w-full h-auto object-cover block"

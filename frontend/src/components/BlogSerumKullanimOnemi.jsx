@@ -441,7 +441,6 @@ const BlogSerumKullanimOnemi = () => {
                   <video 
                     src="/blog-images/serum-kullanim/pedizone-serum-damlalik.webm" 
                     autoPlay 
-                    muted 
                     loop 
                     playsInline
                     className="w-full h-auto object-cover block"

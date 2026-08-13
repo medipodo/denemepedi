@@ -392,7 +392,6 @@ const BlogParmakArasiMantar = () => {
                   <video 
                     src="/blog-images/parmak-arasi-mantar/ayak-mantari-wood-isigi.webm" 
                     autoPlay 
-                    muted 
                     loop 
                     playsInline
                     className="w-full h-auto object-cover block"

@@ -608,7 +608,6 @@ const BlogNasirNedenTekrarEder = () => {
                   <video 
                     src="/blog-images/corn-callus/content/nasir-temizligi-corn-freze.webm" 
                     autoPlay 
-                    muted 
                     loop 
                     playsInline
                     className="w-full h-auto object-cover block"

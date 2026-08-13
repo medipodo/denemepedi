@@ -18,6 +18,7 @@ import BlogTirnakMantariNedenGecmez from '../components/BlogTirnakMantariNedenGe
 import BlogAyakMantariBaslangici from '../components/BlogAyakMantariBaslangici';
 import BlogParmakArasiMantar from '../components/BlogParmakArasiMantar';
 import BlogNasirNedenTekrarEder from '../components/BlogNasirNedenTekrarEder';
+import BlogSerumKullanimOnemi from '../components/BlogSerumKullanimOnemi';
 import LocalizedLink from '../components/LocalizedLink';
 import { useLanguage } from '../i18n/LanguageContext';
 
@@ -70,6 +71,11 @@ const BlogDetail = () => {
   // Nasır neden sürekli tekrar eder blogu
   if (slug === 'nasir-neden-surekli-tekrar-eder') {
     return <BlogNasirNedenTekrarEder />;
+  }
+
+  // PediZone serum kullanım önemi blogu
+  if (slug === 'serum-kullanim-onemi') {
+    return <BlogSerumKullanimOnemi />;
   }
 
   const handleCopyLink = () => {

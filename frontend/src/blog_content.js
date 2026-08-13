@@ -318,7 +318,7 @@ export const enrichedBlogPosts = [
     "excerpt": "Nasır nasıl geçer, neden sürekli tekrarlar? Geçmeyen nasırların altındaki 7 temel nedeni ve profesyonel çözüm yollarını uzman bakış açısıyla öğrenin.",
     "metaTitle": "Nasır Nasıl Geçer? Geçmeyen Nasırın 7 Nedeni - PediZone",
     "metaDescription": "Nasır neden geçmez? Ayak tabanı ve parmak arası nasırların 7 temel nedeni, doğru ayakkabı seçimi ve podolojik bakım önerileriyle kalıcı çözüm rehberi.",
-    "date": "8 Ağustos 2026",
+    "date": "13 Ağustos 2026",
     "readTime": "11 dk",
     "author": "Serdar Ceylan - Podolog",
     "imageCategory": "corn-callus",
@@ -399,7 +399,13 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "paragraph",
-        "content": "Evde nasır bakımı yaparken 'zarar vermeme' ilkesi esastır. Sertleşmiş deriyi yumuşatmak için üre içerikli kremler kullanmak en güvenli yoldur. Ancak nasırı kendi başınıza kesmek, özellikle diyabet hastaları için ciddi enfeksiyon riskleri taşır. Bu konuda daha detaylı bilgi için <a href='/blog/nasir-neden-surekli-tekrar-eder'>aynı yerde sürekli nasır çıkması</a> incelemesine göz atabilirsiniz."
+        "content": "Evde nasır bakımı yaparken 'zarar vermeme' ilkesi esastır. Sertleşmiş deriyi yumuşatmak için üre içerikli kremler kullanmak en güvenli yoldur. Ancak nasırı kendi başınıza kesmek, özellikle diyabet hastaları için ciddi enfeksiyon riskleri taşır. Bu konuda tekrarlayan baskı nedenleri ve ayrıntılar için <a href='/blog/nasir-neden-surekli-tekrar-eder'>nasır neden sürekli tekrar eder</a> incelemesine göz atabilirsiniz."
+      },
+      {
+        "type": "video",
+        "src": "/blog-images/corn-callus/content/nasir-temizligi-corn-freze.webm",
+        "alt": "Corn freze ile nasır alma işlemi örnek uygulama",
+        "caption": "Corn freze ile profesyonel nasır temizliği."
       },
       {
         "type": "comparisonBox",

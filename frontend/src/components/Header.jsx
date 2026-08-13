@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Menu, X, Stethoscope } from 'lucide-react';
+import { Menu, X, Stethoscope, Video } from 'lucide-react';
 import LocalizedLink from './LocalizedLink';
 // import LanguageSwitcher from './LanguageSwitcher'; // DISABLED: Bayraklar statik
 import { useLanguage } from '../i18n/LanguageContext';
@@ -46,7 +46,8 @@ const Header = () => {
     { name: t('nav.blog'), path: '/blog' },
     { name: t('nav.faq'), path: '/sss' },
     { name: t('nav.certificates'), path: '/sertifikalar' },
-    { name: t('nav.contact'), path: '/iletisim' }
+    { name: t('nav.contact'), path: '/iletisim' },
+    { name: 'Clips', path: '/clips', icon: Video }
   ];
 
   const handleNavClick = (path) => {
@@ -103,12 +104,13 @@ const Header = () => {
                 key={link.path}
                 to={link.path}
                 onClick={() => handleNavClick(link.path)}
-                className={`text-sm font-medium whitespace-nowrap transition-colors ${
+                className={`text-sm font-medium whitespace-nowrap transition-colors flex items-center gap-1.5 ${
                   isActive(link.path)
                     ? 'text-red-600'
                     : 'text-gray-700 hover:text-red-600'
                 }`}
               >
+                {link.icon && <link.icon size={16} className="text-red-500" />}
                 {link.name}
               </LocalizedLink>
             ))}
@@ -176,13 +178,14 @@ const Header = () => {
                 <LocalizedLink
                   key={link.path}
                   to={link.path}
-                  onClick={() => handleNavClick(link.path)}
-                  className={`text-sm font-medium py-2 px-4 rounded transition-colors ${
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`block px-4 py-3 rounded-xl text-base font-medium transition-colors flex items-center gap-2 ${
                     isActive(link.path)
                       ? 'bg-white/20 text-white md:bg-red-50 md:text-red-600'
                       : 'text-red-100 hover:bg-white/10 hover:text-white md:text-gray-700 md:hover:bg-red-50 md:hover:text-red-600'
                   }`}
                 >
+                  {link.icon && <link.icon size={18} className="text-red-400 md:text-red-500" />}
                   {link.name}
                 </LocalizedLink>
               ))}

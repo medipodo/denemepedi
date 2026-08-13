@@ -28,7 +28,7 @@ const clipsData = [
     id: 3,
     title: "Onikogrifoz ve Tırnak Mantarı Ayrımı",
     description: "Koç boynuzu tırnak (onikogrifoz) ile tırnak mantarının klinik olarak birbirine karıştırılan ayırt edici özellikleri.",
-    videoSrc: "/blog-images/nail-fungus/content/tirnak-mantari-onikogrifoz.webm",
+    videoSrc: "/blog-images/tirnak-mantari-neden-gecmez/tirnak-mantari-onikogrifoz.webm",
     author: "Podolog Serdar Ceylan",
     tag: "Tırnak Sağlığı",
     link: "/blog/tirnak-mantari-neden-gecmez",

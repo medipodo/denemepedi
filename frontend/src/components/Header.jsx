@@ -185,7 +185,7 @@ const Header = () => {
                       : 'text-red-100 hover:bg-white/10 hover:text-white md:text-gray-700 md:hover:bg-red-50 md:hover:text-red-600'
                   }`}
                 >
-                  {link.icon && <link.icon size={18} className="text-red-400 md:text-red-500" />}
+                  {link.icon && <link.icon size={18} className="text-white md:text-red-500" />}
                   {link.name}
                 </LocalizedLink>
               ))}

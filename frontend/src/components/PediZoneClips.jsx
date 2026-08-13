@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import LocalizedLink from './LocalizedLink';
 import { Helmet } from 'react-helmet-async';
 import { Volume2, VolumeX, Heart, Share2, ArrowLeft, ShieldCheck, Stethoscope } from 'lucide-react';
@@ -52,10 +52,54 @@ const clipsData = [
 ];
 
 const PediZoneClips = () => {
-  const [muted, setMuted] = useState(false);
+  const [globalMuted, setGlobalMuted] = useState(false);
+  const [activeClipId, setActiveClipId] = useState(clipsData[0].id);
   const [likes, setLikes] = useState(
     clipsData.reduce((acc, clip) => ({ ...acc, [clip.id]: { count: clip.likes, liked: false } }), {})
   );
+
+  const videoRefs = useRef({});
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.6 // Video ekranda %60 göründüğünde aktif kabul et
+    };
+
+    const handleIntersect = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = Number(entry.target.dataset.clipId);
+          setActiveClipId(id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersect, observerOptions);
+    const elements = document.querySelectorAll('.clip-container');
+    elements.forEach((el) => observer.observe(el));
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    // Aktif videoyu oynat, diğerlerini durdur ve ses durumlarını ayarla
+    Object.keys(videoRefs.current).forEach((id) => {
+      const video = videoRefs.current[id];
+      if (video) {
+        if (Number(id) === activeClipId) {
+          video.muted = globalMuted;
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+          video.muted = true;
+        }
+      }
+    });
+  }, [activeClipId, globalMuted]);
 
   const handleLike = (id) => {
     setLikes(prev => ({
@@ -109,11 +153,11 @@ const PediZoneClips = () => {
           <h1 className="text-lg font-bold tracking-wide">PediZone Clips</h1>
         </div>
         <button 
-          onClick={() => setMuted(!muted)}
+          onClick={() => setGlobalMuted(!globalMuted)}
           className="bg-white/10 hover:bg-white/20 p-2.5 rounded-full backdrop-blur-md transition-colors cursor-pointer"
-          title={muted ? "Sesi Aç" : "Sesi Kapat"}
+          title={globalMuted ? "Sesi Aç" : "Sesi Kapat"}
         >
-          {muted ? <VolumeX size={20} /> : <Volume2 size={20} />}
+          {globalMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
         </button>
       </div>
 
@@ -123,14 +167,15 @@ const PediZoneClips = () => {
           <div 
             key={clip.id} 
             id={`clip-${clip.id}`}
-            className="w-full h-screen snap-start flex items-center justify-center relative px-4 pt-12 pb-6"
+            data-clip-id={clip.id}
+            className="clip-container w-full h-screen snap-start flex items-center justify-center relative px-4 pt-12 pb-6"
           >
             {/* Video Card Container - Centered & Compact */}
             <div className="relative w-full max-w-sm h-[72vh] bg-neutral-900 rounded-3xl overflow-hidden shadow-2xl flex flex-col justify-end border border-white/10 my-auto">
               <video 
+                ref={(el) => (videoRefs.current[clip.id] = el)}
                 src={clip.videoSrc}
-                autoPlay
-                muted={muted}
+                muted={clip.id === activeClipId ? globalMuted : true}
                 loop
                 playsInline
                 onClick={handleVideoClick}

@@ -59,6 +59,7 @@ const BlogNasirNedenTekrarEder = () => {
         <meta property="og:locale" content="tr_TR" />
         <meta property="og:site_name" content="PediZone" />
         <meta property="article:published_time" content="2026-06-12" />
+        <meta property="article:modified_time" content="2026-08-13" />
         <meta property="article:author" content="Ortotist-Prostetist Podolog Pelin Yarbı" />
         <meta property="article:section" content="Ayak Sağlığı" />
         <meta property="article:tag" content="Nasır" />
@@ -105,7 +106,7 @@ const BlogNasirNedenTekrarEder = () => {
               }
             },
             "datePublished": "2026-06-12",
-            "dateModified": "2026-06-12",
+            "dateModified": "2026-08-13",
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": "https://pedizone.com/blog/nasir-neden-surekli-tekrar-eder"
@@ -582,6 +583,44 @@ const BlogNasirNedenTekrarEder = () => {
                 Kişiye özel tabanlıklar bazı kişilerde yük dağılımının daha dengeli hale gelmesine yardımcı olabilir.
               </figcaption>
             </figure>
+          </div>
+        </div>
+      </section>
+
+      {/* Corn Freze ile Nasır Temizliği Örnek Uygulama */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="p-8 bg-gradient-to-br from-red-50 via-orange-50 to-amber-50 rounded-2xl border-2 border-red-200 shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Corn Freze ile Nasır Alma İşlemi (Örnek Uygulama)
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Podolojik kliniklerde inatçı ve derinleşmiş nasırların temizlenmesinde özel uçlara sahip <strong>corn freze (nasır frezesi)</strong> cihazları kullanılır. Evde jilet veya kesici aletlerle yapılan bilinçsiz müdahaleler sağlıklı dokuya zarar verirken, profesyonel freze uçları ile yapılan işlem nasırın merkezindeki sertleşmiş çekirdeği güvenle ve acısız şekilde uzaklaştırır.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Aşağıdaki örnek klinik uygulamada, corn freze yardımıyla nasırlı dokunun nasıl hassasiyet yaratılmadan temizlendiği ve cildin pürüzsüzleştirildiği net bir şekilde görülmektedir.
+              </p>
+
+              {/* Reels Tarzı Video */}
+              <div className="my-6 flex flex-col items-center">
+                <div className="max-w-xs w-full rounded-2xl overflow-hidden shadow-xl border border-red-200 bg-black">
+                  <video 
+                    src="/blog-images/corn-callus/content/nasir-temizligi-corn-freze.webm" 
+                    autoPlay 
+                    muted 
+                    loop 
+                    playsInline
+                    className="w-full h-auto object-cover block"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-gray-500 mt-3 flex items-center justify-center">
+                  <span className="w-8 h-px bg-red-300 mr-3"></span>
+                  Klinik Uygulama: Corn Freze ile Nasır Temizliği
+                  <span className="w-8 h-px bg-red-300 ml-3"></span>
+                </figcaption>
+              </div>
+            </div>
           </div>
         </div>
       </section>

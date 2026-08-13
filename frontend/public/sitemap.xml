@@ -25,7 +25,7 @@
   <!-- Blog Yazıları -->
   <url>
     <loc>https://pedizone.com/blog/nasir-neden-surekli-tekrar-eder</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -42,6 +42,10 @@
     </image:image>
     <image:image>
       <image:loc>https://pedizone.com/images/blog/nasir-neden-surekli-tekrar-eder/kisiye-ozel-tabanlik-basinc-dagilimi.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://pedizone.com/blog-images/corn-callus/content/nasir-temizligi-corn-freze.webm</image:loc>
+      <image:title>Corn Freze ile Nasır Alma İşlemi Örnek Uygulama</image:title>
     </image:image>
   </url>
   <url>

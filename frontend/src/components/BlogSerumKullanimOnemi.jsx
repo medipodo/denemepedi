@@ -510,32 +510,32 @@ const BlogSerumKullanimOnemi = () => {
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 my-8">
-                <div className="relative bg-red-50/50 rounded-3xl p-4 border-2 border-red-200 shadow-md">
-                  <div className="absolute top-6 left-6 z-10 bg-red-600 text-white px-3.5 py-1 rounded-full text-xs font-bold shadow-lg">
-                    ❌ Bakım Öncesi
+                <div className="relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-4 border-2 border-gray-200 shadow-md">
+                  <div className="absolute top-6 left-6 z-10 bg-gray-900 text-white px-3.5 py-1 rounded-full text-xs font-bold shadow-lg">
+                    🔄 Önceki / Sonrası Gözlem 1
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-inner bg-white mt-8">
                     <img 
                       src="/blog-images/serum-kullanim/pedizone-serum-before-2.webp" 
-                      alt="Bakım Öncesi Tırnak Durumu" 
+                      alt="PediZone Serum Bakım Örneği 1" 
                       className="w-full aspect-square object-cover"
                     />
                   </div>
-                  <p className="text-center text-sm text-red-700 font-semibold mt-4">Zayıflamış, kuruluk ve hijyen ihtiyacı olan tırnak yapısı</p>
+                  <p className="text-center text-sm text-gray-700 font-semibold mt-4">PediZone Serum desteğiyle tırnak yatağında elde edilen klinik gelişim örneği</p>
                 </div>
 
-                <div className="relative bg-emerald-50/50 rounded-3xl p-4 border-2 border-emerald-200 shadow-md">
-                  <div className="absolute top-6 left-6 z-10 bg-emerald-600 text-white px-3.5 py-1 rounded-full text-xs font-bold shadow-lg">
-                    ✅ Düzenli Bakım Sonrası
+                <div className="relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-4 border-2 border-gray-200 shadow-md">
+                  <div className="absolute top-6 left-6 z-10 bg-gray-900 text-white px-3.5 py-1 rounded-full text-xs font-bold shadow-lg">
+                    🔄 Önceki / Sonrası Gözlem 2
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-inner bg-white mt-8">
                     <img 
                       src="/blog-images/serum-kullanim/pedizone-serum-before-after22.webp" 
-                      alt="Düzenli Bakım Sonrası Tırnak Durumu" 
+                      alt="PediZone Serum Bakım Örneği 2" 
                       className="w-full aspect-square object-cover"
                     />
                   </div>
-                  <p className="text-center text-sm text-emerald-700 font-semibold mt-4">Tırnak yatağının güçlendiği ve hijyenik dengenin sağlandığı görünüm</p>
+                  <p className="text-center text-sm text-gray-700 font-semibold mt-4">PediZone Serum desteğiyle tırnak sağlığında sağlanan yenilenme görünümü</p>
                 </div>
               </div>
             </section>

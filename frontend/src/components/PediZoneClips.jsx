@@ -1,7 +1,7 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import LocalizedLink from './LocalizedLink';
 import { Helmet } from 'react-helmet-async';
-import { Play, Pause, Volume2, VolumeX, Heart, Share2, ArrowLeft, ShieldCheck, Stethoscope } from 'lucide-react';
+import { Volume2, VolumeX, Heart, Share2, ArrowLeft, ShieldCheck, Stethoscope } from 'lucide-react';
 
 const clipsData = [
   {
@@ -62,17 +62,22 @@ const PediZoneClips = () => {
     }));
   };
 
-  const handleShare = (title, url) => {
+  const handleShare = (clip) => {
+    const shareUrl = `${window.location.origin}/clips#clip-${clip.id}`;
     if (navigator.share) {
-      navigator.share({ title, url: window.location.origin + url }).catch(() => {});
+      navigator.share({
+        title: clip.title,
+        text: clip.description,
+        url: shareUrl,
+      }).catch(() => {});
     } else {
-      navigator.clipboard.writeText(window.location.origin + url);
-      alert('Video bağlantısı kopyalandı!');
+      navigator.clipboard.writeText(shareUrl);
+      alert(`"${clip.title}" videosunun bağlantısı panoya kopyalandı!`);
     }
   };
 
   return (
-    <div className="min-h-screen bg-black text-white relative">
+    <div className="min-h-screen bg-black text-white relative flex flex-col items-center justify-center">
       <Helmet>
         <title>PediZone Clips - Klinik Podoloji Video Akışı</title>
         <meta name="robots" content="noindex, nofollow" />
@@ -81,7 +86,7 @@ const PediZoneClips = () => {
       {/* Top Header */}
       <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/80 to-transparent p-4 flex items-center justify-between">
         <LocalizedLink to="/" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full backdrop-blur-md transition-colors text-sm font-medium">
-          <ArrowLeft size={18} /> Ana Sayfaya Dön
+          <ArrowLeft size={18} /> Ana Sayfa
         </LocalizedLink>
         <div className="flex items-center gap-2">
           <Stethoscope className="text-red-500" size={24} />
@@ -89,22 +94,23 @@ const PediZoneClips = () => {
         </div>
         <button 
           onClick={() => setMuted(!muted)}
-          className="bg-white/10 hover:bg-white/20 p-2.5 rounded-full backdrop-blur-md transition-colors"
+          className="bg-white/10 hover:bg-white/20 p-2.5 rounded-full backdrop-blur-md transition-colors cursor-pointer"
           title={muted ? "Sesi Aç" : "Sesi Kapat"}
         >
           {muted ? <VolumeX size={20} /> : <Volume2 size={20} />}
         </button>
       </div>
 
-      {/* Reels Feed Container */}
-      <div className="h-screen overflow-y-scroll snap-y snap-mandatory no-scrollbar pt-16">
+      {/* Reels Feed Container - Centered */}
+      <div className="w-full h-screen overflow-y-scroll snap-y snap-mandatory no-scrollbar flex flex-col items-center pt-16">
         {clipsData.map((clip) => (
           <div 
             key={clip.id} 
-            className="h-[calc(100vh-4rem)] snap-start flex items-center justify-center relative p-4 md:p-8"
+            id={`clip-${clip.id}`}
+            className="w-full h-[calc(100vh-4rem)] snap-start flex items-center justify-center relative p-4"
           >
-            {/* Video Card Container */}
-            <div className="relative w-full max-w-sm md:max-w-md h-[80vh] bg-neutral-900 rounded-3xl overflow-hidden shadow-2xl flex flex-col justify-end border border-white/10">
+            {/* Video Card Container - Perfectly Centered */}
+            <div className="relative w-full max-w-sm h-[78vh] bg-neutral-900 rounded-3xl overflow-hidden shadow-2xl flex flex-col justify-end border border-white/10">
               <video 
                 src={clip.videoSrc}
                 autoPlay
@@ -115,13 +121,13 @@ const PediZoneClips = () => {
               />
 
               {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent pointer-events-none"></div>
 
               {/* Right Action Bar (Instagram Reels style) */}
               <div className="absolute right-4 bottom-24 flex flex-col items-center gap-5 z-20">
                 <button 
                   onClick={() => handleLike(clip.id)}
-                  className="flex flex-col items-center gap-1 group"
+                  className="flex flex-col items-center gap-1 group cursor-pointer"
                 >
                   <div className={`p-3 rounded-full backdrop-blur-md transition-transform active:scale-125 ${likes[clip.id].liked ? 'bg-red-600 text-white' : 'bg-black/40 text-white hover:bg-black/60'}`}>
                     <Heart size={24} className={likes[clip.id].liked ? 'fill-current' : ''} />
@@ -130,8 +136,8 @@ const PediZoneClips = () => {
                 </button>
 
                 <button 
-                  onClick={() => handleShare(clip.title, clip.link)}
-                  className="flex flex-col items-center gap-1 group"
+                  onClick={() => handleShare(clip)}
+                  className="flex flex-col items-center gap-1 group cursor-pointer"
                 >
                   <div className="p-3 rounded-full bg-black/40 text-white hover:bg-black/60 backdrop-blur-md transition-transform active:scale-125">
                     <Share2 size={24} />

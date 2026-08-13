@@ -141,29 +141,29 @@ const PediZoneClips = () => {
               </div>
 
               {/* Bottom Info Bar */}
-              <div className="relative z-20 p-6 flex flex-col gap-3">
-                <div className="flex items-center gap-2">
-                  <span className="bg-red-600/90 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">
+              <div className="relative z-20 p-5 pr-16 flex flex-col gap-2">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="bg-red-600/90 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider backdrop-blur-sm">
                     {clip.tag}
                   </span>
-                  <span className="text-xs text-zinc-300 font-medium flex items-center gap-1">
-                    <ShieldCheck size={14} className="text-red-400" /> {clip.author}
+                  <span className="text-[11px] text-zinc-300 font-medium flex items-center gap-1">
+                    <ShieldCheck size={12} className="text-red-400" /> {clip.author}
                   </span>
                 </div>
 
-                <h2 className="text-xl font-bold text-white leading-tight">
+                <h2 className="text-base font-bold text-white leading-snug">
                   {clip.title}
                 </h2>
 
-                <p className="text-sm text-zinc-300 line-clamp-2 leading-relaxed">
+                <p className="text-xs text-zinc-300 line-clamp-2 leading-relaxed">
                   {clip.description}
                 </p>
 
                 <LocalizedLink 
                   to={clip.link}
-                  className="mt-2 inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-2.5 px-5 rounded-xl transition-all shadow-lg text-sm text-center active:scale-95"
+                  className="mt-1 inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded-lg transition-all shadow-md text-xs text-center active:scale-95"
                 >
-                  Yazıyı İncele & Detayları Gör →
+                  Yazıyı İncele →
                 </LocalizedLink>
               </div>
             </div>

@@ -22,9 +22,30 @@ const FAQ = () => {
     {
       category: "Tırnak Problemleri",
       questions: [
-        { id: "q6", q: "Tırnak mantarı bulaşıcı mı?", a: "Evet, tırnak mantarı bulaşıcıdır. Ortak tırnak makası veya manikür malzemeleri risk yaratır. Düzenli temizlik ve kişisel hijyen kurallarına uymak bulaşmayı önler.", link: { text: "Tırnak Mantarı Çeşitleri", url: "/blog/tirnak-mantari-cesitleri" } },
+        { id: "q6", q: "Tırnak mantarı bulaşıcı mı?", a: "Evet, tırnak mantarı bulaşıcıdır. Ortak tırnak makası veya manikür malzemeleri yaratır. Düzenli temizlik ve kişisel hijyen kurallarına uymak bulaşmayı önler.", link: { text: "Tırnak Mantarı Çeşitleri", url: "/blog/tirnak-mantari-cesitleri" } },
         { id: "q7", q: "Tırnak mantarı ne kadar sürede düzelir?", a: "Tırnak mantarının iyileşmesi yavaş olabilir çünkü tırnak uzama hızı düşüktür. Düzenli bakım, mantar önleyici serum ve sabır ile birkaç ayda fark edilir sonuç alınabilir.", link: { text: "Foot Nail Care Serum", url: "/urun/foot-nail-care-serum" } },
-        { id: "q8", q: "Tırnak sararması her zaman mantar mıdır?", a: "Hayır. Oje kullanımı, tırnak travmaları veya bazı cilt sorunları da sararmaya neden olabilir. Doğru tespit için dermatolojik değerlendirme gerekir." }
+        { id: "q8", q: "Tırnak sararması her zaman mantar mıdır?", a: "Hayır. Oje kullanımı, tırnak travmaları veya bazı cilt sorunları da sararmaya neden olabilir. Doğru tespit için dermatolojik değerlendirme gerekir." },
+        { id: "q_nail_onikogrifoz", q: "Tırnak mantarı ile onikogrifoz nasıl ayırt edilir?", a: "Tırnakta kalınlaşma, şekil bozukluğu ve renk değişimi tek başına mantar tanısı koydurmaz. Görünüm benzerliği nedeniyle uzman değerlendirmesi ve gerektiğinde laboratuvar incelemesi gerekebilir.", link: { text: "Tırnak Mantarı Neden Geçmez?", url: "/blog/tirnak-mantari-neden-gecmez" } }
+      ]
+    },
+    {
+      category: "Batık Tırnak",
+      questions: [
+        { id: "q_batik_1", q: "Batık tırnak nasıl anlaşılır?", a: "Batık tırnak, tırnak kenarının yumuşak dokuya baskı yapmasıyla oluşur. Bölgede ağrı, hassasiyet, kızarıklık ve şişlik en yaygın belirtilerdir.", link: { text: "Batık Tırnak İlk Belirtileri", url: "/blog/batik-tirnak-nasil-baslar-ilk-belirtileri" } },
+        { id: "q_batik_2", q: "Batık tırnak neden tekrarlar?", a: "Yanlış tırnak kesimi, parmağa uygulanan baskı ve dar ayakkabı kullanımı batığın tekrarlamasına yol açabilir. Doğru kesim ve uygun ayakkabı seçimi tekrar riskini azaltır.", link: { text: "Batık Tırnak Tekrarlar mı?", url: "/blog/batik-tirnak-tekrarlar-mi" } },
+        { id: "q_batik_3", q: "Batık tırnakta tırnak nasıl kesilmelidir?", a: "Tırnaklar çok kısa kesilmemeli ve köşe kısımları yuvarlatılmamalıdır. Evde tırnak kenarını kesmek veya sivri aletlerle müdahale etmek riski artırabilir.", link: { text: "Batık Tırnakta Ayakkabı Seçimi", url: "/blog/batik-tirnakta-ayakkabi-secimi" } },
+        { id: "q_batik_4", q: "Batık tırnakta tel mi, B/S bant mı uygulanır?", a: "Tel veya B/S bant uygulaması tırnak yapısına ve uzman değerlendirmesine göre belirlenir. Her iki yöntem de tırnağın doğru yöne büyümesine destek olmak amacıyla tercih edilebilir.", link: { text: "Podolog Değerlendirmesi", url: "/podolog-degerlendirmesi" } },
+        { id: "q_batik_5", q: "Batık tırnakta ne zaman uzmana başvurulmalıdır?", a: "Akıntı, irin, yayılan kızarıklık, şiddetli ağrı veya diyabet durumu varsa evde beklenmemelidir. Bu gibi durumlarda vakit kaybetmeden sağlık uzmanına başvurulmalıdır.", link: { text: "Podolog Değerlendirmesi", url: "/podolog-degerlendirmesi" } }
+      ]
+    },
+    {
+      category: "Nasır ve Siğil",
+      questions: [
+        { id: "q_ns_1", q: "Nasır ile siğil nasıl ayırt edilir?", a: "Nasır mekanik basınç sonucu oluşurken siğil viral kökenlidir ve görünüm olarak karıştırılabilir. Kesin ayrım için uzman değerlendirmesi gerekebilir.", link: { text: "Nasır ve Siğil Farkları", url: "/blog/nasir-sigil-farklari" } },
+        { id: "q_ns_2", q: "Nasırı evde kesmek güvenli midir?", a: "Jilet, makas veya kesici aletlerle evde nasır kesmek enfeksiyon riskini ciddi ölçüde artırır. Evde bu tür mekanik müdahaleler kesinlikle önerilmez.", link: { text: "Nasır Nedir, Evde Geçer mi?", url: "/blog/nasir-nedir-evde-gecer-mi" } },
+        { id: "q_ns_3", q: "Nasır bandı veya nasır yakısı herkese uygun mudur?", a: "Asit içerebilen nasır bantları ve yakıları sağlıklı cilde zarar verebileceği için herkes için uygun olmayabilir. Bilinçsiz kullanım tahrişe yol açabilir.", link: { text: "Geçmeyen Nasırın Nedenleri", url: "/blog/nasir-nasil-gecer-gecmeyen-nasirin-7-nedeni" } },
+        { id: "q_ns_4", q: "Diyabeti olan kişiler nasıra evde müdahale edebilir mi?", a: "Özellikle diyabet, dolaşım bozukluğu, his kaybı, açık yara veya enfeksiyon şüphesi olan kişilerin evde müdahale etmesi risklidir. Bu durumda profesyonel destek alınmalıdır.", link: { text: "Podolog Değerlendirmesi", url: "/podolog-degerlendirmesi" } },
+        { id: "q109", q: "Aynı yerde sürekli nasır çıkması ne anlama gelir?", a: "Aynı noktada tekrarlayan nasır, o bölgede biyomekanik bir basış bozukluğu veya aşırı sürtünme olduğunun göstergesidir. Yalnızca yüzeydeki sertliği traş etmek yetersiz kalır; plantar basınç analizi ve kişiye özel taban desteği gerekir.", link: { text: "Aynı Yerde Sürekli Nasır Çıkması", url: "/blog/ayni-yerde-surekli-nasir-cikmasi" } }
       ]
     },
     {
@@ -39,7 +60,7 @@ const FAQ = () => {
     {
       category: "Genel Ayak Sağlığı",
       questions: [
-        { id: "q13", q: "Ayak kokusu neden olur?", a: "Genellikle terleme ve bakteriyel çoğalma kaynaklıdır. Kapalı, hava almayan ayakkabılar ve nemli ortamlar riski artırır. Düzenli temizlik ve ürün kullanımı kokuyu önler.", link: { text: "Ayak Kokusu Nedenleri", url: "/blog/ayak-kokusu-nedenleri" } },
+        { id: "q13", q: "Ayak kokusu neden olur?", a: "Genellikle terleme ve bakteriyel çoğalma kaynaklıdır. Kapalı, hava almayan ayakkabılar ve nemli ortamlar riski artırır. Düzenli ayak hijyeni, ayakların kuru tutulması ve uygun ürün kullanımı kokunun azaltılmasına yardımcı olabilir.", link: { text: "Ayak Kokusu Nedenleri", url: "/blog/ayak-kokusu-nedenleri" } },
         { id: "q14", q: "Ayak terlemesi mantara neden olur mu?", a: "Evet. Nemli ortam mantar oluşumu için uygun zemin sağlar. Kurutma, havalandırma ve mantar önleyici ürünler koruyucudur." },
         { id: "q15", q: "Topuk çatlağı neden olur?", a: "Kuruluk, yanlış ayakkabı seçimi ve bakım eksikliği en sık nedenlerdir. Düzenli nemlendirme ile çatlaklar azaltılabilir.", link: { text: "Üreli Krem", url: "/urun/ureli-krem" } },
         { id: "q16", q: "Medikal ayak bakımı nedir?", a: "Profesyonel ortamda yapılan, tıbbi kurallara uygun ayak bakımıdır. Sorunlu tırnak, mantar veya topuk çatlağı vakalarında en etkili çözümdür.", link: { text: "Medikal Ayak Bakımı Nedir?", url: "/blog/medikal-ayak-bakimi-nedir" } },
@@ -47,7 +68,6 @@ const FAQ = () => {
         { id: "q18", q: "Ürünler hassas ciltler için uygun mu?", a: "Cilt tipine göre değişebilir. Hassas ciltlerde küçük bir bölgede test edilmesi önerilir. Olumsuz bir durum görülürse kullanım durdurulmalıdır." },
         { id: "q19", q: "Hamileler kullanabilir mi?", a: "Genel olarak topikal ürünler güvenlidir ancak doktor onayı alınması tavsiye edilir." },
         { id: "q20", q: "Ürünler ne kadar sürede sonuç verir?", a: "Sorunun derecesine bağlıdır. Düzenli kullanım ile genellikle 2–4 hafta içinde fark edilmeye başlanır, tam sonuç için süre uzayabilir." },
-        { id: "q109", q: "Aynı yerde sürekli nasır çıkması ne anlama gelir?", a: "Aynı noktada tekrarlayan nasır, o bölgede biyomekanik bir basış bozukluğu veya aşırı sürtünme olduğunun göstergesidir. Yalnızca yüzeydeki sertliği traş etmek yetersiz kalır; plantar basınç analizi ve kişiye özel taban desteği gerekir.", link: { text: "Aynı Yerde Sürekli Nasır Çıkması", url: "/blog/ayni-yerde-surekli-nasir-cikmasi" } },
         { id: "q110", q: "Diyabetik ayak bakımında dikkat edilmesi gerekenler nelerdir?", a: "Diyabet (şeker hastalığı) hastalarında en küçük bir yara veya nasır bile zamanla iyileşmeyen ülserlere dönüşebilir. Ayaklar her gün yıkanıp kurulanmalı, asla kesici aletler kullanılmamalı ve yüksek üreli profesyonel nemlendiriciler tercih edilmelidir.", link: { text: "Medikal Ayak Bakımı Nedir?", url: "/blog/medikal-ayak-bakimi-nedir" } },
         { id: "q111", q: "Topuk dikenine ne iyi gelir ve evde nasıl rahatlatılır?", a: "Topuk dikeni (plantar fasiit), taban fasyasının aşırı gerilmesi ve topuk kemiğine binen yük sonucu oluşur. Ortopedik tabanlıklar, silikon topuk yastıkları, germe egzersizleri ve düzenli masaj kremleri ağrıyı hafifletmede etkilidir." }
       ]
@@ -67,7 +87,7 @@ const FAQ = () => {
           {/* Header */}
           <div className="text-center mb-8">
             <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">Sık Sorulan Sorular</h1>
-            <p className="text-gray-500 text-sm">Son Güncelleme: Mart 2026</p>
+            <p className="text-gray-500 text-sm">Son Güncelleme: Ağustos 2026</p>
           </div>
 
           {/* Intro */}

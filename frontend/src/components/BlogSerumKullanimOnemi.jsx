@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { 
   Calendar, Clock, User, CheckCircle, AlertTriangle, ArrowRight, 
   ChevronDown, ChevronUp, Share2, Droplets, ShieldCheck, Stethoscope, 
-  Sparkles, Layers, Activity, Check, Heart, Copy
+  Sparkles, Layers, Activity, Check, Heart, Copy, ArrowLeft
 } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
@@ -391,7 +391,7 @@ const BlogSerumKullanimOnemi = () => {
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Kalınlaşma ve Yapısal Bozulma</h3>
                     <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                      Renk koyulaşır (sarı, kahverengi tonları), tırnak plakasında kalınlaşma (sublingual hiperkeratoz) ve kırılganlık artar. Bu aşamada ürünün tırnak yatağına tam nüfuz etmesi için damlalık uygulaması büyük önem taşır.
+                      Renk koyulaşır (sarı, kahverengi tonları), tırnak plakasında kalınlaşma (sublingual hiperkeratoz) ve kırılganlık artır. Bu aşamada ürünün tırnak yatağına tam nüfuz etmesi için damlalık uygulaması büyük önem taşır.
                     </p>
                     <div className="text-xs font-semibold text-amber-700 flex items-center">
                       ✓ Düzenli damlalık uygulaması ve ölü derinin arındırılması şarttır
@@ -609,7 +609,7 @@ const BlogSerumKullanimOnemi = () => {
         </div>
       </main>
 
-      {/* Related Articles Section (Instagram style cards - ChatGPT Önerisi) */}
+      {/* Related Articles Section */}
       <section className="bg-gray-50 py-16 mt-16 border-t border-gray-200">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center max-w-2xl mx-auto mb-12">
@@ -675,7 +675,7 @@ const BlogSerumKullanimOnemi = () => {
               <div className="relative aspect-[16/10] overflow-hidden bg-gray-100">
                 <img 
                   src="/images/blog/parmak-arasi-mantar-nasil-gecer/parmak-arasi-mantar-kapak.webp" 
-                  alt="Parmak Arası Mantar Nasıl Geçer" 
+                  alt="Parmak Arasi Mantar Nasıl Geçer" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <span className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-md">Ayak Mantarı</span>

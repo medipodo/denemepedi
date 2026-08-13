@@ -43,10 +43,7 @@
     <image:image>
       <image:loc>https://pedizone.com/images/blog/nasir-neden-surekli-tekrar-eder/kisiye-ozel-tabanlik-basinc-dagilimi.webp</image:loc>
     </image:image>
-    <image:image>
-      <image:loc>https://pedizone.com/blog-images/corn-callus/content/nasir-temizligi-corn-freze.webm</image:loc>
-      <image:title>Corn Freze ile Nasır Alma İşlemi Örnek Uygulama</image:title>
-    </image:image>
+
   </url>
   <url>
     <loc>https://pedizone.com/blog/parmak-arasi-mantar-tirnaga-yayilir-mi</loc>
@@ -98,10 +95,7 @@
     <image:image>
       <image:loc>https://pedizone.com/images/blog/parmak-arasi-mantar-nasil-gecer/klinik-ornek-vaka-interdigital-tinea-pedis.webp</image:loc>
     </image:image>
-    <image:image>
-      <image:loc>https://pedizone.com/blog-images/parmak-arasi-mantar/ayak-mantari-wood-isigi.webm</image:loc>
-      <image:title>Ayak Mantarının Wood Işığı Altındaki Görüntüsü</image:title>
-    </image:image>
+
   </url>
   <url>
     <loc>https://pedizone.com/blog/ayak-mantari-baslangici-nasil-anlasilir</loc>
@@ -126,10 +120,7 @@
     <image:image>
       <image:loc>https://pedizone.com/images/blog/tirnak-mantari-neden-gecmez/tirnak-mantari-neden-olur.webp</image:loc>
     </image:image>
-    <image:image>
-      <image:loc>https://pedizone.com/blog-images/tirnak-mantari-neden-gecmez/tirnak-mantari-onikogrifoz.webm</image:loc>
-      <image:title>Tırnak Mantarı ve Onikogrifoz Klinik Gözlem Videosu</image:title>
-    </image:image>
+
   </url>
   <url>
     <loc>https://pedizone.com/blog/nasir-nedir-evde-gecer-mi</loc>
@@ -212,15 +203,7 @@
       <image:loc>https://pedizone.com/blog-images/tirnak-mantari/tirnak-mantari-cesitleri.webp</image:loc>
     </image:image>
   </url>
-  <url>
-    <loc>https://pedizone.com/blog/serum-kullanim-onemi</loc>
-    <lastmod>2025-12-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://pedizone.com/blog-images/serum-kullanimi/pedizone-serum-kullanimi.webp</image:loc>
-    </image:image>
-  </url>
+
   <url>
     <loc>https://pedizone.com/blog/ayak-kokusu-nedenleri</loc>
     <lastmod>2025-12-04</lastmod>
@@ -322,10 +305,7 @@
       <image:loc>https://pedizone.com/blog-images/corn-callus/content/ankara-nasir-tedavisi-pedizone-krem.webp</image:loc>
       <image:title>Klinik Deneyimlerde Karşılaşılan Nasır Örnekleri - Topuk Bölgesi</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://pedizone.com/blog-images/corn-callus/content/nasir-pedizone-video.webm</image:loc>
-      <image:title>Podologların Sık Karşılaştığı Vakalar - Klinik Nasır Uygulama Videosu</image:title>
-    </image:image>
+
   </url>
   <url>
     <loc>https://pedizone.com/blog/nasir-nasil-gecer-gecmeyen-nasirin-7-nedeni</loc>
@@ -340,10 +320,7 @@
       <image:loc>https://pedizone.com/blog-images/corn-callus/content/01.webp</image:loc>
       <image:title>Ayak tabanında oluşan derin nasır ve basınç noktaları</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://pedizone.com/blog-images/corn-callus/content/nasir-temizligi-corn-freze.webm</image:loc>
-      <image:title>Corn freze ile nasır alma işlemi örnek uygulama</image:title>
-    </image:image>
+
   </url>
         
   <!-- Ürün Sayfaları -->
@@ -441,10 +418,7 @@
       <image:loc>https://pedizone.com/blog-images/serum-kullanim/serum-kapak.webp</image:loc>
       <image:title>PediZone Serum Kullanım Önemi ve Doğru Damlalık Uygulama Rehberi</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://pedizone.com/blog-images/serum-kullanim/pedizone-serum-damlalik.webm</image:loc>
-      <image:title>PediZone Serum Damlalık Kullanımı ve Uygulama Videosu</image:title>
-    </image:image>
+
   </url>
 
   <!-- PediZone Clips (Reels-style Video Akışı) -->

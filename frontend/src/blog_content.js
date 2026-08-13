@@ -5,11 +5,11 @@ export const enrichedBlogPosts = [
     "id": "serum-kullanim-onemi",
     "title": "PediZone Serum Kullanım Önemi ve Doğru Damlalık Uygulama Rehberi",
     "slug": "serum-kullanim-onemi",
-    "excerpt": "PediZone Foot and Nail Care Serum nasıl kullanılır? Doğru damlalık tekniği, tırnak bakımında serumun önemi ve klinik ipuçları.",
+    "excerpt": "PediZone Foot and Nail Care Serum nasıl kullanılır? Podolog gözüyle doğru damlalık tekniği, tırnak bakımında serumun önemi ve klinik ipuçları.",
     "metaTitle": "PediZone Serum Kullanım Önemi ve Doğru Damlalık Uygulama Rehberi",
-    "metaDescription": "PediZone ayak ve tırnak bakım serumunun doğru damlalık tekniğiyle kullanımını, tırnak sağlığına etkilerini podolojik perspektifle inceleyin.",
+    "metaDescription": "PediZone ayak ve tırnak bakım serumunun doğru damlalık tekniğiyle evde ve klinik bakımda kullanımını, tırnak sağlığına etkilerini podolojik perspektifle inceleyin.",
     "date": "13 Ağustos 2026",
-    "readTime": "7 dk",
+    "readTime": "8 dk",
     "author": "Podolog Gamze B. Başaran",
     "imageCategory": "serum-kullanim",
     "image": "/blog-images/serum-kullanim/serum-kapak.webp",
@@ -18,21 +18,26 @@ export const enrichedBlogPosts = [
       "tırnak bakımı",
       "damlalık uygulama",
       "podoloji",
-      "ayak bakımı"
+      "ayak bakımı",
+      "PediZone Serum"
     ],
     "sections": [
       {
         "type": "intro",
-        "content": "Ayak ve tırnak sağlığında doğru ürün seçimi kadar, ürünün uygulama tekniği de büyük önem taşır. PediZone Foot and Nail Care Serum, özel formülüyle tırnak yatağına ve çevresine derinlemesine nüfuz eder. Bu rehberde serumun doğru damlalık tekniğiyle nasıl uygulanması gerektiğini detaylıca ele alıyoruz.",
-        "highlight": "Doğru damlalık uygulaması, serumun aktif bileşenlerinin tırnak yapısına maksimum düzeyde etki etmesini sağlar."
+        "content": "Ayak ve tırnak sağlığında doğru bakım ürünü seçmek kadar, o ürünü doğru teknikle uygulamak da başarının anahtarıdır. Klinik uygulamalarımızda sıkça gözlemlediğimiz üzere, evde yapılan bakım rutinlerinde ürünün yanlış uygulanması veya yetersiz emilim sağlanması istenen sonucun alınmasını geciktirebilir. PediZone Foot and Nail Care Serum, özel bileşenleri ve dengeli formülasyonu sayesinde tırnak yatağına ve çevresine derinlemesine etki eder. Bu rehberde, podolojik perspektifle doğru damlalık tekniğini ve bakım sürecinde dikkat edilmesi gerekenleri ele alıyoruz.",
+        "highlight": "Doğru damlalık uygulaması, aktif bileşenlerin tırnak plakasına ve tırnak kıvrımlarına maksimum düzeyde nüfuz etmesini sağlar."
       },
       {
         "type": "heading",
-        "content": "PediZone Serum Neden Önemlidir?"
+        "content": "Tırnak Bakımında Serum Kullanımı Neden Önemlidir?"
       },
       {
         "type": "paragraph",
-        "content": "Tırnak yapısı dış etkenlere karşı dayanıklı gibi görünse de zaman zaman zayıflayabilir, nem dengesini kaybedebilir veya bakım ihtiyacı duyabilir. Tea tree oil (çay ağacı yağı), üre ve salisilik asit içeren özel formülüyle tırnak çevresindeki ölü deriyi yumuşatır ve hijyenik bir bakım sağlar."
+        "content": "Tırnak yapısı dış etkenlerden, kapalı ayakkabılardan, nem dengesizliğinden veya kimyasal temaslardan kolayca etkilenebilir. Zamanla tırnak platesinde zayıflama, kuruluk veya tırnak çevresindeki dokularda hassasiyet görülebilir. Yoğun kıvamlı kremler her zaman tırnak yatağının derinlerine nüfuz edemez. İşte bu noktada sıvı formu ve damlalıklı özel başlığı sayesinde <strong>PediZone Foot and Nail Care Serum</strong> devreye girer."
+      },
+      {
+        "type": "paragraph",
+        "content": "Çay ağacı yağı (tea tree oil), üre ve salisilik asit türevleri gibi seçkin içeriklerle zenginleştirilen formül, tırnak çevresindeki ölü derinin yumuşatılmasına yardımcı olurken tırnak minesinin doğal direncini destekler. Düzenli kullanım, tırnak yatağının hijyenik ve bakımlı kalmasında önemli bir rol oynamaktadır. Konuyla ilgili daha geniş bilgi için <a href='/blog/tirnak-mantari-neden-gecmez'>tırnak mantarı ve tırnak yapısı</a> hakkındaki yazımızı da inceleyebilirsiniz."
       },
       {
         "type": "video",
@@ -42,23 +47,65 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "quickFact",
-        "title": "Uygulama İpucu",
-        "content": "Serum damlatıldıktan sonra birkaç saniye hafifçe masaj yapmak emilimi önemli ölçüde artırır."
+        "title": "Klinik Uygulama İpucu",
+        "content": "Serum damlatıldıktan sonra acele etmeden, hafif dairesel hareketlerle birkaç saniye masaj yapmak emilimi ve aktif maddelerin dağılımını önemli ölçüde artırır."
       },
       {
         "type": "heading",
-        "content": "Adım Adım Doğru Serum Uygulaması"
+        "content": "Adım Adım Doğru Serum Uygulama Rehberi"
+      },
+      {
+        "type": "paragraph",
+        "content": "Evde podolojik bakım rutini uygulanırken hijyen ve istikrar en temel unsurlardır. PediZone serumun en yüksek verimle çalışması için şu adımlar izlenmelidir:"
       },
       {
         "type": "bulletList",
-        "title": "Uygulama adımları",
+        "title": "Adım adım uygulama adımları",
         "items": [
-          "<strong>Temizlik:</strong> Uygulama öncesi ayakların ve tırnakların tamamen temiz ve kuru olduğundan emin olun.",
-          "<strong>Damlalık Kullanımı:</strong> Damlalık yardımıyla ilgili tırnağın üzerine 1-2 damla serum damlatın.",
-          "<strong>Yayma ve Masaj:</strong> Serumun tırnak yatağına ve tırnak etlerine iyice nüfuz etmesi için nazikçe masaj yapın.",
-          "<strong>Kuruma Süresi:</strong> Çorap veya ayakkabı giymeden önce serumun birkaç dakika kurumasını bekleyin.",
-          "<strong>Düzenli Kullanım:</strong> En iyi sonuç için günde 2 kez (sabah ve akşam) düzenli olarak uygulayın."
+          "<strong>Temizlik ve Kurulama:</strong> Uygulama öncesinde ayakların ve özellikle tırnak çevresinin tamamen temiz ve kuru olduğundan emin olun.",
+          "<strong>Damlalık Kontrolü:</strong> Hijyenik damlalık yardımıyla ilgili tırnağın üzerine doğrudan 1-2 damla serum bırakın.",
+          "<strong>Nazik Masaj:</strong> Serumun tırnak yatağına, tırnak etlerine (kütikül) ve yan kıvrımlara iyice nüfuz etmesi için parmak ucunuzla nazikçe yedirin.",
+          "<strong>Kuruma Bekleme Süresi:</strong> Çorap veya kapalı ayakkabı giymeden önce serumun birkaç dakika kendi kendine kurumasını bekleyin.",
+          "<strong>Düzenli Periyot:</strong> Sabah ve akşam olmak üzere günde 2 kez düzenli uygulandığında bakım süreci hızlanır."
         ]
+      },
+      {
+        "type": "heading",
+        "content": "Podolog Gözüyle Sık Yapılan Hatalar"
+      },
+      {
+        "type": "paragraph",
+        "content": "Klinikte hastalarımızla görüştüğümüzde, bakım ürünlerinin yanlış kullanıldığını sıklıkla fark ediyoruz. Ürünü çok fazla miktarda sürmek etkisini artırmaz; aksine doğru noktalara temas etmesini engeller. Damlalık ucunun tırnağa direkt temas ettirilmemesi, şişe içindeki hijyenin korunması açısından çok önemlidir. Ayrıca düzenli kullanım atlandığında istenen bakım kalitesine ulaşmak uzun sürebilir."
+      },
+      {
+        "type": "productCard",
+        "title": "PediZone Yoğun Bakım ve Onarım Desteği",
+        "content": "Tırnak ve ayak bakım rutininizi profesyonel seviyeye taşımak, kuruluk ve sertleşmelere karşı etkili bir çözüm arıyorsanız PediZone bakım ürünleri günlük rutininizi tamamlar.",
+        "benefits": [
+          "Özel damlalık tasarımıyla tam nokta atışı uygulama",
+          "Zenginleştirilmiş aktif bileşen desteği",
+          "Günlük ev bakımına ve klinik rutine tam uyum",
+          "Podologlar tarafından tavsiye edilen formülasyon"
+        ],
+        "link": "/#urunler"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "PediZone Serum günde kaç kez uygulanmalıdır?",
+        "answer": "En etkili sonuç ve düzenli bakım için sabah ve akşam olmak üzere günde 2 kez temiz ve kuru tırnağa damlalık yardımıyla uygulanması tavsiye edilir."
+      },
+      {
+        "question": "Serum uygulandıktan hemen sonra çorap giyilebilir mi?",
+        "answer": "Serumun tırnak yatağına ve çevresine iyice nüfuz etmesi ve etkililiğini göstermesi için giyinmeden önce 2-3 dakika kuruması beklenmelidir."
+      },
+      {
+        "question": "Damlalık tırnağa doğrudan temas etmeli mi?",
+        "answer": "Hijyenin korunması ve ürünün formülasyonunun bozulmaması için damlalık ucunun tırnağa veya cilde direkt temas ettirilmeden birkaç santim yukarıdan damlatılması önerilir."
+      },
+      {
+        "question": "PediZone Serum tırnak mantarında tek başına yeterli midir?",
+        "answer": "PediZone Serum tırnak çevresinin hijyenini ve bakımını destekler. Ancak tıbbi tanısı konulmuş durumlarda uzman podolog eşliğinde yürütülen medikal ayak bakımı rutiniyle birlikte destekleyici olarak kullanılmalıdır."
       }
     ]
   },

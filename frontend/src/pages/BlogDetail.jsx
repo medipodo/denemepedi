@@ -25,11 +25,11 @@ const BlogDetail = () => {
   const { slug, currentLang } = useLanguage();
   // Gizlenen slug'lar detayda da açılmaz
   const isHidden = HIDDEN_BLOG_SLUGS.has(slug);
-  // Detayı önce mock.js'te ara (eski çalışan bloglar önceliklidir), yoksa enrichedBlogPosts'ta ara
+  // Detayı önce enrichedBlogPosts'ta ara (yeni eklenen zengin bloglar önceliklidir), yoksa mock.js'te ara
   const post = isHidden
     ? undefined
-    : (blogPosts.find(p => p.slug === slug)
-        || enrichedBlogPosts.find(p => p.slug === slug));
+    : (enrichedBlogPosts.find(p => p.slug === slug)
+        || blogPosts.find(p => p.slug === slug));
   const [openFaq, setOpenFaq] = useState(null);
   const [copied, setCopied] = useState(false);
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import LocalizedLink from './LocalizedLink';
+import BlogVideoPlayer from './BlogVideoPlayer';
 import { Helmet } from 'react-helmet-async';
 import { 
   Calendar, Clock, User, CheckCircle, AlertTriangle, ArrowRight, 
@@ -208,22 +209,10 @@ const BlogNasirSigilFarklari = () => {
                 Aşağıdaki klinik videoda, ayak tabanında sıkça karşılaşılan plantar siğil ile mekanik nasır arasındaki farkların podolojik muayene esnasındaki görünümünü inceleyebilirsiniz.
               </p>
               
-              <figure className="my-6 flex flex-col items-center">
-                <div className="max-w-xs w-full rounded-2xl overflow-hidden shadow-2xl border border-gray-200 bg-black">
-                  <video 
-                    src="/blog-images/sigil/sigil-plantar-sigil.webm" 
-                    autoPlay 
-                    loop 
-                    playsInline
-                    className="w-full h-auto object-cover block"
-                  />
-                </div>
-                <figcaption className="text-center text-sm text-gray-500 mt-4 flex items-center justify-center">
-                  <span className="w-8 h-px bg-gray-300 mr-3"></span>
-                  Podolog Gözüyle Plantar Siğil ve Nasır Karşılaştırma ve Klinik Gözlem
-                  <span className="w-8 h-px bg-gray-300 ml-3"></span>
-                </figcaption>
-              </figure>
+              <BlogVideoPlayer 
+                src="/blog-images/sigil/sigil-plantar-sigil.webm" 
+                caption="Podolog Gözüyle Plantar Siğil ve Nasır Karşılaştırma ve Klinik Gözlem" 
+              />
             </section>
 
             {/* Section 4: Karşılaştırma Tablosu */}

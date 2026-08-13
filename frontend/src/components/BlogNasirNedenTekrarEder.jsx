@@ -1,5 +1,6 @@
 import React from 'react';
 import LocalizedLink from './LocalizedLink';
+import BlogVideoPlayer from './BlogVideoPlayer';
 import { Helmet } from 'react-helmet-async';
 import { Calendar, Clock, User, CheckCircle, AlertTriangle, ChevronDown, ChevronUp, Share2, Footprints, Activity } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
@@ -602,23 +603,10 @@ const BlogNasirNedenTekrarEder = () => {
                 Aşağıdaki örnek klinik uygulamada, corn freze yardımıyla nasırlı dokunun nasıl hassasiyet yaratılmadan temizlendiği ve cildin pürüzsüzleştirildiği net bir şekilde görülmektedir.
               </p>
 
-              {/* Reels Tarzı Video */}
-              <div className="my-6 flex flex-col items-center">
-                <div className="max-w-xs w-full rounded-2xl overflow-hidden shadow-xl border border-red-200 bg-black">
-                  <video 
-                    src="/blog-images/corn-callus/content/nasir-temizligi-corn-freze.webm" 
-                    autoPlay 
-                    loop 
-                    playsInline
-                    className="w-full h-auto object-cover block"
-                  />
-                </div>
-                <figcaption className="text-center text-sm text-gray-500 mt-3 flex items-center justify-center">
-                  <span className="w-8 h-px bg-red-300 mr-3"></span>
-                  Klinik Uygulama: Corn Freze ile Nasır Temizliği
-                  <span className="w-8 h-px bg-red-300 ml-3"></span>
-                </figcaption>
-              </div>
+              <BlogVideoPlayer 
+                src="/blog-images/corn-callus/content/nasir-temizligi-corn-freze.webm" 
+                caption="Klinik Uygulama: Corn Freze ile Nasır Temizliği" 
+              />
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import LocalizedLink from './LocalizedLink';
+import BlogVideoPlayer from './BlogVideoPlayer';
 import { Helmet } from 'react-helmet-async';
 import { Calendar, Clock, User, CheckCircle, AlertTriangle, ArrowRight, ChevronDown, ChevronUp, Share2 } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
@@ -328,23 +329,10 @@ const BlogTirnakMantariNedenGecmez = () => {
                 Her kalınlaşmış ve sararmış tırnak mantar enfeksiyonu değildir; onikogrifoz vakalarında temel sorun tırnak plağının aşırı hipertrofiye (büyüme/kalınlaşma) uğramasıdır. Bu iki durumun birbirine karıştırılması, yanlış ürünlerin kullanılmasına ve sürecin uzamasına neden olur. Doğru tespit için podolojik frezelerle profesyonel değerlendirme şarttır.
               </p>
 
-              {/* Reels Tarzı Video */}
-              <div className="my-6 flex flex-col items-center">
-                <div className="max-w-xs w-full rounded-2xl overflow-hidden shadow-xl border border-gray-200 bg-black">
-                  <video 
-                    src="/blog-images/tirnak-mantari-neden-gecmez/tirnak-mantari-onikogrifoz.webm" 
-                    autoPlay 
-                    loop 
-                    playsInline
-                    className="w-full h-auto object-cover block"
-                  />
-                </div>
-                <figcaption className="text-center text-sm text-gray-500 mt-3 flex items-center justify-center">
-                  <span className="w-8 h-px bg-gray-300 mr-3"></span>
-                  Klinik Gözlem: Onikogrifoz ve Tırnak Kalınlaşması Vakası
-                  <span className="w-8 h-px bg-gray-300 ml-3"></span>
-                </figcaption>
-              </div>
+              <BlogVideoPlayer 
+                src="/blog-images/tirnak-mantari-neden-gecmez/tirnak-mantari-onikogrifoz.webm" 
+                caption="Klinik Gözlem: Onikogrifoz ve Tırnak Kalınlaşması Vakası" 
+              />
             </div>
           </div>
         </div>

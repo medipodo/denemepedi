@@ -1,5 +1,6 @@
 import React from 'react';
 import LocalizedLink from './LocalizedLink';
+import BlogVideoPlayer from './BlogVideoPlayer';
 import { Helmet } from 'react-helmet-async';
 import { Calendar, Clock, User, CheckCircle, AlertTriangle, ChevronDown, ChevronUp, Share2, Droplets, Timer } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
@@ -386,23 +387,10 @@ const BlogParmakArasiMantar = () => {
                 Çıplak gözle hafif bir soyulma veya kızarıklık gibi görünen parmak arası mantar lezyonları, Wood ışığı altında incelediğinde mantar kolonilerinin yerleştiği sınırlar çok daha net fark edilir. Bu sayede bakım ve ürün uygulama alanları tam olarak belirlenerek nokta atışı bir podolojik yaklaşım sergilenir.
               </p>
 
-              {/* Reels Tarzı Video */}
-              <div className="my-6 flex flex-col items-center">
-                <div className="max-w-xs w-full rounded-2xl overflow-hidden shadow-xl border border-indigo-200 bg-black">
-                  <video 
-                    src="/blog-images/parmak-arasi-mantar/ayak-mantari-wood-isigi.webm" 
-                    autoPlay 
-                    loop 
-                    playsInline
-                    className="w-full h-auto object-cover block"
-                  />
-                </div>
-                <figcaption className="text-center text-sm text-gray-500 mt-3 flex items-center justify-center">
-                  <span className="w-8 h-px bg-indigo-300 mr-3"></span>
-                  Klinik İnceleme: Ayak Mantarının Wood Işığı Altındaki Görüntüsü
-                  <span className="w-8 h-px bg-indigo-300 ml-3"></span>
-                </figcaption>
-              </div>
+              <BlogVideoPlayer 
+                src="/blog-images/parmak-arasi-mantar/ayak-mantari-wood-isigi.webm" 
+                caption="Klinik İnceleme: Ayak Mantarının Wood Işığı Altındaki Görüntüsü" 
+              />
             </div>
           </div>
         </div>

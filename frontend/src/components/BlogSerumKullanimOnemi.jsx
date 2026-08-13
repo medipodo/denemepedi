@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import LocalizedLink from './LocalizedLink';
+import BlogVideoPlayer from './BlogVideoPlayer';
 import { Helmet } from 'react-helmet-async';
 import { 
   Calendar, Clock, User, CheckCircle, AlertTriangle, ArrowRight, 
@@ -435,23 +436,10 @@ const BlogSerumKullanimOnemi = () => {
                 Evde podolojik bakım rutini uygulanırken hijyen ve istikrar en temel unsurlardır. PediZone serumun en yüksek verimle çalışması için şu adımlar izlenmelidir:
               </p>
 
-              {/* Video Player */}
-              <div className="my-8 flex flex-col items-center">
-                <div className="max-w-xs w-full rounded-3xl overflow-hidden shadow-2xl border border-gray-200 bg-black">
-                  <video 
-                    src="/blog-images/serum-kullanim/pedizone-serum-damlalik.webm" 
-                    autoPlay 
-                    loop 
-                    playsInline
-                    className="w-full h-auto object-cover block"
-                  />
-                </div>
-                <p className="text-center text-sm text-gray-500 mt-3 font-medium flex items-center">
-                  <span className="w-8 h-px bg-gray-300 mr-3"></span>
-                  Podolog Gözüyle Damlalık Uygulaması: Doğru Damlatma ve Masaj Tekniği
-                  <span className="w-8 h-px bg-gray-300 ml-3"></span>
-                </p>
-              </div>
+              <BlogVideoPlayer 
+                src="/blog-images/serum-kullanim/pedizone-serum-damlalik.webm" 
+                caption="Podolog Gözüyle Damlalık Uygulaması: Doğru Damlatma ve Masaj Tekniği" 
+              />
 
               {/* Numbered Steps (ChatGPT Önerisi) */}
               <div className="grid sm:grid-cols-2 gap-4 my-8">

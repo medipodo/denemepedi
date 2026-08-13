@@ -21,6 +21,7 @@ import BlogNasirNedenTekrarEder from '../components/BlogNasirNedenTekrarEder';
 import BlogSerumKullanimOnemi from '../components/BlogSerumKullanimOnemi';
 import BlogNasirSigilFarklari from '../components/BlogNasirSigilFarklari';
 import LocalizedLink from '../components/LocalizedLink';
+import BlogVideoPlayer from '../components/BlogVideoPlayer';
 import { useLanguage } from '../i18n/LanguageContext';
 
 const BlogDetail = () => {
@@ -559,24 +560,7 @@ const BlogSection = ({ section, index }) => {
 
     case 'video':
       return (
-        <figure className="my-10 flex flex-col items-center">
-          <div className="max-w-xs w-full rounded-2xl overflow-hidden shadow-xl border border-gray-200">
-            <video 
-              src={section.src} 
-              autoPlay 
-              loop 
-              playsInline
-              className="w-full h-auto object-cover block"
-            />
-          </div>
-          {section.caption && (
-            <figcaption className="text-center text-sm text-gray-500 mt-4 flex items-center justify-center">
-              <span className="w-8 h-px bg-gray-300 mr-3"></span>
-              {section.caption}
-              <span className="w-8 h-px bg-gray-300 ml-3"></span>
-            </figcaption>
-          )}
-        </figure>
+        <BlogVideoPlayer src={section.src} caption={section.caption} />
       );
 
     case 'beforeAfterImages':

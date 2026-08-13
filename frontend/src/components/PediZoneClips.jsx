@@ -78,6 +78,8 @@ const PediZoneClips = () => {
       video.requestFullscreen().catch(() => {});
     } else if (video.webkitEnterFullscreen) {
       video.webkitEnterFullscreen(); // iOS Safari support
+    } else if (video.msRequestFullscreen) {
+      video.msRequestFullscreen();
     }
   };
 
@@ -115,18 +117,26 @@ const PediZoneClips = () => {
             className="w-full h-screen snap-start flex items-center justify-center relative px-4 pt-12 pb-6"
           >
             {/* Video Card Container - Centered & Compact */}
-            <div className="relative w-full max-w-sm h-[72vh] bg-neutral-900 rounded-3xl overflow-hidden shadow-2xl flex flex-col justify-end border border-white/10 my-auto group cursor-pointer" onClick={handleVideoClick}>
+            <div className="relative w-full max-w-sm h-[72vh] bg-neutral-900 rounded-3xl overflow-hidden shadow-2xl flex flex-col justify-end border border-white/10 my-auto">
               <video 
                 src={clip.videoSrc}
                 autoPlay
                 muted={muted}
                 loop
                 playsInline
-                className="absolute inset-0 w-full h-full object-cover"
+                onClick={handleVideoClick}
+                className="absolute inset-0 w-full h-full object-cover cursor-pointer"
+                title="Tam ekran yapmak için tıklayın"
               />
 
               {/* Fullscreen Hint Overlay */}
-              <div className="absolute top-4 left-4 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full backdrop-blur-md opacity-80 group-hover:opacity-150 transition-opacity z-20 flex items-center gap-1 text-[11px] px-3">
+              <div 
+                onClick={(e) => {
+                  const video = e.currentTarget.nextElementSibling;
+                  if (video && video.tagName === 'VIDEO') handleVideoClick({ currentTarget: video });
+                }}
+                className="absolute top-4 left-4 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full backdrop-blur-md opacity-80 transition-opacity z-20 flex items-center gap-1 text-[11px] px-3 cursor-pointer"
+              >
                 <Maximize2 size={14} /> Tam Ekran
               </div>
 
@@ -134,7 +144,7 @@ const PediZoneClips = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none"></div>
 
               {/* Right Action Bar (Instagram Reels style) */}
-              <div className="absolute right-4 bottom-20 flex flex-col items-center gap-4 z-20" onClick={(e) => e.stopPropagation()}>
+              <div className="absolute right-4 bottom-20 flex flex-col items-center gap-4 z-20">
                 <button 
                   onClick={() => handleLike(clip.id)}
                   className="flex flex-col items-center gap-1 group cursor-pointer"
@@ -156,14 +166,14 @@ const PediZoneClips = () => {
                 </button>
               </div>
 
-              {/* Bottom Info Bar - Title Only (No Description) */}
-              <div className="relative z-20 p-4 pr-16 flex flex-col gap-1.5" onClick={(e) => e.stopPropagation()}>
+              {/* Bottom Info Bar - Title Only */}
+              <div className="relative z-20 p-4 pr-16 flex flex-col gap-1.5">
                 <div className="flex items-center gap-2 flex-wrap">
                   <span className="bg-red-600/90 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider backdrop-blur-sm">
                     {clip.tag}
                   </span>
                   <span className="text-[11px] text-zinc-300 font-medium flex items-center gap-1">
-                    <Maximize2 size={12} className="text-red-400" /> {clip.author}
+                    <ShieldCheck size={12} className="text-red-400" /> {clip.author}
                   </span>
                 </div>
 

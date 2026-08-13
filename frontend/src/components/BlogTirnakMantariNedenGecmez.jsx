@@ -308,12 +308,44 @@ const BlogTirnakMantariNedenGecmez = () => {
             </p>
 
             {/* İkinci Görsel */}
-            <div className="rounded-2xl overflow-hidden shadow-lg mt-8">
+            <div className="rounded-2xl overflow-hidden shadow-lg mt-8 mb-10">
               <img 
                 src="/images/blog/tirnak-mantari-neden-gecmez/tirnak-mantari-neden-olur.webp" 
                 alt="Tırnak Mantarı Neden Olur?" 
                 className="w-full object-cover"
               />
+            </div>
+
+            {/* Onikogrifoz Bölümü */}
+            <div className="mt-12 p-8 bg-gradient-to-br from-red-50 via-orange-50 to-amber-50 rounded-2xl border-2 border-red-200 shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Tırnak Mantarı mı, Onikogrifoz mu? (Klinik Ayırım)
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Kliniğimizde sıklıkla karşılaşılan ve tırnak mantarı ile sıkça karıştırılan durumlardan biri de <strong>onikogrifoz (kuş gawk / koç boynuzu tırnak)</strong> tablosudur. Onikogrifoz, tırnağın aşırı kalınlaşarak kıvrılması ve koyu kahverengi/sarı bir görünüm almasıyla karakterizedir. Genellikle kronik travmalar, yaşlılık, dolaşım bozuklukları veya uzun süreli parmak bası baskıları sonucu ortaya çıkar.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Her kalınlaşmış ve sararmış tırnak mantar enfeksiyonu değildir; onikogrifoz vakalarında temel sorun tırnak plağının aşırı hipertrofiye (büyüme/kalınlaşma) uğramasıdır. Bu iki durumun birbirine karıştırılması, yanlış ürünlerin kullanılmasına ve sürecin uzamasına neden olur. Doğru tespit için podolojik frezelerle profesyonel değerlendirme şarttır.
+              </p>
+
+              {/* Reels Tarzı Video */}
+              <div className="my-6 flex flex-col items-center">
+                <div className="max-w-xs w-full rounded-2xl overflow-hidden shadow-xl border border-gray-200 bg-black">
+                  <video 
+                    src="/blog-images/tirnak-mantari-neden-gecmez/tirnak-mantari-onikogrifoz.webm" 
+                    autoPlay 
+                    muted 
+                    loop 
+                    playsInline
+                    className="w-full h-auto object-cover block"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-gray-500 mt-3 flex items-center justify-center">
+                  <span className="w-8 h-px bg-gray-300 mr-3"></span>
+                  Klinik Gözlem: Onikogrifoz ve Tırnak Kalınlaşması Vakası
+                  <span className="w-8 h-px bg-gray-300 ml-3"></span>
+                </figcaption>
+              </div>
             </div>
           </div>
         </div>

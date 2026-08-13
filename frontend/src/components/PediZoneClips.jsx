@@ -165,15 +165,10 @@ const PediZoneClips = () => {
     }
   };
 
-  const handleVideoClick = (e) => {
-    const video = e.currentTarget;
-    if (video.requestFullscreen) {
-      video.requestFullscreen().catch(() => {});
-    } else if (video.webkitEnterFullscreen) {
-      video.webkitEnterFullscreen(); // iOS Safari support
-    } else if (video.msRequestFullscreen) {
-      video.msRequestFullscreen();
-    }
+  const [fullscreenClip, setFullscreenClip] = useState(null);
+
+  const handleVideoClick = (clip) => {
+    setFullscreenClip(clip);
   };
 
   return (
@@ -247,7 +242,7 @@ const PediZoneClips = () => {
                 muted={clip.id === activeClipId ? globalMuted : true}
                 loop
                 playsInline
-                onClick={handleVideoClick}
+                onClick={() => handleVideoClick(clip)}
                 className="absolute inset-0 w-full h-full object-cover cursor-pointer"
                 title="Tam ekran yapmak için tıklayın"
               />
@@ -304,6 +299,29 @@ const PediZoneClips = () => {
           </div>
         ))}
       </div>
+
+      {/* Custom Fullscreen Modal for PC / Mobile (object-contain, vertical, no zoom distortion) */}
+      {fullscreenClip && (
+        <div className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4">
+          <button 
+            onClick={() => setFullscreenClip(null)}
+            className="absolute top-6 right-6 z-50 bg-white/20 hover:bg-white/30 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold backdrop-blur-md transition-colors cursor-pointer"
+          >
+            ✕
+          </button>
+          
+          <div className="relative w-full max-w-md h-[90vh] flex flex-col items-center justify-center">
+            <video 
+              src={fullscreenClip.videoSrc}
+              autoPlay
+              controls
+              loop
+              playsInline
+              className="w-full h-full object-contain rounded-2xl bg-black shadow-2xl"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -923,6 +923,32 @@ const BlogSection = ({ section, index }) => {
         </div>
       );
 
+    case 'comparisonTable':
+      return (
+        <div className="my-8 overflow-x-auto">
+          <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200">
+            <thead>
+              <tr className="bg-gradient-to-r from-red-600 to-rose-700 text-white">
+                {section.headers.map((header, i) => (
+                  <th key={i} className="py-4 px-6 font-bold text-sm uppercase tracking-wider">{header}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200">
+              {section.rows.map((row, i) => (
+                <tr key={i} className={i % 2 === 0 ? 'bg-gray-50/50' : 'bg-white'}>
+                  {row.map((cell, j) => (
+                    <td key={j} className="py-3.5 px-6 text-gray-700 text-sm font-medium">
+                      {j === 0 ? <strong className="text-gray-900">{cell}</strong> : cell}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+
     default:
       return null;
   }

@@ -575,6 +575,11 @@ export const blogPosts = [
         ]
       },
       {
+        type: 'video',
+        src: '/blog-images/sigil/sigil-plantar-sigil.webm',
+        caption: 'Podolog Gözüyle Plantar Siğil ve Nasır Karşılaştırma ve Klinik Gözlem Videosu'
+      },
+      {
         type: 'heading',
         content: 'Nasır ve Siğil Nasıl Ayırt Edilir?'
       },

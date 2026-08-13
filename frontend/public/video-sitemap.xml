@@ -57,4 +57,15 @@
     </video:video>
   </url>
 
+  <!-- 6. Nasır ve Siğil Karşılaştırma ve Klinik Gözlem Videosu -->
+  <url>
+    <loc>https://pedizone.com/blog/nasir-sigil-farklari</loc>
+    <video:video>
+      <video:thumbnail_loc>https://pedizone.com/blog-images/nasir-sigil-farklari/nasir-sigil-kapak.webp</video:thumbnail_loc>
+      <video:title>Podolog Gözüyle Plantar Siğil ve Nasır Karşılaştırma ve Klinik Gözlem</video:title>
+      <video:description>Ayak tabanında nasır ile plantar siğil arasındaki klinik farklar, yerleşim özellikleri ve podolojik gözlem.</video:description>
+      <video:content_loc>https://pedizone.com/blog-images/sigil/sigil-plantar-sigil.webm</video:content_loc>
+    </video:video>
+  </url>
+
 </urlset>

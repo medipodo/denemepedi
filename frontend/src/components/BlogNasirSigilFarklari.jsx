@@ -92,7 +92,7 @@ const BlogNasirSigilFarklari = () => {
               </div>
               <div>
                 <span className="block font-semibold text-white">Podolog Serdar Ceylan</span>
-                <span className="text-xs text-gray-400">PediZone Klinik Direktörü</span>
+                
               </div>
             </div>
             <div className="flex items-center gap-4 text-xs text-gray-400">
@@ -343,7 +343,7 @@ const BlogNasirSigilFarklari = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-1">Podolog Serdar Ceylan</h3>
-                  <p className="text-red-400 text-sm font-medium mb-3">PediZone Klinik Direktörü</p>
+                  
                   <p className="text-gray-300 text-sm leading-relaxed">
                     Ayak sağlığı, medikal podoloji uygulamaları ve problemli tırnak/deri bakımı alanında klinik çalışmalar yürütmektedir.
                   </p>

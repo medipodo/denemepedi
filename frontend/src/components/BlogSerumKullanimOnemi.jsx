@@ -334,7 +334,7 @@ const BlogSerumKullanimOnemi = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-white text-base">Podolog Serdar Ceylan</h4>
-                    <p className="text-red-100 text-xs">PediZone Klinik Direktörü</p>
+
                   </div>
                 </div>
               </div>
@@ -589,7 +589,7 @@ const BlogSerumKullanimOnemi = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">Podolog Serdar Ceylan</h4>
-                  <p className="text-sm text-gray-500">PediZone Klinik Direktörü</p>
+
                 </div>
               </div>
 

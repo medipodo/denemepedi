@@ -52,7 +52,7 @@ const clipsData = [
 ];
 
 const PediZoneClips = () => {
-  const [muted, setMuted] = useState(true);
+  const [muted, setMuted] = useState(false);
   const [likes, setLikes] = useState(
     clipsData.reduce((acc, clip) => ({ ...acc, [clip.id]: { count: clip.likes, liked: false } }), {})
   );

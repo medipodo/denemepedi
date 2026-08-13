@@ -447,6 +447,18 @@
     </image:image>
   </url>
 
+  <!-- PediZone Clips (Reels-style Video Akışı) -->
+  <url>
+    <loc>https://pedizone.com/clips</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/podolog-serdar-ceylan.webp</image:loc>
+      <image:title>PediZone Clips - Klinik Podoloji Video Akışı</image:title>
+    </image:image>
+  </url>
+
   <!-- SSS Sayfası -->
   <url>
     <loc>https://pedizone.com/sss</loc>

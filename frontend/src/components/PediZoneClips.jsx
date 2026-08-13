@@ -170,8 +170,37 @@ const PediZoneClips = () => {
   return (
     <div className="min-h-screen bg-black text-white relative flex flex-col items-center justify-center">
       <Helmet>
-        <title>PediZone Clips - Klinik Podoloji Video Akışı</title>
-        <meta name="robots" content="noindex, nofollow" />
+        <title>PediZone Clips - Klinik Podoloji Video Akışı | PediZone</title>
+        <meta name="description" content="PediZone Clips ile tırnak mantarı, nasır temizliği, batık tırnak ve klinik podoloji uygulamalarına ait Reels tarzı özel kısa klinik videolarını keşfedin." />
+        <link rel="canonical" href="https://pedizone.com/clips" />
+        <meta name="robots" content="index, follow" />
+        
+        {/* Open Graph */}
+        <meta property="og:site_name" content="PediZone®" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="PediZone Clips - Klinik Podoloji Video Akışı" />
+        <meta property="og:description" content="PediZone Clips ile podolojik klinik vakalarını Reels formatında izleyin." />
+        <meta property="og:url" content="https://pedizone.com/clips" />
+        <meta property="og:image" content="https://pedizone.com/podolog-serdar-ceylan.webp" />
+
+        {/* Video Object Schema for Google SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "PediZone Clips - Klinik Podoloji Video Akışı",
+            "description": "Podolog Serdar Ceylan ve uzman ekibinin klinik ayak sağlığı uygulamaları, nasır temizliği ve tırnak bakım videoları.",
+            "url": "https://pedizone.com/clips",
+            "publisher": {
+              "@type": "Organization",
+              "name": "PediZone",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://pedizone.com/favicon.svg"
+              }
+            }
+          })}
+        </script>
       </Helmet>
 
       {/* Top Header */}

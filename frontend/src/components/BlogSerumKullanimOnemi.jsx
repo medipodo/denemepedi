@@ -130,7 +130,7 @@ const BlogSerumKullanimOnemi = () => {
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-gray-600 mb-8 border-y border-gray-100 py-4 max-w-2xl mx-auto">
             <div className="flex items-center font-semibold text-gray-900">
               <div className="w-9 h-9 rounded-full bg-red-600 text-white flex items-center justify-center font-bold mr-2.5 shadow-md">
-                SÇ
+                SC
               </div>
               Podolog Serdar Ceylan
             </div>
@@ -330,7 +330,7 @@ const BlogSerumKullanimOnemi = () => {
                 </blockquote>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 rounded-full bg-white text-red-700 flex items-center justify-center font-bold shadow-md">
-                    SÇ
+                    SC
                   </div>
                   <div>
                     <h4 className="font-bold text-white text-base">Podolog Serdar Ceylan</h4>
@@ -547,11 +547,11 @@ const BlogSerumKullanimOnemi = () => {
                 <h3 className="text-2xl font-bold mt-3 mb-2">PediZone® Foot and Nail Care Serum</h3>
                 <p className="text-gray-300 text-sm">50 ml • Özel Damlalıklı Uygulama Başlığı • Podolog Tavsiyeli Formül</p>
               </div>
-              <LocalizedLink to="/#urunler">
-                <Button className="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-xl shadow-lg flex items-center">
-                  Ürünü İncele <ArrowRight size={18} className="ml-2" />
-                </Button>
-              </LocalizedLink>
+            <LocalizedLink to="/urun/foot-nail-care-serum">
+              <Button className="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-xl shadow-lg flex items-center">
+                Ürünü İncele <ArrowRight size={18} className="ml-2" />
+              </Button>
+            </LocalizedLink>
             </div>
 
             {/* Section 06: Sık Sorulan Sorular (FAQ) */}
@@ -585,11 +585,11 @@ const BlogSerumKullanimOnemi = () => {
             <div className="pt-10 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-4">
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center font-bold text-lg shadow-md">
-                  SÇ
+                  SC
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">Podolog Serdar Ceylan</h4>
-                  <p className="text-sm text-gray-500">PediZone Podoloji Kliniği Uzman Eğitmeni</p>
+                  <p className="text-sm text-gray-500">PediZone Klinik Direktörü</p>
                 </div>
               </div>
 

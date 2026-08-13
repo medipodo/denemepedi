@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import LocalizedLink from './LocalizedLink';
 import { Helmet } from 'react-helmet-async';
-import { Volume2, VolumeX, Heart, Share2, ArrowLeft, ShieldCheck, Stethoscope, Maximize2 } from 'lucide-react';
+import { Volume2, VolumeX, Heart, Share2, ArrowLeft, ShieldCheck, Stethoscope } from 'lucide-react';
 
 const clipsData = [
   {
@@ -128,17 +128,6 @@ const PediZoneClips = () => {
                 className="absolute inset-0 w-full h-full object-cover cursor-pointer"
                 title="Tam ekran yapmak için tıklayın"
               />
-
-              {/* Fullscreen Hint Overlay */}
-              <div 
-                onClick={(e) => {
-                  const video = e.currentTarget.nextElementSibling;
-                  if (video && video.tagName === 'VIDEO') handleVideoClick({ currentTarget: video });
-                }}
-                className="absolute top-4 left-4 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full backdrop-blur-md opacity-80 transition-opacity z-20 flex items-center gap-1 text-[11px] px-3 cursor-pointer"
-              >
-                <Maximize2 size={14} /> Tam Ekran
-              </div>
 
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none"></div>

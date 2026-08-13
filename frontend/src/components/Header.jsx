@@ -172,20 +172,20 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="xl:hidden mt-4 pb-4 border-t border-red-500/30 md:border-gray-200 pt-4">
-            <nav className="flex flex-col space-y-3">
+          <div className="xl:hidden mt-3 pb-3 border-t border-red-500/30 md:border-gray-200 pt-3">
+            <nav className="flex flex-col space-y-1.5">
               {navLinks.map((link) => (
                 <LocalizedLink
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`block px-4 py-3 rounded-xl text-base font-medium transition-colors flex items-center gap-2 ${
+                  className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2 ${
                     isActive(link.path)
                       ? 'bg-white/20 text-white md:bg-red-50 md:text-red-600'
                       : 'text-red-100 hover:bg-white/10 hover:text-white md:text-gray-700 md:hover:bg-red-50 md:hover:text-red-600'
                   }`}
                 >
-                  {link.icon && <link.icon size={18} className="text-white md:text-red-500" />}
+                  {link.icon && <link.icon size={16} className="text-white md:text-red-500" />}
                   {link.name}
                 </LocalizedLink>
               ))}

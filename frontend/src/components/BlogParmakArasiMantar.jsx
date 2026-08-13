@@ -63,6 +63,7 @@ const BlogParmakArasiMantar = () => {
         <meta property="og:locale" content="tr_TR" />
         <meta property="og:site_name" content="PediZone" />
         <meta property="article:published_time" content="2026-04-18" />
+        <meta property="article:modified_time" content="2026-08-13" />
         <meta property="article:author" content="Podolog Serdar Ceylan" />
         <meta property="article:section" content="Ayak Sağlığı" />
         <meta property="article:tag" content="Parmak Arası Mantar" />
@@ -109,7 +110,7 @@ const BlogParmakArasiMantar = () => {
               }
             },
             "datePublished": "2026-04-18",
-            "dateModified": "2026-04-18",
+            "dateModified": "2026-08-13",
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": "https://pedizone.com/blog/parmak-arasi-mantar-nasil-gecer"
@@ -349,7 +350,7 @@ const BlogParmakArasiMantar = () => {
         </div>
       </section>
 
-      {/* Özgün Pull-Quote: Sinsi Evre */}
+            {/* Özgün Pull-Quote: Sinsi Evre */}
       <section className="py-6 md:py-8">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -366,6 +367,44 @@ const BlogParmakArasiMantar = () => {
                 — Podolog Serdar Ceylan, klinik gözlem notları
               </figcaption>
             </figure>
+          </div>
+        </div>
+      </section>
+
+      {/* Wood Işığı Altında Ayak Mantarı Görüntüsü */}
+      <section className="py-8 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="p-8 bg-gradient-to-br from-indigo-50 via-purple-50 to-blue-50 rounded-2xl border-2 border-indigo-200 shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Ayak Mantarının Wood Işığı Altındaki Görüntüsü
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Podolojik klinik değerlendirmelerde ve dermatolojik muayenelerde enfeksiyonun yayılım alanını ve türünü net bir şekilde gözlemlemek için özel tanı araçları kullanılır. Bunlardan biri olan <strong>Wood ışığı (ultraviyole A / siyah ışık)</strong>, cilt üzerindeki mantar sporlarının ve bazı bakteriyel aktivitelerin fluoresan (parlak yansıma) vermesini sağlar.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Çıplak gözle hafif bir soyulma veya kızarıklık gibi görünen parmak arası mantar lezyonları, Wood ışığı altında incelediğinde mantar kolonilerinin yerleştiği sınırlar çok daha net fark edilir. Bu sayede bakım ve ürün uygulama alanları tam olarak belirlenerek nokta atışı bir podolojik yaklaşım sergilenir.
+              </p>
+
+              {/* Reels Tarzı Video */}
+              <div className="my-6 flex flex-col items-center">
+                <div className="max-w-xs w-full rounded-2xl overflow-hidden shadow-xl border border-indigo-200 bg-black">
+                  <video 
+                    src="/blog-images/parmak-arasi-mantar/ayak-mantari-wood-isigi.webm" 
+                    autoPlay 
+                    muted 
+                    loop 
+                    playsInline
+                    className="w-full h-auto object-cover block"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-gray-500 mt-3 flex items-center justify-center">
+                  <span className="w-8 h-px bg-indigo-300 mr-3"></span>
+                  Klinik İnceleme: Ayak Mantarının Wood Işığı Altındaki Görüntüsü
+                  <span className="w-8 h-px bg-indigo-300 ml-3"></span>
+                </figcaption>
+              </div>
+            </div>
           </div>
         </div>
       </section>

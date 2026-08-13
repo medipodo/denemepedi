@@ -60,6 +60,31 @@ const PediZoneClips = () => {
 
   const videoRefs = useRef({});
 
+  // Tarayıcı ilk açılışta kullanıcı etkileşimi olmadan sesli videoyu engelleyebilir (Autoplay Policy).
+  // Sayfada ilk tıklama veya dokunmada ses kilidini açıyoruz.
+  useEffect(() => {
+    const unlockAudio = () => {
+      setGlobalMuted(false);
+      if (videoRefs.current[activeClipId]) {
+        videoRefs.current[activeClipId].muted = false;
+        videoRefs.current[activeClipId].play().catch(() => {});
+      }
+      window.removeEventListener('click', unlockAudio);
+      window.removeEventListener('touchstart', unlockAudio);
+      window.removeEventListener('scroll', unlockAudio);
+    };
+
+    window.addEventListener('click', unlockAudio);
+    window.addEventListener('touchstart', unlockAudio);
+    window.addEventListener('scroll', unlockAudio);
+
+    return () => {
+      window.removeEventListener('click', unlockAudio);
+      window.removeEventListener('touchstart', unlockAudio);
+      window.removeEventListener('scroll', unlockAudio);
+    };
+  }, [activeClipId]);
+
   useEffect(() => {
     const observerOptions = {
       root: null,
@@ -92,7 +117,13 @@ const PediZoneClips = () => {
       if (video) {
         if (Number(id) === activeClipId) {
           video.muted = globalMuted;
-          video.play().catch(() => {});
+          video.play().catch((err) => {
+            // Eğer tarayıcı engellerse muted olarak oynatmayı dene
+            if (err.name === 'NotAllowedError' && !globalMuted) {
+              video.muted = true;
+              video.play().catch(() => {});
+            }
+          });
         } else {
           video.pause();
           video.muted = true;
@@ -184,7 +215,7 @@ const PediZoneClips = () => {
               />
 
               {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none"><div></div></div>
 
               {/* Right Action Bar (Instagram Reels style) */}
               <div className="absolute right-4 bottom-20 flex flex-col items-center gap-4 z-20">

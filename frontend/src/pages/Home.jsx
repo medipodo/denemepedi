@@ -14,6 +14,7 @@ import LocalizedLink from '../components/LocalizedLink';
 import MarketplacesSection from '../components/MarketplacesSection';
 import BayiOl from '../components/BayiOl';
 import FreeEvaluation from '../components/FreeEvaluation';
+import { Video, Play, Sparkles } from 'lucide-react';
 
 // ---- Türkçe tarih parse yardımcısı (blog sıralaması için) ----
 const TR_MONTHS = {
@@ -412,6 +413,79 @@ const Home = () => {
 
       {/* Ücretsiz Podolog Ön Değerlendirme */}
       <FreeEvaluation />
+
+      {/* PediZone Clips / Klinik Videolar Tanıtım Bölümü */}
+      <section className="py-16 md:py-24 bg-gradient-to-br from-neutral-950 via-neutral-900 to-black text-white relative overflow-hidden">
+        {/* Arka plan ışık efektleri */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-red-600/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-red-800/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
+            {/* Sol Taraf: Açıklama ve CTA */}
+            <div className="flex-1 text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 bg-red-600/20 border border-red-500/30 text-red-400 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6 backdrop-blur-md">
+                <Sparkles size={14} /> PediZone® Clips Akışı
+              </div>
+              <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
+                Podolojik Klinik Deneyimler <span className="text-red-500">Canlı Akışta</span>
+              </h2>
+              <p className="text-zinc-300 text-base md:text-lg mb-8 leading-relaxed">
+                Corn freze ile nasır temizliğinden Wood ışığı ile ayak mantarı muayenesine, onikogrifoz incelemelerinden gerçek vaka örneklerine kadar tüm klinik uygulamalarımızı dikey Reels formatında keşfedin.
+              </p>
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                <LocalizedLink 
+                  to="/clips"
+                  className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-bold py-3.5 px-8 rounded-2xl transition-all shadow-xl shadow-red-600/20 text-base active:scale-95"
+                >
+                  <Video size={20} /> PediZone Clips'i Keşfet →
+                </LocalizedLink>
+              </div>
+            </div>
+
+            {/* Sağ Taraf: Şık Önizleme Kartları Grid */}
+            <div className="flex-1 w-full max-w-md lg:max-w-none">
+              <div className="grid grid-cols-2 gap-4">
+                {/* Kart 1 */}
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group aspect-[9/16] bg-neutral-900">
+                  <video 
+                    src="/blog-images/corn-callus/content/nasir-temizligi-corn-freze.webm" 
+                    autoPlay 
+                    muted 
+                    loop 
+                    playsInline 
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-3 left-3 right-3 z-10">
+                    <span className="bg-red-600 text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase">Nasır Tedavisi</span>
+                    <p className="text-xs font-bold text-white mt-1 line-clamp-1">Corn Freze Temizliği</p>
+                  </div>
+                </div>
+
+                {/* Kart 2 */}
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group aspect-[9/16] bg-neutral-900 mt-6">
+                  <video 
+                    src="/blog-images/parmak-arasi-mantar/ayak-mantari-wood-isigi.webm" 
+                    autoPlay 
+                    muted 
+                    loop 
+                    playsInline 
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-3 left-3 right-3 z-10">
+                    <span className="bg-red-600 text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase">Ayak Mantarı</span>
+                    <p className="text-xs font-bold text-white mt-1 line-clamp-1">Wood Işığı Muayenesi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sertifikalar Banner - başlık + geniş görsel, tıklanınca Sertifikalar sayfası */}
 
       {/* Sertifikalar Banner - başlık + geniş görsel, tıklanınca Sertifikalar sayfası */}
       <section className="py-12 md:py-16 bg-white" data-testid="sertifikalar-banner">

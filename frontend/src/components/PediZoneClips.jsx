@@ -8,7 +8,7 @@ const clipsData = [
     id: 1,
     title: "Corn Freze ile Nasır Temizliği",
     videoSrc: "/blog-images/corn-callus/content/nasir-temizligi-corn-freze.webm",
-    author: "Podolog Serdar Ceylan",
+    author: "Podolog Pelin Yarbı",
     tag: "Nasır Tedavisi",
     link: "/blog/nasir-neden-surekli-tekrar-eder",
     likes: 1420

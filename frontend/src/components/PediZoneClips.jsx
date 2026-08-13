@@ -24,6 +24,15 @@ const clipsData = [
   },
   {
     id: 3,
+    title: "Tırnak Mantarı ve Onikogrifoz Klinik Gözlem",
+    videoSrc: "/blog-images/nail-fungus/content/tirnak-mantari-onigogrifos1.webm",
+    author: "Podolog Serdar Ceylan",
+    tag: "Tırnak Mantarı",
+    link: "/blog/tirnak-mantari-bulasici-mi",
+    likes: 1480
+  },
+  {
+    id: 4,
     title: "Corn Freze ile Nasır Temizliği",
     videoSrc: "/blog-images/corn-callus/content/nasir-temizligi-corn-freze.webm",
     author: "Podolog Pelin Yarbı",
@@ -32,7 +41,7 @@ const clipsData = [
     likes: 1420
   },
   {
-    id: 4,
+    id: 5,
     title: "Ayak Mantarının Wood Işığı Altındaki Görüntüsü",
     videoSrc: "/blog-images/parmak-arasi-mantar/ayak-mantari-wood-isigi.webm",
     author: "Podolog Serdar Ceylan",
@@ -41,7 +50,7 @@ const clipsData = [
     likes: 985
   },
   {
-    id: 5,
+    id: 6,
     title: "Onikogrifoz ve Tırnak Mantarı Ayrımı",
     videoSrc: "/blog-images/tirnak-mantari-neden-gecmez/tirnak-mantari-onikogrifoz.webm",
     author: "Podolog Serdar Ceylan",
@@ -50,7 +59,7 @@ const clipsData = [
     likes: 1150
   },
   {
-    id: 6,
+    id: 7,
     title: "Podolog Gözüyle Klinik Nasır Vakası",
     videoSrc: "/blog-images/corn-callus/content/nasir-pedizone-video.webm",
     author: "Podolog Serdar Ceylan",

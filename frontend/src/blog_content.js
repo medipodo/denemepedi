@@ -1271,6 +1271,12 @@ export const enrichedBlogPosts = [
         "caption": "Tırnak mantarı şüphesinde profesyonel değerlendirme, bulaşma riskini ve doğru bakım planını belirlemede yol göstericidir."
       },
       {
+        "type": "video",
+        "src": "/blog-images/nail-fungus/content/tirnak-mantari-onigogrifos1.webm",
+        "alt": "Tırnak Mantarı ve Onikogrifoz Klinik Gözlem Videosu",
+        "caption": "Podolog Gözüyle Tırnak Mantarı ve Onikogrifoz Klinik Değerlendirme Örneği."
+      },
+      {
         "type": "warningList",
         "title": "Dikkat gerektiren durumlar",
         "items": [

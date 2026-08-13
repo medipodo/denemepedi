@@ -13,7 +13,18 @@
     </video:video>
   </url>
 
-  <!-- 2. Corn Freze ile Nasır Temizliği Videosu -->
+  <!-- 2. Tırnak Mantarı ve Onikogrifoz Klinik Gözlem Videosu -->
+  <url>
+    <loc>https://pedizone.com/blog/tirnak-mantari-bulasici-mi</loc>
+    <video:video>
+      <video:thumbnail_loc>https://pedizone.com/blog-images/nail-fungus/cover/nail-fungus-06.webp</video:thumbnail_loc>
+      <video:title>Podolog Gözüyle Tırnak Mantarı ve Onikogrifoz Klinik Gözlem</video:title>
+      <video:description>Tırnak mantarı ve onikogrifoz vakalarında klinik değerlendirme ve bulaşma dinamiği örneği.</video:description>
+      <video:content_loc>https://pedizone.com/blog-images/nail-fungus/content/tirnak-mantari-onigogrifos1.webm</video:content_loc>
+    </video:video>
+  </url>
+
+  <!-- 3. Corn Freze ile Nasır Temizliği Videosu -->
   <url>
     <loc>https://pedizone.com/blog/nasir-nasil-gecer-gecmeyen-nasirin-7-nedeni</loc>
     <video:video>

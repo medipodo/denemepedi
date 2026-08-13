@@ -12,7 +12,7 @@ export const enrichedBlogPosts = [
     "readTime": "8 dk",
     "author": "Podolog Serdar Ceylan",
     "imageCategory": "serum-kullanim",
-    "image": "/blog-images/serum-kullanim/Pedizone-serum6.webp",
+    "image": "/blog-images/serum-kullanim/pedizone-mantar-serumu-kapak.webp",
     "tags": [
       "serum kullanımı",
       "tırnak bakımı",
@@ -27,6 +27,20 @@ export const enrichedBlogPosts = [
         "type": "intro",
         "content": "Ayak ve tırnak sağlığında doğru bakım ürünü seçmek kadar, o ürünü doğru teknikle uygulamak da başarının anahtarıdır. Klinik uygulamalarımızda sıkça gözlemlediğimiz üzere, evde yapılan bakım rutinlerinde ürünün yanlış uygulanması veya yetersiz emilim sağlanması istenen sonucun alınmasını geciktirebilir. PediZone Foot and Nail Care Serum, özel bileşenleri ve dengeli formülasyonu sayesinde tırnak yatağına ve çevresine derinlemesine etki eder. Bu rehberde, podolojik perspektifle doğru damlalık tekniğini, tırnak yapısındaki değişim evrelerini ve bakım sürecinde dikkat edilmesi gerekenleri ele alıyoruz.",
         "highlight": "Doğru damlalık uygulaması, aktif bileşenlerin tırnak plakasına ve tırnak kıvrımlarına maksimum düzeyde nüfuz etmesini sağlar."
+      },
+      {
+        "type": "heading",
+        "content": "PediZone Foot & Nail Care Serum'un Öne Çıkan Klinik Özellikleri"
+      },
+      {
+        "type": "bulletList",
+        "title": "Podologların Tercihi Serinin Temel Avantajları",
+        "items": [
+          "<strong>İnce Moleküler Yapı:</strong> Özel formülasyonu sayesinde tırnak minesine ve tırnak yatağındaki en zor noktalara, derinlemesine dahi kolayca ulaşır.",
+          "<strong>Doğal Çay Ağacı Desteği (Tea Tree Oil):</strong> Antifungal ve hijyenik özellikleriyle tırnak çevresindeki florayı korur ve destekler.",
+          "<strong>Kabin ve Profesyonel Ürün:</strong> Kliniklerde podologların güvenle tercih ettiği, ev bakım rutiniyle uyumlu profesyonel bakım desteğidir.",
+          "<strong>Ure ve Salisilik Asit Sinerjisi:</strong> Tırnak çevresindeki ölü deriyi nazikçe arındırarak aktif maddelerin emilimini maksimuma çıkarır."
+        ]
       },
       {
         "type": "heading",

@@ -12,19 +12,20 @@ export const enrichedBlogPosts = [
     "readTime": "8 dk",
     "author": "Podolog Serdar Ceylan",
     "imageCategory": "serum-kullanim",
-    "image": "/images/products/serum/serum-main-new.jpg",
+    "image": "/blog-images/serum-kullanim/Pedizone-serum6.webp",
     "tags": [
       "serum kullanımı",
       "tırnak bakımı",
       "damlalık uygulama",
       "podoloji",
       "ayak bakımı",
-      "PediZone Serum"
+      "PediZone Serum",
+      "tırnak mantarı evreleri"
     ],
     "sections": [
       {
         "type": "intro",
-        "content": "Ayak ve tırnak sağlığında doğru bakım ürünü seçmek kadar, o ürünü doğru teknikle uygulamak da başarının anahtarıdır. Klinik uygulamalarımızda sıkça gözlemlediğimiz üzere, evde yapılan bakım rutinlerinde ürünün yanlış uygulanması veya yetersiz emilim sağlanması istenen sonucun alınmasını geciktirebilir. PediZone Foot and Nail Care Serum, özel bileşenleri ve dengeli formülasyonu sayesinde tırnak yatağına ve çevresine derinlemesine etki eder. Bu rehberde, podolojik perspektifle doğru damlalık tekniğini ve bakım sürecinde dikkat edilmesi gerekenleri ele alıyoruz.",
+        "content": "Ayak ve tırnak sağlığında doğru bakım ürünü seçmek kadar, o ürünü doğru teknikle uygulamak da başarının anahtarıdır. Klinik uygulamalarımızda sıkça gözlemlediğimiz üzere, evde yapılan bakım rutinlerinde ürünün yanlış uygulanması veya yetersiz emilim sağlanması istenen sonucun alınmasını geciktirebilir. PediZone Foot and Nail Care Serum, özel bileşenleri ve dengeli formülasyonu sayesinde tırnak yatağına ve çevresine derinlemesine etki eder. Bu rehberde, podolojik perspektifle doğru damlalık tekniğini, tırnak yapısındaki değişim evrelerini ve bakım sürecinde dikkat edilmesi gerekenleri ele alıyoruz.",
         "highlight": "Doğru damlalık uygulaması, aktif bileşenlerin tırnak plakasına ve tırnak kıvrımlarına maksimum düzeyde nüfuz etmesini sağlar."
       },
       {
@@ -33,11 +34,49 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "paragraph",
-        "content": "Tırnak yapısı dış etkenlerden, kapalı ayakkabılardan, nem dengesizliğinden veya kimyasal temaslardan kolayca etkilenebilir. Zamanla tırnak platesinde zayıflama, kuruluk veya tırnak çevresindeki dokularda hassasiyet görülebilir. Yoğun kıvamlı kremler her zaman tırnak yatağının derinlerine nüfuz edemez. İşte bu noktada sıvı formu ve damlalıklı özel başlığı sayesinde <strong>PediZone Foot and Nail Care Serum</strong> devreye girer."
+        "content": "Tırnak yapısı dış etkenlerden, kapalı ayakkabılardan, nem dengesizliğinden veya kimyasal temaslardan kolayca etkilenebilir. Zamanla tırnak platesinde zayıflama, kuruluk, renk değişimi veya tırnak çevresindeki dokularda hassasiyet görülebilir. Yoğun kıvamlı kremler her zaman tırnak yatağının derinlerine nüfuz edemez. İşte bu noktada sıvı formu ve damlalıklı özel başlığı sayesinde <strong>PediZone Foot and Nail Care Serum</strong> devreye girer."
       },
       {
         "type": "paragraph",
         "content": "Çay ağacı yağı (tea tree oil), üre ve salisilik asit türevleri gibi seçkin içeriklerle zenginleştirilen formül, tırnak çevresindeki ölü derinin yumuşatılmasına yardımcı olurken tırnak minesinin doğal direncini destekler. Düzenli kullanım, tırnak yatağının hijyenik ve bakımlı kalmasında önemli bir rol oynamaktadır. Konuyla ilgili daha geniş bilgi için <a href='/blog/tirnak-mantari-neden-gecmez'>tırnak mantarı ve tırnak yapısı</a> hakkındaki yazımızı da inceleyebilirsiniz."
+      },
+      {
+        "type": "heading",
+        "content": "Tırnak Sağlığında Değişim Evreleri ve Gözlem"
+      },
+      {
+        "type": "paragraph",
+        "content": "Klinik deneyimlerimizde tırnak yapısındaki bozulmaların ve hijyen kayıplarının belirli evrelerden geçtiğini görüyoruz. Erken aşamada müdahale etmek, bakım sürecini her zaman kısaltır."
+      },
+      {
+        "type": "image",
+        src: "/blog-images/serum-kullanim/tirnak-mantari-baslangic-evresi.webp",
+        alt: "Tırnak mantarı başlangıç evresi ve ilk belirtiler",
+        caption: "Başlangıç Evresi: Tırnak ucunda hafif renk değişimi ve parlaklık kaybı ile kendini gösterir."
+      },
+      {
+        "type": "paragraph",
+        "content": "<strong>1. Başlangıç Evresi:</strong> Tırnağın serbest kenarında hafif sarımsı veya beyazımsı renk değişimleri, matlaşma ve hafif hassasiyet ile başlar. Bu dönemde düzenli serum kullanımı ve hijyenik bakım ile tırnak direnci hızla desteklenebilir."
+      },
+      {
+        "type": "image",
+        src: "/blog-images/serum-kullanim/tirnak-mantari-orta-evre.webp",
+        alt: "Tırnak mantarı orta evre deformasyonu",
+        caption: "Orta Evre: Renk koyulaşması, tırnak altında kalınlaşma ve yapıda bozulma başlar."
+      },
+      {
+        "type": "paragraph",
+        "content": "<strong>2. Orta Evre:</strong> Renk koyulaşır (sarı, kahverengi tonları), tırnak plakasında kalınlaşma (sublingual hiperkeratoz) ve kırılganlık artar. Bu aşamada ürünün tırnak yatağına tam nüfuz etmesi için damlalık uygulaması büyük önem taşır."
+      },
+      {
+        "type": "image",
+        src: "/blog-images/serum-kullanim/tirnak-mantari-ileri-evre.webp",
+        alt: "Tırnak mantarı ileri evre onikogrifoz ve yapı bozukluğu",
+        caption: "İleri Evre: Tırnak yapısının bütünüyle bozulduğu ve profesyonel podolojik bakım gerektiren evre."
+      },
+      {
+        "type": "paragraph",
+        "content": "<strong>3. İleri Evre:</strong> Tırnak yapısının ciddi oranda deforme olduğu, kalkma veya batma eğilimi gösterdiği evredir. Bu aşamada evde bakım rutini mutlaka medikal ayak bakımı ile desteklenmelidir."
       },
       {
         "type": "video",
@@ -49,6 +88,26 @@ export const enrichedBlogPosts = [
         "type": "quickFact",
         "title": "Klinik Uygulama İpucu",
         "content": "Serum damlatıldıktan sonra acele etmeden, hafif dairesel hareketlerle birkaç saniye masaj yapmak emilimi ve aktif maddelerin dağılımını önemli ölçüde artırır."
+      },
+      {
+        "type": "heading",
+        "content": "Klinik Öncesi ve Sonrası Bakım Gözlemleri"
+      },
+      {
+        "type": "image",
+        src: "/blog-images/serum-kullanim/pedizone-serum-before-2.webp",
+        alt: "PediZone serum uygulama öncesi tırnak durumu",
+        caption: "Bakım Öncesi: Zayıflamış, kuruluk ve hijyen ihtiyacı olan tırnak yapısı."
+      },
+      {
+        "type": "paragraph",
+        "content": "Düzenli ve doğru teknikle uygulanan bakım rutinleri, tırnak çevresindeki dokunun yenilenmesine ve sağlıklı görünümün geri kazanılmasına zemin hazırlar."
+      },
+      {
+        "type": "image",
+        src: "/blog-images/serum-kullanim/pedizone-serum-before-after22.webp",
+        alt: "PediZone serum düzenli kullanım sonrası görünüm",
+        caption: "Düzenli Bakım Sonrası: Tırnak yatağının güçlendiği ve hijyenik dengenin sağlandığı görünüm."
       },
       {
         "type": "heading",

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <!-- 1. PediZone Serum Damlalık Uygulama Videosu -->
+  <url>
+    <loc>https://pedizone.com/blog/serum-kullanim-onemi</loc>
+    <video:video>
+      <video:thumbnail_loc>https://pedizone.com/blog-images/serum-kullanim/serum-kapak.webp</video:thumbnail_loc>
+      <video:title>PediZone Serum Damlalık Kullanımı ve Uygulama Rehberi</video:title>
+      <video:description>PediZone ayak ve tırnak bakım serumunun doğru damlalık tekniğiyle podolojik uygulama gösterimi.</video:description>
+      <video:content_loc>https://pedizone.com/blog-images/serum-kullanim/pedizone-serum-damlalik.webm</video:content_loc>
+    </video:video>
+  </url>
+
+  <!-- 2. Corn Freze ile Nasır Temizliği Videosu -->
+  <url>
+    <loc>https://pedizone.com/blog/nasir-nasil-gecer-gecmeyen-nasirin-7-nedeni</loc>
+    <video:video>
+      <video:thumbnail_loc>https://pedizone.com/blog-images/corn-callus/cover/nasir-nasil-gecer-kapak.webp</video:thumbnail_loc>
+      <video:title>Corn Freze ile Nasır Alma İşlemi Örnek Uygulama</video:title>
+      <video:description>Klinik ortamda corn freze cihazı ile sertleşmiş derinin ve nasırın güvenli şekilde temizlenmesi.</video:description>
+      <video:content_loc>https://pedizone.com/blog-images/corn-callus/content/nasir-temizligi-corn-freze.webm</video:content_loc>
+    </video:video>
+  </url>
+
+  <!-- 3. Ayak Mantarının Wood Işığı Altındaki Görünümü -->
+  <url>
+    <loc>https://pedizone.com/blog/parmak-arasi-mantar-nasil-gecer</loc>
+    <video:video>
+      <video:thumbnail_loc>https://pedizone.com/blog-images/parmak-arasi-mantar/parmak-arasi-mantar-kapak.webp</video:thumbnail_loc>
+      <video:title>Ayak Mantarının Wood Işığı Altındaki Klinik Görüntüsü</video:title>
+      <video:description>Parmak arası mantar ve interdigital tinea pedis vakalarının Wood lambası altındaki muayene görünümü.</video:description>
+      <video:content_loc>https://pedizone.com/blog-images/parmak-arasi-mantar/ayak-mantari-wood-isigi.webm</video:content_loc>
+    </video:video>
+  </url>
+
+  <!-- 4. Onikogrifoz ve Tırnak Mantarı Ayrımı Videosu -->
+  <url>
+    <loc>https://pedizone.com/blog/tirnak-mantari-neden-gecmez</loc>
+    <video:video>
+      <video:thumbnail_loc>https://pedizone.com/images/blog/tirnak-mantari-neden-gecmez/tirnak-mantari-neden-gecmez.webp</video:thumbnail_loc>
+      <video:title>Onikogrifoz ve Tırnak Mantarı Ayırıcı Tanı Görüntüsü</video:title>
+      <video:description>Kalınlaşmış tırnak yapısının (onikogrifoz) tırnak mantarından ayırt edilmesi gereken klinik bulgular.</video:description>
+      <video:content_loc>https://pedizone.com/blog-images/tirnak-mantari-neden-gecmez/tirnak-mantari-onikogrifoz.webm</video:content_loc>
+    </video:video>
+  </url>
+
+  <!-- 5. Podolog Gözüyle Klinik Nasır Vakası -->
+  <url>
+    <loc>https://pedizone.com/blog/ayni-yerde-surekli-nasir-cikmasi</loc>
+    <video:video>
+      <video:thumbnail_loc>https://pedizone.com/blog-images/corn-callus/cover/ayni-yerde-nasir-kapak.webp</video:thumbnail_loc>
+      <video:title>Podologların Sık Karşılaştığı Vakalar - Klinik Nasır Uygulaması</video:title>
+      <video:description>Aynı yerde sürekli tekrarlayan nasır vakalarında podolojik değerlendirme ve klinik uygulama örneği.</video:description>
+      <video:content_loc>https://pedizone.com/blog-images/corn-callus/content/nasir-pedizone-video.webm</video:content_loc>
+    </video:video>
+  </url>
+
+</urlset>

@@ -10,6 +10,7 @@ Disallow: /de
 
 # Allow sitemap
 Sitemap: https://pedizone.com/sitemap.xml
+Sitemap: https://pedizone.com/video-sitemap.xml
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1

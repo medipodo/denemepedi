@@ -8,7 +8,7 @@ const clipsData = [
     id: 1,
     title: "PediZone Serum Damlalık Kullanımı ve Uygulama",
     videoSrc: "/blog-images/serum-kullanim/pedizone-serum-damlalik.webm",
-    author: "Podolog Pelin Yarbı",
+    author: "Podolog Gamze B. Başaran",
     tag: "Tırnak Bakımı",
     link: "/blog/serum-kullanim-onemi",
     likes: 1640

@@ -20,6 +20,7 @@ import TermsOfService from './pages/TermsOfService';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import PodologDegerlendirme from './pages/PodologDegerlendirme';
+import PediZoneClips from './components/PediZoneClips';
 
 function App() {
   // Load rrweb scripts only in staging/preview/development environments
@@ -84,6 +85,7 @@ function App() {
           <Route path="/sss" element={<TRContent page="sss" />} />
           <Route path="/gizlilik-politikasi" element={<TRContent page="gizlilik-politikasi" />} />
           <Route path="/kullanim-sartlari" element={<TRContent page="kullanim-sartlari" />} />
+          <Route path="/clips" element={<PediZoneClips />} />
           
           {/* Legacy redirects from old multi-language structure */}
           <Route path="/tr" element={<Navigate to="/" replace />} />

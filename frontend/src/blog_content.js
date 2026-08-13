@@ -10,7 +10,7 @@ export const enrichedBlogPosts = [
     "metaDescription": "PediZone ayak ve tırnak bakım serumunun doğru damlalık tekniğiyle evde ve klinik bakımda kullanımını, tırnak sağlığına etkilerini podolojik perspektifle inceleyin.",
     "date": "13 Ağustos 2026",
     "readTime": "8 dk",
-    "author": "Podolog Gamze B. Başaran",
+    "author": "Podolog Serdar Ceylan",
     "imageCategory": "serum-kullanim",
     "image": "/blog-images/serum-kullanim/serum-kapak.webp",
     "tags": [

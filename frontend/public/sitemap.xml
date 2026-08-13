@@ -432,6 +432,21 @@
     </image:image>
   </url>
 
+  <url>
+    <loc>https://pedizone.com/blog/serum-kullanim-onemi</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pedizone.com/blog-images/serum-kullanim/serum-kapak.webp</image:loc>
+      <image:title>PediZone Serum Kullanım Önemi ve Doğru Damlalık Uygulama Rehberi</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pedizone.com/blog-images/serum-kullanim/pedizone-serum-damlalik.webm</image:loc>
+      <image:title>PediZone Serum Damlalık Kullanımı ve Uygulama Videosu</image:title>
+    </image:image>
+  </url>
+
   <!-- SSS Sayfası -->
   <url>
     <loc>https://pedizone.com/sss</loc>

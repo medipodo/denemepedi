@@ -6,6 +6,15 @@ import { Volume2, VolumeX, Heart, Share2, ArrowLeft, ShieldCheck, Stethoscope } 
 const clipsData = [
   {
     id: 1,
+    title: "PediZone Serum Damlalık Kullanımı ve Uygulama",
+    videoSrc: "/blog-images/serum-kullanim/pedizone-serum-damlalik.webm",
+    author: "Podolog Pelin Yarbı",
+    tag: "Tırnak Bakımı",
+    link: "/blog/serum-kullanim-onemi",
+    likes: 1640
+  },
+  {
+    id: 2,
     title: "Corn Freze ile Nasır Temizliği",
     videoSrc: "/blog-images/corn-callus/content/nasir-temizligi-corn-freze.webm",
     author: "Podolog Pelin Yarbı",
@@ -14,7 +23,7 @@ const clipsData = [
     likes: 1420
   },
   {
-    id: 2,
+    id: 3,
     title: "Ayak Mantarının Wood Işığı Altındaki Görüntüsü",
     videoSrc: "/blog-images/parmak-arasi-mantar/ayak-mantari-wood-isigi.webm",
     author: "Podolog Serdar Ceylan",
@@ -23,7 +32,7 @@ const clipsData = [
     likes: 985
   },
   {
-    id: 3,
+    id: 4,
     title: "Onikogrifoz ve Tırnak Mantarı Ayrımı",
     videoSrc: "/blog-images/tirnak-mantari-neden-gecmez/tirnak-mantari-onikogrifoz.webm",
     author: "Podolog Serdar Ceylan",
@@ -32,7 +41,7 @@ const clipsData = [
     likes: 1150
   },
   {
-    id: 4,
+    id: 5,
     title: "Podolog Gözüyle Klinik Nasır Vakası",
     videoSrc: "/blog-images/corn-callus/content/nasir-pedizone-video.webm",
     author: "Podolog Serdar Ceylan",

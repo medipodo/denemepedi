@@ -12,7 +12,7 @@ export const enrichedBlogPosts = [
     "readTime": "8 dk",
     "author": "Podolog Serdar Ceylan",
     "imageCategory": "serum-kullanim",
-    "image": "/blog-images/serum-kullanim/serum-kapak.webp",
+    "image": "/images/products/serum/serum-main-new.jpg",
     "tags": [
       "serum kullanımı",
       "tırnak bakımı",

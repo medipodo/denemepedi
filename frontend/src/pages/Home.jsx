@@ -80,6 +80,20 @@ const BrandAnimationVideo = () => {
   const [pageReady, setPageReady] = useState(false);
   const [inView, setInView] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [posterSrc, setPosterSrc] = useState('/videos/pedizone-karakterler-poster-640.webp');
+
+  useEffect(() => {
+    const updatePoster = () => {
+      if (window.innerWidth >= 768) {
+        setPosterSrc('/videos/pedizone-karakterler-poster-960.webp');
+      } else {
+        setPosterSrc('/videos/pedizone-karakterler-poster-640.webp');
+      }
+    };
+    updatePoster();
+    window.addEventListener('resize', updatePoster);
+    return () => window.removeEventListener('resize', updatePoster);
+  }, []);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -134,7 +148,7 @@ const BrandAnimationVideo = () => {
           <video
             ref={videoRef}
             src={isLoaded ? "/videos/pedizone-karakterler.webm" : undefined}
-            poster="/videos/pedizone-karakterler-poster.webp"
+            poster={posterSrc}
             autoPlay={shouldPlay}
             muted
             loop
@@ -630,7 +644,11 @@ const Home = () => {
             className="group block overflow-hidden rounded-none md:rounded-3xl md:shadow-[0_20px_50px_-20px_rgba(0,0,0,0.2)] md:ring-1 md:ring-black/5 transition-all duration-500 md:hover:shadow-[0_30px_70px_-25px_rgba(220,38,38,0.3)]"
           >
             <img
-              src="/sertifikalar-banner.webp"
+              src="/sertifikalar-banner-1120.webp"
+              srcSet="/sertifikalar-banner-640.webp 640w, /sertifikalar-banner-1120.webp 1120w, /sertifikalar-banner.webp 1672w"
+              sizes="(max-width: 768px) 100vw, 1120px"
+              width="1672"
+              height="941"
               alt="PediZone Güven Belgelerimiz ve Sertifikalarımız"
               className="w-full h-auto transition-transform duration-700 ease-out md:group-hover:scale-[1.01]"
               loading="lazy"

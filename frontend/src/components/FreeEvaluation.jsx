@@ -40,7 +40,11 @@ const FreeEvaluation = () => {
           {/* Sol: Podolog fotoğrafı */}
           <div className="relative h-full min-h-[340px] bg-gradient-to-br from-red-100 to-red-50">
             <img
-              src="/podolog-serdar-ceylan.webp"
+              src="/podolog-serdar-ceylan-600.webp"
+              srcSet="/podolog-serdar-ceylan-400.webp 400w, /podolog-serdar-ceylan-600.webp 600w, /podolog-serdar-ceylan.webp 1095w"
+              sizes="(max-width: 768px) 100vw, 575px"
+              width="1095"
+              height="1393"
               alt="Podolog Serdar Ceylan"
               className="h-full w-full object-cover object-top"
               loading="lazy"

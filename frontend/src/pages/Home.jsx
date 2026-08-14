@@ -504,16 +504,16 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Brand Animation Video */}
-      <BrandAnimationVideo />
-
       {/* Products Section - pedizone.com gibi */}
       <section id="urunler" className="py-12 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-6">
             <p className="text-red-600 font-semibold text-sm uppercase tracking-wider mb-2">ÜRÜNLER</p>
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Ürün Portföyümüz</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">Her ayak sorunu için özel olarak geliştirilmiş çözümler</p>
+          </div>
+          <div className="mb-10">
+            <BrandAnimationVideo />
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {products.map((product) => (

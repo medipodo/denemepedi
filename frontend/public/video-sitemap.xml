@@ -79,4 +79,15 @@
     </video:video>
   </url>
 
+  <!-- 7. Medikal Ayak Bakımı ve Profesyonel Tırnak Temizliği Videosu -->
+  <url>
+    <loc>https://pedizone.com/blog/medikal-ayak-bakimi-nedir</loc>
+    <video:video>
+      <video:thumbnail_loc>https://pedizone.com/blog-images/medikal-ayak-bakimi/medikal-ayak-bakimi-kapak.webp</video:thumbnail_loc>
+      <video:title>Medikal Ayak Bakımı ve Profesyonel Tırnak Temizliği Uygulaması</video:title>
+      <video:description>Podolog Selin Savur eşliğinde steril koşullarda gerçekleştirilen medikal ayak bakımı ve tırnak temizliği klinik uygulaması.</video:description>
+      <video:content_loc>https://pedizone.com/videos/podolog-selin-savur.webm</video:content_loc>
+    </video:video>
+  </url>
+
 </urlset>

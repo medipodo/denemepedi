@@ -24,6 +24,7 @@ const BlogParmakArasiMantar = lazy(() => import('../components/BlogParmakArasiMa
 const BlogNasirNedenTekrarEder = lazy(() => import('../components/BlogNasirNedenTekrarEder'));
 const BlogSerumKullanimOnemi = lazy(() => import('../components/BlogSerumKullanimOnemi'));
 const BlogNasirSigilFarklari = lazy(() => import('../components/BlogNasirSigilFarklari'));
+const BlogMedikalAyakBakimiNedir = lazy(() => import('../components/BlogMedikalAyakBakimiNedir'));
 
 const BlogLoading = () => (
   <div className="min-h-screen flex items-center justify-center bg-white">
@@ -127,6 +128,15 @@ const BlogDetail = () => {
     return (
       <Suspense fallback={<BlogLoading />}>
         <BlogNasirSigilFarklari />
+      </Suspense>
+    );
+  }
+
+  // Medikal ayak bakımı nedir blogu
+  if (slug === 'medikal-ayak-bakimi-nedir') {
+    return (
+      <Suspense fallback={<BlogLoading />}>
+        <BlogMedikalAyakBakimiNedir />
       </Suspense>
     );
   }

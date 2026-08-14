@@ -33,15 +33,24 @@ const clipsData = [
   },
   {
     id: 4,
+    title: "Medikal Ayak Bakımı ve Profesyonel Tırnak Temizliği",
+    videoSrc: "/videos/podolog-selin-savur.webm",
+    author: "Podolog Selin Savur",
+    tag: "Medikal Bakım",
+    link: "/blog/medikal-ayak-bakimi-nedir",
+    likes: 1720
+  },
+  {
+    id: 5,
     title: "Corn Freze ile Nasır Temizliği",
     videoSrc: "/blog-images/corn-callus/content/nasir-temizligi-corn-freze.webm",
     author: "Podolog Pelin Yarbı",
     tag: "Nasır Tedavisi",
     link: "/blog/nasir-neden-surekli-tekrar-eder",
-    likes: 1420
+    likes: 1290
   },
   {
-    id: 5,
+    id: 6,
     title: "Ayak Mantarının Wood Işığı Altındaki Görüntüsü",
     videoSrc: "/blog-images/parmak-arasi-mantar/ayak-mantari-wood-isigi.webm",
     author: "Podolog Serdar Ceylan",
@@ -50,7 +59,7 @@ const clipsData = [
     likes: 985
   },
   {
-    id: 6,
+    id: 7,
     title: "Onikogrifoz ve Tırnak Mantarı Ayrımı",
     videoSrc: "/blog-images/tirnak-mantari-neden-gecmez/tirnak-mantari-onikogrifoz.webm",
     author: "Podolog Serdar Ceylan",
@@ -59,7 +68,7 @@ const clipsData = [
     likes: 1150
   },
   {
-    id: 7,
+    id: 8,
     title: "Podolog Gözüyle Klinik Nasır Vakası",
     videoSrc: "/blog-images/corn-callus/content/nasir-pedizone-video.webm",
     author: "Podolog Serdar Ceylan",

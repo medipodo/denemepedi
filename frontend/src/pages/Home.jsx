@@ -88,6 +88,9 @@ import { dealers } from '../data/dealers';
 const BrandAnimationVideo = () => {
   const videoRef = useRef(null);
   const [shouldPlay, setShouldPlay] = useState(true);
+  const [pageReady, setPageReady] = useState(false);
+  const [inView, setInView] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -96,28 +99,44 @@ const BrandAnimationVideo = () => {
       return;
     }
 
+    const timer = setTimeout(() => {
+      setPageReady(true);
+    }, 1200);
+
     const currentVideo = videoRef.current;
+    if (!currentVideo) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          currentVideo?.play().catch(() => {});
+          setInView(true);
         } else {
-          currentVideo?.pause();
+          setInView(false);
+          videoRef.current?.pause();
         }
       },
       { threshold: 0.2 }
     );
 
-    if (currentVideo) {
-      observer.observe(currentVideo);
-    }
+    observer.observe(currentVideo);
 
     return () => {
-      if (currentVideo) {
-        observer.unobserve(currentVideo);
-      }
+      clearTimeout(timer);
+      observer.disconnect();
     };
   }, []);
+
+  useEffect(() => {
+    if (pageReady && inView && shouldPlay && !isLoaded) {
+      setIsLoaded(true);
+    }
+  }, [pageReady, inView, shouldPlay, isLoaded]);
+
+  useEffect(() => {
+    if (isLoaded && inView && shouldPlay) {
+      videoRef.current?.play().catch(() => {});
+    }
+  }, [isLoaded, inView, shouldPlay]);
 
   return (
     <div className="py-6 md:py-10 bg-white">
@@ -125,14 +144,84 @@ const BrandAnimationVideo = () => {
         <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-gray-200 shadow-md bg-white">
           <video
             ref={videoRef}
-            src="/videos/pedizone-karakterler.webm"
+            src={isLoaded ? "/videos/pedizone-karakterler.webm" : undefined}
+            poster="/videos/pedizone-karakterler-poster.webp"
             autoPlay={shouldPlay}
             muted
             loop
             playsInline
-            preload="metadata"
+            preload="none"
+            loading="lazy"
             className="w-full h-full object-contain"
           />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const ClipsPreviewSection = () => {
+  const containerRef = useRef(null);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setLoaded(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(el);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  return (
+    <div ref={containerRef} className="flex-1 w-full max-w-md lg:max-w-none">
+      <div className="grid grid-cols-2 gap-4">
+        {/* Kart 1 */}
+        <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group aspect-[9/16] bg-neutral-900">
+          <video 
+            src={loaded ? "/blog-images/corn-callus/content/nasir-temizligi-corn-freze.webm" : undefined}
+            preload="none"
+            autoPlay={loaded}
+            muted 
+            loop 
+            playsInline 
+            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
+          <div className="absolute bottom-3 left-3 right-3 z-10">
+            <span className="bg-red-600 text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase">Nasır Tedavisi</span>
+            <p className="text-xs font-bold text-white mt-1 line-clamp-1">Corn Freze Temizliği</p>
+          </div>
+        </div>
+
+        {/* Kart 2 */}
+        <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group aspect-[9/16] bg-neutral-900 mt-6">
+          <video 
+            src={loaded ? "/blog-images/parmak-arasi-mantar/ayak-mantari-wood-isigi.webm" : undefined}
+            preload="none"
+            autoPlay={loaded}
+            muted 
+            loop 
+            playsInline 
+            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
+          <div className="absolute bottom-3 left-3 right-3 z-10">
+            <span className="bg-red-600 text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase">Ayak Mantarı</span>
+            <p className="text-xs font-bold text-white mt-1 line-clamp-1">Wood Işığı Muayenesi</p>
+          </div>
         </div>
       </div>
     </div>
@@ -500,44 +589,7 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Sağ Taraf: Şık Önizleme Kartları Grid */}
-            <div className="flex-1 w-full max-w-md lg:max-w-none">
-              <div className="grid grid-cols-2 gap-4">
-                {/* Kart 1 */}
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group aspect-[9/16] bg-neutral-900">
-                  <video 
-                    src="/blog-images/corn-callus/content/nasir-temizligi-corn-freze.webm" 
-                    autoPlay 
-                    muted 
-                    loop 
-                    playsInline 
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-3 left-3 right-3 z-10">
-                    <span className="bg-red-600 text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase">Nasır Tedavisi</span>
-                    <p className="text-xs font-bold text-white mt-1 line-clamp-1">Corn Freze Temizliği</p>
-                  </div>
-                </div>
-
-                {/* Kart 2 */}
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group aspect-[9/16] bg-neutral-900 mt-6">
-                  <video 
-                    src="/blog-images/parmak-arasi-mantar/ayak-mantari-wood-isigi.webm" 
-                    autoPlay 
-                    muted 
-                    loop 
-                    playsInline 
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-3 left-3 right-3 z-10">
-                    <span className="bg-red-600 text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase">Ayak Mantarı</span>
-                    <p className="text-xs font-bold text-white mt-1 line-clamp-1">Wood Işığı Muayenesi</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ClipsPreviewSection />
           </div>
         </div>
       </section>

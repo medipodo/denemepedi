@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { CheckCircle, ArrowRight, Phone, Mail, MapPin, ShieldCheck, FlaskConical, Store, Check, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '../components/ui/button';
@@ -84,6 +84,59 @@ const redIcon = new L.Icon({
 
 // Bayi verileri — tek kaynaktan (src/data/dealers.js)
 import { dealers } from '../data/dealers';
+
+const BrandAnimationVideo = () => {
+  const videoRef = useRef(null);
+  const [shouldPlay, setShouldPlay] = useState(true);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (mediaQuery.matches) {
+      setShouldPlay(false);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          videoRef.current?.play().catch(() => {});
+        } else {
+          videoRef.current?.pause();
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => {
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <div className="py-6 md:py-10 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 max-w-[1000px]">
+        <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-gray-200 shadow-md bg-white">
+          <video
+            ref={videoRef}
+            src="/videos/pedizone-karakterler.webm"
+            autoPlay={shouldPlay}
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="w-full h-full object-contain"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const Home = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -360,6 +413,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Brand Animation Video */}
+      <BrandAnimationVideo />
 
       {/* Products Section - pedizone.com gibi */}
       <section id="urunler" className="py-12 bg-white">

@@ -143,20 +143,57 @@ const BrandAnimationVideo = () => {
     }
   }, [isLoaded, inView, shouldPlay]);
 
-  const handlePlaying = () => {
-    // Video playing event fired, wait for 2 requestAnimationFrames to ensure first frame is painted
-    requestAnimationFrame(() => {
+  const [posterVisible, setPosterVisible] = useState(true);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video || !isPlaying) return;
+
+    let handleFrame = () => {
+      // 1) Video ready underneath (opacity 1 by default, or we can ensure video is fully opaque)
+      setVideoReady(true);
+      // 2) Wait for at least one more requestAnimationFrame before fading out poster
       requestAnimationFrame(() => {
-        setVideoReady(true);
-        setIsPlaying(true);
+        setIsPlaying(true); // triggers poster fade out (opacity 1 -> 0)
       });
-    });
+    };
+
+    if ('requestVideoFrameCallback' in video) {
+      const callbackId = video.requestVideoFrameCallback(handleFrame);
+      return () => {
+        if (video && typeof video.cancelVideoFrameCallback === 'function') {
+          video.cancelVideoFrameCallback(callbackId);
+        }
+      };
+    } else {
+      // Fallback
+      const timer1 = requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          setVideoReady(true);
+          setIsPlaying(true);
+        });
+      });
+      return () => cancelAnimationFrame(timer1);
+    }
+  }, [isPlaying]);
+
+  const handlePlaying = () => {
+    if (!isPlaying) {
+      setIsPlaying(true);
+    }
+  };
+
+  const handleTransitionEnd = (e) => {
+    if (e.propertyName === 'opacity' && !posterVisible) {
+      // poster is fully faded out, safe to hide
+    }
   };
 
   return (
     <div className="py-6 md:py-10 bg-white">
       <div className="container mx-auto px-4 sm:px-6 max-w-[1000px]">
         <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-gray-200 shadow-md bg-white">
+          {/* Video element underneath */}
           <video
             ref={videoRef}
             src={isLoaded ? "/videos/pedizone-karakterler.webm" : undefined}
@@ -167,18 +204,22 @@ const BrandAnimationVideo = () => {
             playsInline
             preload="none"
             loading="lazy"
-            className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-300 ease-out ${
-              videoReady ? 'opacity-100' : 'opacity-0'
-            }`}
+            className="absolute inset-0 w-full h-full object-contain opacity-100"
           />
+          {/* Poster element on top (z-index 10) */}
           <img
             src={posterSrc}
             alt=""
             aria-hidden="true"
-            className={`absolute inset-0 w-full h-full object-contain pointer-events-none transition-opacity duration-300 ease-out ${
+            onTransitionEnd={() => {
+              if (isPlaying) {
+                setPosterVisible(false);
+              }
+            }}
+            className={`absolute inset-0 w-full h-full object-contain pointer-events-none z-10 transition-opacity duration-300 ease-out ${
               isPlaying ? 'opacity-0' : 'opacity-100'
             }`}
-            style={{ visibility: isPlaying ? 'hidden' : 'visible', transitionDelay: isPlaying ? '300ms' : '0ms' }}
+            style={{ visibility: posterVisible ? 'visible' : 'hidden' }}
           />
         </div>
       </div>

@@ -192,7 +192,7 @@ const BrandAnimationVideo = () => {
   return (
     <div className="py-6 md:py-10 bg-white">
       <div className="container mx-auto px-4 sm:px-6 max-w-[1000px]">
-        <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-gray-200 shadow-md bg-white">
+        <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden bg-white">
           {/* Video element underneath */}
           <video
             ref={videoRef}

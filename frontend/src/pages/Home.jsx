@@ -81,6 +81,8 @@ const BrandAnimationVideo = () => {
   const [inView, setInView] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
   const [posterSrc, setPosterSrc] = useState('/videos/pedizone-karakterler-poster-640.webp');
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [videoReady, setVideoReady] = useState(false);
 
   useEffect(() => {
     const updatePoster = () => {
@@ -141,6 +143,16 @@ const BrandAnimationVideo = () => {
     }
   }, [isLoaded, inView, shouldPlay]);
 
+  const handlePlaying = () => {
+    // Video playing event fired, wait for 2 requestAnimationFrames to ensure first frame is painted
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        setVideoReady(true);
+        setIsPlaying(true);
+      });
+    });
+  };
+
   return (
     <div className="py-6 md:py-10 bg-white">
       <div className="container mx-auto px-4 sm:px-6 max-w-[1000px]">
@@ -148,14 +160,25 @@ const BrandAnimationVideo = () => {
           <video
             ref={videoRef}
             src={isLoaded ? "/videos/pedizone-karakterler.webm" : undefined}
-            poster={posterSrc}
+            onPlaying={handlePlaying}
             autoPlay={shouldPlay}
             muted
             loop
             playsInline
             preload="none"
             loading="lazy"
-            className="w-full h-full object-contain"
+            className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-300 ease-out ${
+              videoReady ? 'opacity-100' : 'opacity-0'
+            }`}
+          />
+          <img
+            src={posterSrc}
+            alt=""
+            aria-hidden="true"
+            className={`absolute inset-0 w-full h-full object-contain pointer-events-none transition-opacity duration-300 ease-out ${
+              isPlaying ? 'opacity-0' : 'opacity-100'
+            }`}
+            style={{ visibility: isPlaying ? 'hidden' : 'visible', transitionDelay: isPlaying ? '300ms' : '0ms' }}
           />
         </div>
       </div>

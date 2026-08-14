@@ -364,6 +364,66 @@ const BlogMedikalAyakBakimiNedir = () => {
                 </div>
               )}
             </div>
+
+            <div className="border border-gray-200 rounded-xl overflow-hidden">
+              <button
+                onClick={() => toggleFaq(4)}
+                className="w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 font-bold text-gray-900 text-left transition-colors"
+              >
+                <span>Evde kendi başıma nasır kesmek neden tehlikelidir?</span>
+                <span className="text-red-600 text-xl">{openFaq === 4 ? '−' : '+'}</span>
+              </button>
+              {openFaq === 4 && (
+                <div className="p-4 bg-white text-gray-700 text-sm border-t border-gray-200">
+                  Evde jilet, makas veya kesici aletlerle nasır kesmeye çalışmak doku bütünlüğünü bozar ve enfeksiyon riski doğurur. Ayrıca vücut bu durumu travma olarak algılayıp bölgeyi korumak için çok daha sert bir katman üretir. Detaylı bilgi için <LocalizedLink to="/blog/nasir-neden-surekli-tekrar-eder" className="text-red-600 font-semibold hover:underline">nasır neden sürekli tekrar eder</LocalizedLink> rehberimizi inceleyebilirsiniz.
+                </div>
+              )}
+            </div>
+
+            <div className="border border-gray-200 rounded-xl overflow-hidden">
+              <button
+                onClick={() => toggleFaq(5)}
+                className="w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 font-bold text-gray-900 text-left transition-colors"
+              >
+                <span>Medikal ayak bakımından sonra oje sürülür mu?</span>
+                <span className="text-red-600 text-xl">{openFaq === 5 ? '−' : '+'}</span>
+              </button>
+              {openFaq === 5 && (
+                <div className="p-4 bg-white text-gray-700 text-sm border-t border-gray-200">
+                  Medikal ayak bakımı sağlık odaklı bir podolojik uygulamadır. Eğer tırnakta mantar veya deformasyon tedavisi yürütülüyorsa tırnağın nefes alması ve evde <LocalizedLink to="/blog/serum-kullanim-onemi" className="text-red-600 font-semibold hover:underline">PediZone damlalık serum</LocalizedLink> gibi bakım ürünlerinin doğrudan emilmesi için bir süre oje sürülmesi önerilmez.
+                </div>
+              )}
+            </div>
+
+            <div className="border border-gray-200 rounded-xl overflow-hidden">
+              <button
+                onClick={() => toggleFaq(6)}
+                className="w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 font-bold text-gray-900 text-left transition-colors"
+              >
+                <span>Nasır ile siğil birbirine nasıl karıştırılır?</span>
+                <span className="text-red-600 text-xl">{openFaq === 6 ? '−' : '+'}</span>
+              </button>
+              {openFaq === 6 && (
+                <div className="p-4 bg-white text-gray-700 text-sm border-t border-gray-200">
+                  Ayak tabanındaki sertleşmeler sıklıkla nasır sanılır ancak kökleri olan viral plantar siğillerle karışabilir. Yanlış ürün kullanımı siğilin yayılmasına yol açabilir. Bu konuda <LocalizedLink to="/blog/nasir-sigil-farklari" className="text-red-600 font-semibold hover:underline">nasır ve siğil farkları</LocalizedLink> yazımızda anlattığımız klinik ipuçlarına dikkat edilmelidir.
+                </div>
+              )}
+            </div>
+
+            <div className="border border-gray-200 rounded-xl overflow-hidden">
+              <button
+                onClick={() => toggleFaq(7)}
+                className="w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 font-bold text-gray-900 text-left transition-colors"
+              >
+                <span>Tırnak kalınlaşması (onikogrifoz) medikal bakımda düzelir mi?</span>
+                <span className="text-red-600 text-xl">{openFaq === 7 ? '−' : '+'}</span>
+              </button>
+              {openFaq === 7 && (
+                <div className="p-4 bg-white text-gray-700 text-sm border-t border-gray-200">
+                  Yaşlılık, travma veya tırnak mantarı nedeniyle aşırı kalınlaşan tırnaklar ev makaslarıyla kesilemez. Podolojik frezelerle tırnak güvenli bir şekilde inceltilir ve estetik/konforlu bir yapıya kavuşturulur.
+                </div>
+              )}
+            </div>
           </div>
         </div>
 

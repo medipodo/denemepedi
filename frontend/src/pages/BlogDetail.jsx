@@ -294,47 +294,199 @@ const BlogDetail = () => {
           {/* Yapılandırılmış Bölümler (sections) veya Düz İçerik (content) */}
           {hasStructuredContent ? (
             <div className="space-y-10">
-              {post.sections.map((section, idx) => (
-                <div key={idx} className="space-y-4">
-                  {section.heading && (
-                    <h2 className="text-2xl font-bold text-gray-900 mt-6 mb-3">
-                      {section.heading}
-                    </h2>
-                  )}
-                  {section.text && (
-                    <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
-                      {section.text}
-                    </p>
-                  )}
-                  {section.image && (
-                    <div className="rounded-xl overflow-hidden my-4 shadow-sm">
-                      <img 
-                        src={section.image} 
-                        alt={section.heading || 'PediZone Blog Görseli'} 
-                        className="w-full max-h-[400px] object-cover"
-                      />
-                    </div>
-                  )}
-                  {section.list && section.list.length > 0 && (
-                    <ul className="space-y-2 my-4">
-                      {section.list.map((li, lIdx) => (
-                        <li key={lIdx} className="flex items-start gap-2 text-gray-700">
-                          <span className="text-red-600 font-bold mt-1">•</span>
-                          <span>{li}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                  {section.video && (
-                    <div className="my-6 rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-black">
-                      <BlogVideoPlayer src={section.video} poster={section.videoPoster} />
-                      {section.videoCaption && (
-                        <p className="text-xs text-center text-gray-400 py-2 bg-neutral-900">{section.videoCaption}</p>
+              {post.sections.map((section, idx) => {
+                const type = section.type;
+
+                // 1. intro
+                if (type === 'intro') {
+                  return (
+                    <div key={idx} className="p-6 bg-red-50/50 border border-red-100 rounded-2xl space-y-3">
+                      <p className="text-gray-800 leading-relaxed text-base sm:text-lg">{section.content}</p>
+                      {section.highlight && (
+                        <div className="font-semibold text-red-700 text-sm sm:text-base flex items-start gap-2 pt-2 border-t border-red-200/60">
+                          <span className="text-red-600">✦</span>
+                          <span>{section.highlight}</span>
+                        </div>
                       )}
                     </div>
-                  )}
-                </div>
-              ))}
+                  );
+                }
+
+                // 2. heading
+                if (type === 'heading') {
+                  return (
+                    <h2 key={idx} className="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-8 mb-4 tracking-tight">
+                      {section.content}
+                    </h2>
+                  );
+                }
+
+                // 3. paragraph
+                if (type === 'paragraph') {
+                  return (
+                    <p key={idx} className="text-gray-700 leading-relaxed text-base sm:text-lg" dangerouslySetInnerHTML={{ __html: section.content }} />
+                  );
+                }
+
+                // 4. image
+                if (type === 'image') {
+                  return (
+                    <div key={idx} className="my-6 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
+                      <img 
+                        src={section.src} 
+                        alt={section.alt || 'PediZone Blog Görseli'} 
+                        className="w-full max-h-[480px] object-cover"
+                      />
+                      {section.caption && (
+                        <p className="text-xs text-center text-gray-500 py-2.5 bg-gray-100 font-medium">{section.caption}</p>
+                      )}
+                    </div>
+                  );
+                }
+
+                // 5. video
+                if (type === 'video') {
+                  return (
+                    <div key={idx} className="my-8 p-6 bg-gray-50 border border-gray-200 rounded-3xl">
+                      {section.title && <h3 className="text-xl font-bold text-gray-900 mb-2 text-center">{section.title}</h3>}
+                      {section.caption && <p className="text-sm text-gray-600 mb-4 text-center max-w-xl mx-auto">{section.caption}</p>}
+                      <BlogVideoPlayer
+                        src={section.src}
+                        poster={section.poster}
+                        title={section.title || post.title}
+                        category={section.category || 'Klinik Video'}
+                      />
+                    </div>
+                  );
+                }
+
+                // 6. bulletList / checkList / warningList
+                if (type === 'bulletList' || type === 'checkList' || type === 'warningList') {
+                  const isCheck = type === 'checkList';
+                  const isWarn = type === 'warningList';
+                  return (
+                    <div key={idx} className={`p-6 rounded-2xl border ${isWarn ? 'bg-amber-50/50 border-amber-200' : isCheck ? 'bg-emerald-50/50 border-emerald-200' : 'bg-gray-50 border-gray-200'} space-y-3`}>
+                      {section.title && (
+                        <h4 className={`font-bold text-lg ${isWarn ? 'text-amber-900' : isCheck ? 'text-emerald-900' : 'text-gray-900'}`}>
+                          {section.title}
+                        </h4>
+                      )}
+                      <ul className="space-y-2.5">
+                        {section.items && section.items.map((item, lIdx) => (
+                          <li key={lIdx} className="flex items-start gap-3 text-gray-700 text-sm sm:text-base">
+                            <span className={`font-bold mt-0.5 ${isWarn ? 'text-amber-600' : isCheck ? 'text-emerald-600' : 'text-red-600'}`}>
+                              {isCheck ? '✓' : isWarn ? '⚠' : '•'}
+                            </span>
+                            <span dangerouslySetInnerHTML={{ __html: item }} />
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  );
+                }
+
+                // 7. infoBox
+                if (type === 'infoBox') {
+                  const variant = section.variant || 'tip';
+                  const bgClass = variant === 'warning' ? 'bg-amber-50 border-amber-200 text-amber-900' : variant === 'success' ? 'bg-emerald-50 border-emerald-200 text-emerald-900' : 'bg-red-50 border-red-200 text-red-900';
+                  return (
+                    <div key={idx} className={`p-6 rounded-2xl border ${bgClass} space-y-2`}>
+                      {section.title && <h4 className="font-bold text-lg">{section.title}</h4>}
+                      <p className="text-sm sm:text-base leading-relaxed">{section.content}</p>
+                      {section.link && (
+                        <div className="pt-2">
+                          <LocalizedLink to={section.link} className="inline-flex items-center text-sm font-bold underline hover:opacity-80">
+                            Detaylı İncele →
+                          </LocalizedLink>
+                        </div>
+                      )}
+                    </div>
+                  );
+                }
+
+                // 8. productCard
+                if (type === 'productCard') {
+                  return (
+                    <div key={idx} className="my-8 p-6 bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-3xl shadow-sm flex flex-col sm:flex-row items-center gap-6">
+                      <div className="flex-1 space-y-3">
+                        <Badge className="bg-red-600 text-white font-semibold">PediZone® Orijinal Ürün</Badge>
+                        <h3 className="text-xl font-bold text-gray-900">{section.title}</h3>
+                        <p className="text-gray-600 text-sm leading-relaxed">{section.content}</p>
+                        {section.benefits && (
+                          <div className="flex flex-wrap gap-2 pt-1">
+                            {section.benefits.map((b, bIdx) => (
+                              <span key={bIdx} className="bg-white border border-red-200 text-red-700 text-xs px-2.5 py-1 rounded-full font-medium">
+                                ✓ {b}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                        <div className="pt-3">
+                          <LocalizedLink to={section.link || '/urun/foot-nail-care-serum'}>
+                            <Button className="bg-red-600 hover:bg-red-700 text-white font-bold rounded-full px-6">
+                              Ürünü İncele →
+                            </Button>
+                          </LocalizedLink>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+
+                // 9. comparisonBox / stepCard / riskGroups / statsBox / quickFact or general fallback
+                return (
+                  <div key={idx} className="space-y-4">
+                    {section.heading && (
+                      <h2 className="text-2xl font-bold text-gray-900 mt-6 mb-3">
+                        {section.heading}
+                      </h2>
+                    )}
+                    {section.text && (
+                      <p className="text-gray-700 leading-relaxed text-base sm:text-lg" dangerouslySetInnerHTML={{ __html: section.text }} />
+                    )}
+                    {section.content && (
+                      <p className="text-gray-700 leading-relaxed text-base sm:text-lg" dangerouslySetInnerHTML={{ __html: section.content }} />
+                    )}
+                    {section.image && (
+                      <div className="rounded-xl overflow-hidden my-4 shadow-sm">
+                        <img 
+                          src={section.image} 
+                          alt={section.heading || 'PediZone Blog Görseli'} 
+                          className="w-full max-h-[400px] object-cover"
+                        />
+                      </div>
+                    )}
+                    {section.list && section.list.length > 0 && (
+                      <ul className="space-y-2 my-4">
+                        {section.list.map((li, lIdx) => (
+                          <li key={lIdx} className="flex items-start gap-2 text-gray-700">
+                            <span className="text-red-600 font-bold mt-1">•</span>
+                            <span dangerouslySetInnerHTML={{ __html: li }} />
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    {section.items && Array.isArray(section.items) && (
+                      <ul className="space-y-2 my-4">
+                        {section.items.map((item, iIdx) => (
+                          <li key={iIdx} className="flex items-start gap-2 text-gray-700">
+                            <span className="text-red-600 font-bold mt-1">•</span>
+                            <span dangerouslySetInnerHTML={{ __html: typeof item === 'string' ? item : (item.text || item.title || '') }} />
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    {section.video && (
+                      <div className="my-6 rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-black">
+                        <BlogVideoPlayer src={section.video} poster={section.videoPoster} />
+                        {section.videoCaption && (
+                          <p className="text-xs text-center text-gray-400 py-2 bg-neutral-900">{section.videoCaption}</p>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           ) : (
             <div className="prose max-w-none text-gray-700 leading-relaxed space-y-4">

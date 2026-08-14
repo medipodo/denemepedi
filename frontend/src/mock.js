@@ -400,6 +400,13 @@ export const blogPosts = [
         caption: 'Medikal ayak bakımında steril ekipmanlar ve freze cihazı kullanılır'
       },
       {
+        type: 'video',
+        src: '/blog-images/nasir-nedir-evde-gecer-mi/nasir-huretaji-podolog-ankara.webm',
+        title: 'Podolog Gözüyle Profesyonel Nasır Temizliği ve Hüretaj Uygulaması',
+        caption: 'Ankara PediZone Kliniğinde gerçekleştirilen profesyonel nasır hüretajı ve medikal bakım uygulaması.',
+        category: 'Nasır Tedavisi'
+      },
+      {
         type: 'heading',
         content: 'Ne Zaman Medikal Müdahale Gerekir?'
       },

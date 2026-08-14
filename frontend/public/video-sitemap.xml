@@ -90,4 +90,15 @@
     </video:video>
   </url>
 
+  <!-- 8. Profesyonel Nasır Hüretajı ve Temizliği Videosu -->
+  <url>
+    <loc>https://pedizone.com/blog/nasir-nedir-evde-gecer-mi</loc>
+    <video:video>
+      <video:thumbnail_loc>https://pedizone.com/blog-images/nasir-nedir/nasir-nedir-kapak.webp</video:thumbnail_loc>
+      <video:title>Podolog Gözüyle Profesyonel Nasır Temizliği ve Hüretaj Uygulaması</video:title>
+      <video:description>Ankara PediZone Kliniğinde gerçekleştirilen profesyonel nasır hüretajı ve medikal bakım uygulaması.</video:description>
+      <video:content_loc>https://pedizone.com/blog-images/nasir-nedir-evde-gecer-mi/nasir-huretaji-podolog-ankara.webm</video:content_loc>
+    </video:video>
+  </url>
+
 </urlset>

@@ -75,6 +75,15 @@ const clipsData = [
     tag: "Klinik Deneyimler",
     link: "/blog/ayni-yerde-surekli-nasir-cikmasi",
     likes: 1890
+  },
+  {
+    id: 9,
+    title: "Profesyonel Nasır Hüretajı ve Temizliği",
+    videoSrc: "/blog-images/nasir-nedir-evde-gecer-mi/nasir-huretaji-podolog-ankara.webm",
+    author: "Podolog Serdar Ceylan",
+    tag: "Nasır Tedavisi",
+    link: "/blog/nasir-nedir-evde-gecer-mi",
+    likes: 1650
   }
 ];
 

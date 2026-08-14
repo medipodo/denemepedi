@@ -96,24 +96,25 @@ const BrandAnimationVideo = () => {
       return;
     }
 
+    const currentVideo = videoRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          videoRef.current?.play().catch(() => {});
+          currentVideo?.play().catch(() => {});
         } else {
-          videoRef.current?.pause();
+          currentVideo?.pause();
         }
       },
       { threshold: 0.2 }
     );
 
-    if (videoRef.current) {
-      observer.observe(videoRef.current);
+    if (currentVideo) {
+      observer.observe(currentVideo);
     }
 
     return () => {
-      if (videoRef.current) {
-        observer.unobserve(videoRef.current);
+      if (currentVideo) {
+        observer.unobserve(currentVideo);
       }
     };
   }, []);

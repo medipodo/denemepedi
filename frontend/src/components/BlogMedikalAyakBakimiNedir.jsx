@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Calendar, Clock, User, CheckCircle, AlertTriangle, ShieldCheck, Footprints, Sparkles, Phone, Mail, MapPin, ChevronRight, Play, Volume2, VolumeX } from 'lucide-react';
+import { Calendar, Clock, User, CheckCircle, AlertTriangle, ShieldCheck, Footprints, Sparkles, ChevronRight, Volume2, VolumeX } from 'lucide-react';
 import LocalizedLink from './LocalizedLink';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
-import { Card, CardContent } from './ui/card';
 
 const BlogVideoPlayer = ({ src, poster, title, category }) => {
   const videoRef = useRef(null);
@@ -98,13 +97,13 @@ const BlogMedikalAyakBakimiNedir = () => {
   return (
     <article className="min-h-screen bg-white pt-28 pb-16">
       <Helmet>
-        <title>Medikal Ayak Bakımı Nedir? Kimlere Uygulanır ve Nasıl Yapılır? | PediZone®</title>
-        <meta name="description" content="Medikal ayak bakımı (podolojik bakım) nedir, klasik pedikürden farkı nedir? Nasır, batık tırnak ve kalınlaşmış tırnak tedavisinde medikal bakımın önemi ve aşamaları." />
+        <title>Medikal Ayak Bakımı Nedir? Podolojik Bakım ve Klinik Rehber | PediZone®</title>
+        <meta name="description" content="Medikal ayak bakımı nedir, klasik pedikürden farkı nedir? Nasır, batık tırnak ve tırnak mantarında podolog eşliğinde profesyonel bakım süreçleri." />
         <link rel="canonical" href="https://pedizone.com/blog/medikal-ayak-bakimi-nedir" />
         
         <meta property="og:site_name" content="PediZone®" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="Medikal Ayak Bakımı Nedir? Kimlere Uygulanır ve Nasıl Yapılır?" />
+        <meta property="og:title" content="Medikal Ayak Bakımı Nedir? Podolojik Bakım ve Klinik Rehber" />
         <meta property="og:description" content="Medikal ayak bakımı nedir, klasik pedikürden farkı nedir? Uzman podolog eşliğinde steril koşullarda gerçekleştirilen profesyonel ayak sağlığı rehberi." />
         <meta property="og:url" content="https://pedizone.com/blog/medikal-ayak-bakimi-nedir" />
         <meta property="og:image" content="https://pedizone.com/blog-images/medikal-ayak-bakimi/medikal-ayak-bakimi-kapak.webp" />
@@ -113,7 +112,7 @@ const BlogMedikalAyakBakimiNedir = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "Medikal Ayak Bakımı Nedir? Kimlere Uygulanır ve Nasıl Yapılır?",
+            "headline": "Medikal Ayak Bakımı Nedir? Podolojik Bakım ve Klinik Rehber",
             "description": "Medikal ayak bakımı nedir, klasik pedikürden farkı nedir? Uzman podolog eşliğinde steril koşullarda gerçekleştirilen profesyonel ayak sağlığı rehberi.",
             "image": "https://pedizone.com/blog-images/medikal-ayak-bakimi/medikal-ayak-bakimi-kapak.webp",
             "author": {
@@ -153,7 +152,7 @@ const BlogMedikalAyakBakimiNedir = () => {
             Medikal Ayak Bakımı Nedir? Kimlere Uygulanır ve Nasıl Yapılır?
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed mb-6">
-            Ayak sağlığı, genel vücut sağlığımızın temel taşlarından biridir. Gün boyu tüm yükümüzü taşıyan ayaklarımız; yanlış ayakkabı seçimi, genetik faktörler veya sistemik rahatsızlıklar nedeniyle çeşitli deformasyonlara uğrar. Medikal ayak bakımı, bu sorunların profesyonel ve steril koşullarda giderilmesini sağlar.
+            Ayak sağlığı, genel vücut sağlığımızın temel taşlarından biridir. Gün boyu tüm yükümüzü taşıyan ayaklarımız; yanlış ayakkabı seçimi, genetik faktörler veya sistemik rahatsızlıklar nedeniyle çeşitli deformasyonlara uğrar. Medikal ayak bakımı, bu sorunların profesyonel ve steril koşullarda giderilmesini sağlayan bilimsel bir uygulamadır.
           </p>
 
           <div className="flex flex-wrap items-center gap-6 text-sm text-gray-500 border-y border-gray-100 py-4">
@@ -167,16 +166,16 @@ const BlogMedikalAyakBakimiNedir = () => {
             </div>
             <div className="flex items-center gap-2">
               <Clock size={16} className="text-red-600" />
-              <span>7 dk okuma</span>
+              <span>9 dk okuma</span>
             </div>
           </div>
         </header>
 
         {/* Main Cover Image */}
-        <div className="mb-10 rounded-2xl overflow-hidden shadow-xl border border-gray-100">
+        <div className="mb-10 rounded-2xl overflow-hidden shadow-xl border border-gray-100 bg-gray-50">
           <img
             src="/blog-images/medikal-ayak-bakimi/medikal-ayak-bakimi-kapak.webp"
-            alt="Medikal Ayak Bakımı Uygulaması"
+            alt="Medikal Ayak Bakımı Uygulaması ve Podolojik Muayene"
             className="w-full h-auto object-cover max-h-[480px]"
           />
         </div>
@@ -188,11 +187,12 @@ const BlogMedikalAyakBakimiNedir = () => {
           </h3>
           <ul className="space-y-2 text-sm text-gray-700">
             <li><a href="#medikal-bakim-nedir" className="hover:text-red-600 transition-colors">1. Medikal Ayak Bakımı (Podolojik Bakım) Nedir?</a></li>
-            <li><a href="#klasik-pedikur-farki" className="hover:text-red-600 transition-colors">2. Klasik Pedikür ile Medikal Ayak Bakımı Arasındaki Farklar</a></li>
-            <li><a href="#kimlere-uygulanir" className="hover:text-red-600 transition-colors">3. Medikal Ayak Bakımı Kimlere Uygulanır?</a></li>
-            <li><a href="#uygulama-asamalari" className="hover:text-red-600 transition-colors">4. Profesyonel Uygulama Aşamaları</a></li>
-            <li><a href="#video-vaka" className="hover:text-red-600 transition-colors">5. Uzman Gözüyle Klinik Uygulama Videosu</a></li>
-            <li><a href="#sikca-sorulan-sorular" className="hover:text-red-600 transition-colors">6. Sıkça Sorulan Sorular</a></li>
+            <li><a href="#video-vaka" className="hover:text-red-600 transition-colors">2. Uzman Gözüyle Klinik Uygulama Videosu</a></li>
+            <li><a href="#klasik-pedikur-farki" className="hover:text-red-600 transition-colors">3. Klasik Pedikür ile Medikal Ayak Bakımı Arasındaki Farklar</a></li>
+            <li><a href="#kimlere-uygulanir" className="hover:text-red-600 transition-colors">4. Medikal Ayak Bakımı Hangi Durumlarda Şarttır?</a></li>
+            <li><a href="#uygulama-asamalari" className="hover:text-red-600 transition-colors">5. Profesyonel Klinik Uygulama Aşamaları</a></li>
+            <li><a href="#ev-bakimi-destegi" className="hover:text-red-600 transition-colors">6. Evde Bakım Rutini ve PediZone® Destek Ürünleri</a></li>
+            <li><a href="#sikca-sorulan-sorular" className="hover:text-red-600 transition-colors">7. Sıkça Sorulan Sorular</a></li>
           </ul>
         </div>
 
@@ -202,11 +202,31 @@ const BlogMedikalAyakBakimiNedir = () => {
             1. Medikal Ayak Bakımı (Podolojik Bakım) Nedir?
           </h2>
           <p>
-            Medikal ayak bakımı; estetik kaygılardan ziyade tamamen <strong>sağlık odaklı</strong> gerçekleştirilen, uzman podologlar eşliğinde özel freze cihazları ve steril enstrümanlarla yapılan profesyonel bir bakım türüdür. Su kullanılmadan (kuru sistem) gerçekleştirilir; bu sayede bakteri ve mantar yayılım riski tamamen ortadan kaldırılır.
+            Medikal ayak bakımı; estetik kaygılardan ziyade tamamen <strong>sağlık odaklı</strong> gerçekleştirilen, uzman podologlar eşliğinde özel freze cihazları ve steril enstrümanlarla yapılan profesyonel bir bakım türüdür. Su kullanılmadan (kuru sistem) gerçekleştirilir; bu sayede bakteri ve mantar yayılım riski tamamen ortadan kaldırılır. 
+          </p>
+          <p>
+            Ayak yapısında zamanla oluşan <LocalizedLink to="/blog/nasir-neden-surekli-tekrar-eder" className="text-red-600 font-semibold hover:underline">tekrarlayan nasırlar</LocalizedLink>, tırnak kalınlaşmaları veya basma bozuklukları klasik yöntemlerle çözülemez. Podolojik bakım, cildin ve tırnak yatağının fizyolojik yapısına zarar vermeden problemli dokuların güvenle uzaklaştırılmasını sağlar.
           </p>
 
+          {/* Moved Video Higher Up right after section 1 as requested */}
+          <div id="video-vaka" className="my-10 p-6 bg-gray-50 border border-gray-200 rounded-3xl">
+            <h3 className="text-xl font-bold text-gray-900 mb-2 text-center">
+              2. Uzman Gözüyle Klinik Uygulama Videosu
+            </h3>
+            <p className="text-sm text-gray-600 mb-4 text-center max-w-xl mx-auto">
+              Podolog Selin Savur eşliğinde gerçekleştirilen profesyonel medikal ayak bakımı ve tırnak temizliği uygulamasını hemen aşağıdan izleyebilirsiniz.
+            </p>
+            
+            <BlogVideoPlayer
+              src="/videos/podolog-selin-savur.webm"
+              poster="/blog-images/medikal-ayak-bakimi/medikal-ayak-bakimi-kapak.webp"
+              title="Medikal Ayak Bakımı ve Profesyonel Tırnak Temizliği Uygulaması"
+              category="Podoloji Klinik Uygulama"
+            />
+          </div>
+
           <h2 id="klasik-pedikur-farki" className="text-2xl font-bold text-gray-900 pt-4">
-            2. Klasik Pedikür ile Medikal Ayak Bakımı Arasındaki Farklar
+            3. Klasik Pedikür ile Medikal Ayak Bakımı Arasındaki Farklar
           </h2>
           <p>
             Birçok kişi klasik kuaför pedikürü ile podolojik medikal bakımı karıştırmaktadır. Aşağıdaki karşılaştırma tablosu iki yöntem arasındaki temel farkları net bir şekilde ortaya koymaktadır:
@@ -221,7 +241,7 @@ const BlogMedikalAyakBakimiNedir = () => {
                   <th className="py-3 px-4 text-left font-bold border-b border-gray-200">Medikal Ayak Bakımı</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-200 text-sm">
+              <thead className="divide-y divide-gray-200 text-sm">
                 <tr>
                   <td className="py-3 px-4 font-semibold">Uygulayıcı</td>
                   <td className="py-3 px-4 text-gray-600">Güzellik uzmanı / Kuaför</td>
@@ -242,26 +262,31 @@ const BlogMedikalAyakBakimiNedir = () => {
                   <td className="py-3 px-4 text-gray-600">Metal pens ve kesici aletler</td>
                   <td className="py-3 px-4 text-gray-900 font-medium">Steril freze uçları ve yüksek devirli cihazlar</td>
                 </tr>
-              </tbody>
+                <tr>
+                  <td className="py-3 px-4 font-semibold">Risk Faktörü</td>
+                  <td className="py-3 px-4 text-gray-600">Kesik, enfeksiyon ve mantar riski yüksek</td>
+                  <td className="py-3 px-4 text-gray-900 font-medium">Steril ortamda sıfır enfeksiyon riski</td>
+                </tr>
+              </thead>
             </table>
           </div>
 
           <h2 id="kimlere-uygulanir" className="text-2xl font-bold text-gray-900 pt-4">
-            3. Medikal Ayak Bakımı Kimlere Uygulanır?
+            4. Medikal Ayak Bakımı Hangi Durumlarda Şarttır?
           </h2>
           <p>
             Medikal ayak bakımı sadece sorunu olanlara değil, sağlıklı ayak yapısını korumak isteyen herkese önerilir. Ancak özellikle aşağıdaki durumlarda medikal bakım hayati önem taşır:
           </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Diyabetik (Şeker) Hastaları:</strong> Ayak yaralanmalarına karşı en hassas gruptur. Podolog kontrolünde güvenli bakım şarttır.</li>
-            <li><strong>Nasır ve Sertleşme Problemi Yaşayanlar:</strong> Evde kesilen nasırlar tekrar daha derin ve ağrılı şekilde çıkar. Medikal frezelerle kökten güvenli temizlik yapılır.</li>
+            <li><strong>Diyabetik (Şeker) Hastaları:</strong> Ayak yaralanmalarına ve his kaybına karşı en hassas gruptur. Podolog kontrolünde güvenli bakım şarttır.</li>
+            <li><strong>Nasır ve Sertleşme Problemi Yaşayanlar:</strong> Evde kesilen nasırlar tekrar daha derin ve ağrılı şekilde çıkar. Detaylı bilgi için <LocalizedLink to="/blog/ayni-yerde-surekli-nasir-cikmasi" className="text-red-600 font-semibold hover:underline">sürekli tekrarlayan nasır</LocalizedLink> rehberimizi inceleyebilirsiniz.</li>
             <li><strong>Batık Tırnak (Onikokriptoz) Riski Olanlar:</strong> Yanlış kesim veya yapısal nedenlerle batan tırnakların acısız rahatlatılması.</li>
-            <li><strong>Tırnak Mantarı ve Kalınlaşması (Onikogrifoz):</strong> Deforme olmuş tırnakların inceltilmesi ve topikal ürün emiliminin artırılması.</li>
-            <li><strong>Sporcular ve Ayaklarında Yoğun Terleme/Koku Olanlar.</strong></li>
+            <li><strong>Tırnak Mantarı ve Kalınlaşması (Onikogrifoz):</strong> Deforme olmuş tırnakların inceltilmesi. Bu konuda <LocalizedLink to="/blog/tirnak-mantari-neden-gecmez" className="text-red-600 font-semibold hover:underline">tırnak mantarı ve onikogrifoz ayrımı</LocalizedLink> yazımız yol göstericidir.</li>
+            <li><strong>Parmak Arası Deformasyonlar ve Mantar Şüphesi:</strong> Erken teşhis ve hijyenik bakım için <LocalizedLink to="/blog/parmak-arasi-mantar-nasil-gecer" className="text-red-600 font-semibold hover:underline">parmak arası mantar</LocalizedLink> süreçleri dikkate alınmalıdır.</li>
           </ul>
 
           <h2 id="uygulama-asamalari" className="text-2xl font-bold text-gray-900 pt-4">
-            4. Profesyonel Uygulama Aşamaları
+            5. Profesyonel Klinik Uygulama Aşamaları
           </h2>
           <p>
             Klinik ortamında gerçekleştirilen medikal bakım şu adımlardan oluşur:
@@ -273,22 +298,12 @@ const BlogMedikalAyakBakimiNedir = () => {
             <li><strong>Destekleyici Ürün Uygulaması:</strong> PediZone® Foot and Nail Care Serum veya üre içerikli profesyonel kremlerle cildin ve tırnak yatağının nemlendirilmesi.</li>
           </ol>
 
-          {/* Video Section */}
-          <div id="video-vaka" className="pt-6">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">
-              5. Uzman Gözüyle Klinik Uygulama Videosu
-            </h2>
-            <p className="text-sm text-gray-600 mb-4">
-              Podolog Selin Savur eşliğinde gerçekleştirilen profesyonel medikal ayak bakımı ve tırnak temizliği uygulamasını aşağıdan izleyebilirsiniz.
-            </p>
-            
-            <BlogVideoPlayer
-              src="/videos/podolog-selin-savur.webm"
-              poster="/blog-images/medikal-ayak-bakimi/medikal-ayak-bakimi-kapak.webp"
-              title="Medikal Ayak Bakımı ve Profesyonel Tırnak Temizliği Uygulaması"
-              category="Podoloji Klinik Uygulama"
-            />
-          </div>
+          <h2 id="ev-bakimi-destegi" className="text-2xl font-bold text-gray-900 pt-4">
+            6. Evde Bakım Rutini ve PediZone® Destek Ürünleri
+          </h2>
+          <p>
+            Klinikte gerçekleştirilen medikal bakımın kalıcılığını artırmak ve günlük konforu korumak için evde doğru ürünler kullanılmalıdır. <LocalizedLink to="/blog/serum-kullanim-onemi" className="text-red-600 font-semibold hover:underline">PediZone damlalık serum kullanım rehberi</LocalizedLink> yazımızda belirttiğimiz gibi, düzenli serum uygulaması tırnak yatağının hijyenik kalmasını destekler.
+          </p>
 
           <div className="bg-red-50 border-l-4 border-red-600 p-6 rounded-r-xl my-8">
             <h4 className="font-bold text-red-900 mb-2 flex items-center gap-2">
@@ -301,7 +316,7 @@ const BlogMedikalAyakBakimiNedir = () => {
 
           {/* FAQ Section */}
           <h2 id="sikca-sorulan-sorular" className="text-2xl font-bold text-gray-900 pt-6 mb-4">
-            6. Sıkça Sorulan Sorular
+            7. Sıkça Sorulan Sorular
           </h2>
           
           <div className="space-y-4 not-prose">

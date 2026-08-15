@@ -250,6 +250,15 @@ export const dealers = [
   lat: 39.906120,
   lng: 41.275542
 },
+  {
+  id: 24,
+  name: "Bağlıca Nehir Eczanesi",
+  city: "Ankara",
+  address: "Bağlıca, 1232. sk 2/F, 06790 Etimesgut/Ankara",
+  phone: "0312 511 6335",
+  type: "Eczane",
+  lat: 39.8964375185,
+  lng: 32.64790065
 ];
 
 export default dealers;

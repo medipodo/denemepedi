@@ -1,0 +1,29 @@
+# PediZone
+
+PediZone, ayak ve tırnak bakımına yönelik ürünler, bilgilendirici içerikler ve podolog desteği sunan bir Türk markasıdır.
+
+## Ana Sayfalar
+
+- [Ana Sayfa](https://pedizone.com/)
+- [PediZone Clips](https://pedizone.com/clips)
+- [Ayak Analizi](https://pedizone.com/ayak-analizi)
+- [Podolog Değerlendirmesi](https://pedizone.com/podolog-degerlendirmesi)
+- [Bayiler](https://pedizone.com/bayiler)
+- [Sertifikalar](https://pedizone.com/sertifikalar)
+
+## Ürünler
+
+- [Ürün Portföyü](https://pedizone.com/#urunler)
+- [Foot and Nail Care Serum](https://pedizone.com/urun/foot-nail-care-serum)
+- [Fresh-Guard Ayak Temizleme Köpüğü](https://pedizone.com/urun/temizleme-kopugu)
+- [%15 Üreli Çatlak Topuk ve Ayak Kremi](https://pedizone.com/urun/ureli-krem)
+
+## Bilgi ve Rehberler
+
+- [Blog](https://pedizone.com/blog)
+- [Sıkça Sorulan Sorular](https://pedizone.com/sss)
+
+## Destek ve İletişim
+
+- [İletişim](https://pedizone.com/iletisim)
+- [Bayi Ol](https://pedizone.com/bayi-ol)

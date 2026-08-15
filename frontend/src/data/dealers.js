@@ -259,6 +259,7 @@ export const dealers = [
   type: "Eczane",
   lat: 39.8964375185,
   lng: 32.64790065
+}
 ];
 
 export default dealers;

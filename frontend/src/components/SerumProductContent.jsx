@@ -85,6 +85,29 @@ const SerumProductContent = ({ product, productImages }) => {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
+            "@type": "Product",
+            "name": product?.name || "PediZone® Foot and Nail Care Serum",
+            "description": product?.description || "Tırnak mantarı, ayak kokusu ve tırnak problemleri için özel formüllenmiş profesyonel serum. İnce moleküler yapı, tırnak altına nüfuz eder.",
+            "image": "https://pedizone.com/images/products/serum/pedizone-serum988.jpg",
+            "category": "Ayak Bakım Ürünleri",
+            "brand": {
+              "@type": "Brand",
+              "name": "PediZone"
+            },
+            "manufacturer": {
+              "@type": "Organization",
+              "name": "PediZone"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "89"
+            }
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
             "@type": "FAQPage",
             "mainEntity": faqData.map(faq => ({
               "@type": "Question",

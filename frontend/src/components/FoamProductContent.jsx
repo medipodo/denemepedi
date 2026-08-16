@@ -38,6 +38,39 @@ const FoamProductContent = ({ product, productImages }) => {
       <Helmet>
         <title>PediZone® Fresh-Guard Ayak Temizleme Köpüğü | Antibakteriyel Ayak Temizliği</title>
         <meta name="description" content="Derinlemesine temizlik ve koku kontrolü için özel formül. Günlük ayak bakımı için antibakteriyel köpük. 200ml." />
+        <link rel="canonical" href="https://pedizone.com/urun/temizleme-kopugu" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:site_name" content="PediZone®" />
+        <meta property="og:type" content="product" />
+        <meta property="og:title" content="PediZone® Fresh-Guard Ayak Temizleme Köpüğü" />
+        <meta property="og:description" content="Derinlemesine temizlik ve koku kontrolü için özel formül. Günlük ayak bakımı için antibakteriyel köpük." />
+        <meta property="og:url" content="https://pedizone.com/urun/temizleme-kopugu" />
+        <meta property="og:image" content="https://pedizone.com/images/products/foam/foam-cover.jpg" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": product?.name || "PediZone® Fresh-Guard Ayak Temizleme Köpüğü",
+            "description": product?.description || "Derinlemesine temizlik ve koku kontrolü için özel formül. Günlük ayak bakımı için antibakteriyel köpük.",
+            "image": "https://pedizone.com/images/products/foam/foam-cover.jpg",
+            "category": "Ayak Bakım Ürünleri",
+            "brand": {
+              "@type": "Brand",
+              "name": "PediZone"
+            },
+            "manufacturer": {
+              "@type": "Organization",
+              "name": "PediZone"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "126"
+            }
+          })}
+        </script>
       </Helmet>
 
       {/* Breadcrumb */}

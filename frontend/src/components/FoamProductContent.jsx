@@ -58,9 +58,9 @@ const FoamProductContent = ({ product, productImages }) => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
             {/* Gallery */}
-            <div className="space-y-4">
+            <div className="space-y-4 lg:max-w-md lg:mx-auto w-full">
               <div 
-                className="relative rounded-2xl overflow-hidden shadow-2xl bg-white cursor-grab active:cursor-grabbing"
+                className="relative rounded-2xl overflow-hidden shadow-xl bg-white cursor-grab active:cursor-grabbing max-w-[380px] lg:max-w-[420px] mx-auto"
                 onTouchStart={handleTouchStart}
                 onTouchMove={handleTouchMove}
                 onTouchEnd={handleTouchEnd}
@@ -134,7 +134,7 @@ const FoamProductContent = ({ product, productImages }) => {
                     <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <span className="text-sm text-gray-600">(94 değerlendirme)</span>
+                <span className="text-sm text-gray-600">(126 değerlendirme)</span>
               </div>
 
               {/* Özellikler */}

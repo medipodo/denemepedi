@@ -195,10 +195,10 @@ const FoamProductContent = ({ product, productImages }) => {
             </div>
 
             {/* Görsel 1 - Açıklama arasına */}
-            <div className="my-8 rounded-2xl overflow-hidden shadow-md max-w-2xl mx-auto border border-gray-100">
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md max-w-2xl mx-auto border border-gray-100 bg-gray-50 p-2">
               <picture>
                 <source media="(max-width: 640px)" srcSet="/images/products/foam/foam-usage.jpg?w=640&q=75" />
-                <img src="/images/products/foam/foam-usage.jpg" alt="PediZone Köpük Kullanımı" className="w-full max-h-[420px] object-cover" loading="lazy" />
+                <img src="/images/products/foam/foam-usage.jpg" alt="PediZone Köpük Kullanımı" className="w-full max-h-[480px] object-contain mx-auto" loading="lazy" />
               </picture>
             </div>
 
@@ -275,10 +275,10 @@ const FoamProductContent = ({ product, productImages }) => {
             </div>
 
             {/* Görsel 2 - Etki mekanizması arasına */}
-            <div className="my-8 rounded-2xl overflow-hidden shadow-md max-w-2xl mx-auto border border-gray-100">
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md max-w-2xl mx-auto border border-gray-100 bg-gray-50 p-2">
               <picture>
                 <source media="(max-width: 640px)" srcSet="/images/products/foam/foam-detail.jpg?w=640&q=75" />
-                <img src="/images/products/foam/foam-detail.jpg" alt="PediZone Köpük Detay" className="w-full max-h-[420px] object-cover" loading="lazy" />
+                <img src="/images/products/foam/foam-detail.jpg" alt="PediZone Köpük Detay" className="w-full max-h-[480px] object-contain mx-auto" loading="lazy" />
               </picture>
             </div>
 

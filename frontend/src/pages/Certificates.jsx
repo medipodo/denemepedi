@@ -208,11 +208,52 @@ const Certificates = () => {
                   </div>
                 </CardContent>
               </Card>
-            ))}
+                        ))}
+
+            {/* Ayrı Klinik Test Çalışması Kartı */}
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border border-red-200 bg-white">
+              <CardContent className="p-0">
+                <div className="relative">
+                  <img
+                    src="/certificates/pedizone-klinik-test-sonuclari.jpg"
+                    alt="PediZone klinik test çalışması"
+                    className="w-full h-56 object-cover object-top"
+                  />
+                  <Badge className="absolute top-4 left-4 bg-red-100 text-red-700 font-semibold">
+                    Yeni çalışma
+                  </Badge>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">Klinik Test Çalışması</h3>
+                  <p className="text-sm text-red-600 font-medium mb-4">PediZone</p>
+                  <div className="space-y-2 mb-4">
+                    <div className="flex items-center text-sm text-gray-600">
+                      <Building2 className="w-4 h-4 mr-2 text-gray-400" />
+                      SKINLAB P.S.A.
+                    </div>
+                    <div className="flex items-center text-sm text-gray-600">
+                      <Calendar className="w-4 h-4 mr-2 text-gray-400" />
+                      14–22 Ekim 2025
+                    </div>
+                    <div className="flex items-center text-sm text-gray-600">
+                      <Hash className="w-4 h-4 mr-2 text-gray-400" />
+                      10 gönüllü
+                    </div>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-6 line-clamp-3">
+                    Klinik test çalışmasının yöntemi, sonuçları ve kapsamı hakkında ayrıntılı bilgi.
+                  </p>
+                  <a href="#klinik-test-sonuclari">
+                    <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
+                      Çalışmayı İncele
+                    </Button>
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
-
       {/* Neden Güvenilir Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">

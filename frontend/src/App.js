@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route, Navigate, useParams } from 'react-router-dom';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider } from 'react-helmet-async';
 import { LanguageProvider, DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES, LANGUAGE_INFO } from './i18n/LanguageContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -67,7 +67,6 @@ function App() {
   return (
     <HelmetProvider>
       <div className="App" style={{ margin: 0, padding: 0, border: 'none' }}>
-        <Helmet titleTemplate="%s" />
         <BrowserRouter>
           <ScrollToTop />
           <Routes>

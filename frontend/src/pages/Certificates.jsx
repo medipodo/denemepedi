@@ -309,7 +309,7 @@ const Certificates = () => {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="rounded-xl bg-gray-50 border border-gray-100 p-4">
                     <p className="text-xs text-gray-500 mb-1">Ürün adı</p>
-                    <p className="font-semibold text-gray-900">PediZone Intense Repair Foot Care Cream</p>
+                    <p className="font-semibold text-gray-900">PediZone</p>
                   </div>
                   <div className="rounded-xl bg-gray-50 border border-gray-100 p-4">
                     <p className="text-xs text-gray-500 mb-1">Testi gerçekleştiren kurum</p>

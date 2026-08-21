@@ -7,6 +7,7 @@
 # --- STATIC FILES ---
 /sitemap.xml   /sitemap.xml   200!
 /robots.txt    /robots.txt    200!
+/llms-full.txt  /llms-full.txt  200!
 
 # --- IMAGE REDIRECTS ---
 /static/media/pedizone-serum-new.e1c3220b805233b3ba3c.jpg         /static/media/pedizone-serum-new.e1c3220b805233b3ba3c.webp        301!

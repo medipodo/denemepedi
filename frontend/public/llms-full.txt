@@ -1,0 +1,215 @@
+# PediZone — Full Site Reference
+
+> Bu dosya, PediZone.com’un herkese açık ürün, içerik, destek, bayi ve kurumsal sayfalarını yapay zekâ destekli arama ve bilgi erişim sistemleri için ayrıntılı biçimde tanımlar. Güncel ürün, sayfa ve görsel bilgileri için ilgili kanonik URL esas alınmalıdır.
+
+## Marka ve işletme kimliği
+
+PediZone®, podologların tavsiyelerine yönelik ayak ve tırnak bakım ürünleri, bilgilendirici içerikler ve podolog desteği sunan Türk markasıdır. Ana sayfa ürün portföyünü; PediZone® Foot and Nail Care Serum, PediZone® Fresh-Guard Ayak Temizleme Köpüğü ve PediZone® %15 Üreli Çatlak Topuk ve Ayak Kremi olarak tanımlar.
+
+- Marka: PediZone®
+- Faaliyet alanı: Ayak ve tırnak bakım ürünleri, bilgilendirici ayak sağlığı içerikleri ve podolog desteği
+- Uzman desteği: Podolog Serdar Ceylan ve PediZone podolog ekibi
+- Konum: Ankara / Turkey
+- Telefon: 0505 400 03 26
+- E-posta: info@pedizone.com
+- WhatsApp: https://wa.me/905054000326
+- Ana site: https://pedizone.com/
+
+Ana sayfada ürünler için podologların tavsiyesi, uzman tavsiyesi, klinik test, güvenli formül ve seçili eczanelerde satış ifadeleri bulunur. Ürünlerin gerçek kullanım kapsamı, içerikleri, fiyatı, stok durumu ve satın alma kanalı için ilgili ürün sayfası veya resmi mağaza bağlantısı kontrol edilmelidir.
+
+## Ana sayfalar ve kullanıcı akışları
+
+- Ana sayfa: https://pedizone.com/
+- Ürün portföyü: https://pedizone.com/#urunler
+- Blog: https://pedizone.com/blog
+- PediZone Clips: https://pedizone.com/clips
+- Ayak analizi: https://pedizone.com/ayak-analizi
+- Podolog değerlendirmesi: https://pedizone.com/podolog-degerlendirmesi
+- Bayiler: https://pedizone.com/bayiler
+- Bayi ol: https://pedizone.com/bayi-ol
+- Sertifikalar: https://pedizone.com/sertifikalar
+- Sıkça sorulan sorular: https://pedizone.com/sss
+- İletişim: https://pedizone.com/iletisim
+
+Ana sayfa ücretsiz ön değerlendirme akışını, ürün seçiminde yardımcı olan ayak analizi akışını, PediZone Clips video alanını, sertifikalar bölümünü, resmi pazaryeri mağazalarını ve bayi başvuru akışını tanıtır. Medipodo üzerindeki ücretsiz ön değerlendirme bağlantısı ayrıca kullanılabilir: https://medipodo.com/ucretsiz-on-degerlendirme .
+
+## Ürünler
+
+### PediZone® Foot and Nail Care Serum
+
+Ürün URL’si: https://pedizone.com/urun/foot-nail-care-serum
+
+Ana sayfa ve blog içerikleri bu ürünü ayak ve tırnak bakımı bağlamında tanımlar. Kullanım şekli, ürün açıklaması, gerçek içerik ve satın alma bilgileri için ürün sayfası esas alınmalıdır.
+
+### PediZone® Fresh-Guard Ayak Temizleme Köpüğü
+
+Ürün URL’si: https://pedizone.com/urun/temizleme-kopugu
+
+Ana sayfa ürünü derinlemesine temizlik ve koruma, antibakteriyel, koku giderici ve günlük bakım başlıklarıyla tanıtır. Ayrıntılı ürün bilgileri ve temin için ürün sayfası ile resmi mağazalar kontrol edilmelidir.
+
+### PediZone® %15 Üreli Çatlak Topuk ve Ayak Kremi
+
+Ürün URL’si: https://pedizone.com/urun/ureli-krem
+
+Ana sayfa ürünü yoğun nemlendirme, onarıcı etki, koruyucu bariyer ve genel ayak bakımı bağlamında tanıtır. Ürün iddiaları, kullanım bilgisi ve temin için kanonik ürün sayfası esas alınmalıdır.
+
+## Resmi satış ve bayi kanalları
+
+- Trendyol resmi PediZone mağazası: https://www.trendyol.com/sr?mid=1114633&id=949004162%2C974106929%2C974407501%2C993719944&os=1
+- Hepsiburada resmi PediZone mağazası: https://www.hepsiburada.com/magaza/medipodo?tab=allproducts
+- Amazon Türkiye resmi PediZone mağazası: https://www.amazon.com.tr/s?me=AMMP0XZD7GV7U&marketplaceID=A33AVAJ2PDY3EV
+- Bayiler: https://pedizone.com/bayiler
+- Bayilik başvurusu: https://pedizone.com/bayi-ol
+
+Resmi mağaza bağlantılarındaki fiyat, stok, kampanya, kargo ve temin bilgileri zamanla değişebilir. Bu dosya satış koşulu veya fiyat garantisi vermez.
+
+## PediZone Clips
+
+https://pedizone.com/clips
+
+PediZone Clips, corn freze ile nasır temizliği, Wood ışığı ile ayak mantarı muayenesi, onikogrifoz incelemeleri ve klinik vaka örnekleri gibi podolojik uygulama temalarını dikey video akışında sunan içerik alanıdır.
+
+## Blog bilgi merkezi
+
+PediZone blogu; nasır, siğil, ayak mantarı, tırnak mantarı, batık tırnak, ayak hijyeni, ayak kokusu, üre, medikal ayak bakımı ve ürün kullanımına ilişkin bilgilendirici içerikler sunar. Blog yazılarında kullanılan yazar, tarih, sağlık uyarısı ve görsel bilgileri ilgili canlı sayfada kontrol edilmelidir.
+
+- Nasir neden surekli tekrar eder: https://pedizone.com/blog/nasir-neden-surekli-tekrar-eder
+  - Sitemap güncellemesi: 2026-08-13
+  - Görsel: https://pedizone.com/images/blog/nasir-neden-surekli-tekrar-eder/nasir-neden-surekli-tekrar-eder.webp
+  - Görsel: https://pedizone.com/images/blog/nasir-neden-surekli-tekrar-eder/nasir-bolgeleri-ne-anlama-gelir.webp
+  - Görsel: https://pedizone.com/images/blog/nasir-neden-surekli-tekrar-eder/tekrarlayan-nasir-risk-faktorleri.webp
+  - Görsel: https://pedizone.com/images/blog/nasir-neden-surekli-tekrar-eder/ayak-basis-analizi-basinc-haritasi.webp
+  - Görsel: https://pedizone.com/images/blog/nasir-neden-surekli-tekrar-eder/kisiye-ozel-tabanlik-basinc-dagilimi.webp
+- Parmak arasi mantar tirnaga yayilir mi: https://pedizone.com/blog/parmak-arasi-mantar-tirnaga-yayilir-mi
+  - Sitemap güncellemesi: 2026-07-26
+  - Görsel: https://pedizone.com/blog-images/nail-fungus/cover/nail-fungus-01.webp — Parmak Arası Mantar Tırnağa Yayılır mı?
+  - Görsel: https://pedizone.com/blog-images/nail-fungus/content/parmak-aralarinda-mantar-gorsel.webp
+  - Görsel: https://pedizone.com/blog-images/nail-fungus/content/parmak-arasi-mantar-muayene.webp
+  - Görsel: https://pedizone.com/blog-images/nail-fungus/content/parmak-arasi-mantar-tirnaga-bulasir-mi.webp
+  - Görsel: https://pedizone.com/blog-images/nail-fungus/content/pedizone-mantar-damlasi-before-after.webp — Pedizone Mantar Damlası Before After
+  - Görsel: https://pedizone.com/blog-images/nail-fungus/content/parmak-arasi-mantar-tirnaga-yayilim-infografik.webp — Parmak Arası Mantarın Tırnağa Yayılım Süreci Infografik
+- Parmak arasi mantar nasil gecer: https://pedizone.com/blog/parmak-arasi-mantar-nasil-gecer
+  - Sitemap güncellemesi: 2026-08-13
+  - Görsel: https://pedizone.com/images/blog/parmak-arasi-mantar-nasil-gecer/parmak-arasi-mantar-kapak.webp
+  - Görsel: https://pedizone.com/images/blog/parmak-arasi-mantar-nasil-gecer/tinea-pedis-interdigital.webp
+  - Görsel: https://pedizone.com/images/blog/parmak-arasi-mantar-nasil-gecer/parmak-arasi-kasinti.webp
+  - Görsel: https://pedizone.com/images/blog/parmak-arasi-mantar-nasil-gecer/parmak-arasi-mantar-nasil-gecer.webp
+  - Görsel: https://pedizone.com/images/blog/parmak-arasi-mantar-nasil-gecer/el-parmak-mantari.webp
+  - Görsel: https://pedizone.com/images/blog/parmak-arasi-mantar-nasil-gecer/klinik-ornek-vaka-interdigital-tinea-pedis.webp
+- Ayak mantari baslangici nasil anlasilir: https://pedizone.com/blog/ayak-mantari-baslangici-nasil-anlasilir
+  - Sitemap güncellemesi: 2026-03-19
+  - Görsel: https://pedizone.com/images/blog/ayak-mantari-baslangici-nasil-anlasilir/ayak-mantari-belirtileri.webp
+  - Görsel: https://pedizone.com/images/blog/ayak-mantari-baslangici-nasil-anlasilir/ayak-kasintisi.webp
+- Tirnak mantari neden gecmez: https://pedizone.com/blog/tirnak-mantari-neden-gecmez
+  - Sitemap güncellemesi: 2026-08-13
+  - Görsel: https://pedizone.com/images/blog/tirnak-mantari-neden-gecmez/tirnak-mantari-neden-gecmez.webp
+  - Görsel: https://pedizone.com/images/blog/tirnak-mantari-neden-gecmez/tirnak-mantari-neden-olur.webp
+- Nasir nedir evde gecer mi: https://pedizone.com/blog/nasir-nedir-evde-gecer-mi
+  - Sitemap güncellemesi: 2026-03-04
+  - Görsel: https://pedizone.com/blog-images/nasir-nedir/nasir-nedir-kapak.webp
+- Nasir sigil farklari: https://pedizone.com/blog/nasir-sigil-farklari
+  - Sitemap güncellemesi: 2026-08-14
+  - Görsel: https://pedizone.com/blog-images/nasir-sigil-farklari/nasir-sigil-kapak.webp
+- Ayak mantari evde nasil gecer: https://pedizone.com/blog/ayak-mantari-evde-nasil-gecer
+  - Sitemap güncellemesi: 2026-01-05
+  - Görsel: https://pedizone.com/blog-images/ayak-mantari-evde/ayak-mantari-evde-gecer-mi-kapak-gorseli.webp
+- Ayak mantari mi egzama mi: https://pedizone.com/blog/ayak-mantari-mi-egzama-mi
+  - Sitemap güncellemesi: 2026-01-02
+  - Görsel: https://pedizone.com/blog-images/ayak-mantari-egzama/mantar-mi-egzama-mi-kapak-gorseli.webp
+- Ayak mantari neden tekrarlar: https://pedizone.com/blog/ayak-mantari-neden-tekrarlar
+  - Sitemap güncellemesi: 2026-01-02
+  - Görsel: https://pedizone.com/blog-images/ayak-mantari-tekrar/ayakmantari-neden-tekrarlar.webp
+- Ure nedir: https://pedizone.com/blog/ure-nedir
+  - Sitemap güncellemesi: 2025-12-24
+  - Görsel: https://pedizone.com/blog-images/ure-nedir/ure-kapak.webp
+- Medikal ayak bakimi nedir: https://pedizone.com/blog/medikal-ayak-bakimi-nedir
+  - Sitemap güncellemesi: 2026-08-14
+  - Görsel: https://pedizone.com/blog-images/medikal-ayak-bakimi/medikal-ayak-bakimi-kapak.webp
+- Ayak mantari nedir: https://pedizone.com/blog/ayak-mantari-nedir
+  - Sitemap güncellemesi: 2025-12-18
+  - Görsel: https://pedizone.com/blog-images/ayak-parmak-arasi-mantar.jpg
+- Tirnak mantari cesitleri: https://pedizone.com/blog/tirnak-mantari-cesitleri
+  - Sitemap güncellemesi: 2025-12-10
+  - Görsel: https://pedizone.com/blog-images/tirnak-mantari/tirnak-mantari-cesitleri.webp
+- Ayak kokusu nedenleri: https://pedizone.com/blog/ayak-kokusu-nedenleri
+  - Sitemap güncellemesi: 2025-12-04
+  - Görsel: https://pedizone.com/blog-images/ayak-kokusu/ayak-kokusu-blog.webp
+- Ayak hijyeni ipuclari: https://pedizone.com/blog/ayak-hijyeni-ipuclari
+  - Sitemap güncellemesi: 2025-11-29
+  - Görsel: https://pedizone.com/blog-images/ayak-hijyeni/ayak-hijyeni-blog.webp
+- Tirnak mantarinda iyilesmeyi geciktiren aliskanliklar: https://pedizone.com/blog/tirnak-mantarinda-iyilesmeyi-geciktiren-aliskanliklar
+  - Sitemap güncellemesi: 2026-07-19
+  - Görsel: https://pedizone.com/blog-images/nail-fungus/content/mantar-kasinti-parmak.webp
+- Batik tirnakta ayakkabi secimi: https://pedizone.com/blog/batik-tirnakta-ayakkabi-secimi
+  - Sitemap güncellemesi: 2026-07-19
+  - Görsel: https://pedizone.com/blog-images/batik-tirnak/content/batik-tirnak-ayakkabi-secimi.webp
+- Batik tirnak tekrarlar mi: https://pedizone.com/blog/batik-tirnak-tekrarlar-mi
+  - Sitemap güncellemesi: 2026-07-21
+  - Görsel: https://pedizone.com/blog-images/batik-tirnak/content/batik-tirnak-ankara-niti-tel.webp
+- Tirnak mantari bulasici mi: https://pedizone.com/blog/tirnak-mantari-bulasici-mi
+  - Sitemap güncellemesi: 2026-08-14
+  - Görsel: https://pedizone.com/blog-images/nail-fungus/content/tirnak-mantari-ankara.webp
+- Batik tirnak nasil baslar ilk belirtileri: https://pedizone.com/blog/batik-tirnak-nasil-baslar-ilk-belirtileri
+  - Sitemap güncellemesi: 2026-08-07
+  - Görsel: https://pedizone.com/blog-images/ingrown/cover/ingrown-06.webp — Batık Tırnak Nasıl Başlar? İlk Belirtileri Nelerdir?
+  - Görsel: https://pedizone.com/blog-images/ingrown/content/tirnak-batmasi-cizim.webp — Batık tırnak oluşum mekanizması
+  - Görsel: https://pedizone.com/blog-images/ingrown/content/tirnak-batmasi-niti-tel-tedavisi.webp — Batık tırnak tel tedavisi uygulaması
+  - Görsel: https://pedizone.com/blog-images/ingrown/content/podolog-serdar-ceylan-baglica.webp — Podolog Serdar Ceylan Klinik Muayene
+- Ayni yerde surekli nasir cikmasi: https://pedizone.com/blog/ayni-yerde-surekli-nasir-cikmasi
+  - Sitemap güncellemesi: 2026-08-09
+  - Görsel: https://pedizone.com/blog-images/corn-callus/cover/ayni-yerde-nasir-kapak.webp — Aynı Yerde Sürekli Nasır Çıkması Ne Anlama Gelir?
+  - Görsel: https://pedizone.com/blog-images/corn-callus/content/ayni-yerde-nasir-ic-gorsel.webp — Aynı Yerde Sürekli Nasır Çıkması İç Görseli
+  - Görsel: https://pedizone.com/blog-images/corn-callus/content/ankara-nasir-tedavisi-pedizone.webp — Klinik Deneyimlerde Karşılaşılan Nasır Örnekleri - Ayak Tabanı
+  - Görsel: https://pedizone.com/blog-images/corn-callus/content/ankara-nasir-tedavisi-pedizone-medipodo.webp — Klinik Deneyimlerde Karşılaşılan Nasır Örnekleri - Parmak Kenarı
+  - Görsel: https://pedizone.com/blog-images/corn-callus/content/ankara-nasir-tedavisi-pedizone-krem.webp — Klinik Deneyimlerde Karşılaşılan Nasır Örnekleri - Topuk Bölgesi
+- Nasir nasil gecer gecmeyen nasirin 7 nedeni: https://pedizone.com/blog/nasir-nasil-gecer-gecmeyen-nasirin-7-nedeni
+  - Sitemap güncellemesi: 2026-08-13
+  - Görsel: https://pedizone.com/blog-images/corn-callus/cover/nasir-nasil-gecer-kapak.webp — Nasır Nasıl Geçer? Geçmeyen Nasırın 7 Temel Nedeni
+  - Görsel: https://pedizone.com/blog-images/corn-callus/content/01.webp — Ayak tabanında oluşan derin nasır ve basınç noktaları
+- Serum kullanim onemi: https://pedizone.com/blog/serum-kullanim-onemi
+  - Sitemap güncellemesi: 2026-08-13
+  - Görsel: https://pedizone.com/blog-images/serum-kullanim/serum-kapak.webp — PediZone Serum Kullanım Önemi ve Doğru Damlalık Uygulama Rehberi
+
+## Sitemap envanteri
+
+Aşağıdaki URL listesi, repodaki sitemap.xml dosyasından otomatik olarak oluşturulmuştur. Sitemap güncel URL keşfi için temel kaynaktır; ilgili sayfaların kanonik içeriği canlı URL’de bulunur.
+
+- https://pedizone.com/ — lastmod: 2026-08-08
+- https://pedizone.com/blog — lastmod: 2026-08-08
+- https://pedizone.com/sertifikalar — lastmod: 2025-11-01
+- https://pedizone.com/bayiler — lastmod: 2026-07-25
+- https://pedizone.com/ayak-analizi — lastmod: 2026-07-25
+- https://pedizone.com/podolog-degerlendirmesi — lastmod: 2026-07-25
+- https://pedizone.com/clips — lastmod: 2026-08-14
+- https://pedizone.com/sss — lastmod: 2026-08-14
+- https://pedizone.com/iletisim — lastmod: 2026-04-07
+- https://pedizone.com/gizlilik-politikasi — lastmod: 2026-04-07
+- https://pedizone.com/kullanim-sartlari — lastmod: 2026-04-07
+
+## Sertifikalar ve güven bilgileri
+
+Sertifikalar sayfası: https://pedizone.com/sertifikalar . Sitemap ve public dosyalarında GS1, klinik test, laboratuvar test, mikrobiyoloji, ürün uygunluğu, marka tescili ve ilgili belge görselleri bulunur. Her belgenin kapsamı ve geçerliliği için canlı sertifika sayfasındaki özgün belge kontrol edilmelidir; bu dosya belge sonucu veya tıbbi etkinlik garantisi vermez.
+
+## İletişim ve destek
+
+- Telefon: tel:+905054000326
+- E-posta: mailto:info@pedizone.com
+- WhatsApp: https://wa.me/905054000326
+- İletişim sayfası: https://pedizone.com/iletisim
+- Ön değerlendirme: https://medipodo.com/ucretsiz-on-degerlendirme
+
+## Sağlık ve içerik güvenliği
+
+PediZone web içeriği ayak ve tırnak bakımı hakkında genel bilgilendirme amacı taşır. İçerikler tıbbi teşhis, kişiye özel tedavi planı veya ilaç reçetesi yerine geçmez. Şiddetli ya da artan ağrı, yayılan kızarıklık, irinli akıntı, ateş, diyabet, dolaşım sorunu, açık yara veya hızlı kötüleşme gibi durumlarda uygun sağlık profesyonelinden değerlendirme alınmalıdır. Ürünler ve aktif içerikler kişiden kişiye farklı sonuç verebilir; kullanım talimatı ve ilgili sağlık profesyonelinin yönlendirmesi esas alınmalıdır.
+
+## Teknik kaynaklar
+
+- Kısa AI özeti: https://pedizone.com/llms.txt
+- Ayrıntılı AI özeti: https://pedizone.com/llms-full.txt
+- Sitemap: https://pedizone.com/sitemap.xml
+- Video sitemap: https://pedizone.com/video-sitemap.xml
+- Robots: https://pedizone.com/robots.txt
+
+## Güncelleme ve doğruluk
+
+Bu dosya PediZone.com’un herkese açık sayfalarını ve repo sitemap envanterini makine-okur bir referans olarak özetler. Ürün fiyatı, stok, kampanya, resmi satış koşulları, sertifika kapsamı, yazar/tarih ve sayfa içeriği için her zaman ilgili canlı kanonik URL kontrol edilmelidir.

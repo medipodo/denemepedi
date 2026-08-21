@@ -222,7 +222,7 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "paragraph",
-        "content": "Bu nedenle nasırın yalnızca üstten temizlenmesi her zaman yeterli olmayabilir. Yüzeydeki sert tabaka giderilse bile alttaki baskı nedeni devam ediyorsa nasır birkaç hafta veya ay içinde aynı noktada belirginleşebilir. Daha geniş bilgi için <a href='/blog/nasir-nasil-gecer-gecmeyen-nasirin-7-nedeni'>geçmeyen nasırın temel nedenleri</a> üzerine hazırlanan rehber de bu konuyu tamamlayıcı niteliktedir."
+        "content": "Bu nedenle nasırın yalnızca üstten temizlenmesi her zaman yeterli olmayabilir. Yüzeydeki sert tabaka giderilse bile alttaki baskı nedeni devam ediyorsa nasır birkaç hafta veya ay içinde aynı noktada belirginleşebilir. Daha geniş bilgi için <a href='/blog/nasir-nasil-gecer-gecmeyen-nasirin-7-nedeni' title='Geçmeyen Nasırın Temel Nedenleri ve Tedavi Yöntemleri'>geçmeyen nasırın temel nedenleri</a> üzerine hazırlanan rehber de bu konuyu tamamlayıcı niteliktedir."
       },
       {
         "type": "video",
@@ -258,7 +258,7 @@ export const enrichedBlogPosts = [
       },
       {
         "type": "paragraph",
-        "content": "Ayakkabı seçimi bu süreçte önemli bir etkendir. Ayakkabı ayağı sıkmamalı, parmaklara hareket alanı bırakmalı ve taban desteği kişinin günlük yüklenmesine uygun olmalıdır. Bu konuda daha detaylı bilgi için <a href='/blog/nasir-neden-surekli-tekrar-eder'>aynı yerde sürekli nasır çıkması</a> incelemesine göz atabilirsiniz."
+        "content": "Ayakkabı seçimi bu süreçte önemli bir etkendir. Ayakkabı ayağı sıkmamalı, parmaklara hareket alanı bırakmalı ve taban desteği kişinin günlük yüklenmesine uygun olmalıdır. Bu konuda daha detaylı bilgi için <a href='/blog/nasir-neden-surekli-tekrar-eder' title='Nasır Neden Sürekli Tekrar Eder ve Nasıl Önlenir'>aynı yerde sürekli nasır çıkması</a> incelemesine göz atabilirsiniz."
       },
       {
         "type": "heading",

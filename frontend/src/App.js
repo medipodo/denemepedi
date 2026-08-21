@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route, Navigate, useParams } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { LanguageProvider, DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES, LANGUAGE_INFO } from './i18n/LanguageContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -67,6 +67,7 @@ function App() {
   return (
     <HelmetProvider>
       <div className="App" style={{ margin: 0, padding: 0, border: 'none' }}>
+        <Helmet defaultTitle="PediZone® - Profesyonel Ayak Bakım Ürünleri" titleTemplate="%s | PediZone" />
         <BrowserRouter>
           <ScrollToTop />
           <Routes>
@@ -139,7 +140,9 @@ const TRContent = ({ page }) => {
   return (
     <LanguageProvider>
       <Header />
-      {renderPage()}
+      <main>
+        {renderPage()}
+      </main>
       <Footer />
       <WhatsAppButton />
     </LanguageProvider>

@@ -32,11 +32,6 @@ const ProductDetail = () => {
   "manufacturer": {
     "@type": "Organization",
     "name": product.manufacturer || "PediZone"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "139"
   }
 } : null;
 
@@ -107,8 +102,8 @@ const ProductDetail = () => {
     <div className="min-h-screen bg-white">
       {/* SEO Schema */}
       <Helmet>
-        <title>PediZone® %15 Urea Intense Repair Cream | Profesyonel Ayak Kremi</title>
-        <meta name="description" content="Çatlak topuklar ve aşırı kuruluk için geliştirilmiş profesyonel bakım kremi. %15 üre, bitkisel antifungal destek. Dermatolojik olarak test edilmiştir." />
+        <title>{product?.name || 'PediZone® Ürün'} | Profesyonel Ayak Bakımı</title>
+        <meta name="description" content={product?.description || 'PediZone profesyonel ayak bakım ürünü.'} />
         <link rel="canonical" href={`https://pedizone.com/urun/${slug}`} />
         
         {/* Open Graph Meta Tags */}
@@ -127,12 +122,12 @@ const ProductDetail = () => {
       {/* Breadcrumb */}
       <section className="pt-24 pb-4 bg-gray-50">
         <div className="container mx-auto px-4">
-          <nav className="flex items-center space-x-2 text-sm text-gray-600">
+          <nav aria-label="Breadcrumb" className="flex items-center space-x-2 text-sm text-gray-600">
             <LocalizedLink to="/" className="hover:text-red-600">Ana Sayfa</LocalizedLink>
             <span>/</span>
             <LocalizedLink to="/#urunler" className="hover:text-red-600">Ürünler</LocalizedLink>
             <span>/</span>
-            <span className="text-gray-900 font-medium">%15 Üreli Krem</span>
+            <span className="text-gray-900 font-medium" aria-current="page">{product?.name || '%15 Üreli Krem'}</span>
           </nav>
         </div>
       </section>
@@ -238,15 +233,7 @@ const ProductDetail = () => {
                 )}
               </div>
 
-              {/* Rating */}
-              <div className="flex items-center gap-2 pb-4 border-b border-gray-200">
-                <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <span className="text-sm text-gray-600">(139 değerlendirme)</span>
-              </div>
+              {/* Removed fake rating */}
 
               {/* Key Features */}
               <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-6">

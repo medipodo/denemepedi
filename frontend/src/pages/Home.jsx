@@ -477,11 +477,10 @@ const Home = () => {
               
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-0">
                 Profesyonel Ayak Bakım Çözümleri
+                <span className="block text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-red-600 mt-2">
+                  Pedizone<span style={{ fontSize: '0.5em', verticalAlign: 'super' }}>®</span>
+                </span>
               </h1>
-              
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-red-600 mb-0">
-                Pedizone<span style={{ fontSize: '0.5em', verticalAlign: 'super' }}>®</span>
-              </h2>
               
               <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
                 {siteInfo.description}

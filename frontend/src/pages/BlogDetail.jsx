@@ -179,26 +179,73 @@ const BlogDetail = () => {
     }))
   } : null;
 
+  // Parse date for schema
+  const parseDateForSchema = (dateStr) => {
+    if (!dateStr) return new Date().toISOString();
+    const parts = dateStr.trim().split(' ');
+    if (parts.length >= 3) {
+      const day = parts[0].padStart(2, '0');
+      const months = { 'Ocak': '01', 'Şubat': '02', 'Mart': '03', 'Nisan': '04', 'Mayıs': '05', 'Haziran': '06', 'Temmuz': '07', 'Ağustos': '08', 'Eylül': '09', 'Ekim': '10', 'Kasım': '11', 'Aralık': '12' };
+      const month = months[parts[1]] || '01';
+      const year = parts[2];
+      return `${year}-${month}-${day}T12:00:00Z`;
+    }
+    return new Date().toISOString();
+  };
+  const isoDate = parseDateForSchema(post.date);
+
   // Article JSON-LD Schema
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://pedizone.com/blog/${post.slug}`
+    },
     "headline": post.title,
     "description": post.excerpt,
-    "image": typeof post.image === 'string' ? post.image : undefined,
+    "image": typeof post.image === 'string' ? (post.image.startsWith('http') ? post.image : `https://pedizone.com${post.image}`) : "https://pedizone.com/images/pedizone-og-home-v2.jpg",
     "author": {
       "@type": "Person",
-      "name": post.author
+      "name": post.author || "PediZone"
     },
-    "datePublished": post.date,
     "publisher": {
       "@type": "Organization",
       "name": "PediZone",
+      "url": "https://pedizone.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://pedizone.com/favicon.svg"
+        "url": "https://pedizone.com/logo.png"
       }
-    }
+    },
+    "datePublished": isoDate,
+    "dateModified": isoDate
+  };
+
+  // Breadcrumb Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Ana Sayfa",
+        "item": "https://pedizone.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://pedizone.com/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": post.title,
+        "item": `https://pedizone.com/blog/${post.slug}`
+      }
+    ]
   };
 
   // Related posts - mock.js + enrichedBlogPosts birleşik (slug çakışması + gizlenenler filtreli)
@@ -239,9 +286,12 @@ const BlogDetail = () => {
         )}
       </Helmet>
 
-      {/* Schema.org - Article & FAQ */}
+      {/* Schema.org - Article, Breadcrumb & FAQ */}
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(breadcrumbSchema)}
       </script>
       {faqSchema && (
         <script type="application/ld+json">
@@ -257,9 +307,21 @@ const BlogDetail = () => {
           </LocalizedLink>
         </div>
 
+        {/* Breadcrumb HTML */}
+        <nav aria-label="Breadcrumb" className="mb-4 text-sm text-gray-500">
+          <ol className="flex items-center space-x-2">
+            <li><LocalizedLink to="/" className="hover:text-red-600">Ana Sayfa</LocalizedLink></li>
+            <li><span className="mx-1">/</span></li>
+            <li><LocalizedLink to="/blog" className="hover:text-red-600">Blog</LocalizedLink></li>
+            <li><span className="mx-1">/</span></li>
+            <li className="text-gray-900 font-medium" aria-current="page">{post.title}</li>
+          </ol>
+        </nav>
+
         {/* Makale Başlığı & Bilgileri */}
         <article className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden p-6 sm:p-10 mb-8">
-          <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-4">
+          <header>
+            <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-4">
             <span className="flex items-center gap-1.5 bg-red-50 text-red-600 px-3 py-1 rounded-full font-medium">
               <Calendar size={14} /> {post.date}
             </span>
@@ -274,16 +336,17 @@ const BlogDetail = () => {
           <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight mb-6 leading-tight">
             {post.title}
           </h1>
+          </header>
 
           {/* Kapak Görseli */}
           {post.image && (
-            <div className="rounded-xl overflow-hidden mb-8 shadow-md">
+            <figure className="rounded-xl overflow-hidden mb-8 shadow-md">
               <img 
                 src={post.image} 
                 alt={post.title} 
                 className="w-full max-h-[450px] object-cover"
               />
-            </div>
+            </figure>
           )}
 
           {/* Giriş / Özet */}
@@ -496,7 +559,7 @@ const BlogDetail = () => {
 
           {/* Sık Sorulan Sorular (FAQ) */}
           {post.faqs && post.faqs.length > 0 && (
-            <div className="mt-12 pt-8 border-t border-gray-200">
+            <section className="mt-12 pt-8 border-t border-gray-200">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {post.faqs.map((faq, fIdx) => (
@@ -516,7 +579,7 @@ const BlogDetail = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </section>
           )}
 
           {/* Paylaş ve Etkileşim */}

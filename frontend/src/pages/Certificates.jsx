@@ -268,6 +268,148 @@ const Certificates = () => {
           </div>
         </div>
       </section>
+
+      {/* Klinik Test Sonuçları */}
+      <section id="klinik-test-sonuclari" className="py-16 bg-gray-50 border-t border-gray-100">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-red-700 via-red-600 to-rose-500 text-white p-8 md:p-12 shadow-xl mb-8">
+              <div className="absolute -right-16 -top-20 w-64 h-64 rounded-full bg-white/10" />
+              <div className="absolute -left-20 -bottom-32 w-72 h-72 rounded-full bg-black/10" />
+              <div className="relative flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+                <div className="max-w-3xl">
+                  <div className="inline-flex items-center gap-2 rounded-full bg-white/15 border border-white/25 px-4 py-2 text-sm font-semibold mb-5">
+                    <FlaskConical className="w-4 h-4" />
+                    Bağımsız dermatolojik değerlendirme
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Klinik Test Sonuçları</h2>
+                  <p className="text-red-50 text-base md:text-lg leading-relaxed">
+                    PediZone® kalite yaklaşımının bir parçası olarak gerçekleştirilen klinik test sonuçlarını, kapsamı ve sınırlarıyla birlikte şeffaf biçimde paylaşıyoruz.
+                  </p>
+                </div>
+                <div className="shrink-0 rounded-2xl bg-white/10 border border-white/20 px-6 py-5 md:min-w-52">
+                  <p className="text-xs uppercase tracking-wider text-red-100 mb-2">Değerlendirme</p>
+                  <p className="text-2xl font-bold">Non-irritating</p>
+                  <p className="text-sm text-red-100 mt-1">Tahriş edici değil</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid lg:grid-cols-3 gap-6 mb-6">
+              <article className="lg:col-span-2 bg-white rounded-2xl border border-gray-200 shadow-sm p-6 md:p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-11 h-11 rounded-xl bg-red-100 flex items-center justify-center">
+                    <FileCheck className="w-5 h-5 text-red-600" />
+                  </div>
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-red-600 font-bold">Test künyesi</p>
+                    <h3 className="text-xl font-bold text-gray-900">Ürün Bilgisi</h3>
+                  </div>
+                </div>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div className="rounded-xl bg-gray-50 border border-gray-100 p-4">
+                    <p className="text-xs text-gray-500 mb-1">Ürün adı</p>
+                    <p className="font-semibold text-gray-900">PediZone Intense Repair Foot Care Cream</p>
+                  </div>
+                  <div className="rounded-xl bg-gray-50 border border-gray-100 p-4">
+                    <p className="text-xs text-gray-500 mb-1">Testi gerçekleştiren kurum</p>
+                    <p className="font-semibold text-gray-900">SKINLAB P.S.A. (Kraków, Polonya)</p>
+                  </div>
+                  <div className="rounded-xl bg-gray-50 border border-gray-100 p-4">
+                    <p className="text-xs text-gray-500 mb-1">Test tarihi</p>
+                    <p className="font-semibold text-gray-900">14–22 Ekim 2025</p>
+                  </div>
+                  <div className="rounded-xl bg-gray-50 border border-gray-100 p-4">
+                    <p className="text-xs text-gray-500 mb-1">Katılımcı sayısı</p>
+                    <p className="font-semibold text-gray-900">10 gönüllü (normal cilt tipi)</p>
+                  </div>
+                </div>
+              </article>
+
+              <article className="bg-gray-900 rounded-2xl p-6 md:p-8 text-white shadow-sm">
+                <div className="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center mb-6">
+                  <Shield className="w-5 h-5 text-red-300" />
+                </div>
+                <p className="text-xs uppercase tracking-wider text-red-300 font-bold mb-2">Testin odağı</p>
+                <h3 className="text-xl font-bold mb-4">Cilt toleransı</h3>
+                <p className="text-gray-300 leading-relaxed text-sm">
+                  Bu değerlendirme, ürünün tek seferlik uygulama sonrasında cilt tarafından nasıl tolere edildiğini inceleyen bir irritasyon/yama testidir.
+                </p>
+              </article>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-6 mb-6">
+              <article className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 md:p-8">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-10 h-10 rounded-xl bg-red-100 flex items-center justify-center">
+                    <FlaskConical className="w-5 h-5 text-red-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900">Test Metodolojisi</h3>
+                </div>
+                <p className="text-gray-600 leading-relaxed mb-5">
+                  Test, dermatolog gözetiminde SKINLAB P.S.A. tarafından Jadassohn-Bloch patch test (Rudzki modifikasyonu) yöntemiyle uygulanmıştır. Ürün tek seferlik olarak cilde sürülmüş ve 48 saat boyunca gözlemlenmiştir.
+                </p>
+                <div className="rounded-xl bg-gray-50 border border-gray-100 p-5 space-y-3 text-sm">
+                  <p><strong className="text-gray-900">Parametreler:</strong> <span className="text-gray-600">Erythema (kızarıklık), Edema (şişlik)</span></p>
+                  <p><strong className="text-gray-900">Değerlendirme:</strong> <span className="text-gray-600">0–4 puan skalası</span></p>
+                </div>
+              </article>
+
+              <article className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 md:p-8">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-10 h-10 rounded-xl bg-green-100 flex items-center justify-center">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900">Sonuçlar</h3>
+                </div>
+                <div className="space-y-3 mb-5">
+                  <div className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-green-600 mt-0.5 shrink-0" /><p className="text-gray-700">Tüm gönüllülerde reaksiyon puanı: <strong>0</strong></p></div>
+                  <div className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-green-600 mt-0.5 shrink-0" /><p className="text-gray-700">Ortalama irritasyon indeksi: <strong>Xsr = 0</strong></p></div>
+                  <div className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-green-600 mt-0.5 shrink-0" /><p className="text-gray-700"><strong>Sınıflandırma:</strong> Non-irritating (Tahriş edici değil)</p></div>
+                </div>
+                <p className="text-gray-600 leading-relaxed">Ürün, bu test koşullarında cilt tarafından iyi tolere edilmiştir ve irritan özellik göstermemiştir.</p>
+              </article>
+            </div>
+
+            <article className="bg-amber-50 border border-amber-200 rounded-2xl p-6 md:p-8 mb-6">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center shrink-0">
+                  <Shield className="w-5 h-5 text-amber-700" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Bu test neyi destekler?</h3>
+                  <p className="text-gray-700 leading-relaxed mb-3">
+                    Bu test, ürünün test edilen koşullarda dermatolojik olarak iyi tolere edildiğini ve tahriş edici olmadığını destekler.
+                  </p>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Test, ürünün etkinliği (örneğin nemlendirme veya çatlak görünümünü iyileştirme) üzerine veri sunmaz. Sonuçlar 10 gönüllü ve tek seferlik uygulama ile sınırlıdır; kişisel cilt tepkileri farklılık gösterebilir.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 md:p-8">
+              <div className="flex flex-col lg:flex-row gap-8 items-start">
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-xl bg-red-100 flex items-center justify-center">
+                      <FileCheck className="w-5 h-5 text-red-600" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900">Orijinal Test Raporu</h3>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed mb-5">Test raporunun ayrıntılarını ve yöntem bilgisini orijinal belge üzerinden inceleyebilirsiniz.</p>
+                  <a href="/certificates/dermatolojik-test-raporu.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl bg-red-600 hover:bg-red-700 text-white font-semibold px-5 py-3 transition-colors">
+                    PDF raporunu görüntüle
+                  </a>
+                </div>
+                <div className="w-full lg:w-80 rounded-xl overflow-hidden border border-gray-200 bg-gray-50">
+                  <img src="/certificates/pedizone-klinik-test-sonuclari-seo.png" alt="PediZone klinik test sonuçları" className="w-full h-48 object-cover" loading="lazy" />
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

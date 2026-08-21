@@ -67,7 +67,7 @@ function App() {
   return (
     <HelmetProvider>
       <div className="App" style={{ margin: 0, padding: 0, border: 'none' }}>
-        <Helmet defaultTitle="PediZone® - Profesyonel Ayak Bakım Ürünleri" titleTemplate="%s | PediZone" />
+        <Helmet titleTemplate="%s" />
         <BrowserRouter>
           <ScrollToTop />
           <Routes>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { CheckCircle, ArrowRight, Phone, Mail, MapPin, ShieldCheck, FlaskConical, Store, Check, ChevronLeft, ChevronRight } from 'lucide-react';
+import { CheckCircle, ArrowRight, Phone, Mail, MapPin, ShieldCheck, FlaskConical, Store, Check, ChevronLeft, ChevronRight, ShoppingBag } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
@@ -224,6 +224,70 @@ const BrandAnimationVideo = () => {
         </div>
       </div>
     </div>
+  );
+};
+
+const ProductDiscoverySection = ({ onExploreProducts }) => {
+  return (
+    <section
+      data-testid="product-discovery-section"
+      aria-labelledby="product-discovery-title"
+      className="relative overflow-hidden bg-gradient-to-br from-white via-red-50/40 to-white py-10 md:py-16"
+    >
+      <div className="container mx-auto px-4">
+        <div className="mx-auto mb-8 max-w-3xl text-center md:mb-10">
+          <span className="inline-flex items-center gap-2 rounded-full bg-red-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-red-600">
+            <ShoppingBag size={14} /> İhtiyacınız hangisi?
+          </span>
+          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
+            Her ayak farklıdır. Doğru bakım,
+            <span className="block text-red-600">doğru yönlendirmeyle başlar.</span>
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-600 md:text-lg">
+            Günlük bakım için PediZone ürünlerini keşfedin. Emin olamadığınız bir durum varsa,
+            podologlarımızdan ücretsiz ön değerlendirme alın.
+          </p>
+        </div>
+
+        <div className="mx-auto grid max-w-6xl items-center overflow-hidden rounded-3xl border border-red-100 bg-white shadow-[0_25px_60px_-35px_rgba(220,38,38,0.3)] lg:grid-cols-[1.05fr_0.95fr]">
+          <div className="relative flex min-h-[260px] items-center justify-center overflow-hidden bg-gradient-to-br from-red-50 via-white to-gray-50 p-6 sm:min-h-[320px] sm:p-10 lg:min-h-[360px]">
+            <div className="absolute -left-16 -top-16 h-44 w-44 rounded-full bg-red-100/60 blur-3xl" aria-hidden="true" />
+            <div className="absolute -bottom-20 -right-12 h-52 w-52 rounded-full bg-red-100/50 blur-3xl" aria-hidden="true" />
+            <img
+              src="/images/products/pedizone-set.webp"
+              alt="PediZone ayak ve tırnak bakım ürünleri"
+              width="650"
+              height="635"
+              loading="lazy"
+              className="relative z-10 h-auto w-full max-w-[520px] object-contain mix-blend-multiply drop-shadow-[0_20px_24px_rgba(31,41,55,0.14)] transition-transform duration-500 hover:scale-[1.02]"
+            />
+          </div>
+
+          <div className="p-7 sm:p-10 lg:p-12">
+            <span className="inline-flex items-center rounded-full bg-red-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-red-600">
+              Günlük Bakım
+            </span>
+            <h3 id="product-discovery-title" className="mt-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              Ürünlerinizi keşfedin
+            </h3>
+            <p className="mt-4 max-w-lg text-base leading-relaxed text-gray-600 sm:text-lg">
+              Ayak ve tırnak bakım rutininize uygun çözümleri inceleyin. PediZone ürünleriyle günlük bakımınızı doğru adımlarla oluşturun.
+            </p>
+            <button
+              type="button"
+              onClick={onExploreProducts}
+              className="group mt-7 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gray-900 px-7 py-4 text-base font-bold text-white shadow-lg shadow-gray-900/15 transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 hover:shadow-xl sm:w-auto"
+            >
+              Ürünleri Keşfet
+              <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
+            </button>
+            <p className="mt-4 text-sm text-gray-500">
+              Emin değilseniz, aşağıdaki ücretsiz ön değerlendirme bölümünden podologlarımızdan destek alabilirsiniz.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
@@ -646,7 +710,10 @@ const Home = () => {
       {/* Animasyon Videosu - Ücretsiz Ön Değerlendirme Öncesi */}
       <BrandAnimationVideo />
 
-      {/* Ücretsiz Podolog Ön Değerlendirme */}
+      {/* Ürün keşif köprüsü - mevcut ücretsiz değerlendirme bölümünün üstünde */}
+      <ProductDiscoverySection onExploreProducts={scrollToProducts} />
+
+      {/* Ücretsiz Podolog Ön Değerlendirme - mevcut bölüm korunuyor */}
       <FreeEvaluation />
 
       {/* PediZone Clips / Klinik Videolar Tanıtım Bölümü */}

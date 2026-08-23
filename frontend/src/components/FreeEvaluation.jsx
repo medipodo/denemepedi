@@ -22,12 +22,12 @@ const features = [
   },
 ];
 
-const FreeEvaluation = () => {
+const FreeEvaluation = ({ compact = false }) => {
   return (
     <section
       id="ucretsiz-degerlendirme"
       data-testid="free-eval-section"
-      className="py-16 md:py-24 bg-gradient-to-br from-red-50 via-white to-red-50"
+      className={compact ? 'h-full bg-transparent' : 'py-16 md:py-24 bg-gradient-to-br from-red-50 via-white to-red-50'}
     >
       <div className="container mx-auto px-4">
         <motion.div
@@ -35,10 +35,14 @@ const FreeEvaluation = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="mx-auto grid max-w-6xl items-center gap-8 overflow-hidden rounded-3xl border border-red-100 bg-white shadow-[0_25px_60px_-25px_rgba(220,38,38,0.25)] md:grid-cols-2 lg:gap-0"
+          className={compact
+            ? 'flex h-full flex-col overflow-hidden rounded-3xl border border-red-100 bg-white shadow-[0_25px_60px_-35px_rgba(220,38,38,0.3)]'
+            : 'mx-auto grid max-w-6xl items-center gap-8 overflow-hidden rounded-3xl border border-red-100 bg-white shadow-[0_25px_60px_-25px_rgba(220,38,38,0.25)] md:grid-cols-2 lg:gap-0'}
         >
           {/* Sol: Podolog fotoğrafı */}
-          <div className="relative h-full min-h-[340px] bg-gradient-to-br from-red-100 to-red-50">
+          <div className={compact
+            ? 'relative min-h-[220px] bg-gradient-to-br from-red-100 to-red-50 sm:min-h-[250px]'
+            : 'relative h-full min-h-[340px] bg-gradient-to-br from-red-100 to-red-50'}>
             <img
               src="/podolog-serdar-ceylan-600.webp"
               srcSet="/podolog-serdar-ceylan-400.webp 400w, /podolog-serdar-ceylan-600.webp 600w, /podolog-serdar-ceylan.webp 1095w"
@@ -46,7 +50,7 @@ const FreeEvaluation = () => {
               width="1095"
               height="1393"
               alt="Podolog Serdar Ceylan"
-              className="h-full w-full object-cover object-top"
+              className={compact ? 'h-64 w-full object-cover object-top' : 'h-full w-full object-cover object-top'}
               loading="lazy"
             />
             {/* Çevrimiçi rozeti */}
@@ -63,7 +67,7 @@ const FreeEvaluation = () => {
           </div>
 
           {/* Sağ: İçerik */}
-          <div className="p-8 md:p-10 lg:p-12">
+          <div className={compact ? 'flex flex-1 flex-col p-7 sm:p-8' : 'p-8 md:p-10 lg:p-12'}>
             <span className="inline-flex items-center gap-2 rounded-full bg-red-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-red-600">
               <Camera size={14} /> Ücretsiz Hizmet
             </span>

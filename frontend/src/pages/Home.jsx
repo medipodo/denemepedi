@@ -240,7 +240,7 @@ const ProductDiscoverySection = ({ onExploreProducts }) => {
             <ShoppingBag size={14} /> İhtiyacınız hangisi?
           </span>
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
-            Her ayak farklıdır. Doğru bakım,
+            Her ayak farklıdır. Doğru bakım,{' '}
             <span className="block text-red-600">doğru yönlendirmeyle başlar.</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-600 md:text-lg">
@@ -249,21 +249,22 @@ const ProductDiscoverySection = ({ onExploreProducts }) => {
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-6xl items-center overflow-hidden rounded-3xl border border-red-100 bg-white shadow-[0_25px_60px_-35px_rgba(220,38,38,0.3)] lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="relative flex min-h-[260px] items-center justify-center overflow-hidden bg-gradient-to-br from-red-50 via-white to-gray-50 p-6 sm:min-h-[320px] sm:p-10 lg:min-h-[360px]">
+        <div className="mx-auto grid max-w-6xl items-stretch gap-8 lg:grid-cols-2">
+          <div className="flex min-w-0 flex-col overflow-hidden rounded-3xl border border-red-100 bg-white shadow-[0_25px_60px_-35px_rgba(220,38,38,0.3)]">
+            <div className="relative flex min-h-[260px] flex-1 items-center justify-center overflow-hidden bg-gradient-to-br from-red-50 via-white to-gray-50 p-6 sm:min-h-[320px] sm:p-10 lg:min-h-[360px]">
             <div className="absolute -left-16 -top-16 h-44 w-44 rounded-full bg-red-100/60 blur-3xl" aria-hidden="true" />
             <div className="absolute -bottom-20 -right-12 h-52 w-52 rounded-full bg-red-100/50 blur-3xl" aria-hidden="true" />
-            <img
-              src="/images/products/pedizone-set.webp"
-              alt="PediZone ayak ve tırnak bakım ürünleri"
-              width="650"
-              height="635"
-              loading="lazy"
-              className="relative z-10 h-auto w-full max-w-[520px] object-contain mix-blend-multiply drop-shadow-[0_20px_24px_rgba(31,41,55,0.14)] transition-transform duration-500 hover:scale-[1.02]"
-            />
-          </div>
+              <img
+                src="/images/products/pedizone-set.webp"
+                alt="PediZone ayak ve tırnak bakım ürünleri"
+                width="650"
+                height="635"
+                loading="lazy"
+                className="relative z-10 h-auto w-full max-w-[520px] object-contain mix-blend-multiply drop-shadow-[0_20px_24px_rgba(31,41,55,0.14)] transition-transform duration-500 hover:scale-[1.02]"
+              />
+            </div>
 
-          <div className="p-7 sm:p-10 lg:p-12">
+            <div className="p-7 sm:p-10 lg:p-12">
             <span className="inline-flex items-center rounded-full bg-red-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-red-600">
               Günlük Bakım
             </span>
@@ -284,7 +285,10 @@ const ProductDiscoverySection = ({ onExploreProducts }) => {
             <p className="mt-4 text-sm text-gray-500">
               Emin değilseniz, aşağıdaki ücretsiz ön değerlendirme bölümünden podologlarımızdan destek alabilirsiniz.
             </p>
+            </div>
           </div>
+
+          <FreeEvaluation compact />
         </div>
       </div>
     </section>
@@ -710,11 +714,8 @@ const Home = () => {
       {/* Animasyon Videosu - Ücretsiz Ön Değerlendirme Öncesi */}
       <BrandAnimationVideo />
 
-      {/* Ürün keşif köprüsü - mevcut ücretsiz değerlendirme bölümünün üstünde */}
+      {/* Ürün keşif + mevcut ücretsiz değerlendirme bölümleri: web'de yan yana, mobilde alt alta */}
       <ProductDiscoverySection onExploreProducts={scrollToProducts} />
-
-      {/* Ücretsiz Podolog Ön Değerlendirme - mevcut bölüm korunuyor */}
-      <FreeEvaluation />
 
       {/* PediZone Clips / Klinik Videolar Tanıtım Bölümü */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-neutral-950 via-neutral-900 to-black text-white relative overflow-hidden">

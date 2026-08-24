@@ -41,7 +41,7 @@ const FreeEvaluation = ({ compact = false }) => {
         >
           {/* Sol: Podolog fotoğrafı */}
           <div className={compact
-            ? 'relative flex min-h-[300px] items-center justify-center overflow-hidden bg-gradient-to-br from-red-100 to-red-50 p-6 sm:min-h-[340px]'
+            ? 'relative flex aspect-square w-full shrink-0 items-center justify-center overflow-hidden bg-gradient-to-br from-red-100 to-red-50 p-6 sm:p-10'
             : 'relative h-full min-h-[340px] bg-gradient-to-br from-red-100 to-red-50'}>
             <img
               src="/podolog-serdar-ceylan-600.webp"
@@ -50,7 +50,7 @@ const FreeEvaluation = ({ compact = false }) => {
               width="1095"
               height="1393"
               alt="Podolog Serdar Ceylan"
-              className={compact ? 'h-[300px] w-auto max-w-full object-contain object-center sm:h-[340px]' : 'h-full w-full object-cover object-top'}
+              className={compact ? 'h-full w-full object-contain object-center' : 'h-full w-full object-cover object-top'}
               loading="lazy"
             />
             {/* Çevrimiçi rozeti */}

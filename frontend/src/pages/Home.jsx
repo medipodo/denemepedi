@@ -251,7 +251,7 @@ const ProductDiscoverySection = ({ onExploreProducts }) => {
 
         <div className="mx-auto grid max-w-6xl items-stretch gap-8 lg:grid-cols-2">
           <div className="flex h-full min-w-0 flex-col overflow-hidden rounded-3xl border border-red-100 bg-white shadow-[0_25px_60px_-35px_rgba(220,38,38,0.3)]">
-            <div className="relative flex min-h-[260px] flex-1 items-center justify-center overflow-hidden bg-gradient-to-br from-red-50 via-white to-gray-50 p-6 sm:min-h-[320px] sm:p-10 lg:min-h-[360px]">
+            <div className="relative aspect-square w-full shrink-0 overflow-hidden bg-gradient-to-br from-red-50 via-white to-gray-50 p-6 sm:p-10">
             <div className="absolute -left-16 -top-16 h-44 w-44 rounded-full bg-red-100/60 blur-3xl" aria-hidden="true" />
             <div className="absolute -bottom-20 -right-12 h-52 w-52 rounded-full bg-red-100/50 blur-3xl" aria-hidden="true" />
               <img

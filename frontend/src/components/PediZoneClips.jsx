@@ -5,6 +5,15 @@ import { Volume2, VolumeX, Heart, Share2, ArrowLeft, ShieldCheck, Stethoscope } 
 
 const clipsData = [
   {
+    id: 10,
+    title: "Tırnak Mantarı Çeşitleri",
+    videoSrc: "/blog-images/tirnak-mantari-cesitleri/tirnak-mantari-shorts-ankara-podolog.webm",
+    author: "Podolog Serdar Ceylan",
+    tag: "Tırnak Mantarı",
+    link: "/blog/tirnak-mantari-cesitleri",
+    likes: 0
+  },
+  {
     id: 1,
     title: "PediZone Serum Damlalık Kullanımı ve Uygulama",
     videoSrc: "/blog-images/serum-kullanim/pedizone-serum-damlalik.webm",

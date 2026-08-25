@@ -600,7 +600,7 @@ const Home = () => {
                 </LocalizedLink>
 
                 {/* Seçili Eczanelerde - E logosu */}
-                <LocalizedLink to="/bayiler?search=eczane" aria-label="Eczane satış noktalarını bul" className="flex flex-1 lg:flex-none items-center gap-1.5 lg:gap-3 bg-white border border-gray-100 rounded-xl lg:rounded-2xl px-2 py-1.5 lg:px-4 lg:py-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                <LocalizedLink to="/bayiler" aria-label="Eczane satış noktalarını bul" className="flex flex-1 lg:flex-none items-center gap-1.5 lg:gap-3 bg-white border border-gray-100 rounded-xl lg:rounded-2xl px-2 py-1.5 lg:px-4 lg:py-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
                   <div className="w-7 h-7 lg:w-10 lg:h-10 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <div className="w-4 h-5 lg:w-7 lg:h-8 bg-white border lg:border-2 border-red-600 flex items-center justify-center">
                       <span className="text-red-600 font-black text-base lg:text-3xl leading-none">E</span>

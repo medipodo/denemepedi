@@ -20,7 +20,10 @@ const redIcon = new L.Icon({
 });
 
 const Dealers = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState(() => {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('search') || '';
+  });
 
   // Bayi verileri tek kaynaktan: src/data/dealers.js
   // Yeni bayi eklemek/güncellemek için SADECE o dosyayı düzenleyin.

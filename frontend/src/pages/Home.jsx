@@ -574,7 +574,7 @@ const Home = () => {
               {/* Trust Badges - mobilde 3'ü yan yana kompakt, web'de mevcut hali */}
               <div className="flex flex-nowrap items-stretch justify-center gap-2 pt-4 lg:flex-wrap lg:justify-start lg:gap-3">
                 {/* Podolog Onaylı - Yeşil */}
-                <div className="flex flex-1 lg:flex-none items-center gap-1.5 lg:gap-3 bg-white border border-gray-100 rounded-xl lg:rounded-2xl px-2 py-1.5 lg:px-4 lg:py-3 shadow-sm">
+                <LocalizedLink to="/podolog-degerlendirmesi" aria-label="Podolog değerlendirmesi sayfasını aç" className="flex flex-1 lg:flex-none items-center gap-1.5 lg:gap-3 bg-white border border-gray-100 rounded-xl lg:rounded-2xl px-2 py-1.5 lg:px-4 lg:py-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
                   <div className="w-7 h-7 lg:w-10 lg:h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-4 h-4 lg:w-6 lg:h-6 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
@@ -584,10 +584,10 @@ const Home = () => {
                     <p className="font-bold text-gray-800 text-[10px] lg:text-sm leading-tight">Podolog Onaylı</p>
                     <p className="hidden lg:block text-xs text-gray-500">Uzman Tavsiyesi</p>
                   </div>
-                </div>
+                </LocalizedLink>
 
                 {/* Klinik Testli - Mavi */}
-                <div className="flex flex-1 lg:flex-none items-center gap-1.5 lg:gap-3 bg-white border border-gray-100 rounded-xl lg:rounded-2xl px-2 py-1.5 lg:px-4 lg:py-3 shadow-sm">
+                <LocalizedLink to="/sertifikalar" aria-label="Sertifikalar sayfasını aç" className="flex flex-1 lg:flex-none items-center gap-1.5 lg:gap-3 bg-white border border-gray-100 rounded-xl lg:rounded-2xl px-2 py-1.5 lg:px-4 lg:py-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
                   <div className="w-7 h-7 lg:w-10 lg:h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-4 h-4 lg:w-6 lg:h-6 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
@@ -597,10 +597,10 @@ const Home = () => {
                     <p className="font-bold text-gray-800 text-[10px] lg:text-sm leading-tight">Klinik Testli</p>
                     <p className="hidden lg:block text-xs text-gray-500">Güvenli Formül</p>
                   </div>
-                </div>
+                </LocalizedLink>
 
                 {/* Seçili Eczanelerde - E logosu */}
-                <div className="flex flex-1 lg:flex-none items-center gap-1.5 lg:gap-3 bg-white border border-gray-100 rounded-xl lg:rounded-2xl px-2 py-1.5 lg:px-4 lg:py-3 shadow-sm">
+                <LocalizedLink to="/bayiler?search=eczane" aria-label="Eczane satış noktalarını bul" className="flex flex-1 lg:flex-none items-center gap-1.5 lg:gap-3 bg-white border border-gray-100 rounded-xl lg:rounded-2xl px-2 py-1.5 lg:px-4 lg:py-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
                   <div className="w-7 h-7 lg:w-10 lg:h-10 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <div className="w-4 h-5 lg:w-7 lg:h-8 bg-white border lg:border-2 border-red-600 flex items-center justify-center">
                       <span className="text-red-600 font-black text-base lg:text-3xl leading-none">E</span>
@@ -610,7 +610,7 @@ const Home = () => {
                     <p className="font-bold text-gray-800 text-[10px] lg:text-sm leading-tight">Seçili Eczanelerde</p>
                     <p className="hidden lg:block text-xs text-gray-500">Güvenli Satış</p>
                   </div>
-                </div>
+                </LocalizedLink>
               </div>
             </div>
 

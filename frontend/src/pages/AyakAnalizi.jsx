@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import LocalizedLink from '../components/LocalizedLink';
 import FreeEvaluation from '../components/FreeEvaluation';
 
 const AyakAnalizi = ({ embedded = false, compact = false }) => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const incomingQuizResult = location.state?.quizResult;
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [answers, setAnswers] = useState({});
-  const [showResult, setShowResult] = useState(false);
-  const [recommendation, setRecommendation] = useState(null);
+  const [answers, setAnswers] = useState(() => incomingQuizResult?.answers || {});
+  const [showResult, setShowResult] = useState(() => Boolean(incomingQuizResult));
+  const [recommendation, setRecommendation] = useState(() => incomingQuizResult?.recommendation || null);
 
   const totalQuestions = 6;
 
@@ -203,20 +206,39 @@ const AyakAnalizi = ({ embedded = false, compact = false }) => {
     }
   };
 
+  const trackQuizCompletion = (result) => {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'quiz_completed', {
+        'event_category': 'Ayak Analiz Aracı',
+        'event_label': result.product,
+        'value': 1
+      });
+    }
+  };
+
   const handleSubmit = () => {
     if (answers[`q${currentQuestion}`]) {
       const result = getRecommendation();
       setRecommendation(result);
       setShowResult(true);
+      trackQuizCompletion(result);
+    } else {
+      alert('Lütfen bir seçenek seçiniz.');
+    }
+  };
 
-      // Google Analytics tracking
-      if (typeof window.gtag === 'function') {
-        window.gtag('event', 'quiz_completed', {
-          'event_category': 'Ayak Analiz Aracı',
-          'event_label': result.product,
-          'value': 1
-        });
-      }
+  const handleCompactSubmit = () => {
+    if (answers[`q${currentQuestion}`]) {
+      const result = getRecommendation();
+      trackQuizCompletion(result);
+      navigate('/ayak-analizi', {
+        state: {
+          quizResult: {
+            answers,
+            recommendation: result
+          }
+        }
+      });
     } else {
       alert('Lütfen bir seçenek seçiniz.');
     }
@@ -283,7 +305,7 @@ const AyakAnalizi = ({ embedded = false, compact = false }) => {
               </button>
               <button
                 type="button"
-                onClick={currentQuestion === totalQuestions - 1 ? handleSubmit : handleNext}
+                onClick={currentQuestion === totalQuestions - 1 ? handleCompactSubmit : handleNext}
                 className="inline-flex items-center gap-1 rounded-full bg-red-600 px-4 py-2 text-sm font-bold text-white shadow-md transition-all hover:bg-red-700 active:scale-95"
               >
                 {currentQuestion === totalQuestions - 1 ? 'Sonuçları Gör' : currentQuestion === 0 ? 'Başla' : 'İleri'} →

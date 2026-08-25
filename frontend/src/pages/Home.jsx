@@ -794,44 +794,6 @@ const Home = () => {
       {/* Pazaryerleri Bölümü */}
       <MarketplacesSection />
 
-      {/* Hangi Ürün Size Uygun? - Quiz CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-red-600 to-red-700">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center text-white">
-            {/* Ayak İkonu - sadece emoji, 2x büyük */}
-            <div className="flex justify-center mb-6">
-              <span className="text-8xl md:text-9xl animate-bounce">🦶</span>
-            </div>
-            
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-              Hangi Ürün Size Uygun?
-            </h2>
-            
-            <p className="text-lg md:text-xl text-red-100 mb-8 max-w-2xl mx-auto">
-              6 basit soruyla ayak sağlığınızı analiz edin ve podologunuzla danışarak size özel PediZone® ürün önerisi alın.
-            </p>
-            
-            <LocalizedLink to="/ayak-analizi">
-              <Button className="bg-white text-red-700 hover:bg-red-50 px-10 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all">
-                Ayaklarınızı Analiz Edin
-              </Button>
-            </LocalizedLink>
-            
-            {/* Alt bilgiler */}
-            <div className="flex flex-wrap justify-center gap-6 mt-8">
-              <div className="flex items-center space-x-2 text-red-100">
-                <Check className="w-5 h-5 text-green-400" />
-                <span>Üyeliksiz / 2 dakika</span>
-              </div>
-              <div className="flex items-center space-x-2 text-red-100">
-                <Check className="w-5 h-5 text-green-400" />
-                <span>Hızlı/Kolay Sonuç</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Why PediZone Section - pedizone.com style */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -1055,6 +1017,74 @@ const Home = () => {
           </div>
         </section>
       )}
+
+      {/* Ayak Analiz Aracı - Quiz CTA */}
+      <section id="ayak-analiz-cta" className="relative overflow-hidden bg-gradient-to-br from-gray-950 via-red-950 to-red-700 py-16 md:py-24">
+        <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-red-500/20 blur-3xl" aria-hidden="true" />
+        <div className="absolute -right-24 bottom-0 h-96 w-96 rounded-full bg-red-400/20 blur-3xl" aria-hidden="true" />
+        <div className="container relative mx-auto px-4">
+          <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+            <div className="text-white">
+              <span className="inline-flex items-center gap-2 rounded-full border border-red-300/30 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-red-100 backdrop-blur-sm">
+                <Sparkles size={15} /> PediZone Ayak Analiz Aracı
+              </span>
+              <h2 className="mt-6 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
+                Ayak bakım rutininizi tahmin etmeyin.
+                <span className="mt-2 block text-red-200">İhtiyacınızı birlikte keşfedelim.</span>
+              </h2>
+              <p className="mt-6 max-w-xl text-base leading-relaxed text-red-100 sm:text-lg">
+                Koku, mantar eğilimi, tırnak batması, nasır veya genel bakım ihtiyacınızı 6 basit soruyla değerlendirin. Yanıtlarınıza göre size uygun PediZone® bakım önerilerini keşfedin.
+              </p>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <LocalizedLink to="/ayak-analizi">
+                  <Button className="group w-full rounded-full bg-white px-7 py-3.5 text-base font-bold text-red-700 shadow-xl shadow-black/20 transition-all hover:-translate-y-0.5 hover:bg-red-50 sm:w-auto">
+                    Analizi Başlat
+                    <ArrowRight className="ml-2 transition-transform duration-200 group-hover:translate-x-1" size={19} />
+                  </Button>
+                </LocalizedLink>
+                <span className="inline-flex items-center justify-center rounded-full border border-white/20 px-5 py-3.5 text-sm font-medium text-red-100">
+                  Tanı yerine geçmez · Bilgilendirme amaçlıdır
+                </span>
+              </div>
+              <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm text-red-100">
+                <span className="inline-flex items-center gap-2"><CheckCircle className="text-green-300" size={18} /> Üyeliksiz</span>
+                <span className="inline-flex items-center gap-2"><CheckCircle className="text-green-300" size={18} /> Yaklaşık 2 dakika</span>
+                <span className="inline-flex items-center gap-2"><ShieldCheck className="text-green-300" size={18} /> Kişisel öneri</span>
+              </div>
+            </div>
+
+            <div className="relative mx-auto w-full max-w-md">
+              <div className="absolute -inset-4 rounded-[2rem] bg-white/10 blur-2xl" aria-hidden="true" />
+              <div className="relative overflow-hidden rounded-[2rem] border border-white/20 bg-white p-5 shadow-2xl sm:p-7">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-xs font-bold uppercase tracking-[0.14em] text-red-600">Kısa bir yolculuk</p>
+                    <p className="mt-1 text-lg font-extrabold text-gray-900">Size en uygun bakım hangisi?</p>
+                  </div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-red-100 text-2xl">🦶</div>
+                </div>
+                <div className="mt-6 flex items-center gap-3">
+                  <div className="h-2 flex-1 overflow-hidden rounded-full bg-red-100"><div className="h-full w-1/6 rounded-full bg-red-600" /></div>
+                  <span className="text-xs font-bold text-gray-500">1 / 6</span>
+                </div>
+                <p className="mt-6 text-sm font-bold text-gray-900">Ayaklarınızda en belirgin sorun nedir?</p>
+                <div className="mt-4 space-y-2.5">
+                  {['Koku ve terleme', 'Mantar eğilimi', 'Tırnak ve cilt bakımı'].map((option, index) => (
+                    <div key={option} className={`flex items-center gap-3 rounded-xl border px-4 py-3 text-sm font-medium ${index === 1 ? 'border-red-500 bg-red-50 text-red-700' : 'border-gray-200 text-gray-700'}`}>
+                      <span className={`h-4 w-4 rounded-full border-2 ${index === 1 ? 'border-red-600 bg-red-600 ring-4 ring-red-100' : 'border-gray-300'}`} />
+                      {option}
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-6 flex items-center justify-between border-t border-gray-100 pt-5">
+                  <span className="text-xs text-gray-500">Yanıtlarınıza göre ilerler</span>
+                  <span className="inline-flex items-center gap-1 text-sm font-bold text-red-600">Başla <ArrowRight size={16} /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Bayilerimiz Harita Section */}
       <section ref={mapSectionRef} className="py-12 bg-gray-50">

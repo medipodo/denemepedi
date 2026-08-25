@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import LocalizedLink from '../components/LocalizedLink';
 import FreeEvaluation from '../components/FreeEvaluation';
 
-const AyakAnalizi = ({ embedded = false }) => {
+const AyakAnalizi = ({ embedded = false, compact = false }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState({});
   const [showResult, setShowResult] = useState(false);
@@ -233,8 +233,87 @@ const AyakAnalizi = ({ embedded = false }) => {
   const progress = ((currentQuestion + 1) / totalQuestions) * 100;
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    if (!compact) window.scrollTo(0, 0);
+  }, [compact]);
+
+  if (compact) {
+    return (
+      <div className="relative overflow-hidden rounded-[2rem] border border-white/20 bg-white p-5 shadow-2xl sm:p-7">
+        {!showResult ? (
+          <>
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.14em] text-red-600">Kısa bir yolculuk</p>
+                <p className="mt-1 text-lg font-extrabold text-gray-900">Size en uygun bakım hangisi?</p>
+              </div>
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-red-100 text-2xl">🦶</div>
+            </div>
+            <div className="mt-6 flex items-center gap-3">
+              <div className="h-2 flex-1 overflow-hidden rounded-full bg-red-100">
+                <div className="h-full rounded-full bg-red-600 transition-all duration-300" style={{ width: `${progress}%` }} />
+              </div>
+              <span className="text-xs font-bold text-gray-500">{currentQuestion + 1} / {totalQuestions}</span>
+            </div>
+            <p className="mt-6 text-sm font-bold text-gray-900">{questions[currentQuestion].text}</p>
+            <div className="mt-4 max-h-[260px] space-y-2.5 overflow-y-auto pr-1">
+              {questions[currentQuestion].options.map((option) => {
+                const selected = answers[`q${currentQuestion}`] === option.value;
+                return (
+                  <button
+                    type="button"
+                    key={option.value}
+                    onClick={() => handleOptionChange(currentQuestion, option.value)}
+                    aria-pressed={selected}
+                    className={`flex w-full items-center gap-3 rounded-xl border px-4 py-3 text-left text-sm font-medium transition-colors ${selected ? 'border-red-500 bg-red-50 text-red-700' : 'border-gray-200 text-gray-700 hover:border-red-300 hover:bg-red-50/50'}`}
+                  >
+                    <span className={`h-4 w-4 flex-shrink-0 rounded-full border-2 ${selected ? 'border-red-600 bg-red-600 ring-4 ring-red-100' : 'border-gray-300'}`} />
+                    <span>{option.label}</span>
+                  </button>
+                );
+              })}
+            </div>
+            <div className="mt-6 flex items-center justify-between border-t border-gray-100 pt-5">
+              <button
+                type="button"
+                onClick={handlePrev}
+                disabled={currentQuestion === 0}
+                className="text-xs font-semibold text-gray-400 transition-colors hover:text-gray-700 disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                ← Geri
+              </button>
+              <button
+                type="button"
+                onClick={currentQuestion === totalQuestions - 1 ? handleSubmit : handleNext}
+                className="inline-flex items-center gap-1 rounded-full bg-red-600 px-4 py-2 text-sm font-bold text-white shadow-md transition-all hover:bg-red-700 active:scale-95"
+              >
+                {currentQuestion === totalQuestions - 1 ? 'Sonuçları Gör' : currentQuestion === 0 ? 'Başla' : 'İleri'} →
+              </button>
+            </div>
+          </>
+        ) : (
+          <div className="text-center">
+            <div className="text-4xl">{recommendation.icon}</div>
+            <p className="mt-3 text-xs font-bold uppercase tracking-[0.14em] text-red-600">Analiz tamamlandı</p>
+            <h3 className="mt-2 text-xl font-extrabold text-gray-900">{recommendation.title}</h3>
+            <p className="mt-3 text-sm leading-relaxed text-gray-600">{recommendation.description}</p>
+            <LocalizedLink
+              to="/ayak-analizi"
+              className="mt-5 inline-flex items-center gap-1 rounded-full bg-red-600 px-5 py-2.5 text-sm font-bold text-white shadow-md transition-all hover:bg-red-700"
+            >
+              Detaylı sonucu gör →
+            </LocalizedLink>
+            <button
+              type="button"
+              onClick={handleRestart}
+              className="mt-3 block w-full text-xs font-semibold text-gray-500 transition-colors hover:text-red-600"
+            >
+              Yeniden başla
+            </button>
+          </div>
+        )}
+      </div>
+    );
+  }
 
   return (
     <>

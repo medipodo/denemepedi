@@ -14,6 +14,7 @@ import LocalizedLink from '../components/LocalizedLink';
 import MarketplacesSection from '../components/MarketplacesSection';
 import BayiOl from '../components/BayiOl';
 import FreeEvaluation from '../components/FreeEvaluation';
+import AyakAnalizi from './AyakAnalizi';
 import { Video, Play, Sparkles } from 'lucide-react';
 
 // ---- Türkçe tarih parse yardımcısı (blog sıralaması için) ----
@@ -1055,32 +1056,7 @@ const Home = () => {
 
             <div className="relative mx-auto w-full max-w-md">
               <div className="absolute -inset-4 rounded-[2rem] bg-white/10 blur-2xl" aria-hidden="true" />
-              <div className="relative overflow-hidden rounded-[2rem] border border-white/20 bg-white p-5 shadow-2xl sm:p-7">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-xs font-bold uppercase tracking-[0.14em] text-red-600">Kısa bir yolculuk</p>
-                    <p className="mt-1 text-lg font-extrabold text-gray-900">Size en uygun bakım hangisi?</p>
-                  </div>
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-red-100 text-2xl">🦶</div>
-                </div>
-                <div className="mt-6 flex items-center gap-3">
-                  <div className="h-2 flex-1 overflow-hidden rounded-full bg-red-100"><div className="h-full w-1/6 rounded-full bg-red-600" /></div>
-                  <span className="text-xs font-bold text-gray-500">1 / 6</span>
-                </div>
-                <p className="mt-6 text-sm font-bold text-gray-900">Ayaklarınızda en belirgin sorun nedir?</p>
-                <div className="mt-4 space-y-2.5">
-                  {['Koku ve terleme', 'Mantar eğilimi', 'Tırnak ve cilt bakımı'].map((option, index) => (
-                    <div key={option} className={`flex items-center gap-3 rounded-xl border px-4 py-3 text-sm font-medium ${index === 1 ? 'border-red-500 bg-red-50 text-red-700' : 'border-gray-200 text-gray-700'}`}>
-                      <span className={`h-4 w-4 rounded-full border-2 ${index === 1 ? 'border-red-600 bg-red-600 ring-4 ring-red-100' : 'border-gray-300'}`} />
-                      {option}
-                    </div>
-                  ))}
-                </div>
-                <div className="mt-6 flex items-center justify-between border-t border-gray-100 pt-5">
-                  <span className="text-xs text-gray-500">Yanıtlarınıza göre ilerler</span>
-                  <span className="inline-flex items-center gap-1 text-sm font-bold text-red-600">Başla <ArrowRight size={16} /></span>
-                </div>
-              </div>
+              <AyakAnalizi compact />
             </div>
           </div>
         </div>

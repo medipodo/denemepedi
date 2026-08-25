@@ -251,16 +251,16 @@ const ProductDiscoverySection = ({ onExploreProducts }) => {
 
         <div className="mx-auto grid max-w-6xl items-stretch gap-8 lg:grid-cols-2">
           <div className="flex h-full min-w-0 flex-col overflow-hidden rounded-3xl border border-red-100 bg-white shadow-[0_25px_60px_-35px_rgba(220,38,38,0.3)]">
-            <div className="relative aspect-square w-full shrink-0 overflow-hidden bg-gradient-to-br from-red-50 via-white to-gray-50 p-6 sm:p-10">
+            <div className="relative flex aspect-square w-full shrink-0 items-center justify-center overflow-hidden bg-gradient-to-br from-red-50 via-white to-gray-50 p-6 sm:p-10">
             <div className="absolute -left-16 -top-16 h-44 w-44 rounded-full bg-red-100/60 blur-3xl" aria-hidden="true" />
             <div className="absolute -bottom-20 -right-12 h-52 w-52 rounded-full bg-red-100/50 blur-3xl" aria-hidden="true" />
               <img
                 src="/images/products/pedizone-set.webp"
                 alt="PediZone ayak ve tırnak bakım ürünleri"
-                width="650"
-                height="635"
+                width="1040"
+                height="1100"
                 loading="lazy"
-                className="relative z-10 h-auto w-full max-w-[520px] object-contain mix-blend-multiply drop-shadow-[0_20px_24px_rgba(31,41,55,0.14)] transition-transform duration-500 hover:scale-[1.02]"
+                className="relative z-10 h-full w-full max-w-[520px] object-contain mix-blend-multiply drop-shadow-[0_20px_24px_rgba(31,41,55,0.14)] transition-transform duration-500 hover:scale-[1.02]"
               />
             </div>
 

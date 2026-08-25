@@ -29,7 +29,7 @@ const FreeEvaluation = ({ compact = false }) => {
       data-testid="free-eval-section"
       className={compact ? 'h-full bg-transparent' : 'py-16 md:py-24 bg-gradient-to-br from-red-50 via-white to-red-50'}
     >
-      <div className="container mx-auto px-4">
+      <div className={compact ? 'w-full' : 'container mx-auto px-4'}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

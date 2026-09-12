@@ -17,23 +17,9 @@ const ProductDetail = () => {
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
 
-  // Informational Product Schema (NO offers/price - not an e-commerce site)
- const productSchema = product ? {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": product.name,
-  "description": product.description,
-  "image": `https://pedizone.com${product.image}`,
-  "category": product.category || "Ayak Bakım Ürünleri",
-  "brand": {
-    "@type": "Brand",
-    "name": "PediZone"
-  },
-  "manufacturer": {
-    "@type": "Organization",
-    "name": product.manufacturer || "PediZone"
-  }
-} : null;
+  // Bu sayfa doğrudan fiyat/satış teklifi veya doğrulanmış değerlendirme sunmadığı için
+  // Product JSON-LD üretmiyoruz. Böylece Google'a eksik offers/review/aggregateRating
+  // içeren geçersiz bir Product öğesi gönderilmiyor.
 
   // Ürüne özel görseller
   const productImages = slug === 'ureli-krem' ? [
@@ -116,7 +102,6 @@ const ProductDetail = () => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         
-        <script type="application/ld+json">{JSON.stringify(productSchema)}</script>
       </Helmet>
 
       {/* Breadcrumb */}
